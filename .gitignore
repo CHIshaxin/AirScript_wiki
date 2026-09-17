@@ -1,0 +1,31 @@
+# ---- 抓取中间产物（可重新生成，不入库）----
+# HTML 页面缓存，约 53MB，由 scripts/crawl.py 生成，可断点续跑
+_raw/cache/
+# metadata.js 及由其派生的中间文件，见 scripts/fetch_meta.py
+_raw/*.js
+_raw/*.json
+_raw/*.html
+
+# ---- 本地智能体状态（非仓库内容）----
+.workbuddy-ai/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ---- 系统与编辑器 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- 其他 ----
+*.log

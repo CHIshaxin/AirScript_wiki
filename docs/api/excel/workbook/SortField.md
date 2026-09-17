@@ -1,0 +1,104 @@
+---
+title: "排序字段(SortField)"
+source: https://airsheet.wps.cn/docs/api/excel/workbook/SortField.html
+---
+# SortField
+
+代表与 **Sort** 对象关联的排序字段对象
+
+#### 属性列表
+
+| 属性名 | 数据类型 | 简介 |
+| --- | --- | --- |
+| CustomOrder | Variant | 指定对字段进行排序的自定义次序 |
+| DataOption | [XlSortDataOption](Enum.md#xlsortdataoption) | 指定如何在 SortField 对象中指定的区域中对文本进行排序 |
+| Key | [Range](Range.md) | 指定排序字段，该字段确定要排序的值 |
+| Order | [XlSortOrder](Enum.md#xlsortorder) | 确定关键字所指定的值的排序次序 |
+| Priority | Number | 指定排序字段的优先级 |
+| SortOn | [XlSortOn](Enum.md#xlsorton) | 返回或设置要排序的单元格的属性 |
+| SortOnValue | Object | 返回针对指定的 SortField 对象执行排序的值 |
+
+#### 方法列表
+
+| 方法名 | 返回类型 | 简介 |
+| --- | --- | --- |
+| Delete() | undefined | 从 SortFields 集合中删除指定的 SortField 对象 |
+| ModifyKey() | undefined | 修改字段中按其排序的键值 |
+
+## CustomOrder
+
+指定对字段进行排序的自定义次序，可读/写
+
+#### 数据类型
+
+Variant - 自定义次序对象
+
+## DataOption
+
+指定如何在 SortField 对象中指定的区域中对文本进行排序，可读/写
+
+#### 数据类型
+
+[XlSortDataOption](Enum.md#xlsortdataoption) - 文本排序方式枚举
+
+## Key
+
+指定排序字段，该字段确定要排序的值，此为只读属性
+
+#### 数据类型
+
+[Range](Range.md) - 区域对象
+
+## Order
+
+确定关键字所指定的值的排序次序，可读/写
+
+#### 数据类型
+
+[XlSortOrder](Enum.md#xlsortorder) - 排序次序枚举
+
+## Priority
+
+指定排序字段的优先级，可读/写
+
+#### 数据类型
+
+Number
+
+## SortOn
+
+返回或设置要排序的单元格的属性，可读/写
+
+#### 数据类型
+
+[XlSortOn](Enum.md#xlsorton)
+
+## SortOnValue
+
+返回针对指定的 SortField 对象执行排序的值，此为只读属性
+
+#### 数据类型
+
+Object
+
+## Delete()
+
+从 SortFields 集合中删除指定的 SortField 对象
+
+#### 返回值
+
+undefined
+
+## ModifyKey()
+
+修改字段中按其排序的键值
+
+#### 参数
+
+| 属性 | 数据类型 | 默认值 | 必填 | 说明 |
+| --- | --- | --- | --- | --- |
+| Key | [Range](Range.md) | null | 是 | 指定要修改的键 |
+
+#### 返回值
+
+undefined
