@@ -10,7 +10,7 @@ from pathlib import Path
 from . import chunk as chunk_mod
 from . import site
 from .convert import html_to_markdown
-from .index import STAGE_API_REF, STAGE_DOCS, PageRef
+from .index import PageRef
 from .resolver import PathResolver
 from .state import State
 
@@ -169,13 +169,18 @@ def crawl(refs: list[PageRef], fetcher, st: State, out_root: Path,
             break
         processed += 1
 
+        # 0) 内容未变则直接跳过：此时既不需要还原路径，也不需要任何请求
+        unchanged = bool(ref.hash) and st.hashes.get(ref.key) == ref.hash
+        if unchanged and not force and not dry_run:
+            stats.skipped += 1
+            st.clear_failure(ref.key)
+            continue
+
         # 1) 路径：curated 页直接有；api-ref 页需要还原
-        real_path = ref.real_path or (st.path_map.get(ref.key) if ref.key in st.path_map else None)
-        if ref.real_path is None and resolver is not None:
-            if ref.key in st.path_map:
-                real_path = st.path_map[ref.key]
-            else:
-                real_path = resolver.resolve(ref.key, ref.hash)
+        real_path = ref.real_path or st.path_map.get(ref.key)
+        if ref.real_path is None and not real_path and resolver is not None:
+            real_path = resolver.resolve(ref.key, ref.hash)
+            if real_path:
                 st.path_map[ref.key] = real_path
         if not real_path:
             stats.unresolved += 1
@@ -183,12 +188,6 @@ def crawl(refs: list[PageRef], fetcher, st: State, out_root: Path,
             continue
         if real_path in (st.unresolved.get(ref.key), None):
             st.unresolved.pop(ref.key, None)
-
-        # 2) hash 未变则跳过
-        if not force and not dry_run and st.hashes.get(ref.key) == ref.hash and ref.hash:
-            stats.skipped += 1
-            st.clear_failure(ref.key)
-            continue
 
         # 3) 拉取并转换
         status, body = fetcher.get(site.asset_url(real_path, ref.hash))

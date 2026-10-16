@@ -8,7 +8,6 @@ from pathlib import Path
 
 from . import index as index_mod
 from . import report as report_mod
-from . import state as state_mod
 from .fetch import crawl
 from .http import Fetcher
 from .resolver import PathResolver

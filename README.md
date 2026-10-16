@@ -4,6 +4,8 @@
 由 GitHub Actions **每月检查一次**：官方文档有更新就增量拉取、提交；没有变化就什么都不做。
 
 - 产出目录：[`wiki/`](wiki/)（索引见 [`wiki/INDEX.md`](wiki/INDEX.md)）
+- 历史快照：[`docs/`](docs/) 下除 `superpowers/` 外的内容，是本仓库 2026-09 用早期脚本生成的同一份文档的旧镜像
+  （旧脚本在 `scripts/*.py`，一并保留备查）。**维护中的版本是 `wiki/`**，旧快照仅供对照。
 - 抓取工具：`src/airscript_wiki/`（Python，依赖隔离在仓库内 `.venv`）
 - 定时任务：[`.github/workflows/update-wiki.yml`](.github/workflows/update-wiki.yml)（每月 1 日 03:00 UTC / 北京时间 11:00）
 
@@ -47,7 +49,9 @@ AirScript_wiki/
 │  ├─ failures.json              失败计数（下次运行继续重试）
 │  └─ unresolved.json            无法还原的页面及原因
 ├─ wiki/                         产出的 Markdown（zh / en-US / ja-JP）
-└─ docs/superpowers/             本项目的设计文档与实施计划
+└─ docs/
+   ├─ superpowers/               本项目的设计文档与实施计划
+   └─ api* / guide / …           2026-09 旧镜像快照（保留备查）
 ```
 
 ## 本地使用
@@ -102,6 +106,9 @@ bash scripts/crawl_all.sh
   chunk 里没有静态 HTML。这类页面会降级为“从页面数据中提取的索引链接”，并在文件内明确标注。
 - **路径还原的边界**：极少数成员名（拼写不规范或未收录的专有词）可能还原失败；
   这些页面会记录在 `state/unresolved.json`，不会静默丢失，也不会删除已有文件。
+  目前 `state/name_map.json` 里的官方写法来自两处：① API 1.0 文档页收割的词元推断；
+  ② 本仓库 2026-09 旧镜像（`docs/apiV2/**`）中已存在的 161 个类名与 1393 个成员名
+  ——后者作为“种子”直接复用，因此绝大多数页面只需 **1 次验证请求** 即可命中。
 - **图片不落盘**：Markdown 中的图片保留官方 CDN 绝对链接；官方链接失效时图片会失效。
 - **抓取速率**：受上游 CDN 限流约束，全量首次抓取需要较长时间（可断点续传，中断后重跑即可）。
 

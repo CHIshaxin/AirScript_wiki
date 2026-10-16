@@ -1,0 +1,32 @@
+---
+title: "Select (方法)"
+source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Legend/%E6%96%B9%E6%B3%95/Select%20%E6%96%B9%E6%B3%95.html
+updated: 1789700916000
+hash: k8zLkt5O
+---
+
+# Select (方法)
+
+选择对象。
+
+## 返回值
+
+Variant
+
+## 示例
+
+```javascript
+/*本示例选择图表工作表 Chart1 的图例。*/
+function test() {
+    let legend = Application.Charts.Item("Chart1").ChartObjects(1).Chart.Legend
+    legend.Select()
+}
+```
+
+```javascript
+/*本示例选择工作表 Sheet1 中第一张图表的图例。*/
+function test() {
+    let legend = Application.Sheets.Item("Sheet1").ChartObjects(1).Chart.Legend
+    legend.Select()
+}
+```

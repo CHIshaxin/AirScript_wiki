@@ -27,7 +27,7 @@ PREFIX_CASE = {
     "ja-jp": "ja-JP",
 }
 
-MAX_CANDIDATES = 10
+MAX_CANDIDATES = 12
 DEFAULT_PROBE_BUDGET = 24
 
 
@@ -109,44 +109,58 @@ def _segmentations(chunk: str, limit: int = 10) -> list[list[str]]:
     """
     n = len(chunk)
 
-    def collect(allow_unknown: bool) -> list[list[str]]:
-        results: list[list[str]] = []
-        seen = set()
+    # 已知词能否切完 chunk[i:]（用于限制“未知词”只出现在可解释的上下文里）
+    known_ok = [False] * (n + 1)
+    known_ok[n] = True
+    for i in range(n - 1, -1, -1):
+        for j in range(min(n, i + 16), i, -1):
+            if _known(chunk[i:j]) and known_ok[j]:
+                known_ok[i] = True
+                break
 
-        def rec(i: int, parts: list[str], used_unknown: bool):
-            if len(results) >= limit:
-                return
-            if i == n:
-                key = tuple(parts)
-                if key not in seen:
-                    seen.add(key)
-                    results.append(list(parts))
-                return
+    results: list[list[str]] = []
+    seen = set()
+
+    def rec(i: int, parts: list[str], used_unknown: bool):
+        if len(results) >= limit:
+            return
+        if i == n:
+            key = tuple(parts)
+            if key not in seen:
+                seen.add(key)
+                results.append(list(parts))
+            return
+        # 先用已知词切（长词优先）——保证 text|effect|format 这类切法先进结果
+        for j in range(min(n, i + 16), i, -1):
+            piece = chunk[i:j]
+            if _known(piece):
+                parts.append(piece)
+                rec(j, parts, used_unknown)
+                parts.pop()
+                if len(results) >= limit:
+                    return
+        # 再允许一个未收录词，且它后面必须能用已知词解释完（如 control|format、eomonth）
+        if not used_unknown:
             for j in range(min(n, i + 16), i, -1):
                 piece = chunk[i:j]
-                if _known(piece):
-                    parts.append(piece)
-                    rec(j, parts, used_unknown)
-                    parts.pop()
-                elif allow_unknown and not used_unknown and len(piece) >= 3:
-                    # 最多允许一个未收录词（如 guess、affect），避免整词切不动
+                if len(piece) >= 3 and known_ok[j]:
                     parts.append(piece)
                     rec(j, parts, True)
                     parts.pop()
-                if len(results) >= limit:
-                    return
+                    if len(results) >= limit:
+                        return
 
-        rec(0, [], False)
-        return results
-
-    results = collect(allow_unknown=False)
-    if not results:
-        results = collect(allow_unknown=True)
+    rec(0, [], False)
     if not results and chunk:
         results = [[chunk]]
-    # 排序：整词都由“强词元”构成者优先，其次词元数少者优先（即最长匹配直觉）
+    # 排序：未收录词少 → 未收录字符少 → 词元少
     order = {tuple(r): i for i, r in enumerate(results)}
-    results.sort(key=lambda r: (0 if all(_strong(t) for t in r) else 1, len(r), order[tuple(r)]))
+
+    def score(seg):
+        unknown = [t for t in seg if not _known(t)]
+        return (len(unknown), sum(len(t) for t in unknown), len(seg), order[tuple(seg)])
+
+    results.sort(key=score)
     return results
 
 
@@ -172,15 +186,15 @@ def candidates(lower_name: str, limit: int = MAX_CANDIDATES) -> list[str]:
         acronym = "_".join("".join(_pascal_acronym(t) for t in seg) for seg in combo)
         if acronym != rendered and acronym not in out:
             out.append(acronym)
-    # 末尾追加低成本变体：camelCase（首个词元小写）与全大写（工作表函数名）
-    for seg in (segs[0] if segs else []):
-        camel = "".join((t if idx == 0 else _pascal(t)) for idx, t in enumerate(seg))
-        if camel != "".join(_pascal(t) for t in seg) and camel not in out:
-            out.append(camel)
+    # 末尾追加低成本兜底变体：全大写（工作表函数名）与 camelCase（部分官方名以小写开头）
     if 2 <= len(lower_name) <= 8 and lower_name.isalpha():
         upper = lower_name.upper()
         if upper not in out:
             out.append(upper)
+    for seg in (segs[0] if segs else []):
+        camel = "".join((t if idx == 0 else _pascal(t)) for idx, t in enumerate(seg))
+        if camel not in out and camel != "".join(_pascal(t) for t in seg):
+            out.append(camel)
     return out[:limit]
 
 
@@ -294,9 +308,14 @@ class PathResolver:
             if cached:
                 member_cased = cached
 
-        # 组装候选并验证
+        # 组装候选并验证：先试缓存（种子）结果，失败后回退到完整候选列表（缓存可能过期）
         cls_list = [class_cased] if class_cased else (self.class_candidates(parsed) or [None])
         mem_list = [member_cased] if member_cased else (candidates(parsed.member) if parsed.member else [None])
+        if class_cased or member_cased:
+            fallback_cls = [c for c in candidates(parsed.class_name) if c != class_cased] if parsed.class_name else [None]
+            fallback_mem = [c for c in candidates(parsed.member) if c != member_cased] if parsed.member else [None]
+            cls_list = cls_list + fallback_cls
+            mem_list = mem_list + fallback_mem
 
         for cls in cls_list:
             for mem in mem_list:

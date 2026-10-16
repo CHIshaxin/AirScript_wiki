@@ -1,0 +1,292 @@
+---
+title: "Application"
+source: https://airsheet.wps.cn/docs/api/excel/databook/Application.html
+updated: 1789700916000
+hash: Cgn_UrZj
+---
+
+# Application
+
+文档操作的顶级对象，对文档进行相关操作，都是间接或直接操作该对象。
+
+Application 是一个文件的顶级对象，新打开一个文件返回的也是 Application。
+
+而在脚本中的`Application`则是指当前文件的顶级对象，有且只有一个。
+
+Application 对象的具体属性和方法请参阅下方的列表。
+
+#### 属性列表
+
+| 属性 | 数据类型 | 简介 |
+|---|---|---|
+| [ActiveSheet](#activesheet) | [Sheet](/docs/api/excel/databook/Sheet.html) | 当前的活动工作表/数据表 |
+| [Sheets](#sheets) | [Sheets](/docs/api/excel/databook/Application.html#sheets) | 当前文件的所有工作表/数据表 |
+| [FileInfo](#fileinfo) | Object | 当前文档的信息 |
+| [UserInfo](#userinfo) | Object | 当前文档的用户信息 |
+| [Enum](#enum) | [Enum](/docs/api/excel/databook/Enum.html) | 所有的枚举类型 |
+
+#### 方法列表
+
+| 方法 | 返回类型 | 简介 |
+|---|---|---|
+| [Sheets(name)](#sheets-1) | [Sheet](/docs/api/excel/databook/Sheet.html) | 获取名称为 name 的工作表/数据表 |
+
+## ActiveSheet
+
+当前活动工作表/数据表，可以通过 Sheet.Activate()来切换活动工作表/数据表。该属性返回[Sheet](/docs/api/excel/databook/Sheet.html#ActiveSheet)对象,能利用该属性操作当前活动工作表/数据表。
+
+运行脚本的环境是独立在服务器的，因此脚本运行环境的 ActiveSheet 与用户环境的 ActiveSheet 不一定相同。
+
+具体规则是：
+
+1.运行脚本时会把脚本运行环境的 ActiveSheet 切换为用户环境当前的 ActiveSheet。
+
+2.当脚本通过函数切换脚本运行环境的 ActiveSheet 时，用户环境的 ActiveSheet 不会同步切换。
+
+#### 数据类型
+
+[Sheet](/docs/api/excel/databook/Sheet.html) - 当前活动工作表/数据表
+
+#### 示例
+
+```js
+console.log(Application.ActiveSheet.Name) // 数据表2
+
+// 切换到名称为数据表2的数据表
+Application.Sheets.Item('数据表2').Activate()
+console.log(Application.ActiveSheet.Name) // 数据表2
+```
+
+## Sheets
+
+获取当前文件能操作的所有 Sheet，返回一个[Sheets](/docs/api/excel/databook/Application.html#sheets)对象。
+
+#### 数据类型
+
+[Sheets](/docs/api/excel/databook/Application.html#sheets)
+
+#### 示例
+
+```js
+// 工作簿（Workbook）中所有工作表/数据表（Sheet）的集合,下面两种写法是一样的
+let sheets = Application.ActiveWorkbook.Sheets
+sheets = Application.Sheets
+
+// 打印所有工作表/数据表的名称
+for (let i = 1; i <= sheets.Count; i++) {
+  console.log(sheets.Item(i).Name)
+}
+```
+
+### Sheets.Count
+
+工作表/数据表数量
+
+#### 数据类型
+
+Number - 对应工作簿的工作表/数据表数量
+
+#### 示例
+
+```js
+// 下面两种写法是一样的
+let sheets = Application.ActiveWorkbook.Sheets
+sheets = Application.Sheets
+
+// 打印所有工作表/数据表的名称
+console.log(sheets.Count) //1
+```
+
+### Sheets.DefaultNewSheetName
+
+默认新工作表名
+
+#### 返回类型
+
+String - 新建工作表时若没有指定名称，可用这个名称作为新建工作表名称
+
+#### 示例
+
+```js
+const defaultName = Application.Sheets.DefaultNewSheetName
+// 工作表对象
+Application.Sheets.Add(
+  null,
+  Application.ActiveSheet.Name,
+  1,
+  Application.Enum.XlSheetType.xlWorksheet,
+  defaultName
+)
+```
+
+### Sheets.Add()
+
+新增工作表，如果 Before 和 After 都存在，以 Before 为准
+
+#### 参数
+
+| 属性 | 数据类型 | 默认值 | 必填 | 说明 |
+|---|---|---|---|---|
+| Before | String/Number |  | 否 | After 空时，必填，为当前已有单元格的 index 或者名称，新建的工作表将置于此工作表之前 |
+| After | String/Number |  | 否 | Before 空时，必填，为当前已有单元格的 index 或者名称，新建的工作表将置于此工作表之后 |
+| Count | Number | 1 | 否 | 要添加的工作表数。默认值为选定工作表的数量 |
+| Type | Enum |  | 否 | 指定工作表类型，详细可见 [Enum.XlSheetType](/docs/api/excel/databook/Enum.html#xlsheettype) |
+| Name | Name |  | 否 | 指定工作表名称 |
+
+#### 示例
+
+```js
+// 添加工作表
+Application.Sheets.Add(
+  null,
+  Application.ActiveSheet.Name,
+  1,
+  Application.Enum.XlSheetType.xlWorksheet,
+  '新工作表'
+)
+```
+
+### Sheets.Item()
+
+根据名称或索引选择 Sheet
+
+#### 参数
+
+| 属性 | 数据类型 | 默认值 | 必填 | 说明 |
+|---|---|---|---|---|
+| index | String/Number |  | 是 | 所选的 sheet 的名称/索引 |
+
+#### 返回类型
+
+[Sheet](/docs/api/excel/databook/Sheet.html) - 对应名称的工作表/数据表
+
+#### 示例
+
+```js
+// 切换名称为"Sheet2"的工作表
+Application.Sheets.Item('Sheet2').Activate()
+
+// 切换索引为1的工作表
+Application.Sheets.Item(1).Activate()
+```
+
+### Sheets.Each()
+
+遍历所有 sheet 并执行回调函数
+
+#### 参数
+
+| 属性 | 数据类型 | 默认值 | 必填 | 说明 |
+|---|---|---|---|---|
+| callback | Function | null | 是 | 类似 JS 数组的 forEach |
+
+#### 示例
+
+```js
+// 打印所有工作表/数据表的名称
+Application.Sheets.Each(function (item) {
+  console.log(item.Name) //Sheet1 Sheet2
+})
+```
+
+## FileInfo
+
+返回当前文件的基本信息。
+
+#### 数据类型
+
+Object - 当前文件的信息
+
+| 名称 | 类型 | 说明 |
+|---|---|---|
+| id | string | 文件 ID |
+| name | string | 文件名 |
+| officeType | string | 文档类型 |
+| creator | [CreatorObject](#creatorobject) | 文档创建者信息 |
+| size | number | 文件大小 |
+| groupId | string | 文件的群组 ID |
+| docType | number | 文档类型（数字形式） |
+
+#### CreatorObject 对象信息
+
+| 名称 | 类型 | 说明 |
+|---|---|---|
+| id | string | 创建者 ID |
+| name | string | 创建者名称 |
+| avatar_url | string | 创建者头像 |
+| logined | boolean | 是否已登录 |
+| attrs | Object | 属性对象 |
+| real_id | string | 真实 ID |
+
+#### 示例
+
+```javascript
+// 打印文件信息
+console.log(Application.FileInfo)
+/*{
+ "id": "<open_id>",
+ ...
+}*/
+```
+
+## UserInfo
+
+返回当前文件的用户信息。
+
+#### 数据类型
+
+Object- 当前文件的用户信息
+
+| 名称 | 类型 | 说明 |
+|---|---|---|
+| id | string | 用户 ID |
+| name | string | 用户名称 |
+
+#### 示例
+
+```javascript
+// 打印用户信息
+console.log(Application.UserInfo)
+```
+
+## Enum
+
+枚举类型，存放在 Application 下。
+
+可以通过 Application.Enum 使用
+
+#### 数据类型
+
+[Enum](/docs/api/excel/databook/Enum.html) - 所有的枚举类型
+
+#### 示例
+
+```js
+// 打印工作表/数据表的类型枚举
+console.log(Application.Enum.XlSheetType)
+//{"xlChart":-4109,"xlDialogSheet":-4116,"xlExcel4IntlMacroSheet":4,"xlExcel4MacroSheet":3,"xlWorksheet":-4167}
+```
+
+## Sheets()
+
+作为函数使用，代替 Sheets.Item()，返回一个[Sheet](/docs/api/excel/databook/Sheet.html)对象。
+
+#### 参数
+
+| 名称 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| name | string | 是 | 工作表/数据表的名称 |
+
+#### 返回类型
+
+[Sheet](/docs/api/excel/databook/Sheet.html) - 对应名称的工作表/数据表 Sheet 对象
+
+#### 示例
+
+```js
+console.log(Application.Sheets.Count) // 1
+
+// 以下两种写法效果是一样的
+console.log(Application.Sheets('Sheet2').Range('A1').Text) // Sheet2的A1单元格的内容
+console.log(Application.Sheets.Item('Sheet2').Range('A1').Text) // Sheet2的A1单元格的内容
+```

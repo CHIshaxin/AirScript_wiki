@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import re
 
-from bs4 import BeautifulSoup, NavigableString, Tag
+from bs4 import BeautifulSoup, NavigableString
 from markdownify import MarkdownConverter
 
 _ATTRS = {"heading_style": "ATX", "bullets": "-", "escape_asterisks": False,
