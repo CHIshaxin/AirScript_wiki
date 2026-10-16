@@ -1,0 +1,18 @@
+# Python / venv（依赖隔离：本项目使用仓库内 .venv）
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# 本地运行产物
+logs/
+state/*.tmp
+
+# 抓取时临时保存的站点索引（仅在本地调试时存在）
+hashmap.json
+hashmap_cdn.json
+hashmap_new.json
+shell.html

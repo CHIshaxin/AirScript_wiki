@@ -1,0 +1,86 @@
+name: Update AirScript Wiki
+
+# 每月检查一次官方文档站（北京时间每月 1 日 11:00 = 03:00 UTC），也支持手动触发。
+on:
+  schedule:
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      locales:
+        description: "要抓取的 locale：zh / en-US / ja-JP / all"
+        required: false
+        default: "zh"
+      stage:
+        description: "抓取阶段：docs（指南+API1.0） / api-ref（API 2.0 参考页） / all"
+        required: false
+        default: "all"
+      delay:
+        description: "请求间隔（秒），上游 CDN 有限流，调小有被临时 404 的风险"
+        required: false
+        default: "0.5"
+      dry_run:
+        description: "只报告不写文件（true/false）"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-wiki
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Create virtualenv and install dependencies
+        run: |
+          python -m venv .venv
+          . .venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Crawl documentation
+        env:
+          LOCALES: ${{ github.event.inputs.locales || 'zh' }}
+          STAGE: ${{ github.event.inputs.stage || 'all' }}
+          DELAY: ${{ github.event.inputs.delay || '0.5' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: |
+          . .venv/bin/activate
+          ARGS="--locales $LOCALES --stage $STAGE --delay $DELAY"
+          if [ "$DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python -m airscript_wiki crawl $ARGS
+        continue-on-error: true
+
+      - name: Report changes
+        id: changes
+        run: |
+          git add -A wiki state
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --stat | tail -3
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          DATE=$(date -u +%Y-%m-%d)
+          PAGES=$(git diff --cached --numstat -- wiki | wc -l)
+          git commit -m "chore(wiki): monthly sync ${DATE} (${PAGES} files)"
+          git push

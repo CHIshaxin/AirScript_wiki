@@ -1,0 +1,4 @@
+# 运行依赖（抓取 + 转换）
+requests>=2.31,<3
+beautifulsoup4>=4.12,<5
+markdownify>=0.13,<1
