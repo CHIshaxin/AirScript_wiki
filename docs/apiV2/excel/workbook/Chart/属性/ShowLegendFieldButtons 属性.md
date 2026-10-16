@@ -1,0 +1,35 @@
+---
+title: "ShowLegendFieldButtons 属性"
+source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E5%B1%9E%E6%80%A7/ShowLegendFieldButtons%20%E5%B1%9E%E6%80%A7.html
+---
+# ShowLegendFieldButtons (属性)
+
+返回或设置是否要在数据透视图上显示图例字段按钮。可读/写。
+
+## 说明
+
+将 **ShowLegendFieldButtons** 属性设置为 **True** 将在指定的数据透视图上显示图例字段按钮。将该属性设置为 **False** 将隐藏这些按钮。
+
+**ShowLegendFieldButtons** 属性对应于\*\*“分析”**选项卡（在选择数据透视图时可用）的**“字段按钮”**下拉列表中的**“显示图例字段按钮”\*\*命令。
+
+## 返回值
+
+Boolean
+
+## 示例
+
+```javascript
+/*本示例将图表工作表 Chart 1 设置为显示图例字段按钮。*/
+function test() {
+    let chart = Application.Charts.Item("Chart1").ChartObjects(1).Chart
+    chart.ShowLegendFieldButtons = true
+}
+```
+
+```javascript
+/*本示例显示工作表 Sheet2 中第一个内嵌图表是否显示图例字段按钮。*/
+function test() {
+    let chart = Application.Sheets.Item("Sheet2").ChartObjects(1).Chart
+    console.log(chart.ShowLegendFieldButtons)
+}
+```
