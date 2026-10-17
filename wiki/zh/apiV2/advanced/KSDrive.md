@@ -34,13 +34,13 @@ file.close()
 ### 属性列表
 
 | 属性名 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | [FileType](#filetype) | object | 支持的文件类型集合 |
 
 ### 方法列表
 
 | 方法名 | 返回类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | [createFile()](#createfile) | string | 创建或另存一个文件 |
 | [openFile()](#openfile) | [File](#file) | 额外打开一个文件 |
 | [listFiles()](#listfiles) | [FilesInfo](#filesinfo) | 列出某个目录下的表格文件 |
@@ -52,7 +52,7 @@ file.close()
 ### 属性说明
 
 | 属性名 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | AP | string | 智能文档 |
 | KSheet | string | 智能表格 |
 | ET | string | 表格 |
@@ -65,14 +65,14 @@ file.close()
 ### 参数
 
 | 名称 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | type | [FileType](#filetype) | 是 | 新文件的类型 |
 | createOptions | CreateOptions | 是 | 新文件的参数选项 |
 
 ### CreateOptions 对象说明
 
 | 名称 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | 是 | 新文件的文件名 |
 | dirUrl | string | 否 | 新文件的文件目录 |
 | source | string | 否 | 将目标文件另存为新文件 |
@@ -122,7 +122,7 @@ file.close()
 ### 参数
 
 | 名称 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | openInfo | URL / [FileInfo](#fileinfo) | 是 | 打开文件的信息，可以为文件分享链接或者[FileInfo](#fileinfo) |
 
 ### 返回值
@@ -153,13 +153,13 @@ for (let offset = 0; offset >= 0; ) {
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | options | object | undefined | 否 | 一个 JavaScript 对象，undefined 时获取我的云文档目录下面的文件数据，详细参数如下所示 |
 
 ### 详细参数
 
 | 参数名 | 参数类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | dirUrl | string |  | false | 目录链接，如`https://www.kdocs.cn/mine/xxxxxx`，为空时获取我的云文档目录下面的文件数据 |
 | offset | number | 0 | false | 开始位置。通常由[listFiles()](#listfiles)函数返回。比如，[listFiles()](#listfiles)函数在某次检索中返回了 nextOffset 为 100，而想要获取更多文件信息，则下一次调用[listFiles()](#listfiles)函数时把 100 作为此可选参数传入。 |
 | count | number | 30 | false | 文件个数 |
@@ -176,8 +176,8 @@ for (let offset = 0; offset >= 0; ) {
 ### 属性
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
-| Application | [Application(ET/Ksheet/DBT)](/docs/api/excel/workbook/Application.html) | 被打开文件的操作对象，目前支持 et,ksheet,dbt |
+| --- | --- | --- |
+| Application | [Application(ET/Ksheet/DBT)](../../api/excel/workbook/Application.md) | 被打开文件的操作对象，目前支持 et,ksheet,dbt |
 | close | Function | 关闭文件的函数，使用完 file 对象之后调用，关闭打开的文件 |
 
 ## FilesInfo
@@ -187,14 +187,14 @@ for (let offset = 0; offset >= 0; ) {
 ### 属性
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | files | [FileInfo](#fileinfo)[] | 文件信息，详细参数如下所示 |
 | nextOffset | number | 下一页的偏移量，可以作为[listFiles(options)](#listfiles-options)的参数而输出下一页文件内容，当下一页为空时，nextOffset 为-1 |
 
 ### FileInfo
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | fileName | string | 文件名 |
 | fileId | string | 加密后的文件 id |
 | createTime | number | 文件创建时间戳 |

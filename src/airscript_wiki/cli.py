@@ -8,7 +8,7 @@ from pathlib import Path
 
 from . import index as index_mod
 from . import report as report_mod
-from .fetch import crawl
+from .fetch import crawl, rewrite_links
 from .http import Fetcher
 from .resolver import PathResolver
 from .state import State
@@ -65,6 +65,45 @@ def cmd_crawl(args) -> int:
     return 0 if not stats.failures else 1
 
 
+def cmd_relink(args) -> int:
+    """离线重写 wiki/ 下所有页面里的站内链接（转换规则升级后无需重新抓取）。"""
+    import posixpath
+
+    from . import site as site_mod
+
+    root = Path(args.root).resolve()
+    wiki = root / "wiki"
+    if not wiki.exists():
+        print("wiki/ 不存在", file=sys.stderr)
+        return 2
+
+    known_out: dict[str, str] = {}
+    sources: list[tuple[Path, str]] = []
+    for path in sorted(wiki.rglob("*.md")):
+        rel_out = path.relative_to(wiki).as_posix()
+        if "/" not in rel_out:      # wiki/INDEX.md
+            continue
+        locale, rest = rel_out.split("/", 1)
+        real = rest if locale == "zh" else f"{locale}/{rest}"
+        known_out[real] = rel_out
+        sources.append((path, real, rel_out))
+
+    changed = 0
+    for path, real, rel_out in sources:
+        text = path.read_text(encoding="utf-8")
+        if text.startswith("---\n"):
+            end = text.find("\n---\n", 4)
+            head, body = (text[: end + 5], text[end + 5:]) if end != -1 else ("", text)
+        else:
+            head, body = "", text
+        new_body = rewrite_links(body, known_out, posixpath.dirname(real), rel_out)
+        if new_body != body:
+            path.write_text(head + new_body, encoding="utf-8", newline="\n")
+            changed += 1
+    print(f"relinked {changed} / {len(sources)} pages -> {site_mod.BASE}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="airscript_wiki", description="AirScript 文档抓取 → Markdown")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -79,6 +118,10 @@ def build_parser() -> argparse.ArgumentParser:
     crawl_p.add_argument("--force", action="store_true", help="忽略 hash 缓存，重写全部页面（转换规则升级后使用）")
     crawl_p.add_argument("--root", default=str(DEFAULT_ROOT), help="仓库根目录")
     crawl_p.set_defaults(func=cmd_crawl)
+
+    relink_p = sub.add_parser("relink", help="离线重写 wiki/ 中的站内链接（不访问网络）")
+    relink_p.add_argument("--root", default=str(DEFAULT_ROOT), help="仓库根目录")
+    relink_p.set_defaults(func=cmd_relink)
     return parser
 
 

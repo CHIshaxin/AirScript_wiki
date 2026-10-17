@@ -14,7 +14,7 @@ Enumeration types stored under Application
 Whether the value is above or below the average.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlAboveAverage | 0 | Above average |
 | xlBelowAverage | 1 | Below average |
 | xlEqualAboveAverage | 2 | Equal to average |
@@ -24,7 +24,7 @@ Whether the value is above or below the average.
 Specifies how the destination range is filled from the source range.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlFillDefault | 0 | Determine values and formats used to fill the destination |
 | xlFillCopy | 1 | Copy values and formats from source to destination, repeating as needed |
 | xlFillSeries | 2 | Extend source values as a series (e.g. "1, 2" to "3, 4, 5"). Copy formats from source, repeating as needed |
@@ -42,7 +42,7 @@ Specifies how the destination range is filled from the source range.
 Border index to retrieve.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlDiagonalDown | 5 | Diagonal from top-left to bottom-right of each cell |
 | xlDiagonalUp | 6 | Diagonal from bottom-left to top-right of each cell |
 | xlEdgeLeft | 7 | Left edge of the range |
@@ -59,7 +59,7 @@ Border index to retrieve.
 Border weight around a range.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlMedium | -4138 | Medium |
 | xlHairline | 1 | Hairline (thinnest) |
 | xlThin | 2 | Thin |
@@ -70,7 +70,7 @@ Border weight around a range.
 Calculation mode.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | manual | `manual` | Manual |
 | automatic | `automatic` | Automatic |
 
@@ -79,7 +79,7 @@ Calculation mode.
 Chart type.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xl3DArea | -4098 | 3-D area |
 | xl3DAreaStacked | 78 | 3-D stacked area |
 | xl3DAreaStacked100 | 79 | 100% stacked area |
@@ -159,7 +159,7 @@ Chart type.
 Operators used by contains functions.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlContains | 0 | Contains the value |
 | xlDoesNotContain | 1 | Does not contain the value |
 | xlBeginsWith | 2 | Begins with the value |
@@ -170,7 +170,7 @@ Operators used by contains functions.
 How cells shift when deleting.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlShiftToLeft | -4159 | Shift cells left |
 | xlShiftUp | -4162 | Shift cells up |
 
@@ -179,7 +179,7 @@ How cells shift when deleting.
 Direction to move.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlDown | -4121 | Down |
 | xlToLeft | -4159 | Left |
 | xlToRight | -4161 | Right |
@@ -190,7 +190,7 @@ Direction to move.
 Icon used in validation alerts.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlValidAlertStop | 1 | Stop icon |
 | xlValidAlertWarning | 2 | Warning icon |
 | xlValidAlertInformation | 3 | Information icon |
@@ -200,7 +200,7 @@ Icon used in validation alerts.
 Type of validation to perform on values.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlValidateWholeNumber | 1 | Whole number |
 | xlValidateDecimal | 2 | Decimal |
 | xlValidateList | 3 | Value must exist in list |
@@ -214,7 +214,7 @@ Type of validation to perform on values.
 Exported image format.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlImgTypePNG | 0 | Export .png |
 | xlImgTypeJPG | 1 | Export .jpg |
 | xlImgTypeBMP | 2 | Export .bmp |
@@ -225,7 +225,7 @@ Exported image format.
 Fixed export format type.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlTypePDF | 0 | PDF (.pdf) |
 | xlTypeXPS | 1 | XPS (.xps) |
 | xlTypeIMG | 2 | IMG (.png, .jpg, .bmp, .tif) |
@@ -235,7 +235,7 @@ Fixed export format type.
 Operator comparing formulas to cell values, including xlBetween and xlNotBetween.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlBetween | 1 | Between; requires two formulas |
 | xlNotBetween | 2 | Not between; requires two formulas |
 | xlEqual | 3 | Equal |
@@ -250,7 +250,7 @@ Operator comparing formulas to cell values, including xlBetween and xlNotBetween
 Whether conditional format is based on cell values or expressions.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlCellValue | 1 | Cell value |
 | xlExpression | 2 | Expression |
 | xlColorScale | 3 | Color scale |
@@ -269,7 +269,7 @@ Whether conditional format is based on cell values or expressions.
 Horizontal alignment.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlHAlignRight | -4152 | Right |
 | xlHAlignLeft | -4131 | Left |
 | xlHAlignJustify | -4130 | Justify |
@@ -284,7 +284,7 @@ Horizontal alignment.
 Where to copy inserted cell formats from.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlFormatFromLeftOrAbove | 0 | Copy format from left or above |
 | xlFormatFromRightOrBelow | 1 | Copy format from right or below |
 
@@ -293,7 +293,7 @@ Where to copy inserted cell formats from.
 Direction cells shift when inserting.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlShiftDown | -4121 | Shift cells down |
 | xlShiftToRight | -4161 | Shift cells right |
 
@@ -302,7 +302,7 @@ Direction cells shift when inserting.
 Border line style.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlLineStyleNone | -4142 | No line |
 | xlDouble | -4119 | Double line |
 | xlDot | -4118 | Dotted |
@@ -317,7 +317,7 @@ Border line style.
 Paste special operation.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlPasteSpecialOperationAdd | 0x1 | Add pasted data to destination |
 | xlPasteSpecialOperationDivide | 0x4 | Divide pasted data by destination |
 | xlPasteSpecialOperationMultiply | 0x3 | Multiply pasted data by destination |
@@ -329,7 +329,7 @@ Paste special operation.
 Paste type.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlPasteAll | 0x1 | Paste all |
 | xlPasteFormulas | 0x2 | Paste formulas |
 | xlPasteAllExceptBorders | 0x4 | Paste all except borders |
@@ -345,7 +345,7 @@ Paste type.
 Reference style.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlR1C1 | -4150 | Use xlR1C1 for R1C1-style references |
 | xlA1 | 1 | Default. Use xlA1 for A1-style references |
 
@@ -354,7 +354,7 @@ Reference style.
 Whether series values are organized by rows or columns.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlRows | 1 | Data series in rows |
 | xlColumns | 2 | Data series in columns |
 
@@ -363,7 +363,7 @@ Whether series values are organized by rows or columns.
 Worksheet type.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlWorksheet | -4167 | Worksheet |
 | xlDialogSheet | -4116 | Dialog sheet |
 | xlChart | -4109 | Chart |
@@ -375,7 +375,7 @@ Worksheet type.
 Time period filter.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlToday | 0 | Today |
 | xlYesterday | 1 | Yesterday |
 | xlLast7Days | 2 | Last 7 days |
@@ -392,7 +392,7 @@ Time period filter.
 Font underline style.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlUnderlineStyleDouble | -4119 | Double underline |
 | xlUnderlineStyleDoubleAccounting | 5 | Double accounting underline |
 | xlUnderlineStyleNone | -4142 | No underline |
@@ -404,7 +404,7 @@ Font underline style.
 Vertical alignment.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlVAlignTop | -4160 | Top |
 | xlVAlignJustify | -4130 | Justify (vertical) |
 | xlVAlignDistributed | -4117 | Distributed (vertical) |
@@ -416,7 +416,7 @@ Vertical alignment.
 Macro type referenced by a name on the sheet.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlFunction | 1 | Custom function |
 | xlCommand | 2 | Custom command |
 | xlNotXLM | 3 | Not a macro |
@@ -426,7 +426,7 @@ Macro type referenced by a name on the sheet.
 AutoFilter operator or logical combination of two criteria.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlAnd | 1 | Logical AND of Criteria1 and Criteria2 |
 | xlOr | 2 | Logical OR of Criteria1 and Criteria2 |
 | xlTop10Items | 3 | Top N items (N in Criteria1) |
@@ -444,7 +444,7 @@ AutoFilter operator or logical combination of two criteria.
 Whether the first row contains headers. Not used when sorting PivotTables.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlGuess | 0 | Let Excel detect headers |
 | xlYes | 1 | Default. Sort the entire range |
 | xlNo | 2 | Do not sort entire range as headers |
@@ -454,7 +454,7 @@ Whether the first row contains headers. Not used when sorting PivotTables.
 Sort orientation (rows vs columns).
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlSortColumns | 1 | Sort by columns |
 | xlSortRows | 2 | Sort by rows (default) |
 
@@ -463,7 +463,7 @@ Sort orientation (rows vs columns).
 East Asian sort method.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlPinYin | 1 | Phonetic order for East Asian text (default) |
 | xlStroke | 2 | Stroke count order for East Asian text |
 
@@ -472,7 +472,7 @@ East Asian sort method.
 How text is sorted.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlSortNormal | 0 | Sort numbers and text separately (default) |
 | xlSortTextAsNumbers | 1 | Sort text as numbers |
 
@@ -481,7 +481,7 @@ How text is sorted.
 Property to sort on.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | SortOnCellColor | 1 | Cell color |
 | SortOnFontColor | 2 | Font color |
 | SortOnIcon | 3 | Icon |
@@ -492,7 +492,7 @@ Property to sort on.
 Sort order for a field or range.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlAscending | 1 | Default. Ascending sort for the field |
 | xlDescending | 2 | Descending sort |
 
@@ -501,7 +501,7 @@ Sort order for a field or range.
 Column format when importing delimited text.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlDelimited | 1 | Default. Delimited text file |
 | xlFixedWidth | 2 | Fixed-width columns |
 
@@ -510,7 +510,7 @@ Column format when importing delimited text.
 Text qualifier for parsing.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlTextQualifierDoubleQuote | 1 | Double quote (") |
 | xlTextQualifierNone | -4142 | No qualifier |
 | xlTextQualifierSingleQuote | 2 | Single quote (') |
@@ -520,7 +520,7 @@ Text qualifier for parsing.
 Column data type when splitting text.
 
 | Field | Value | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | xlDMYFormat | 4 | DMY date format |
 | xlDYMFormat | 7 | DYM date format |
 | xlEMDFormat | 10 | EMD date format |

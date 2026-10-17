@@ -18,28 +18,28 @@ See the lists below for the Application object's properties and methods.
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/en-US/api/excel/workbook/Sheet.html) | Active worksheet |
-| [Sheets](#sheets) | [Sheets](/docs/en-US/api/excel/workbook/Application.html#sheets) | All worksheets in the current file |
-| [ActiveWorkbook](#activeworkbook) | [Workbook](/docs/en-US/api/excel/workbook/Workbook.html) | Current document |
-| [Selection](#selection) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Current selection |
-| [Cells](#cells) | [Range](/docs/en-US/api/excel/workbook/Range.html) | All cells on the active sheet |
-| [Columns](#columns) | [Range](/docs/en-US/api/excel/workbook/Range.html) | All columns on the active sheet |
-| [Rows](#rows) | [Range](/docs/en-US/api/excel/workbook/Range.html) | All rows on the active sheet |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | Active worksheet |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | All worksheets in the current file |
+| [ActiveWorkbook](#activeworkbook) | [Workbook](Workbook.md) | Current document |
+| [Selection](#selection) | [Range](Range.md) | Current selection |
+| [Cells](#cells) | [Range](Range.md) | All cells on the active sheet |
+| [Columns](#columns) | [Range](Range.md) | All columns on the active sheet |
+| [Rows](#rows) | [Range](Range.md) | All rows on the active sheet |
 | [FileInfo](#fileinfo) | Object | Information about the current document |
 | [UserInfo](#userinfo) | Object | User information for the current document |
-| [Enum](#enum) | [Enum](/docs/en-US/api/excel/workbook/Enum.html) | All enumeration types |
+| [Enum](#enum) | [Enum](Enum.md) | All enumeration types |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
-| [Range(address)](#range) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Gets a region on the current ActiveSheet (address specifies the region) |
-| [Sheets(name)](#sheets-1) | [Sheet](/docs/en-US/api/excel/workbook/Sheet.html) | Gets the worksheet named name |
+| --- | --- | --- |
+| [Range(address)](#range) | [Range](Range.md) | Gets a region on the current ActiveSheet (address specifies the region) |
+| [Sheets(name)](#sheets-1) | [Sheet](Sheet.md) | Gets the worksheet named name |
 
 ## ActiveSheet
 
-The active worksheet. You can switch the active sheet with Sheet.Activate(). This property returns a [Sheet](/docs/en-US/api/excel/workbook/Sheet.html#ActiveSheet) object so you can work with the active worksheet.
+The active worksheet. You can switch the active sheet with Sheet.Activate(). This property returns a [Sheet](Sheet.md#ActiveSheet) object so you can work with the active worksheet.
 
 The script runs in an environment isolated on the server, so the script environment's ActiveSheet may not match the user's ActiveSheet.
 
@@ -50,7 +50,7 @@ Rules:
 
 #### Data type
 
-[Sheet](/docs/en-US/api/excel/workbook/Sheet.html) - Active worksheet
+[Sheet](Sheet.md) - Active worksheet
 
 #### Example
 
@@ -67,11 +67,11 @@ Application.ActiveSheet.Range('A1').Value = 'foo'
 
 ## Sheets
 
-Gets all worksheets the current file can operate on, as a [Sheets](/docs/en-US/api/excel/workbook/Application.html#sheets) object.
+Gets all worksheets the current file can operate on, as a [Sheets](Application.md#sheets) object.
 
 #### Data type
 
-[Sheets](/docs/en-US/api/excel/workbook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### Example
 
@@ -134,11 +134,11 @@ Adds a worksheet. If both Before and After are provided, Before takes precedence
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | String/Number |  | No | Required when After is empty: index or name of an existing sheet; the new sheet is placed before this sheet |
 | After | String/Number |  | No | Required when Before is empty: index or name of an existing sheet; the new sheet is placed after this sheet |
 | Count | Number | 1 | No | Number of sheets to add. Default is the number of selected sheets |
-| Type | Enum |  | No | Worksheet type; see [Enum.XlSheetType](/docs/en-US/api/excel/workbook/Enum.html#xlsheettype) |
+| Type | Enum |  | No | Worksheet type; see [Enum.XlSheetType](Enum.md#xlsheettype) |
 | Name | Name |  | No | Worksheet name |
 
 #### Example
@@ -161,12 +161,12 @@ Selects a sheet by name or index.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | Yes | Name or index of the sheet to select |
 
 #### Return type
 
-[Sheet](/docs/en-US/api/excel/workbook/Sheet.html) - Worksheet with the given name
+[Sheet](Sheet.md) - Worksheet with the given name
 
 #### Example
 
@@ -185,7 +185,7 @@ Iterates all sheets and runs a callback.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | Yes | Similar to JS array forEach |
 
 #### Example
@@ -199,11 +199,11 @@ Application.Sheets.Each(function (item) {
 
 ## ActiveWorkbook
 
-The active file. Returns a [Workbook](/docs/en-US/api/excel/workbook/Workbook.html) object.
+The active file. Returns a [Workbook](Workbook.md) object.
 
 #### Data type
 
-[Workbook](/docs/en-US/api/excel/workbook/Workbook.html) - Active file
+[Workbook](Workbook.md) - Active file
 
 #### Example
 
@@ -214,11 +214,11 @@ Application.ActiveWorkbook.Save()
 
 ## Selection
 
-The current selection. Returns a [Range](/docs/en-US/api/excel/workbook/Range.html) object.
+The current selection. Returns a [Range](Range.md) object.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Current selection
+[Range](Range.md) - Current selection
 
 #### Example
 
@@ -229,11 +229,11 @@ console.log(Application.Selection.Address()) // $A$1
 
 ## Cells
 
-All cells on the current sheet. Returns a [Range](/docs/en-US/api/excel/workbook/Range.html) object.
+All cells on the current sheet. Returns a [Range](Range.md) object.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - All cells on the current sheet
+[Range](Range.md) - All cells on the current sheet
 
 #### Example
 
@@ -245,11 +245,11 @@ console.log(cells.Count) // 17179869184
 
 ## Columns
 
-All columns on the current sheet. Returns a [Range](/docs/en-US/api/excel/workbook/Range.html) object.
+All columns on the current sheet. Returns a [Range](Range.md) object.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - All columns on the current sheet
+[Range](Range.md) - All columns on the current sheet
 
 #### Example
 
@@ -261,11 +261,11 @@ console.log(columns.Count) // 16384
 
 ## Rows
 
-All rows on the current sheet. Returns a [Range](/docs/en-US/api/excel/workbook/Range.html) object.
+All rows on the current sheet. Returns a [Range](Range.md) object.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - All rows on the current sheet
+[Range](Range.md) - All rows on the current sheet
 
 #### Example
 
@@ -285,7 +285,7 @@ Returns basic information about the current file.
 Object - File information
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | string | File ID |
 | name | string | File name |
 | officeType | string | Document type |
@@ -297,7 +297,7 @@ Object - File information
 #### CreatorObject
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | string | Creator ID |
 | name | string | Creator name |
 | avatar_url | string | Creator avatar |
@@ -325,7 +325,7 @@ Returns user information for the current file.
 Object - User information for the current file
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | string | User ID |
 | name | string | User name |
 
@@ -344,7 +344,7 @@ Use via Application.Enum.
 
 #### Data type
 
-[Enum](/docs/en-US/api/excel/workbook/Enum.html) - All enumeration types
+[Enum](Enum.md) - All enumeration types
 
 #### Example
 
@@ -356,17 +356,17 @@ console.log(Application.Enum.XlSheetType)
 
 ## Range()
 
-Gets a [Range](/docs/en-US/api/excel/workbook/Range.html) for a region on the current ActiveSheet.
+Gets a [Range](Range.md) for a region on the current ActiveSheet.
 
 #### Parameters
 
 | Name | Type | Required | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | address | string | Yes | Address: a cell address or range, e.g. "A1" or "A1:A10" |
 
 #### Return type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Range object for the given address
+[Range](Range.md) - Range object for the given address
 
 #### Example
 
@@ -379,17 +379,17 @@ console.log(Application.ActiveSheet.Range('A1').Text) // content of A1
 
 ## Sheets()
 
-Used as a function; equivalent to Sheets.Item(). Returns a [Sheet](/docs/en-US/api/excel/workbook/Sheet.html) object.
+Used as a function; equivalent to Sheets.Item(). Returns a [Sheet](Sheet.md) object.
 
 #### Parameters
 
 | Name | Type | Required | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | Yes | Worksheet name |
 
 #### Return type
 
-[Sheet](/docs/en-US/api/excel/workbook/Sheet.html) - Sheet object with the given name
+[Sheet](Sheet.md) - Sheet object with the given name
 
 #### Example
 

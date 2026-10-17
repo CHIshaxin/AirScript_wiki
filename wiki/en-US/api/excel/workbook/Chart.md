@@ -14,14 +14,14 @@ See the lists below for the Chart object's properties and methods.
 ### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [ChartTitle.Text](#charttitle-text) | String | Chart title |
 | [HasTitle](#hastitle) | Boolean | Whether chart title is visible |
 
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [SetSourceData()](#setsourcedata) | undefined | Sets the chart source data range |
 
 ## ChartTitle.Text
@@ -69,9 +69,9 @@ Sets the source data range for the chart.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Source | Range |  | Yes | Range containing source data |
-| PlotBy | Enum |  | No | Plot by rows or columns; see [Enum.XlRowCol](/docs/en-US/api/excel/workbook/Enum.html#xlrowcol), e.g. xlColumns or xlRows |
+| PlotBy | Enum |  | No | Plot by rows or columns; see [Enum.XlRowCol](Enum.md#xlrowcol), e.g. xlColumns or xlRows |
 
 ### Example
 

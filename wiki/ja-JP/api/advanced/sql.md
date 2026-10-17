@@ -45,14 +45,14 @@ connection.close()
 ### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Drivers](#drivers) | object | データベースドライバーの定数 |
 | [Types](#types) | object | 列型の定数（SQL Server のみ） |
 
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [connect()](#connect) | Connection | データベースに接続する |
 | [Connection.queryAll()](#queryall) | Result | SQL 文を実行する |
 | [Connection.close()](#close) | null | 接続を閉じる |
@@ -64,7 +64,7 @@ connection.close()
 ### プロパティ
 
 | パラメーター | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | MySQL | string | MySQL ドライバー |
 | PostgreSQL | string | PostgreSQL ドライバー |
 | SQLServer | string | SQL Server ドライバー |
@@ -78,7 +78,7 @@ connection.close()
 #### 正確な数値型
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | Bit | Boolean |
 | TinyInt | Number |
 | SmallInt | Number |
@@ -92,14 +92,14 @@ connection.close()
 #### 近似数値型
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | Float | Number |
 | Real | Number |
 
 #### 日付と時刻
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | SmallDateTime | Date |
 | DateTime | Date |
 | DateTime2 | Date |
@@ -110,7 +110,7 @@ connection.close()
 #### 文字列
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | Char | String |
 | VarChar | String |
 | Text | String |
@@ -118,7 +118,7 @@ connection.close()
 #### Unicode 文字列
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | NChar | String |
 | NVarChar | String |
 | NText | String |
@@ -126,7 +126,7 @@ connection.close()
 #### バイナリ文字列
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | Binary | Buffer |
 | VarBinary | Buffer |
 | Image | Buffer |
@@ -134,7 +134,7 @@ connection.close()
 #### その他のデータ型
 
 | プロパティ | 対応する JavaScript の型 |
-|---|---|
+| --- | --- |
 | Null | null |
 | TVP | Object |
 | UDT | Buffer |
@@ -149,14 +149,14 @@ connection.close()
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | driver | [Driver](#drivers) | null | はい | 対象 DB ドライバー |
 | options | [Options](#options) | null | はい | 接続オプション |
 
 ### options
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | host | string | null | はい | データベースホスト |
 | port | number | null | はい | データベースポート |
 | username | string | null | はい | ユーザー名 |
@@ -187,14 +187,14 @@ const connection = SQL.connect(SQL.Drivers.MySQL, {
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | sql | string | null | はい | 実行する SQL |
 | InsertData | any[] \| [InsertData](#insertdata) | null | いいえ | INSERT のバインド値 |
 
 ### InsertData
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | name | string | null | はい | 列名 |
 | value | string | null | はい | 値 |
 | type | [Types](#types) | null | いいえ | 列型。SQL Server の INSERT では必須 |
@@ -204,7 +204,7 @@ const connection = SQL.connect(SQL.Drivers.MySQL, {
 影響行数と返却行を含む Result オブジェクト。
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | affectRowCount | number | SQL 文によって影響を受けた行数 |
 | rows | Array | 照会した表構造に一致する結果行 |
 

@@ -20,21 +20,21 @@ hash: B6NYn_4E
 ### Header 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Content-Type | 是 | string | `application/json` |
 | AirScript-Token | 是 | string | 传入您通过 AirScript 编辑器生成的**脚本令牌**（APIToken） |
 
 ### path 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | script_id | 是 | string | 脚本的 ID |
 | file_id | 是 | string | 运行脚本的文件 ID |
 
 ### body 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Context | 是 | Object | 运行时的上下文参数 |
 | Context.argv | 否 | Object | 传入的上下文参数对象，比如传入`{name: 'xiaomeng', age: 18}`，在 AS 代码中可通过`Context.argv.name`获取到传入的值 |
 | Context.sheet_name | 否 | string | et,ksheet 运行时所在表名 |
@@ -46,7 +46,7 @@ hash: B6NYn_4E
 ### 返回参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | data | 是 | Object | 任务执行数据对象 |
 | data.result | 是 | string | 任务执行返回的数据 |
 | data.logs | 是 | Array | 任务执行日志 |
@@ -320,21 +320,21 @@ IRestResponse response = client.Execute(request);
 ### Header 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Content-Type | 是 | string | `application/json` |
 | AirScript-Token | 是 | string | 传入您通过 AirScript 编辑器生成的**脚本令牌**（APIToken） |
 
 ### path 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | script_id | 是 | string | 脚本的 ID |
 | file_id | 是 | string | 运行脚本的文件 ID |
 
 ### body 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Context | 是 | Object | 运行时的上下文参数 |
 | Context.argv | 否 | Object | 传入的上下文参数对象，比如传入`{name: 'xiaomeng', age: 18}`，在 AS 代码中可通过`Context.argv.name`获取到传入的值 |
 | Context.sheet_name | 否 | string | et,ksheet 运行时所在表名 |
@@ -346,7 +346,7 @@ IRestResponse response = client.Execute(request);
 ### 返回参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | task_id | 是 | string | 运行的任务 Id，用于轮循运行结果 |
 | task_type | 是 | string | 任务类型 |
 
@@ -577,7 +577,7 @@ IRestResponse response = client.Execute(request);
 ### query 参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | task_id | 是 | string | 执行异步任务时返回的 ID |
 
 提示
@@ -587,7 +587,7 @@ IRestResponse response = client.Execute(request);
 ### 返回参数
 
 | 参数 | 必须 | 类型 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | data | 是 | Object | 任务执行数据对象 |
 | data.result | 是 | string | 任务执行返回的数据 |
 | data.logs | 是 | Array | 任务执行日志 |

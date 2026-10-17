@@ -34,13 +34,13 @@ file.close()
 ### Property List
 
 | Property Name | Data Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [FileType](#filetype) | object | Collection of supported file types |
 
 ### Method List
 
 | Method Name | Return Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [createFile()](#createfile) | string | Create or save as a file |
 | [openFile()](#openfile) | [File](#file) | Open an additional file |
 | [listFiles()](#listfiles) | [FilesInfo](#filesinfo) | List spreadsheet files in a directory |
@@ -52,7 +52,7 @@ File types supported by cloud documents, can be used to specify new file type wh
 ### Property Description
 
 | Property | Data Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | AP | string | Smart Document |
 | KSheet | string | Smart Spreadsheet |
 | ET | string | Spreadsheet |
@@ -65,14 +65,14 @@ Create a new file, or save a source file as a new file.
 ### Parameters
 
 | Name | Type | Required | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | type | [FileType](#filetype) | Yes | Type of new file |
 | createOptions | CreateOptions | Yes | Parameter options for new file |
 
 ### CreateOptions Object Description
 
 | Name | Type | Required | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | Yes | File name of new file |
 | dirUrl | string | No | File directory of new file |
 | source | string | No | Save target file as new file |
@@ -122,7 +122,7 @@ file.close()
 ### Parameters
 
 | Name | Type | Required | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | openInfo | URL / [FileInfo](#fileinfo) | Yes | Information for opening file, can be file share link or [FileInfo](#fileinfo) |
 
 ### Return Value
@@ -153,13 +153,13 @@ for (let offset = 0; offset >= 0; ) {
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | options | object | undefined | No | A JavaScript object, when undefined gets file data under My Cloud Documents directory, detailed parameters as shown below |
 
 ### Detailed Parameters
 
 | Parameter | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | dirUrl | string |  | false | Directory link, such as `https://www.wps.com/mine/xxxxxx`, when empty gets file data under My Cloud Documents directory |
 | offset | number | 0 | false | Start position. Usually returned by [listFiles()](#listfiles) function. For example, if [listFiles()](#listfiles) returns nextOffset as 100 in a retrieval, pass 100 as this optional parameter in the next call to get more file information. |
 | count | number | 30 | false | Number of files |
@@ -176,8 +176,8 @@ A JavaScript object returned by the [openFile()](#openfile) function.
 ### Properties
 
 | Name | Type | Description |
-|---|---|---|
-| Application | [Application(ET/Ksheet/DBT)](/docs/en-US/api/excel/workbook/Application.html) | Operation object for opened file, currently supports et, ksheet, dbt |
+| --- | --- | --- |
+| Application | [Application(ET/Ksheet/DBT)](../../api/excel/workbook/Application.md) | Operation object for opened file, currently supports et, ksheet, dbt |
 | close | Function | Function to close file, call after using file object to close opened file |
 
 ## FilesInfo
@@ -187,14 +187,14 @@ A JavaScript object returned by the [listFiles(options)](#listfiles-options) fun
 ### Properties
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | files | [FileInfo](#fileinfo)[] | File information, detailed parameters as shown below |
 | nextOffset | number | Offset for next page, can be used as parameter for [listFiles(options)](#listfiles-options) to output next page content, nextOffset is -1 when next page is empty |
 
 ### FileInfo
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | fileName | string | File name |
 | fileId | string | Encrypted file id |
 | createTime | number | File creation timestamp |

@@ -18,22 +18,22 @@ hash: C7RThpWl
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/ja-JP/api/excel/databook/Sheet.html) | アクティブなワークシート／データ Sheet |
-| [Sheets](#sheets) | [Sheets](/docs/ja-JP/api/excel/databook/Application.html#sheets) | ファイル内のすべてのワークシート／データ Sheet |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | アクティブなワークシート／データ Sheet |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | ファイル内のすべてのワークシート／データ Sheet |
 | [FileInfo](#fileinfo) | オブジェクト | ドキュメントに関する情報 |
 | [UserInfo](#userinfo) | オブジェクト | ドキュメントのユーザー情報 |
-| [Enum](#enum) | [Enum](/docs/ja-JP/api/excel/databook/Enum.html) | すべての列挙型 |
+| [Enum](#enum) | [Enum](Enum.md) | すべての列挙型 |
 
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
-| [Sheets(name)](#sheets-1) | [Sheet](/docs/ja-JP/api/excel/databook/Sheet.html) | 名前が `name` のワークシート／データ Sheet を取得 |
+| --- | --- | --- |
+| [Sheets(name)](#sheets-1) | [Sheet](Sheet.md) | 名前が `name` のワークシート／データ Sheet を取得 |
 
 ## ActiveSheet
 
-アクティブなワークシート／データ Sheet です。`Sheet.Activate()` で切り替えられます。このプロパティは [Sheet](/docs/ja-JP/api/excel/databook/Sheet.html#activesheet) オブジェクトを返すため、アクティブな Sheet を操作できます。
+アクティブなワークシート／データ Sheet です。`Sheet.Activate()` で切り替えられます。このプロパティは [Sheet](Sheet.md#activesheet) オブジェクトを返すため、アクティブな Sheet を操作できます。
 
 スクリプトはサーバー上で隔離された環境で実行されるため、スクリプト環境の `ActiveSheet` がユーザーの `ActiveSheet` と一致しない場合があります。
 
@@ -44,7 +44,7 @@ hash: C7RThpWl
 
 #### 型
 
-[Sheet](/docs/ja-JP/api/excel/databook/Sheet.html) – アクティブなワークシート／データ Sheet
+[Sheet](Sheet.md) – アクティブなワークシート／データ Sheet
 
 #### 例
 
@@ -58,11 +58,11 @@ console.log(Application.ActiveSheet.Name) // DataSheet2
 
 ## Sheets
 
-現在のファイルで操作可能なすべての `Sheet` を [Sheets](/docs/ja-JP/api/excel/databook/Application.html#sheets) オブジェクトとして返します。
+現在のファイルで操作可能なすべての `Sheet` を [Sheets](Application.md#sheets) オブジェクトとして返します。
 
 #### 型
 
-[Sheets](/docs/ja-JP/api/excel/databook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### 例
 
@@ -123,11 +123,11 @@ Application.Sheets.Add(
 #### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | String/Number |  | いいえ | `After` が空のとき必須。既存 Sheet のインデックスまたは名前。新しい Sheet はその前に挿入 |
 | After | String/Number |  | いいえ | `Before` が空のとき必須。既存 Sheet のインデックスまたは名前。新しい Sheet はその後に挿入 |
 | Count | Number | 1 | いいえ | 追加する Sheet の数。既定は選択中の Sheet の数 |
-| Type | Enum |  | いいえ | Sheet の種類。[Enum.XlSheetType](/docs/ja-JP/api/excel/databook/Enum.html#xlsheettype) を参照 |
+| Type | Enum |  | いいえ | Sheet の種類。[Enum.XlSheetType](Enum.md#xlsheettype) を参照 |
 | Name | Name |  | いいえ | 新しい Sheet の名前 |
 
 #### 例
@@ -149,12 +149,12 @@ Application.Sheets.Add(
 #### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | はい | Sheet 名またはインデックス |
 
 #### 戻り値の型
 
-[Sheet](/docs/ja-JP/api/excel/databook/Sheet.html) – 一致したワークシート／データ Sheet
+[Sheet](Sheet.md) – 一致したワークシート／データ Sheet
 
 #### 例
 
@@ -170,7 +170,7 @@ Application.Sheets.Item(1).Activate()
 #### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | はい | `Array.prototype.forEach` に似た動作 |
 
 #### 例
@@ -190,7 +190,7 @@ Application.Sheets.Each(function (item) {
 オブジェクト – ファイルのメタデータ
 
 | 名前 | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | ファイル ID |
 | name | string | ファイル名 |
 | officeType | string | ドキュメントの種類 |
@@ -202,7 +202,7 @@ Application.Sheets.Each(function (item) {
 #### CreatorObject
 
 | 名前 | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 作成者 ID |
 | name | string | 作成者名 |
 | avatar_url | string | アバター URL |
@@ -229,7 +229,7 @@ console.log(Application.FileInfo)
 オブジェクト – ユーザーのメタデータ
 
 | 名前 | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | ユーザー ID |
 | name | string | ユーザー名 |
 
@@ -247,7 +247,7 @@ console.log(Application.UserInfo)
 
 #### 型
 
-[Enum](/docs/ja-JP/api/excel/databook/Enum.html) – すべての列挙型
+[Enum](Enum.md) – すべての列挙型
 
 #### 例
 
@@ -258,17 +258,17 @@ console.log(Application.Enum.XlSheetType)
 
 ## Sheets()
 
-`Sheets.Item()` の代わりに関数として使用します。[Sheet](/docs/ja-JP/api/excel/databook/Sheet.html) を返します。
+`Sheets.Item()` の代わりに関数として使用します。[Sheet](Sheet.md) を返します。
 
 #### パラメーター
 
 | パラメーター | 型 | 必須 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | はい | ワークシート／データ Sheet の名前 |
 
 #### 戻り値の型
 
-[Sheet](/docs/ja-JP/api/excel/databook/Sheet.html) – その名前の Sheet オブジェクト
+[Sheet](Sheet.md) – その名前の Sheet オブジェクト
 
 #### 例
 

@@ -14,22 +14,22 @@ FormatCondition オブジェクトのプロパティとメソッドは、以下�
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
-| [AppliesTo](#appliesto) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 書式ルールが適用される Range |
-| [Borders](#borders) | [Border](/docs/ja-JP/api/excel/workbook/Border.html) | Borders コレクション |
-| [Font](#font) | [Font](/docs/ja-JP/api/excel/workbook/Font.html) | Font オブジェクト |
+| --- | --- | --- |
+| [AppliesTo](#appliesto) | [Range](Range.md) | 書式ルールが適用される Range |
+| [Borders](#borders) | [Border](Border.md) | Borders コレクション |
+| [Font](#font) | [Font](Font.md) | Font オブジェクト |
 | [Formula1](#formula1) | 文字列 | 条件または入力規則の値・式 |
 | [Formula2](#formula2) | 文字列 | 入力規則や 2 値の間の条件の第 2 要素 |
 | [Interior](#interior) | Interior | オブジェクトの塗りつぶし |
 | [NumberFormat](#numberformat) | 文字列 | ルールが真のときの表示形式 |
-| [Operator](#operator) | [XlFormatConditionOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditionoperator) | 条件付き書式の演算子 |
+| [Operator](#operator) | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | 条件付き書式の演算子 |
 | [Priority](#priority) | 数値 | このルールの優先度 |
-| [Type](#type) | [XlFormatConditionType](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditiontype) | 条件オブジェクトの種類 |
+| [Type](#type) | [XlFormatConditionType](Enum.md#xlformatconditiontype) | 条件オブジェクトの種類 |
 
 #### メソッド
 
 | メソッド | 戻り値 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Modify()](#modify) | undefined | 既存のルールを変更する |
 | [ModifyAppliesToRange()](#modifyappliestorange) | undefined | このルールが適用される範囲を設定する |
 | [SetFirstPriority()](#setfirstpriority) | undefined | このルールの優先度を 1 に設定する（最初に評価） |
@@ -41,7 +41,7 @@ FormatCondition オブジェクトのプロパティとメソッドは、以下�
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - Range オブジェクト
+[Range](Range.md) - Range オブジェクト
 
 #### 例
 
@@ -66,7 +66,7 @@ console.log(appliesToRange.Address())
 
 #### データ型
 
-[Border](/docs/ja-JP/api/excel/workbook/Border.html) コレクション
+[Border](Border.md) コレクション
 
 #### 例
 
@@ -89,7 +89,7 @@ formatCondition1.Borders.Item(xlDiagonalDown).Color = '#FFFF00'
 
 #### データ型
 
-[Font](/docs/ja-JP/api/excel/workbook/Font.html) - Font オブジェクト
+[Font](Font.md) - Font オブジェクト
 
 #### 例
 
@@ -200,7 +200,7 @@ formatCondition1.NumberFormat = '0.0'
 
 #### データ型
 
-[XlFormatConditionOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditionoperator) - 演算子の列挙型
+[XlFormatConditionOperator](Enum.md#xlformatconditionoperator) - 演算子の列挙型
 
 #### 例
 
@@ -230,14 +230,14 @@ console.log(betweenCondition.Priority)
 
 オブジェクトの種類を返します。
 
-[XlFormatConditionType](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditiontype) のいずれか:
+[XlFormatConditionType](Enum.md#xlformatconditiontype) のいずれか:
 
 - xlCellValue
 - xlExpression
 
 #### データ型
 
-[XlFormatConditionType](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditiontype) - 条件の種類
+[XlFormatConditionType](Enum.md#xlformatconditiontype) - 条件の種類
 
 #### 例
 
@@ -254,9 +254,9 @@ console.log(betweenCondition.Type)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Type | [XlFormatConditionType](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditiontype) | null | はい | セル値ベースまたは式ベース |
-| Operator | [XlFormatConditionOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditionoperator) | null | いいえ | Type が xlExpression のときは無視される |
+| --- | --- | --- | --- | --- |
+| Type | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | はい | セル値ベースまたは式ベース |
+| Operator | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | null | いいえ | Type が xlExpression のときは無視される |
 | Formula1 | 文字列 | null | いいえ | 値または式 |
 | Formula2 | 文字列 | null | いいえ | 第 2 の値または式 |
 
@@ -281,8 +281,8 @@ A1 参照スタイルであり、FormatConditions コレクションを所有す
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | このルールが適用される範囲 |
+| --- | --- | --- | --- | --- |
+| Range | [Range](Range.md) | null | はい | このルールが適用される範囲 |
 
 ### 戻り値
 

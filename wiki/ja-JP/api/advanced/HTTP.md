@@ -29,7 +29,7 @@ console.log(data.note, data.content)
 ### メソッド
 
 | メソッド | 戻り値の型 | 概要 |
-|---|---|---|
+| --- | --- | --- |
 | [fetch(url[, options])](#fetch) | [Response](#response) | 任意の HTTP リクエストを送信する |
 | [get(url[, options])](#get) | [Response](#response) | GET リクエストを送信する |
 | [delete(url[, options])](#delete) | [Response](#response) | DELETE リクエストを送信する |
@@ -57,14 +57,14 @@ console.log(resp.text())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | リクエスト先の URL。ポート番号を含まないホスト名のみ使用可能 |
 | options | [RequestOption](#requestoption) | undefined | いいえ | 任意のリクエスト設定オブジェクト。後述。 |
 
 ### RequestOption
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [method](#method) | string | GET | いいえ | HTTP メソッド。例: `GET`, `POST`, `PUT`, `DELETE` など。 |
 | [timeout](#timeout) | number | 10000 | いいえ | タイムアウト（ミリ秒）。範囲 0〜60000。範囲外は 10 秒にフォールバック。 |
 | [headers](#headers) | object | undefined | いいえ | リクエストヘッダー。例: `cookie`。 |
@@ -88,14 +88,14 @@ console.log(resp.json())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | リクエスト先の URL。ポート番号を含まないホスト名のみ使用可能 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | このリクエスト用の任意の設定オブジェクト。後述。 |
 
 ### MethodRequestOption
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [timeout](#timeout) | number | 10000 | いいえ | タイムアウト（ミリ秒）。範囲 0〜60000。範囲外は 10 秒にフォールバック。 |
 | [headers](#headers) | object | undefined | いいえ | リクエストヘッダー。例: `cookie`。 |
 
@@ -117,7 +117,7 @@ console.log(resp.status)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | リクエスト先の URL。ポート番号を含まないホスト名のみ使用可能 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | このリクエスト用の任意の設定オブジェクト。後述。 |
 
@@ -151,7 +151,7 @@ console.log(resp.json())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | リクエスト先の URL。ポート番号を含まないホスト名のみ使用可能 |
 | body | string\| object |  | はい | リクエストボディ |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | このリクエスト用の任意の設定オブジェクト。後述。 |
@@ -177,7 +177,7 @@ console.log(resp.json())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | リクエスト先の URL。ポート番号を含まないホスト名のみ使用可能 |
 | body | string\| object |  | はい | リクエストボディ |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | このリクエスト用の任意の設定オブジェクト。後述。 |
@@ -204,7 +204,7 @@ console.log(resp.status) // [...]
 ### メソッド
 
 | メソッド | 戻り値の型 | 概要 |
-|---|---|---|
+| --- | --- | --- |
 | [status](#status) | number | HTTP ステータスコード |
 | [statusText](#statustext) | string | HTTP ステータステキスト |
 | [headers](#headers) | object | レスポンスヘッダー |

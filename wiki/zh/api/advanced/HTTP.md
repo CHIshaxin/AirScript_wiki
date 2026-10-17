@@ -29,7 +29,7 @@ console.log(data.note, data.content)
 ### 方法列表
 
 | 方法 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [fetch(url[, options])](#fetch) | [Response](#response) | 发起自定义类型的网络请求 |
 | [get(url[, options])](#get) | [Response](#response) | 发起 GET 类型的网络请求 |
 | [delete(url[, options])](#delete) | [Response](#response) | 发起 DELETE 类型的网络请求 |
@@ -57,14 +57,14 @@ console.log(resp.text())
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | 需要访问的网络地址，只允许访问不带端口号的域名 |
 | options | [RequestOption](#requestoption) | undefined | false | 一个 JavaScript 对象，可指定发起请求的可选参数，如下所示。 |
 
 ### RequestOption
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [method](#method) | string | GET | false | 发起网络请求的方法，例如`GET`、`POST`、`PUT`、`DELETE`等 |
 | [timeout](#timeout) | number | 10000 | false | 发起网络请求的超时时间，单位毫秒(ms)，数据范围为 0~60000，超出范围的数据将被设为默认值 10 秒。 |
 | [headers](#headers) | object | undefined | false | 发起网络请求的头部。例如`cookie`等 |
@@ -88,14 +88,14 @@ console.log(resp.json())
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | 需要访问的网络地址，只允许访问不带端口号的域名 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | 一个 JavaScript 对象，可指定特定请求的可选参数，如下所示。 |
 
 ### MethodRequestOption
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [timeout](#timeout) | number | 10000 | false | 发起网络请求的超时时间，单位毫秒(ms)，数据范围为 0~60000，超出范围的数据将被设为默认值 10 秒。 |
 | [headers](#headers) | object | undefined | false | 发起网络请求的头部。例如`cookie`等 |
 
@@ -117,7 +117,7 @@ console.log(resp.status)
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | 需要访问的网络地址，只允许访问不带端口号的域名 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | 一个 JavaScript 对象，可指定特定请求的可选参数，如下所示。 |
 
@@ -151,7 +151,7 @@ console.log(resp.json())
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | 需要访问的网络地址，只允许访问不带端口号的域名 |
 | body | string\| object |  | true | 请求体 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | 一个 JavaScript 对象，可指定特定请求的可选参数，如下所示。 |
@@ -177,7 +177,7 @@ console.log(resp.json())
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填项 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | 需要访问的网络地址，只允许访问不带端口号的域名 |
 | body | string\| object |  | true | 请求体 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | 一个 JavaScript 对象，可指定特定请求的可选参数，如下所示。 |
@@ -204,7 +204,7 @@ console.log(resp.status) // [...]
 ### 方法列表
 
 | 方法 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [status](#status) | number | 获取响应的 HTTP 状态码 |
 | [statusText](#statustext) | string | 获取响应的 HTTP 状态 |
 | [headers](#status) | object | 获取响应的 header |

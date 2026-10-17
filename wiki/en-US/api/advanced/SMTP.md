@@ -51,7 +51,7 @@ mailer.send({
 ### Methods
 
 | Method | Return type | Summary |
-|---|---|---|
+| --- | --- | --- |
 | [login(argvs)](#login-argvs) | [Mailer](#mailer) | Logs in and returns a mail sender |
 
 ## login(argvs)
@@ -72,13 +72,13 @@ let mailer = SMTP.login({
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | argvs | LoginArgvs | undefined | true | JavaScript object with SMTP settings, see below |
 
 ### LoginArgvs
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | host | string | undefined | true | Mail server hostname |
 | port | number | undefined | true | SMTP port. When `host` is undefined, default depends on `secure`: false defaults to 587, true defaults to 465. |
 | secure | boolean | undefined | true | Whether to use TLS. Usually set true for port 465; set false for 587 or 25. |
@@ -97,7 +97,7 @@ Object created by [login(argvs)](#login-argvs), used to send mail.
 ### Methods
 
 | Method | Return type | Summary |
-|---|---|---|
+| --- | --- | --- |
 | [send(message)](#send-message) | undefined | Sends mail |
 
 ## send(message)
@@ -117,13 +117,13 @@ mailer.send({
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | message | messageArgvs | undefined | true | JavaScript object with the message, see below |
 
 ### messageArgvs
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | from | string | undefined | true | Sender email address |
 | to | string / string[] | undefined | true | Recipient email address(es) |
 | subject | string | undefined | true | Email subject |

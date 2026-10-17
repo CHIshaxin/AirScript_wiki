@@ -12,7 +12,7 @@ Field の操作。
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [GetFields()](#getfields) | Array | Field 定義を取得 |
 | [CreateFields()](#createfields) | Array | Field を作成 |
 | [DeleteFields()](#deletefields) | Array | Field を削除 |
@@ -27,10 +27,10 @@ Field 定義を取得します。
 Array – Sheet 上のすべての Field
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | name | String | Field 名 |
-| type | String | [Field の種類](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| type | String | [Field の種類](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### 例
 
@@ -51,18 +51,18 @@ Field を作成します。
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Fields | Array |  | はい | Field 定義。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| --- | --- | --- | --- | --- |
+| Fields | Array |  | はい | Field 定義。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 戻り値
 
 Array – 作成された Field
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | name | String | Field 名 |
-| type | String | [Field の種類](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| type | String | [Field の種類](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### 例
 
@@ -82,7 +82,7 @@ Field を削除します。
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Fields | Array |  | はい | 削除する Field の ID |
 
 ### 戻り値
@@ -90,7 +90,7 @@ Field を削除します。
 Array – Field ごとの削除結果
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | deleted | Boolean | 削除に成功したかどうか |
 
@@ -110,18 +110,18 @@ Field を更新します。
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Fields | Array |  | はい | Field ID と名前を含む更新内容。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| --- | --- | --- | --- | --- |
+| Fields | Array |  | はい | Field ID と名前を含む更新内容。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 戻り値
 
 Array – 更新後の Field 定義
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | name | String | Field 名 |
-| type | String | [Field の種類](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| type | String | [Field の種類](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### 例
 

@@ -51,7 +51,7 @@ mailer.send({
 ### 方法列表
 
 | 方法 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [login(argvs)](#login-argvs) | [Mailer](#mailer) | 登录并返回邮件发送者 |
 
 ## login(argvs)
@@ -72,13 +72,13 @@ let mailer = SMTP.login({
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | argvs | LoginArgvs | undefined | true | 一个JavaScript对象，用于配置SMTP的参数，如下所示 |
 
 ### LoginArgvs
 
 | 名称 | 类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | host | string | undefined | true | 邮箱服务器域名 |
 | port | number | undefined | true | SMTP服务端口，当host为undefined时，取默认值，默认值由secure决定，当secure是false时默认值为587，当secure是true时默认值为465。 |
 | secure | boolean | undefined | true | 是否使用TLS连接服务器，在大多数情况下，如果要连接到端口465，请将此值设置为true；如果要连接到端口587或25，请将此值设置为false。 |
@@ -97,7 +97,7 @@ let mailer = SMTP.login({
 ### 方法列表
 
 | 方法 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [send(message)](#send-message) | undefined | 发送邮件 |
 
 ## send(message)
@@ -117,13 +117,13 @@ mailer.send({
 ### 参数
 
 | 名称 | 类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | message | messageArgvs | undefined | true | 一个JavaScript对象，要发送的邮件内容，如下所示 |
 
 ### messageArgvs
 
 | 名称 | 类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | from | string | undefined | true | 发件人的电子邮箱地址 |
 | to | string / string[] | undefined | true | 收件人的电子邮箱地址 |
 | subject | string | undefined | true | 电子邮件的主题 |

@@ -31,7 +31,7 @@ Array - 获取的表下所有视图的列表，单项视图信息中的字段说
 | id | String | 视图Id |
 | name | String | 视图名称 |
 | recordsCount | Number | 视图的记录数量 |
-| type | String | [视图类型](/docs/api/excel/databook/附录.html#附录-2-数据表视图类型说明) |
+| type | String | [视图类型](附录.md#附录-2-数据表视图类型说明) |
 
 ### 示例
 
@@ -57,7 +57,7 @@ console.log(views)
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
 | --- | --- | --- | --- | --- |
 | Name | String |  | 是 | 视图名称 |
-| ViewType | String |  | 是 | [视图类型](/docs/api/excel/databook/附录.html#附录-2-数据表视图类型说明) |
+| ViewType | String |  | 是 | [视图类型](附录.md#附录-2-数据表视图类型说明) |
 
 ### 返回值
 
@@ -68,7 +68,7 @@ Object - 返回内含新创建视图的各种信息
 | id | String | 视图Id |
 | name | String | 视图名称 |
 | recordsCount | Number | 视图的记录数量 |
-| type | String | [视图类型](/docs/api/excel/databook/附录.html#附录-2-数据表视图类型说明) |
+| type | String | [视图类型](附录.md#附录-2-数据表视图类型说明) |
 
 ### 示例
 
@@ -137,7 +137,7 @@ Object - 返回已更新的视图信息
 | id | String | 视图Id |
 | name | String | 视图名称 |
 | recordsCount | Number | 视图的记录数量 |
-| type | String | [视图类型](/docs/api/excel/databook/附录.html#附录-2-数据表视图类型说明) |
+| type | String | [视图类型](附录.md#附录-2-数据表视图类型说明) |
 
 ### 示例
 

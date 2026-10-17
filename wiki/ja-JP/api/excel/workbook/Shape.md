@@ -14,16 +14,16 @@ Shape オブジェクトのプロパティとメソッドは、以下の一覧�
 ### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [ID](#id) | String | Shape の ID |
 | [Name](#name) | String | Shape の名前 |
 | [Title](#title) | String | Shape のタイトル |
-| [Chart](#chart) | [Chart](/docs/ja-JP/api/excel/workbook/Chart.html) | Chart オブジェクト |
+| [Chart](#chart) | [Chart](Chart.md) | Chart オブジェクト |
 
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Delete](#delete) | undefined | Shape を削除します |
 
 ## ID
@@ -87,7 +87,7 @@ shape.Title = 'WebOffice'
 
 ### データ型
 
-[Chart](/docs/ja-JP/api/excel/workbook/Chart.html) - Chart オブジェクト
+[Chart](Chart.md) - Chart オブジェクト
 
 ### 例
 

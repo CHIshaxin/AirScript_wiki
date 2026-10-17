@@ -107,4 +107,4 @@ newSheetLeft.Name = '新工作表(左)'
 
 ## 更多
 
-更多真实例子可通过[示范案例](/docs/example/excel.html)尝试。
+更多真实例子可通过[示范案例](../example/excel.md)尝试。

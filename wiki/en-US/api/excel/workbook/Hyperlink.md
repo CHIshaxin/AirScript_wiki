@@ -14,7 +14,7 @@ See the lists below for the Hyperlink object's properties and methods.
 ### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Address](#address) | String | Hyperlink target URL |
 | [TextToDisplay](#texttodisplay) | String | Hyperlink display text |
 

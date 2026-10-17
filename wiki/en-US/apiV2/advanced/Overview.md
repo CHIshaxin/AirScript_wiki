@@ -47,6 +47,6 @@ Users can manually revoke authorization for authorized scripts by following thes
 To prevent providing malicious scripts to users, there are some restrictions on using advanced services for security reasons.
 
 - Using advanced services too frequently. When this happens, the script will throw an obvious error notifying the user of abnormal calls.
-- When using the [HTTP](/docs/en-US/apiV2/advanced/HTTP.html) service, using IP addresses for requests is prohibited, and using ports for requests is prohibited.
-- When using the [HTTP](/docs/en-US/apiV2/advanced/HTTP.html) service, the maximum message body content received is 2M. Exceeding 2M will throw an error.
-- If the [File](/docs/en-US/apiV2/advanced/KSDrive.html#file) object obtained from [KSDrive.openFile](/docs/en-US/apiV2/advanced/KSDrive.html#openfile-openinfo) is not closed, using [KSDrive.openFile](/docs/en-US/apiV2/advanced/KSDrive.html#openfile-openinfo) again will throw an error.
+- When using the [HTTP](HTTP.md) service, using IP addresses for requests is prohibited, and using ports for requests is prohibited.
+- When using the [HTTP](HTTP.md) service, the maximum message body content received is 2M. Exceeding 2M will throw an error.
+- If the [File](KSDrive.md#file) object obtained from [KSDrive.openFile](KSDrive.md#openfile-openinfo) is not closed, using [KSDrive.openFile](KSDrive.md#openfile-openinfo) again will throw an error.

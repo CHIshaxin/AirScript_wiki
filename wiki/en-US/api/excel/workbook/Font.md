@@ -14,14 +14,14 @@ See the lists below for the Font object's properties and methods.
 ### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Bold](#bold) | Boolean | Whether the font is bold |
 | [Color](#color) | String | Font color |
 | [Italic](#italic) | Boolean | Whether the font is italic |
 | [Name](#name) | String | Font name |
 | [Size](#size) | Number | Font size |
 | [Strikethrough](#strikethrough) | Boolean | Whether strikethrough is applied |
-| [Underline](#underline) | [Enum.XlUnderlineStyle](/docs/en-US/api/excel/workbook/Enum.html#xlunderlinestyle) | Underline style |
+| [Underline](#underline) | [Enum.XlUnderlineStyle](Enum.md#xlunderlinestyle) | Underline style |
 
 ## Bold
 
@@ -149,7 +149,7 @@ Gets or sets underline style.
 
 ### Data type
 
-[Enum.XlUnderlineStyle](/docs/en-US/api/excel/workbook/Enum.html#xlunderlinestyle) - Underline type
+[Enum.XlUnderlineStyle](Enum.md#xlunderlinestyle) - Underline type
 
 For example, single underline: `Application.Enum.XlUnderlineStyle.xlUnderlineStyleSingle`
 

@@ -17,7 +17,7 @@ var views = Application.View.GetViews({ SheetId: 1 }）
 
 ## 创建视图
 
-视图类型说明见 [多维表视图类型说明](/docs/api/dbsheet/附录.html#附录2：多维表视图类型说明#多维表视图类型说明)
+视图类型说明见 [多维表视图类型说明](附录.md#附录2：多维表视图类型说明#多维表视图类型说明)
 
 ```javascript
 var view = Application.View.CreateView({

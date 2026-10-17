@@ -17,7 +17,7 @@ var fields = Application.Field.GetFields({ SheetId: 1 })
 
 ## 创建字段
 
-Field 格式说明见 [多维表字段类型说明](/docs/api/dbsheet/附录.html#附录1：多维表字段类型说明)
+Field 格式说明见 [多维表字段类型说明](附录.md#附录1：多维表字段类型说明)
 
 ```javascript
 var field = Application.Field.CreateFields({

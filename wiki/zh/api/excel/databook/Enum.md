@@ -14,7 +14,7 @@ hash: NlGse3aY
 指定值是高于还是低于平均值
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlAboveAverage | 0 | 高于平均值 |
 | xlBelowAverage | 1 | 低于平均值 |
 | xlEqualAboveAverage | 2 | 等于平均值 |
@@ -24,7 +24,7 @@ hash: NlGse3aY
 根据源区域的内容，指定目标区域的填充方式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlFillDefault | 0 | 确定用于填充目标区域的值和格式 |
 | xlFillCopy | 1 | 将源区域的值和格式复制到目标区域，如有必要可重复执行 |
 | xlFillSeries | 2 | 将源区域中的值扩展到目标区域中，形式为系列（如，“1, 2” 扩展为 “3, 4, 5”）。格式从源区域复制到目标区域，如有必要可重复执行 |
@@ -42,7 +42,7 @@ hash: NlGse3aY
 指定要检索的边框
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlDiagonalDown | 5 | 从区域中每个单元格的左上角到右下角的边框 |
 | xlDiagonalUp | 6 | 从区域中每个单元格的左下角到右上角的边框 |
 | xlEdgeLeft | 7 | 区域左边缘的边框 |
@@ -59,7 +59,7 @@ hash: NlGse3aY
 指定某一区域周围的边框的粗细
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlMedium | -4138 | 中 |
 | xlHairline | 1 | 细线（最细的边框） |
 | xlThin | 2 | 细长 |
@@ -70,7 +70,7 @@ hash: NlGse3aY
 迭代计算模式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | manual | `manual` | 手动 |
 | automatic | `automatic` | 自动 |
 
@@ -79,7 +79,7 @@ hash: NlGse3aY
 指定图表类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xl3DArea | -4098 | 三维面积图。 |
 | xl3DAreaStacked | 78 | 三维堆积面积图。 |
 | xl3DAreaStacked100 | 79 | 百分比堆积面积图。 |
@@ -159,7 +159,7 @@ hash: NlGse3aY
 指定函数使用的运算符
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlContains | 0 | 包含指定的值 |
 | xlDoesNotContain | 1 | 不包含指定的值 |
 | xlBeginsWith | 2 | 以指定的值开始 |
@@ -170,7 +170,7 @@ hash: NlGse3aY
 指定如何移动单元格来替换删除的单元格
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlShiftToLeft | -4159 | 单元格向左移动 |
 | xlShiftUp | -4162 | 单元格向上移动 |
 
@@ -179,7 +179,7 @@ hash: NlGse3aY
 指定移动的方向
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlDown | -4121 | 下拉 |
 | xlToLeft | -4159 | 向左 |
 | xlToRight | -4161 | 向右 |
@@ -190,7 +190,7 @@ hash: NlGse3aY
 指定验证过程中显示的消息框所用的图标
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlValidAlertStop | 1 | 停止图标 |
 | xlValidAlertWarning | 2 | 警告图标 |
 | xlValidAlertInformation | 3 | 信息图标 |
@@ -200,7 +200,7 @@ hash: NlGse3aY
 指定要对值进行的有效性测试类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlValidateWholeNumber | 1 | 全部数值 |
 | xlValidateDecimal | 2 | 数值 |
 | xlValidateList | 3 | 值必须存在于指定列表中 |
@@ -214,7 +214,7 @@ hash: NlGse3aY
 导出图片的格式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlImgTypePNG | 0 | 导出 .png |
 | xlImgTypeJPG | 1 | 导出 .jpg |
 | xlImgTypeBMP | 2 | 导出 .bmp |
@@ -225,7 +225,7 @@ hash: NlGse3aY
 指定文件格式的类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlTypePDF | 0 | PDF（.pdf） |
 | xlTypeXPS | 1 | XPS（.xps） |
 | xlTypeIMG | 2 | IMG（.png、.jpg、.bmp、.tif） |
@@ -235,7 +235,7 @@ hash: NlGse3aY
 指定用于将公式与单元格中的值或 xlBetween 和 xlNotBetween 中的值进行比较，以比较两个公式的运算符
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlBetween | 1 | 行间，只在提供了两个公式的情况下才能使用 |
 | xlNotBetween | 2 | 不介于。只在提供了两个公式的情况下才能使用 |
 | xlEqual | 3 | 平等 |
@@ -250,7 +250,7 @@ hash: NlGse3aY
 指定条件格式是基于单元格值还是基于表达式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlCellValue | 1 | 单元格值 |
 | xlExpression | 2 | 表达式 |
 | xlColorScale | 3 | 色阶 |
@@ -269,7 +269,7 @@ hash: NlGse3aY
 指定对象的水平对齐方式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlHAlignRight | -4152 | 靠右 |
 | xlHAlignLeft | -4131 | 靠左 |
 | xlHAlignJustify | -4130 | 两端对齐 |
@@ -284,7 +284,7 @@ hash: NlGse3aY
 指定从何处复制插入单元格的格式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlFormatFromLeftOrAbove | 0 | 从上方和/或左侧单元格复制格式 |
 | xlFormatFromRightOrBelow | 1 | 从下方和/或右侧单元格复制格式 |
 
@@ -293,7 +293,7 @@ hash: NlGse3aY
 指定插入时单元格的移动方向
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlShiftDown | -4121 | 向下移动单元格 |
 | xlShiftToRight | -4161 | 向上移动单元格 |
 
@@ -302,7 +302,7 @@ hash: NlGse3aY
 指定边框的线条样式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlLineStyleNone | -4142 | 无线 |
 | xlDouble | -4119 | 双线 |
 | xlDot | -4118 | 点式线 |
@@ -317,7 +317,7 @@ hash: NlGse3aY
 XlPaste 特殊操作
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlPasteSpecialOperationAdd | 0x1 | 复制的数据与目标单元格中的值相加 |
 | xlPasteSpecialOperationDivide | 0x4 | 复制的数据除以目标单元格中的值 |
 | xlPasteSpecialOperationMultiply | 0x3 | 复制的数据乘以目标单元格中的值 |
@@ -329,7 +329,7 @@ XlPaste 特殊操作
 粘贴类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlPasteFormulas | 0x2 | 公式 |
 | xlPasteAllExceptBorders | 0x4 | 无边框 |
 | xlPasteColumnWidths | 0x5 | 保留源列宽 |
@@ -345,7 +345,7 @@ XlPaste 特殊操作
 指定引用样式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlR1C1 | -4150 | 使用 xlR1C1 返回 R1C1 样式的引用 |
 | xlA1 | 1 | 默认值。 使用 xlA1 返回 A1 样式的引用 |
 
@@ -354,7 +354,7 @@ XlPaste 特殊操作
 指定对应于特定数据系列的数值是处于行中还是列中
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlRows | 1 | 数据系列在列中 |
 | xlColumns | 2 | 数据系列在行中 |
 
@@ -363,7 +363,7 @@ XlPaste 特殊操作
 指定工作表类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlWorksheet | -4167 | 工作表 |
 | xlDialogSheet | -4116 | 对话框工作表 |
 | xlChart | -4109 | 图表 |
@@ -375,7 +375,7 @@ XlPaste 特殊操作
 指定时间段
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlToday | 0 | 今天 |
 | xlYesterday | 1 | 昨天 |
 | xlLast7Days | 2 | 过去 7 天 |
@@ -392,7 +392,7 @@ XlPaste 特殊操作
 指定应用于字体的下划线类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlUnderlineStyleDouble | -4119 | 粗双下划线 |
 | xlUnderlineStyleDoubleAccounting | 5 | 紧靠在一起的两条细下划线 |
 | xlUnderlineStyleNone | -4142 | 无下划线 |
@@ -404,7 +404,7 @@ XlPaste 特殊操作
 指定对象的垂直对齐方式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlVAlignTop | -4160 | 向上 |
 | xlVAlignJustify | -4130 | 调整使全行排满 |
 | xlVAlignDistributed | -4117 | 一起 |
@@ -416,7 +416,7 @@ XlPaste 特殊操作
 指定在工作表中，名称引用哪种宏，或名称是否引用宏
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlFunction | 1 | 自定义函数 |
 | xlCommand | 2 | 自定义命令 |
 | xlNotXLM | 3 | 非宏 |
@@ -426,7 +426,7 @@ XlPaste 特殊操作
 当前工作表中，指定筛选的类型，也用于指定用于关联两个筛选条件的操作符
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlAnd | 1 | Criteria1 和 Criteria2 的逻辑与 |
 | xlOr | 2 | Criteria1 或 Criteria2 的逻辑或 |
 | xlTop10Items | 3 | 显示最高值项 (在 Criteria1 中指定的项目数) |
@@ -444,7 +444,7 @@ XlPaste 特殊操作
 指定第一行是否包含标题。 对数据透视表进行排序时，不能使用该参数
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlGuess | 0 | 自动判断 Excel 是否有表头 |
 | xlYes | 1 | 默认值。 应对整个区域进行排序 |
 | xlNo | 2 | 不应对整个区域进行排序 |
@@ -454,7 +454,7 @@ XlPaste 特殊操作
 指定排序方向
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlSortColumns | 1 | 按列排序 |
 | xlSortRows | 2 | 按行排序，此值为默认值 |
 
@@ -463,7 +463,7 @@ XlPaste 特殊操作
 指定排序类型
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlPinYin | 1 | 按字符的汉语拼音顺序排序，此值为默认值 |
 | xlStroke | 2 | 按每个字符的笔划数排序 |
 
@@ -472,7 +472,7 @@ XlPaste 特殊操作
 指定文本的排序方式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlSortNormal | 0 | 分别对数字和文本数据进行排序，此值为默认值 |
 | xlSortTextAsNumbers | 1 | 将文本作为数字型数据进行排序 |
 
@@ -481,7 +481,7 @@ XlPaste 特殊操作
 指定数据的排序参数
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | SortOnCellColor | 1 | 单元格颜色 |
 | SortOnFontColor | 2 | 字体颜色 |
 | SortOnIcon | 3 | 图标 |
@@ -492,7 +492,7 @@ XlPaste 特殊操作
 为指定字段或范围指定排序顺序
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlAscending | 1 | 默认值，按升序对指定字段排序 |
 | xlDescending | 2 | 按降序对指定字段排序 |
 
@@ -501,7 +501,7 @@ XlPaste 特殊操作
 指定要导入到查询表中的文本文件中的数据的列格式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlDelimited | 1 | 默认值，指示文件由分隔符分隔 |
 | xlFixedWidth | 2 | 指示将文件中的数据排列在固定宽度的列中 |
 
@@ -510,7 +510,7 @@ XlPaste 特殊操作
 指定用于指定文本的分隔符
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlTextQualifierDoubleQuote | 1 | 双引号 (") |
 | xlTextQualifierNone | -4142 | 无分隔符 |
 | xlTextQualifierSingleQuote | 2 | 单引号 (') |
@@ -520,7 +520,7 @@ XlPaste 特殊操作
 指定列的分列方式
 
 | 字段 | 值 | 释义 |
-|---|---|---|
+| --- | --- | --- |
 | xlDMYFormat | 4 | DMY 日期格式 |
 | xlDYMFormat | 7 | DYM 日期格式 |
 | xlEMDFormat | 10 | EMD 日期格式 |

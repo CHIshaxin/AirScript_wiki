@@ -14,7 +14,7 @@ Validation オブジェクトのプロパティとメソッドは、以下の一
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Add()](#add) | undefined | データの入力規則を追加します |
 | [Modify()](#modify) | undefined | データの入力規則を変更します |
 | [Delete()](#delete) | undefined | データの入力規則を削除します |
@@ -26,10 +26,10 @@ Validation オブジェクトのプロパティとメソッドは、以下の一
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Type | Enum |  | はい | 検証の種類。[Enum.XlDVType](/docs/ja-JP/api/excel/workbook/Enum.html#xldvtype) を参照 |
-| AlertStyle | Enum |  | はい | 検証メッセージのアイコン。[Enum.XlDVAlertStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xldvalertstyle) を参照 |
-| Operator | Enum |  | いいえ | 値または数式の比較演算子。[Enum.XlFormatConditionOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditionoperator) を参照 |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | はい | 検証の種類。[Enum.XlDVType](Enum.md#xldvtype) を参照 |
+| AlertStyle | Enum |  | はい | 検証メッセージのアイコン。[Enum.XlDVAlertStyle](Enum.md#xldvalertstyle) を参照 |
+| Operator | Enum |  | いいえ | 値または数式の比較演算子。[Enum.XlFormatConditionOperator](Enum.md#xlformatconditionoperator) を参照 |
 | Formula1 | String |  | いいえ | 検証数式の第 1 部分。最大 255 文字 |
 | Formula2 | String |  | いいえ | Operator が xlBetween または xlNotBetween のときの第 2 部分（それ以外では無視） |
 
@@ -56,10 +56,10 @@ validation.Add({
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Type | Enum |  | はい | 検証の種類。[Enum.XlDVType](/docs/ja-JP/api/excel/workbook/Enum.html#xldvtype) を参照 |
-| AlertStyle | Enum |  | はい | 検証メッセージのアイコン。[Enum.XlDVAlertStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xldvalertstyle) を参照 |
-| Operator | Enum |  | いいえ | 比較演算子。[Enum.XlFormatConditionOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditionoperator) を参照 |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | はい | 検証の種類。[Enum.XlDVType](Enum.md#xldvtype) を参照 |
+| AlertStyle | Enum |  | はい | 検証メッセージのアイコン。[Enum.XlDVAlertStyle](Enum.md#xldvalertstyle) を参照 |
+| Operator | Enum |  | いいえ | 比較演算子。[Enum.XlFormatConditionOperator](Enum.md#xlformatconditionoperator) を参照 |
 | Formula1 | String |  | いいえ | 検証数式の第 1 部分。最大 255 文字 |
 | Formula2 | String |  | いいえ | Operator が xlBetween または xlNotBetween のときの第 2 部分（それ以外では無視） |
 

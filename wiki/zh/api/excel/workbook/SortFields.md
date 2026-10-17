@@ -21,15 +21,15 @@ Number - 对象数目
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
 | --- | --- | --- | --- | --- |
-| Key | [Range](/docs/api/excel/workbook/Range.html) | null | 是 | 指定用于排序的键值 |
-| SortOn | [XlSortOn](/docs/api/excel/workbook/Enum.html#xlsorton) | null | 否 | 要进行排序的字段 |
-| Order | [XlSortOrder](/docs/api/excel/workbook/Enum.html#xlsortorder) | null | 否 | 指定排序次序 |
+| Key | [Range](Range.md) | null | 是 | 指定用于排序的键值 |
+| SortOn | [XlSortOn](Enum.md#xlsorton) | null | 否 | 要进行排序的字段 |
+| Order | [XlSortOrder](Enum.md#xlsortorder) | null | 否 | 指定排序次序 |
 | CustomOrder | Variant | null | 否 | 指定是否应使用自定义排序次序 |
-| DataOption | [XlSortDataOption](/docs/api/excel/workbook/Enum.html#xlsortdataoption) | null | 否 | 指定数据选项 |
+| DataOption | [XlSortDataOption](Enum.md#xlsortdataoption) | null | 否 | 指定数据选项 |
 
 #### 返回值
 
-[SortField](/docs/api/excel/workbook/SortField.html) - 代表与 **Sort** 对象关联的排序字段对象
+[SortField](SortField.md) - 代表与 **Sort** 对象关联的排序字段对象
 
 ### Clear()
 
@@ -41,7 +41,7 @@ undefined
 
 ### Item()
 
-返回一个 [SortField](/docs/api/excel/workbook/SortField.html) 对象，此为只读属性
+返回一个 [SortField](SortField.md) 对象，此为只读属性
 
 #### 参数
 
@@ -51,4 +51,4 @@ undefined
 
 #### 返回值
 
-[SortField](/docs/api/excel/workbook/SortField.html) - 代表与 **Sort** 对象关联的排序字段对象
+[SortField](SortField.md) - 代表与 **Sort** 对象关联的排序字段对象

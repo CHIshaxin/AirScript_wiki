@@ -34,13 +34,13 @@ file.close()
 ### プロパティ一覧
 
 | プロパティ名 | データ型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [FileType](#filetype) | object | サポートするファイルタイプの集合 |
 
 ### メソッド一覧
 
 | メソッド名 | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [createFile()](#createfile) | string | ファイルを新規作成または別名保存 |
 | [openFile()](#openfile-openinfo) | [File](#file) | 追加でファイルを開く |
 | [listFiles()](#listfiles-options) | [FilesInfo](#filesinfo) | ディレクトリ内のスプレッドシートファイルを一覧 |
@@ -52,7 +52,7 @@ file.close()
 ### プロパティの説明
 
 | プロパティ | データ型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | AP | string | スマートドキュメント |
 | KSheet | string | スマートスプレッドシート |
 | ET | string | スプレッドシート |
@@ -65,14 +65,14 @@ file.close()
 ### パラメーター
 
 | パラメーター | 型 | 必須 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | type | [FileType](#filetype) | はい | 新規ファイルのタイプ |
 | createOptions | CreateOptions | はい | 新規ファイルのパラメーターオプション |
 
 ### CreateOptions オブジェクトの説明
 
 | パラメーター | 型 | 必須 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | はい | 新規ファイルのファイル名 |
 | dirUrl | string | いいえ | 新規ファイルの保存ディレクトリ |
 | source | string | いいえ | 対象ファイルを新しいファイルとして保存 |
@@ -122,7 +122,7 @@ file.close()
 ### パラメーター
 
 | パラメーター | 型 | 必須 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | openInfo | URL / [FileInfo](#fileinfo) | はい | 開くファイルの情報。ファイル共有リンクまたは [FileInfo](#fileinfo) |
 
 ### 戻り値
@@ -153,13 +153,13 @@ for (let offset = 0; offset >= 0; ) {
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | options | object | undefined | いいえ | JavaScript オブジェクト。undefined のときはマイクラウドドキュメント直下のファイルデータを取得。詳細は下記 |
 
 ### 詳細パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | dirUrl | string |  | いいえ | ディレクトリリンク。例：`https://www.wps.com/mine/xxxxxx`。空のときはマイクラウドドキュメント直下のファイルデータを取得 |
 | offset | number | 0 | いいえ | 開始位置。通常は [listFiles()](#listfiles-options) の戻り値。例：[listFiles()](#listfiles-options) の取得で nextOffset が 100 の場合、次の呼び出しでこの任意パラメーターに 100 を渡すと、続きのファイル情報を取得できる。 |
 | count | number | 30 | いいえ | 取得するファイル数 |
@@ -176,8 +176,8 @@ for (let offset = 0; offset >= 0; ) {
 ### プロパティ
 
 | プロパティ名 | 型 | 説明 |
-|---|---|---|
-| Application | [Application(ET/Ksheet/DBT)](/docs/ja-JP/api/excel/workbook/Application.html) | 開いたファイルの操作オブジェクト。現在 et、ksheet、dbt をサポート |
+| --- | --- | --- |
+| Application | [Application(ET/Ksheet/DBT)](../../api/excel/workbook/Application.md) | 開いたファイルの操作オブジェクト。現在 et、ksheet、dbt をサポート |
 | close | Function | ファイルを閉じる関数。ファイルオブジェクト使用後に呼び出して開いたファイルを閉じる |
 
 ## FilesInfo
@@ -187,14 +187,14 @@ for (let offset = 0; offset >= 0; ) {
 ### プロパティ
 
 | プロパティ名 | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | files | [FileInfo](#fileinfo)[] | ファイル情報。詳細は下記 |
 | nextOffset | number | 次ページ用オフセット。[listFiles(options)](#listfiles-options) のパラメーターとして次ページを出力するのに使える。次ページがないとき nextOffset は -1 |
 
 ### FileInfo
 
 | プロパティ名 | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | fileName | string | ファイル名 |
 | fileId | string | 暗号化されたファイル ID |
 | createTime | number | ファイル作成時刻（タイムスタンプ） |

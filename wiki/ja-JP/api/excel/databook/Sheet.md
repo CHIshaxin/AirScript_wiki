@@ -14,7 +14,7 @@ hash: DP6ZWRgS
 #### プロパティ
 
 | 名前 | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Id](#id) | String | Sheet ID |
 | [Name](#name) | String | Sheet 名 |
 | [Index](#index) | Number | すべての Sheet 中のインデックス |
@@ -26,7 +26,7 @@ hash: DP6ZWRgS
 #### メソッド
 
 | 名前 | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Activate()](#activate) | undefined | Sheet をアクティブにする |
 | [Move()](#move) | undefined | Sheet を移動する |
 | [Delete()](#delete) | undefined | Sheet を削除する |
@@ -100,7 +100,7 @@ Sheet の種類。
 
 #### 型
 
-[Enum.xlEtDataBaseSheet](/docs/ja-JP/api/excel/databook/Enum.html#xlsheettype) – Sheet の種類
+[Enum.xlEtDataBaseSheet](Enum.md#xlsheettype) – Sheet の種類
 
 #### 例
 
@@ -111,11 +111,11 @@ console.log(sheet.Type) // xlEtDataBaseSheet
 
 ## Field
 
-データ Sheet 上の Field。[Field](/docs/ja-JP/api/excel/databook/Field.html) オブジェクトを返します。
+データ Sheet 上の Field。[Field](Field.md) オブジェクトを返します。
 
 #### 型
 
-[Field](/docs/ja-JP/api/excel/databook/Field.html)
+[Field](Field.md)
 
 #### 例
 
@@ -126,11 +126,11 @@ const fields = sheet.Field.GetFields()
 
 ## Record
 
-データ Sheet 上の行 Record。[Record](/docs/ja-JP/api/excel/databook/Record.html) オブジェクトを返します。
+データ Sheet 上の行 Record。[Record](Record.md) オブジェクトを返します。
 
 #### 型
 
-[Record](/docs/ja-JP/api/excel/databook/Record.html)
+[Record](Record.md)
 
 #### 例
 
@@ -159,7 +159,7 @@ Sheet を移動します。
 **`Before` と `After` は同時に使用できません。**
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | number | null | いいえ | この Sheet の前に配置する Sheet の ID。`After` と同時に使用不可。 |
 | After | number | null | いいえ | この Sheet の後に配置する Sheet の ID。`Before` と同時に使用不可。 |
 

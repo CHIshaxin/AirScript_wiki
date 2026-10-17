@@ -49,7 +49,7 @@ AirScript 2.0设计上能够满足所有AirScript 1.0具备的能力，目前一
 > 当前AirScript 2.0处于beta版，部分API能力将在后续迭代中持续补齐。
 
 |  | AirScript 1.0 | AirScript 2.0 |
-|---|---|---|
+| --- | --- | --- |
 | 工作表 | ✅API（500+） | ✅API（2000+） |
 | 数据表 | ✅API | 🏗️API（待开放） |
 | 高级服务 | ✅网络API<br>✅云文档API<br>✅邮件API<br>✅数据库API | ✅网络API<br>✅云文档API<br>🏗️邮件API（待开放）<br>🏗️数据库API（待开放） |

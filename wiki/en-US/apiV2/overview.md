@@ -49,7 +49,7 @@ AirScript 2.0 is designed to cover everything AirScript 1.0 can do. In the first
 > AirScript 2.0 is currently in beta. Some API capabilities will be filled in over upcoming releases.
 
 |  | AirScript 1.0 | AirScript 2.0 |
-|---|---|---|
+| --- | --- | --- |
 | Worksheet | APIs (500+) | APIs (2,000+) |
 | Databook | APIs | APIs (coming soon) |
 | Advanced services | Network API<br>Cloud document API<br>Email API<br>Database API | Network API<br>Cloud document API<br>Email API (coming soon)<br>Database API (coming soon) |
@@ -89,4 +89,4 @@ Note that the exact same version selection process applies to scripts created un
 
 ### How to find the 2.0 API documentation
 
-API documentation is available in 1.0 and 2.0 versions. The APIs differ between versions. See [API documentation (2.0)](/docs/en-US/apiV2/overview.html).
+API documentation is available in 1.0 and 2.0 versions. The APIs differ between versions. See [API documentation (2.0)](overview.md).

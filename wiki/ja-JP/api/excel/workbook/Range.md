@@ -38,27 +38,27 @@ function printText(r) {
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Count](#count) | Number | 範囲内のセル数 |
 | [Text](#text) | String | [読み取り専用] セルに表示される書式付きテキスト |
 | [Value/Value2](#value) | any/[][]any | セルの値を取得または設定 |
-| [FormatConditions](#formatConditions) | [FormatConditions](/docs/ja-JP/api/excel/workbook/FormatConditions.html) | 範囲の条件付き書式 |
+| [FormatConditions](#formatConditions) | [FormatConditions](FormatConditions.md) | 範囲の条件付き書式 |
 | [Formula](#formula) | String | A1 形式の数式（暗黙の交差） |
 | [FormulaArray](#formulaarray) | String | 範囲の配列数式を取得または設定 |
 | [NumberFormat](#numberformat) | String | 表示形式の取得または設定 |
 | [Hidden](#hidden) | Boolean | 行または列の非表示／表示 |
 | [Interior.Color](#interior-color) | String | 16 進 RGB による塗りつぶしの色 |
-| [HorizontalAlignment](#horizontalalignment) | [Enum.XlHAlign](/docs/ja-JP/api/excel/workbook/Enum.html#xlhalign) | 水平方向の配置 |
-| [VerticalAlignment](#verticalalignment) | [Enum.XlVAlign](/docs/ja-JP/api/excel/workbook/Enum.html#xlvalign) | 垂直方向の配置 |
+| [HorizontalAlignment](#horizontalalignment) | [Enum.XlHAlign](Enum.md#xlhalign) | 水平方向の配置 |
+| [VerticalAlignment](#verticalalignment) | [Enum.XlVAlign](Enum.md#xlvalign) | 垂直方向の配置 |
 | [WrapText](#wraptext) | Boolean | 範囲内で折り返して全体を表示 |
 | [IndentLevel](#indentlevel) | Number | セルのインデント |
-| [MergeArea](#mergearea) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | セルを含む結合範囲 |
+| [MergeArea](#mergearea) | [Range](Range.md) | セルを含む結合範囲 |
 | [MergeCells](#mergecells) | Boolean | 範囲に結合セルが含まれるかどうか |
-| [Cells](#cells) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 範囲内のセル |
-| [Rows](#rows) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 範囲内の行 |
-| [Columns](#columns) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 範囲内の列 |
-| [EntireRow](#entirerow) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 範囲と交差する行全体 |
-| [EntireColumn](#entirecolumn) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 範囲と交差する列全体 |
+| [Cells](#cells) | [Range](Range.md) | 範囲内のセル |
+| [Rows](#rows) | [Range](Range.md) | 範囲内の行 |
+| [Columns](#columns) | [Range](Range.md) | 範囲内の列 |
+| [EntireRow](#entirerow) | [Range](Range.md) | 範囲と交差する行全体 |
+| [EntireColumn](#entirecolumn) | [Range](Range.md) | 範囲と交差する列全体 |
 | [Row](#row) | Number | 範囲の先頭行番号 |
 | [RowEnd](#rowend) | Number | 範囲の末尾行番号 |
 | [Column](#column) | Number | 範囲の先頭列インデックス |
@@ -68,10 +68,10 @@ function printText(r) {
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [BorderAround()](#borderaround) | undefined | 罫線を追加し、新しい罫線に Color、LineStyle、Weight を設定 |
 | [Each()](#each) | undefined | 範囲内の各セルを反復処理 |
-| [Item()](#item) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 範囲内の指定インデックス位置のセル |
+| [Item()](#item) | [Range](Range.md) | 範囲内の指定インデックス位置のセル |
 | [Offset()](#offset) | undefined | 行と列で範囲をオフセット |
 | [Replace()](#replace) | undefined | セル内の文字列を置換 |
 | [Delete()](#delete) | undefined | セル、行、または列を削除 |
@@ -185,7 +185,7 @@ FormatConditions コレクションは、Excel の条件付き書式を制御し
 
 #### データ型
 
-[FormatConditions](/docs/ja-JP/api/excel/workbook/FormatConditions.html) - FormatConditions コレクション
+[FormatConditions](FormatConditions.md) - FormatConditions コレクション
 
 #### 例
 
@@ -331,11 +331,11 @@ interior.Color = RGB(255, 0, 0)
 
 ## HorizontalAlignment
 
-水平方向の配置。次の値を使用します: [Enum.XlHAlign](/docs/ja-JP/api/excel/workbook/Enum.html#xlhalign).
+水平方向の配置。次の値を使用します: [Enum.XlHAlign](Enum.md#xlhalign).
 
 #### データ型
 
-[Enum.XlHAlign](/docs/ja-JP/api/excel/workbook/Enum.html#xlhalign) - 水平方向の配置
+[Enum.XlHAlign](Enum.md#xlhalign) - 水平方向の配置
 
 #### 例
 
@@ -355,11 +355,11 @@ console.log(range.HorizontalAlignment) // -4108 (center)
 
 ## VerticalAlignment
 
-垂直方向の配置。次の値を使用します: [Enum.XlVAlign](/docs/ja-JP/api/excel/workbook/Enum.html#xlvalign).
+垂直方向の配置。次の値を使用します: [Enum.XlVAlign](Enum.md#xlvalign).
 
 #### データ型
 
-[Enum.XlVAlign](/docs/ja-JP/api/excel/workbook/Enum.html#xlvalign) - 垂直方向の配置
+[Enum.XlVAlign](Enum.md#xlvalign) - 垂直方向の配置
 
 #### 例
 
@@ -457,7 +457,7 @@ console.log(range.MergeCells) // true
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - 範囲内のセルのコレクション
+[Range](Range.md) - 範囲内のセルのコレクション
 
 #### 例
 
@@ -479,7 +479,7 @@ console.log(cell.Address()) // $A$1
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - 範囲内の行
+[Range](Range.md) - 範囲内の行
 
 #### 例
 
@@ -497,7 +497,7 @@ console.log(Application.Range('A1:D4').Rows.Count) // 4
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - 範囲内の列
+[Range](Range.md) - 範囲内の列
 
 #### 例
 
@@ -515,7 +515,7 @@ console.log(Application.Range('A1:D4').Columns.Count) // 4
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - 範囲と交差する行全体
+[Range](Range.md) - 範囲と交差する行全体
 
 #### 例
 
@@ -533,7 +533,7 @@ console.log(Application.Range('A1:B2').EntireRow.Count) // 32768
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - 範囲と交差する列全体
+[Range](Range.md) - 範囲と交差する列全体
 
 #### 例
 
@@ -615,7 +615,7 @@ Borders コレクション
 
 #### データ型
 
-[Border](/docs/ja-JP/api/excel/workbook/Border.html) コレクション - Border オブジェクト
+[Border](Border.md) コレクション - Border オブジェクト
 
 #### 例
 
@@ -634,8 +634,8 @@ A single border in the Borders コレクション for a range or style
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Index | Enum |  | はい | 取得する罫線。次を参照: [Enum.XlBordersIndex](/docs/ja-JP/api/excel/workbook/Enum.html#xlbordersindex) |
+| --- | --- | --- | --- | --- |
+| Index | Enum |  | はい | 取得する罫線。次を参照: [Enum.XlBordersIndex](Enum.md#xlbordersindex) |
 
 #### 戻り値の型
 
@@ -658,9 +658,9 @@ borders.Item(Application.Enum.XlBordersIndex.xlDiagonalDown).Color = '#FFFF00'
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| LineStyle | [LineStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xllinestyle) | null | いいえ | 線種の XlLineStyle 定数 |
-| BorderWeight | [BorderWeight](/docs/ja-JP/api/excel/workbook/Enum.html#xlborderweight) | null | いいえ | 罫線の太さ |
+| --- | --- | --- | --- | --- |
+| LineStyle | [LineStyle](Enum.md#xllinestyle) | null | いいえ | 線種の XlLineStyle 定数 |
+| BorderWeight | [BorderWeight](Enum.md#xlborderweight) | null | いいえ | 罫線の太さ |
 | Color | string | null | いいえ | 罫線の色（RGB）。例: `#ff0000` |
 
 #### 例
@@ -679,7 +679,7 @@ Range('C3').BorderAround(xlDashDot, xlHairline, '#00ff00')
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | はい | Array.prototype.forEach に似たコールバック |
 
 #### 例
@@ -702,7 +702,7 @@ range.Each(function (item) {
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowIndex | Number |  | はい | ColumnIndex を指定した場合は範囲内の相対行。それ以外は部分範囲へのインデックス |
 | ColumnIndex | Number |  | いいえ | 範囲内の相対列 |
 
@@ -726,7 +726,7 @@ console.log(range.Item(2, 2).Address()) //$B$2
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowOffset | Number | 0 | いいえ | 行オフセット。正で下、負で上 |
 | ColumnOffset | Number | 0 | いいえ | 列オフセット。正で右、負で左 |
 
@@ -750,7 +750,7 @@ console.log(newRange.Address()) //$C$3:$F$4
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | What | String | （なし） | はい | 検索する文字列 |
 | Replacement | String | （なし） | はい | 置換後の文字列 |
 | LookAt | Enum | xlWhole | いいえ | XlLookAt: xlWhole または xlPart。例を参照 |
@@ -825,7 +825,7 @@ range.EntireColumn.Insert()
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | dataURL | string | undefined | はい | Base64 の data URL 文字列としての画像 |
 
 #### 例
@@ -846,7 +846,7 @@ range.InsertImage(
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Across | boolean | false | はい | true のとき、範囲内の各行を列方向に 1 セルに結合します。 |
 
 #### 例
@@ -864,7 +864,7 @@ range.Merge()
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | CancelCenter | Boolean | false | いいえ | 結合を解除するときに中央揃えもクリアするか |
 
 #### 例
@@ -883,10 +883,10 @@ range.UnMerge()
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowAbsolute | Boolean |  | いいえ | true のとき行部分を絶対参照で返す。既定は true |
 | ColumnAbsolute | Boolean |  | いいえ | true のとき列部分を絶対参照で返す。既定は true |
-| ReferenceStyle | Enum |  | いいえ | 参照形式。既定は xlA1。次を参照: [Enum.XlReferenceStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xlreferencestyle) |
+| ReferenceStyle | Enum |  | いいえ | 参照形式。既定は xlA1。次を参照: [Enum.XlReferenceStyle](Enum.md#xlreferencestyle) |
 | External | Boolean |  | いいえ | true のとき外部参照、false のときローカル参照。既定は false |
 | RelativeTo | Range |  | いいえ | 行と列がともに相対でスタイルが xlR1C1 のとき、相対アドレスの基準となる範囲 |
 
@@ -918,7 +918,7 @@ console.log(
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Text | String |  | いいえ | コメントのテキスト |
 
 #### 例
@@ -1000,7 +1000,7 @@ range.ClearHyperlinks()
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Range | Range |  | はい | 別の Range オブジェクト |
 
 #### 戻り値の型
@@ -1044,8 +1044,8 @@ Range('B1').PasteSpecial()
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Destination | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 貼り付け先の範囲 |
+| --- | --- | --- | --- | --- |
+| Destination | [Range](Range.md) | null | はい | 貼り付け先の範囲 |
 
 #### 戻り値の型
 
@@ -1071,9 +1071,9 @@ PasteSpecial() の前に範囲をクリップボードにコピーしてくだ�
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Paste | [XlPasteType](/docs/ja-JP/api/excel/workbook/Enum.html#xlpastetype) | xlPasteAll | いいえ | 貼り付けの種類。例: xlPasteAll または xlPasteValues |
-| Operation | [XlPasteSpecialOperation](/docs/ja-JP/api/excel/workbook/Enum.html#xlpastespecialoperation) | xlPasteSpecialOperationNone | いいえ | 貼り付け演算。例: xlPasteSpecialOperationAdd |
+| --- | --- | --- | --- | --- |
+| Paste | [XlPasteType](Enum.md#xlpastetype) | xlPasteAll | いいえ | 貼り付けの種類。例: xlPasteAll または xlPasteValues |
+| Operation | [XlPasteSpecialOperation](Enum.md#xlpastespecialoperation) | xlPasteSpecialOperationNone | いいえ | 貼り付け演算。例: xlPasteSpecialOperationAdd |
 | SkipBlanks | Boolean | false | いいえ | true のとき貼り付け時に元の空白セルをスキップ |
 | Transpose | Boolean | false | いいえ | true のとき貼り付け時に行と列を入れ替えます |
 
@@ -1193,9 +1193,9 @@ console.log(range.Value) //[["A2","B2"],["A2","B2"]]
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Destination | Range |  | いいえ | 貼り付け先の範囲。元の範囲を含める必要があります |
-| Type | Enum | Enum.XlAutoFillType.xlFillDefault | いいえ | 塗りつぶしの種類。次を参照: [Enum.XlAutoFillType](/docs/ja-JP/api/excel/workbook/Enum.html#xlautofilltype) |
+| Type | Enum | Enum.XlAutoFillType.xlFillDefault | いいえ | 塗りつぶしの種類。次を参照: [Enum.XlAutoFillType](Enum.md#xlautofilltype) |
 
 #### 例
 
@@ -1219,10 +1219,10 @@ fillRange.Each(item => {
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Field | Variant | null | いいえ | リスト左からのフィールド インデックス。左端のフィールドは 1 |
 | Criteria1 | Variant | null | いいえ | 第 1 の条件。空白は "="、非空白は "<>" 。省略時はすべての値。xlTop10Items のときは件数を指定 |
-| Operator | [XlAutoFilterOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlautofilteroperator) | null | いいえ | フィルター演算子。次を参照: [XlAutoFilterOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlautofilteroperator) |
+| Operator | [XlAutoFilterOperator](Enum.md#xlautofilteroperator) | null | いいえ | フィルター演算子。次を参照: [XlAutoFilterOperator](Enum.md#xlautofilteroperator) |
 | Criteria2 | Variant | null | いいえ | Criteria1 と Operator と組み合わせる第 2 の条件。日付フィルターでは Array(Level, Date) としても使用。Level は 0～2（年・月・日）、Date は範囲内の有効な日付 |
 | SubField | Variant | null | いいえ | 構造化された型のフィールド（例: Population または Volume）。表示値のみのときは省略 |
 | VisibleDropDown | Variant | true | いいえ | `true` のときフィールドのオートフィルター ドロップダウンを表示、`false` のとき非表示。既定は `true` |
@@ -1505,10 +1505,10 @@ console.log(selection.Address())
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Destination | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | いいえ | 分割先の列。省略時は元のセルを上書き |
-| DataType | [XlTextParsingType](/docs/ja-JP/api/excel/workbook/Enum.html#xltextparsingtype) | xlDelimited | いいえ | 解析するテキストの形式 |
-| TextQualifier | [XlTextQualifier](/docs/ja-JP/api/excel/workbook/Enum.html#xltextqualifier) | xlTextQualifierDoubleQuote | いいえ | テキストの区切り記号 |
+| --- | --- | --- | --- | --- |
+| Destination | [Range](Range.md) | null | いいえ | 分割先の列。省略時は元のセルを上書き |
+| DataType | [XlTextParsingType](Enum.md#xltextparsingtype) | xlDelimited | いいえ | 解析するテキストの形式 |
+| TextQualifier | [XlTextQualifier](Enum.md#xltextqualifier) | xlTextQualifierDoubleQuote | いいえ | テキストの区切り記号 |
 | ConsecutiveDelimiter | Boolean | false | いいえ | 連続する区切りを 1 つとして扱う |
 | Tab | Boolean | false | いいえ | タブを区切りとして使用 |
 | Semicolon | Boolean | false | いいえ | セミコロンを区切りとして使用 |
@@ -1525,7 +1525,7 @@ console.log(selection.Address())
 
 `FieldInfo` について: この配列は `DataType` に応じて各列をどう解析するかを記述します。
 
-区切りデータでは、各要素は 2 要素の配列です: 列インデックス（1 始まり）と [XlColumnDataType](/docs/ja-JP/api/excel/workbook/Enum.html#xlcolumndatatype) の値。エントリのない列は標準。固定幅データでは第 1 要素が開始文字インデックスです。
+区切りデータでは、各要素は 2 要素の配列です: 列インデックス（1 始まり）と [XlColumnDataType](Enum.md#xlcolumndatatype) の値。エントリのない列は標準。固定幅データでは第 1 要素が開始文字インデックスです。
 
 #### 戻り値の型
 

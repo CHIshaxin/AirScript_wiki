@@ -16,7 +16,7 @@ WorksheetFunction は、Sum、Average、Min、Max などの一般的な Excel �
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Average()](#average) | Number | 範囲内の数値の平均 |
 | [AverageIf()](#averageif) | Number | 条件を満たすセルの平均 |
 | [Small()](#small) | Number | データ集合の k 番目に小さい値 |
@@ -32,8 +32,8 @@ WorksheetFunction は、Sum、Average、Min、Max などの一般的な Excel �
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 平均を求める範囲 |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | はい | 平均を求める範囲 |
 
 ### 戻り値
 
@@ -54,10 +54,10 @@ console.log(average)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 評価する範囲 |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | はい | 評価する範囲 |
 | criteria | String | null | はい | 条件。数値、式、参照、またはテキスト（例: 32、"32"、">32"、"apples"、または B4） |
-| average_range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | いいえ | 実際に平均するセル。省略時は range が使用されます |
+| average_range | [Range](Range.md) | null | いいえ | 実際に平均するセル。省略時は range が使用されます |
 
 ### 戻り値
 
@@ -85,8 +85,8 @@ k <= 0 または k がデータ点の数を超える場合、Small は `#NUM!` �
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | k 番目に小さい値を取得する配列または列 |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | はい | k 番目に小さい値を取得する配列または列 |
 | k | Number | null | はい | 小さい方からの順位。k は 0 より大きく、要素数以下である必要があります |
 
 ### 戻り値
@@ -116,8 +116,8 @@ k <= 0 または k がデータ点の数を超える場合、Large は `#NUM!` �
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | k 番目に大きい値を取得する配列または列 |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | はい | k 番目に大きい値を取得する配列または列 |
 | k | Number | null | はい | 大きい方からの順位。k は 0 より大きく、要素数以下である必要があります |
 
 ### 戻り値
@@ -151,8 +151,8 @@ console.log(fourth)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 最小値を取得する数値の範囲 |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | はい | 最小値を取得する数値の範囲 |
 
 ### 戻り値
 
@@ -185,8 +185,8 @@ console.log(min)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 最大値を求める配列または列 |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | はい | 最大値を求める配列または列 |
 
 ### 戻り値
 
@@ -215,8 +215,8 @@ console.log(max)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Array | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 合計する引数 |
+| --- | --- | --- | --- | --- |
+| Array | [Range](Range.md) | null | はい | 合計する引数 |
 
 ### 戻り値
 
@@ -259,9 +259,9 @@ match_type が 0 で lookup_value がテキストのとき、ワイルドカー�
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Lookup_value | Object | null | はい | 検索する値 |
-| Lookup_array | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 値を含む可能性のある連続範囲。配列または参照である必要があります |
+| Lookup_array | [Range](Range.md) | null | はい | 値を含む可能性のある連続範囲。配列または参照である必要があります |
 | Match_type | Object | null | いいえ | -1、0、または 1: Excel における lookup_value と lookup_array の比較方法 |
 
 ### 戻り値

@@ -14,16 +14,16 @@ Border 对象的具体属性和方法请参阅下方的列表。
 ### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Color](#color) | Number | 边框的颜色 |
-| [Weight](#weight) | [Enum.XlBorderWeight](/docs/api/excel/workbook/Enum.html#xlborderweight) | 边框的粗细 |
-| [LineStyle](#linestyle) | [Enum.XlLineStyle](/docs/api/excel/workbook/Enum.html#xllinestyle) | 边框的线条样式 |
+| [Weight](#weight) | [Enum.XlBorderWeight](Enum.md#xlborderweight) | 边框的粗细 |
+| [LineStyle](#linestyle) | [Enum.XlLineStyle](Enum.md#xllinestyle) | 边框的线条样式 |
 
 ## Color
 
 边框颜色
 
-注意：获取边框颜色时，需要指定具体的边框，即枚举值 [Enum.XlBordersIndex](/docs/api/excel/workbook/Enum.html#xlbordersindex) 不能是 xlAll、xlOutside、xlInside 等
+注意：获取边框颜色时，需要指定具体的边框，即枚举值 [Enum.XlBordersIndex](Enum.md#xlbordersindex) 不能是 xlAll、xlOutside、xlInside 等
 
 ### 数据类型
 
@@ -52,7 +52,7 @@ border.Color = '#00FF00'
 
 ### 数据类型
 
-[Enum.XlBorderWeight](/docs/api/excel/workbook/Enum.html#xlborderweight)- 边框的粗细
+[Enum.XlBorderWeight](Enum.md#xlborderweight)- 边框的粗细
 
 该对象只能设置值，无法读取值
 
@@ -75,7 +75,7 @@ border.Weight = Application.Enum.XlBorderWeight.xlThick
 
 ### 数据类型
 
-[Enum.XlLineStyle](/docs/api/excel/workbook/Enum.html#xllinestyle)- 边框的线条样式
+[Enum.XlLineStyle](Enum.md#xllinestyle)- 边框的线条样式
 
 该对象只能设置值，无法读取值
 

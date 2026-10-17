@@ -14,22 +14,22 @@ See the lists below for the FormatCondition object's properties and methods.
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
-| [AppliesTo](#appliesto) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Range where the format rule applies |
-| [Borders](#borders) | [Border](/docs/en-US/api/excel/workbook/Border.html) | Borders collection |
-| [Font](#font) | [Font](/docs/en-US/api/excel/workbook/Font.html) | Font object |
+| --- | --- | --- |
+| [AppliesTo](#appliesto) | [Range](Range.md) | Range where the format rule applies |
+| [Borders](#borders) | [Border](Border.md) | Borders collection |
+| [Font](#font) | [Font](Font.md) | Font object |
 | [Formula1](#formula1) | String | Value or expression for the condition or validation |
 | [Formula2](#formula2) | String | Second part for validation or conditions between two values |
 | [Interior](#interior) | Interior | Interior fill of the object |
 | [NumberFormat](#numberformat) | String | Number format when the rule is true |
-| [Operator](#operator) | [XlFormatConditionOperator](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditionoperator) | Conditional format operator |
+| [Operator](#operator) | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | Conditional format operator |
 | [Priority](#priority) | Number | Priority of this rule |
-| [Type](#type) | [XlFormatConditionType](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditiontype) | Condition object type |
+| [Type](#type) | [XlFormatConditionType](Enum.md#xlformatconditiontype) | Condition object type |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Modify()](#modify) | undefined | Modify an existing rule |
 | [ModifyAppliesToRange()](#modifyappliestorange) | undefined | Set the range this rule applies to |
 | [SetFirstPriority()](#setfirstpriority) | undefined | Set this rule's priority to 1 (evaluated first) |
@@ -41,7 +41,7 @@ Returns the Range where the format rule applies.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Range object
+[Range](Range.md) - Range object
 
 #### Example
 
@@ -66,7 +66,7 @@ Returns Borders for the range or style (including conditional format borders).
 
 #### Data type
 
-[Border](/docs/en-US/api/excel/workbook/Border.html) collection
+[Border](Border.md) collection
 
 #### Example
 
@@ -89,7 +89,7 @@ Returns the Font object for the formatted range.
 
 #### Data type
 
-[Font](/docs/en-US/api/excel/workbook/Font.html) - Font object
+[Font](Font.md) - Font object
 
 #### Example
 
@@ -200,7 +200,7 @@ Returns the conditional format operator.
 
 #### Data type
 
-[XlFormatConditionOperator](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditionoperator) - Operator enum
+[XlFormatConditionOperator](Enum.md#xlformatconditionoperator) - Operator enum
 
 #### Example
 
@@ -230,14 +230,14 @@ console.log(betweenCondition.Priority)
 
 Returns the object type.
 
-One of [XlFormatConditionType](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditiontype):
+One of [XlFormatConditionType](Enum.md#xlformatconditiontype):
 
 - xlCellValue
 - xlExpression
 
 #### Data type
 
-[XlFormatConditionType](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditiontype) - Condition type
+[XlFormatConditionType](Enum.md#xlformatconditiontype) - Condition type
 
 #### Example
 
@@ -254,9 +254,9 @@ Modifies an existing conditional format.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Type | [XlFormatConditionType](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditiontype) | null | Yes | Cell value or expression based |
-| Operator | [XlFormatConditionOperator](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditionoperator) | null | No | Ignored if Type is xlExpression |
+| --- | --- | --- | --- | --- |
+| Type | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | Yes | Cell value or expression based |
+| Operator | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | null | No | Ignored if Type is xlExpression |
 | Formula1 | String | null | No | Value or expression |
 | Formula2 | String | null | No | Second value or expression |
 
@@ -281,8 +281,8 @@ Must be A1-style and fully on the worksheet that owns the FormatConditions colle
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Range this rule applies to |
+| --- | --- | --- | --- | --- |
+| Range | [Range](Range.md) | null | Yes | Range this rule applies to |
 
 ### Return value
 

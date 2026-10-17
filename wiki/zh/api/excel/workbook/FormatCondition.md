@@ -14,22 +14,22 @@ FormatCondition 对象的具体属性和方法请参阅下方的列表。
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
-| [AppliesTo](#appliesto) | [Range](/docs/api/excel/workbook/Range.html) | 应用格式规则的单元格区域 |
-| [Borders](#borders) | [Border](/docs/api/excel/workbook/Border.html) | 返回一个 Borders 集合 |
-| [Font](#font) | [Font](/docs/api/excel/workbook/Font.html) | 返回一个 Font 对象 |
+| --- | --- | --- |
+| [AppliesTo](#appliesto) | [Range](Range.md) | 应用格式规则的单元格区域 |
+| [Borders](#borders) | [Border](Border.md) | 返回一个 Borders 集合 |
+| [Font](#font) | [Font](Font.md) | 返回一个 Font 对象 |
 | [Formula1](#formula1) | String | 返回与条件格式或者数据有效性相关联的值或表达式 |
 | [Formula2](#formula2) | String | 返回与条件格式或数据有效性验证第二部分相关联的值或表达式 |
 | [Interior](#interior) | Interior | 表示指定对象的内部 |
 | [NumberFormat](#numberformat) | String | 单元格的数字格式 |
-| [Operator](#operator) | [XlFormatConditionOperator](/docs/api/excel/workbook/Enum.html#xlformatconditionoperator) | 条件格式的运算符 |
+| [Operator](#operator) | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | 条件格式的运算符 |
 | [Priority](#priority) | Number | 返回或设置条件格式规则的优先级值 |
-| [Type](#type) | [XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) | 条件格式对象类型 |
+| [Type](#type) | [XlFormatConditionType](Enum.md#xlformatconditiontype) | 条件格式对象类型 |
 
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Modify()](#modify) | undefined | 更改现有条件格式 |
 | [ModifyAppliesToRange()](#modifyappliestorange) | undefined | 设置此格式规则所应用于的单元格区域 |
 | [SetFirstPriority()](#setfirstpriority) | undefined | 将此条件格式规则的优先级值设置为“1” |
@@ -41,7 +41,7 @@ FormatCondition 对象的具体属性和方法请参阅下方的列表。
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 区域对象
+[Range](Range.md) - 区域对象
 
 #### 示例
 
@@ -70,7 +70,7 @@ console.log(appliesToRange.Address())
 
 #### 数据类型
 
-[Border](/docs/api/excel/workbook/Border.html)集合 - 边框对象集合
+[Border](Border.md)集合 - 边框对象集合
 
 #### 示例
 
@@ -97,7 +97,7 @@ formatCondition1.Borders.Item(xlDiagonalDown).Color = '#FFFF00'
 
 #### 数据类型
 
-[Font](/docs/api/excel/workbook/Font.html) - 字体对象
+[Font](Font.md) - 字体对象
 
 #### 示例
 
@@ -226,7 +226,7 @@ formatCondition1.NumberFormat = '0.0'
 
 #### 数据类型
 
-[XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditionoperator) - 条件格式操作类型枚举
+[XlFormatConditionType](Enum.md#xlformatconditionoperator) - 条件格式操作类型枚举
 
 #### 示例
 
@@ -262,14 +262,14 @@ console.log(betweenCondition.Priority)
 
 返回对象类型
 
-对象类型可以是以下 [XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) 枚举中的一个:
+对象类型可以是以下 [XlFormatConditionType](Enum.md#xlformatconditiontype) 枚举中的一个:
 
 - xlCellValue
 - xlExpression
 
 #### 数据类型
 
-[XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) - 条件格式类型
+[XlFormatConditionType](Enum.md#xlformatconditiontype) - 条件格式类型
 
 #### 示例
 
@@ -289,11 +289,11 @@ console.log(betweenCondition.Type)
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Type | [XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) | null | 是 | 指定条件格式是基于单元格值还是基于表达式 |
-| Operator | [XlFormatConditionOperator](/docs/api/excel/workbook/Enum.html#xlformatconditionoperator) | null | 否 | 条件格式运算符，如果 Type 为 xlExpression，则忽略参数 Operator |
-| Formula1 | [XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) | null | 否 | 与条件格式关联的值或表达式。 可为常量值、字符串值、单元格引用或公式 |
-| Formula2 | [XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) | null | 否 | 与条件格式关联的值或表达式。 可为常量值、字符串值、单元格引用或公式 |
+| --- | --- | --- | --- | --- |
+| Type | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | 是 | 指定条件格式是基于单元格值还是基于表达式 |
+| Operator | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | null | 否 | 条件格式运算符，如果 Type 为 xlExpression，则忽略参数 Operator |
+| Formula1 | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | 否 | 与条件格式关联的值或表达式。 可为常量值、字符串值、单元格引用或公式 |
+| Formula2 | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | 否 | 与条件格式关联的值或表达式。 可为常量值、字符串值、单元格引用或公式 |
 
 ### 返回值
 
@@ -319,8 +319,8 @@ betweenCondition.Modify(xlCellValue, xlBetween, '=90', '=110')
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Range | [Range](/docs/api/excel/workbook/Range.html) | null | 是 | 此格式规则将应用于的区域 |
+| --- | --- | --- | --- | --- |
+| Range | [Range](Range.md) | null | 是 | 此格式规则将应用于的区域 |
 
 ### 返回值
 

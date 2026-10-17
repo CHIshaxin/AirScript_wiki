@@ -14,7 +14,7 @@ Enumeration types are exposed on `Application`.
 Specifies whether a value is above or below the average.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlAboveAverage | 0 | Above average |
 | xlBelowAverage | 1 | Below average |
 | xlEqualAboveAverage | 2 | Equal to average |
@@ -24,7 +24,7 @@ Specifies whether a value is above or below the average.
 Specifies how the destination range is filled based on the source range.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlFillDefault | 0 | Determine values and formats used to fill the destination |
 | xlFillCopy | 1 | Copy values and formats from source to destination, repeating if needed |
 | xlFillSeries | 2 | Extend values from source to destination as a series (e.g. “1, 2” becomes “3, 4, 5”). Copy formats from source, repeating if needed |
@@ -42,7 +42,7 @@ Specifies how the destination range is filled based on the source range.
 Specifies which border to retrieve.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlDiagonalDown | 5 | Border from top-left to bottom-right of each cell |
 | xlDiagonalUp | 6 | Border from bottom-left to top-right of each cell |
 | xlEdgeLeft | 7 | Left edge border of the range |
@@ -59,7 +59,7 @@ Specifies which border to retrieve.
 Specifies border weight around a range.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlMedium | -4138 | Medium |
 | xlHairline | 1 | Hairline (thinnest border) |
 | xlThin | 2 | Thin |
@@ -70,7 +70,7 @@ Specifies border weight around a range.
 Iterative calculation mode.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | manual | `manual` | Manual |
 | automatic | `automatic` | Automatic |
 
@@ -79,7 +79,7 @@ Iterative calculation mode.
 Specifies the chart type.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xl3DArea | -4098 | 3-D area chart. |
 | xl3DAreaStacked | 78 | 3-D stacked area chart. |
 | xl3DAreaStacked100 | 79 | 100% stacked area chart. |
@@ -159,7 +159,7 @@ Specifies the chart type.
 Specifies operators used by the function.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlContains | 0 | Contains the specified value |
 | xlDoesNotContain | 1 | Does not contain the specified value |
 | xlBeginsWith | 2 | Begins with the specified value |
@@ -170,7 +170,7 @@ Specifies operators used by the function.
 Specifies how cells move to replace deleted cells.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlShiftToLeft | -4159 | Shift cells left |
 | xlShiftUp | -4162 | Shift cells up |
 
@@ -179,7 +179,7 @@ Specifies how cells move to replace deleted cells.
 Specifies the direction to move.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlDown | -4121 | Down |
 | xlToLeft | -4159 | To the left |
 | xlToRight | -4161 | To the right |
@@ -190,7 +190,7 @@ Specifies the direction to move.
 Specifies the icon used in validation message boxes.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlValidAlertStop | 1 | Stop icon |
 | xlValidAlertWarning | 2 | Warning icon |
 | xlValidAlertInformation | 3 | Information icon |
@@ -200,7 +200,7 @@ Specifies the icon used in validation message boxes.
 Specifies the type of validation to apply to values.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlValidateWholeNumber | 1 | Whole number |
 | xlValidateDecimal | 2 | Decimal |
 | xlValidateList | 3 | Value must exist in the specified list |
@@ -214,7 +214,7 @@ Specifies the type of validation to apply to values.
 Image export format.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlImgTypePNG | 0 | Export .png |
 | xlImgTypeJPG | 1 | Export .jpg |
 | xlImgTypeBMP | 2 | Export .bmp |
@@ -225,7 +225,7 @@ Image export format.
 Specifies the file format type.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlTypePDF | 0 | PDF (.pdf) |
 | xlTypeXPS | 1 | XPS (.xps) |
 | xlTypeIMG | 2 | IMG (.png, .jpg, .bmp, .tif) |
@@ -235,7 +235,7 @@ Specifies the file format type.
 Specifies operators that compare formulas to cell values, or compare two formulas for xlBetween and xlNotBetween.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlBetween | 1 | Between; only valid when two formulas are provided |
 | xlNotBetween | 2 | Not between; only valid when two formulas are provided |
 | xlEqual | 3 | Equal |
@@ -250,7 +250,7 @@ Specifies operators that compare formulas to cell values, or compare two formula
 Specifies whether conditional formatting is based on cell values or expressions.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlCellValue | 1 | Cell value |
 | xlExpression | 2 | Expression |
 | xlColorScale | 3 | Color scale |
@@ -269,7 +269,7 @@ Specifies whether conditional formatting is based on cell values or expressions.
 Specifies horizontal alignment.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlHAlignRight | -4152 | Right |
 | xlHAlignLeft | -4131 | Left |
 | xlHAlignJustify | -4130 | Justify |
@@ -284,7 +284,7 @@ Specifies horizontal alignment.
 Specifies where to copy formats when inserting cells.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlFormatFromLeftOrAbove | 0 | Copy format from left or above |
 | xlFormatFromRightOrBelow | 1 | Copy format from right or below |
 
@@ -293,7 +293,7 @@ Specifies where to copy formats when inserting cells.
 Specifies how cells shift when inserting.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlShiftDown | -4121 | Shift cells down |
 | xlShiftToRight | -4161 | Shift cells to the right |
 
@@ -302,7 +302,7 @@ Specifies how cells shift when inserting.
 Specifies the line style for borders.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlLineStyleNone | -4142 | None |
 | xlDouble | -4119 | Double |
 | xlDot | -4118 | Dotted |
@@ -317,7 +317,7 @@ Specifies the line style for borders.
 Special operations for XlPaste.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlPasteSpecialOperationAdd | 0x1 | Add copied data to destination values |
 | xlPasteSpecialOperationDivide | 0x4 | Divide copied data by destination values |
 | xlPasteSpecialOperationMultiply | 0x3 | Multiply copied data by destination values |
@@ -329,7 +329,7 @@ Special operations for XlPaste.
 Paste type.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlPasteFormulas | 0x2 | Formulas |
 | xlPasteAllExceptBorders | 0x4 | All except borders |
 | xlPasteColumnWidths | 0x5 | Column widths |
@@ -345,7 +345,7 @@ Paste type.
 Specifies the reference style.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlR1C1 | -4150 | Use xlR1C1 to return R1C1-style references |
 | xlA1 | 1 | Default. Use xlA1 to return A1-style references |
 
@@ -354,7 +354,7 @@ Specifies the reference style.
 Specifies whether data series values are organized in rows or columns.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlRows | 1 | Data series in columns |
 | xlColumns | 2 | Data series in rows |
 
@@ -363,7 +363,7 @@ Specifies whether data series values are organized in rows or columns.
 Specifies the worksheet type.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlWorksheet | -4167 | Worksheet |
 | xlDialogSheet | -4116 | Dialog sheet |
 | xlChart | -4109 | Chart |
@@ -375,7 +375,7 @@ Specifies the worksheet type.
 Specifies the time period.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlToday | 0 | Today |
 | xlYesterday | 1 | Yesterday |
 | xlLast7Days | 2 | Last 7 days |
@@ -392,7 +392,7 @@ Specifies the time period.
 Specifies the underline style applied to the font.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlUnderlineStyleDouble | -4119 | Double underline |
 | xlUnderlineStyleDoubleAccounting | 5 | Double accounting (two thin underlines) |
 | xlUnderlineStyleNone | -4142 | No underline |
@@ -404,7 +404,7 @@ Specifies the underline style applied to the font.
 Specifies vertical alignment.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlVAlignTop | -4160 | Top |
 | xlVAlignJustify | -4130 | Justify (vertical) |
 | xlVAlignDistributed | -4117 | Distributed (vertical) |
@@ -416,7 +416,7 @@ Specifies vertical alignment.
 Specifies whether a name refers to a macro in the worksheet, or whether it refers to a macro at all.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlFunction | 1 | User-defined function |
 | xlCommand | 2 | User-defined command |
 | xlNotXLM | 3 | Not a macro |
@@ -426,7 +426,7 @@ Specifies whether a name refers to a macro in the worksheet, or whether it refer
 Specifies the filter type on the current worksheet, or the operator that joins two filter criteria.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlAnd | 1 | Logical AND of Criteria1 and Criteria2 |
 | xlOr | 2 | Logical OR of Criteria1 and Criteria2 |
 | xlTop10Items | 3 | Top items (count in Criteria1) |
@@ -444,7 +444,7 @@ Specifies the filter type on the current worksheet, or the operator that joins t
 Specifies whether the first row contains headers. Cannot be used when sorting a PivotTable.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlGuess | 0 | Guess whether Excel has headers |
 | xlYes | 1 | Default. Sort the entire range |
 | xlNo | 2 | Do not sort the entire range |
@@ -454,7 +454,7 @@ Specifies whether the first row contains headers. Cannot be used when sorting a 
 Specifies sort orientation.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlSortColumns | 1 | Sort by columns |
 | xlSortRows | 2 | Sort by rows (default) |
 
@@ -463,7 +463,7 @@ Specifies sort orientation.
 Specifies the sort method.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlPinYin | 1 | Sort by Pinyin for Chinese characters (default) |
 | xlStroke | 2 | Sort by stroke count for each character |
 
@@ -472,7 +472,7 @@ Specifies the sort method.
 Specifies how text is sorted.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlSortNormal | 0 | Sort numbers and text separately (default) |
 | xlSortTextAsNumbers | 1 | Sort text as numeric data |
 
@@ -481,7 +481,7 @@ Specifies how text is sorted.
 Specifies what to sort on.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | SortOnCellColor | 1 | Cell color |
 | SortOnFontColor | 2 | Font color |
 | SortOnIcon | 3 | Icon |
@@ -492,7 +492,7 @@ Specifies what to sort on.
 Specifies sort order for a field or range.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlAscending | 1 | Default. Sort ascending |
 | xlDescending | 2 | Sort descending |
 
@@ -501,7 +501,7 @@ Specifies sort order for a field or range.
 Specifies the column data format when importing a text file into a query table.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlDelimited | 1 | Default. Delimited file |
 | xlFixedWidth | 2 | Fixed-width columns |
 
@@ -510,7 +510,7 @@ Specifies the column data format when importing a text file into a query table.
 Specifies the text qualifier.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlTextQualifierDoubleQuote | 1 | Double quote (") |
 | xlTextQualifierNone | -4142 | No qualifier |
 | xlTextQualifierSingleQuote | 2 | Single quote (') |
@@ -520,7 +520,7 @@ Specifies the text qualifier.
 Specifies how columns are parsed.
 
 | Member | Value | Description |
-|---|---|---|
+| --- | --- | --- |
 | xlDMYFormat | 4 | DMY date |
 | xlDYMFormat | 7 | DYM date |
 | xlEMDFormat | 10 | EMD date |

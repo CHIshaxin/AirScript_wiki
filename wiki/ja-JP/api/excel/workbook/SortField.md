@@ -12,19 +12,19 @@ hash: CSCKW6Iv
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [CustomOrder](#customorder) | Variant | フィールドのカスタム並べ替え順 |
-| [DataOption](#dataoption) | [XlSortDataOption](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortdataoption) | SortField で指定された範囲内のテキストの並べ替え方法 |
-| [Key](#key) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 並べ替え対象の値を決定する並べ替えキーの範囲 |
-| [Order](#order) | [XlSortOrder](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortorder) | キーの並べ替え順 |
+| [DataOption](#dataoption) | [XlSortDataOption](Enum.md#xlsortdataoption) | SortField で指定された範囲内のテキストの並べ替え方法 |
+| [Key](#key) | [Range](Range.md) | 並べ替え対象の値を決定する並べ替えキーの範囲 |
+| [Order](#order) | [XlSortOrder](Enum.md#xlsortorder) | キーの並べ替え順 |
 | [Priority](#priority) | Number | この並べ替えフィールドの優先順位 |
-| [SortOn](#sorton) | [XlSortOn](/docs/ja-JP/api/excel/workbook/Enum.html#xlsorton) | 並べ替えに使用するセルのプロパティ |
+| [SortOn](#sorton) | [XlSortOn](Enum.md#xlsorton) | 並べ替えに使用するセルのプロパティ |
 | [SortOnValue](#sortonvalue) | Object | この SortField の並べ替えに使用される値 |
 
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Delete()](#delete) | undefined | この SortField を SortFields コレクションから削除します |
 | [ModifyKey()](#modifykey) | undefined | 並べ替えに使用するキー範囲を変更します |
 
@@ -42,7 +42,7 @@ SortField で指定された範囲内のテキストの並べ替え方法です�
 
 #### データ型
 
-[XlSortDataOption](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortdataoption) - テキストの並べ替えオプション
+[XlSortDataOption](Enum.md#xlsortdataoption) - テキストの並べ替えオプション
 
 ## Key
 
@@ -50,7 +50,7 @@ SortField で指定された範囲内のテキストの並べ替え方法です�
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - Range オブジェクト
+[Range](Range.md) - Range オブジェクト
 
 ## Order
 
@@ -58,7 +58,7 @@ SortField で指定された範囲内のテキストの並べ替え方法です�
 
 #### データ型
 
-[XlSortOrder](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortorder) - 並べ替え順の列挙型
+[XlSortOrder](Enum.md#xlsortorder) - 並べ替え順の列挙型
 
 ## Priority
 
@@ -74,7 +74,7 @@ Number
 
 #### データ型
 
-[XlSortOn](/docs/ja-JP/api/excel/workbook/Enum.html#xlsorton)
+[XlSortOn](Enum.md#xlsorton)
 
 ## SortOnValue
 
@@ -99,8 +99,8 @@ undefined
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Key | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | 新しいキー範囲 |
+| --- | --- | --- | --- | --- |
+| Key | [Range](Range.md) | null | はい | 新しいキー範囲 |
 
 #### 戻り値
 

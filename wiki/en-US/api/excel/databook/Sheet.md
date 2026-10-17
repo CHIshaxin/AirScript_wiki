@@ -14,7 +14,7 @@ See the lists below for properties and methods.
 #### Properties
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Id](#id) | String | Sheet ID |
 | [Name](#name) | String | Sheet name |
 | [Index](#index) | Number | Index among all sheets |
@@ -26,7 +26,7 @@ See the lists below for properties and methods.
 #### Methods
 
 | Name | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Activate()](#activate) | undefined | Activate the sheet |
 | [Move()](#move) | undefined | Move the sheet |
 | [Delete()](#delete) | undefined | Delete the sheet |
@@ -100,7 +100,7 @@ Sheet type.
 
 #### Type
 
-[Enum.xlEtDataBaseSheet](/docs/en-US/api/excel/databook/Enum.html#xlsheettype) – sheet type
+[Enum.xlEtDataBaseSheet](Enum.md#xlsheettype) – sheet type
 
 #### Example
 
@@ -111,11 +111,11 @@ console.log(sheet.Type) // xlEtDataBaseSheet
 
 ## Field
 
-Fields on the data sheet; returns a [Field](/docs/en-US/api/excel/databook/Field.html) object.
+Fields on the data sheet; returns a [Field](Field.md) object.
 
 #### Type
 
-[Field](/docs/en-US/api/excel/databook/Field.html)
+[Field](Field.md)
 
 #### Example
 
@@ -126,11 +126,11 @@ const fields = sheet.Field.GetFields()
 
 ## Record
 
-Row records on the data sheet; returns a [Record](/docs/en-US/api/excel/databook/Record.html) object.
+Row records on the data sheet; returns a [Record](Record.md) object.
 
 #### Type
 
-[Record](/docs/en-US/api/excel/databook/Record.html)
+[Record](Record.md)
 
 #### Example
 
@@ -159,7 +159,7 @@ Moves the sheet.
 **`Before` and `After` are mutually exclusive.**
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | number | null | No | ID of the sheet before which this sheet is placed. Cannot be used together with `After`. |
 | After | number | null | No | ID of the sheet after which this sheet is placed. Cannot be used together with `Before`. |
 

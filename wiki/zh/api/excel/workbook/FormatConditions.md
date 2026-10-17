@@ -14,21 +14,21 @@ FormatConditions 集合对象用于控制 Excel 中的条件格式。
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Count](#count) | Number | 返回 FormatConditions 集合中的对象数 |
 
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
-| [Add()](#add) | [FormatCondition](/docs/api/excel/workbook/FormatCondition.html) | 向 FormatConditions 集合中添加一个条件格式 |
+| --- | --- | --- |
+| [Add()](#add) | [FormatCondition](FormatCondition.md) | 向 FormatConditions 集合中添加一个条件格式 |
 | [AddAboveAverage()](#addaboveaverage) | AboveAverage | 返回表示指定区域的条件格式规则的新 AboveAverage 对象 |
 | [AddIconSetCondition()](#addiconsetcondition) | IconSetCondition | 代表指定区域的图标集条件格式规则 |
 | [AddColorScale()](#addcolorscale) | ColorScale | 该条件格式规则使用单元格颜色中的渐变来指示所选区域中包含的单元格值的相对差异 |
 | [AddTop10()](#addtop10) | Top10 | 该条件格式可以根据指定的截止值查找单元格区域中的最高值和最低值 |
 | [AddUniqueValues()](#adduniquevalues) | UniqueValues | 返回表示指定区域的条件格式规则的新 UniqueValues 对象 |
 | [Delete()](#delete) | undefined | 删除该区域下的条件格式 |
-| [Item()](#item) | [FormatCondition](/docs/api/excel/workbook/FormatCondition.html) | 从条件格式集合中返回一个条件格式对象 |
+| [Item()](#item) | [FormatCondition](FormatCondition.md) | 从条件格式集合中返回一个条件格式对象 |
 
 ## Count
 
@@ -56,15 +56,15 @@ console.log(count)
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Type | [XlFormatConditionType](/docs/api/excel/workbook/Enum.html#xlformatconditiontype) | null | 是 | 指定条件格式的类型 |
-| Operator | [XlFormatConditionOperator](/docs/api/excel/workbook/Enum.html#xlformatconditionoperator) | null | 是 | 指定条件格式的运算符，请注意：如果 Type 为 `xlExpression` ，则忽略 Operator 参数 |
+| --- | --- | --- | --- | --- |
+| Type | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | 是 | 指定条件格式的类型 |
+| Operator | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | null | 是 | 指定条件格式的运算符，请注意：如果 Type 为 `xlExpression` ，则忽略 Operator 参数 |
 | Formula1 | String | null | 是 | 与条件格式关联的值或表达式。 可为常量值、字符串值、单元格引用或公式 |
 | Formula2 | String | null | 否 | 当 Operator 为 `xlBetween` 或 `xlNotBetween` 时，表示与条件格式的第二部分关联的值或表达式 (否则，将忽略此参数)。可以是常量值、字符串值、单元格引用或公式 |
 
 #### 返回值
 
-[FormatCondition](/docs/api/excel/workbook/FormatCondition.html) - 返回一个 [FormatCondition](/docs/api/excel/workbook/FormatCondition.html) 对象，表示添加的条件格式
+[FormatCondition](FormatCondition.md) - 返回一个 [FormatCondition](FormatCondition.md) 对象，表示添加的条件格式
 
 #### 示例
 
@@ -174,7 +174,7 @@ for (let i = 0; i < targetColumns.length; ++i) {
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | ColorScaleType | Number | null | 是 | 色阶的类型，例如传 2 就代表双色刻度，传 3 就代表三色刻度 |
 
 #### 返回值
@@ -301,12 +301,12 @@ const formatCondition1 = targetFormulaRange.FormatConditions.Delete()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number / String | null | 是 | 目标对象在集合内的索引值，从 1 开始 |
 
 #### 返回值
 
-[FormatCondition](/docs/api/excel/workbook/FormatCondition.html) 对象
+[FormatCondition](FormatCondition.md) 对象
 
 #### 示例
 

@@ -14,14 +14,14 @@ Font 对象的具体属性和方法请参阅下方的列表。
 ### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Bold](#bold) | Boolean | 字体是否加粗 |
 | [Color](#color) | String | 字体的颜色 |
 | [Italic](#italic) | Boolean | 字体是否斜体 |
 | [Name](#name) | String | 字体的名称 |
 | [Size](#size) | Number | 字体的大小 |
 | [Strikethrough](#strikethrough) | Boolean | 字体是否有删除线 |
-| [Underline](#underline) | [Enum.XlUnderlineStyle](/docs/api/excel/workbook/Enum.html#xlunderlinestyle) | 字体是否有下划线 |
+| [Underline](#underline) | [Enum.XlUnderlineStyle](Enum.md#xlunderlinestyle) | 字体是否有下划线 |
 
 ## Bold
 
@@ -149,7 +149,7 @@ font.Strikethrough = true
 
 ### 数据类型
 
-[Enum.XlUnderlineStyle](/docs/api/excel/workbook/Enum.html#xlunderlinestyle) - 字体下划线的类型
+[Enum.XlUnderlineStyle](Enum.md#xlunderlinestyle) - 字体下划线的类型
 
 例如：设置单下划线即设置为 `Application.Enum.XlUnderlineStyle.xlUnderlineStyleSingle`
 

@@ -11,25 +11,25 @@ AutoFilter for a worksheet. Use it to filter data and find values quickly. You c
 
 Filtering lets you control what to show and what to hide. When values in one or more columns do not meet the criteria, the entire row is hidden. You can filter numbers or text, or filter by cell fill or font color.
 
-Developers use the [Filters](#filters) property to get the collection of column filters. The [Range](#range) property returns a [Range](/docs/en-US/api/excel/workbook/Range.html) for the whole filtered region.
+Developers use the [Filters](#filters) property to get the collection of column filters. The [Range](#range) property returns a [Range](Range.md) for the whole filtered region.
 
 Note
 
-To create an AutoFilter on a sheet, turn on filtering in the toolbar manually, or use the [AutoFilter](/docs/en-US/api/excel/workbook/Range.html#autofilter) method on a [Range](/docs/en-US/api/excel/workbook/Range.html) to enable AutoFilter for a region.
+To create an AutoFilter on a sheet, turn on filtering in the toolbar manually, or use the [AutoFilter](Range.md#autofilter) method on a [Range](Range.md) to enable AutoFilter for a region.
 
 See the lists below for the AutoFilter object's properties and methods.
 
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Filters](#filters) | [Filters](#filters) | Filter collection |
-| [Range](#range) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Filtered range |
+| [Range](#range) | [Range](Range.md) | Filtered range |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [ApplyFilter()](#applyfilter) | undefined | Apply filters to the current sheet |
 | [ShowAllData()](#showalldata) | undefined | Clear all filters and show all rows |
 
@@ -138,7 +138,7 @@ Iterates all filters and runs a callback.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | Yes | Similar to JS array forEach |
 
 #### Example
@@ -158,7 +158,7 @@ Gets the filter for a column by index.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | Yes | Physical column index on the sheet, starting at 1 |
 
 #### Return type
@@ -175,11 +175,11 @@ const filter1 = filters.Item(1)
 
 ### Item().Operator
 
-Filter operator; see [XlAutoFilterOperator](/docs/en-US/api/excel/workbook/Enum.html#xlautofilteroperator).
+Filter operator; see [XlAutoFilterOperator](Enum.md#xlautofilteroperator).
 
 #### Data type
 
-[XlAutoFilterOperator](/docs/en-US/api/excel/workbook/Enum.html#xlautofilteroperator) - XlAutoFilterOperator enum
+[XlAutoFilterOperator](Enum.md#xlautofilteroperator) - XlAutoFilterOperator enum
 
 #### Example
 
@@ -211,7 +211,7 @@ Region covered by AutoFilter.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Range object
+[Range](Range.md) - Range object
 
 #### Example
 

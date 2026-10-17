@@ -27,7 +27,7 @@ console.log(
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | createHash(algorithm) | [hash](#hash) | Create a hash instance. Algorithms: `"md5"`, `"sha1"`, `"sha"`, `"sha256"`, `"sha512"`. |
 | createHmac(algorithm, key) | [hmac](#hmac) | Create an HMAC instance. Same supported algorithms. |
 
@@ -38,7 +38,7 @@ Hash object produced by [Crypto](#crypto).
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | update(data[, inputEncoding]) | [hash](#hash) | Update the hash with `data`. If `data` is a string and `encoding` is omitted, UTF-8 is used. If `data` is a Buffer, `inputEncoding` is ignored. Can be called repeatedly. |
 | digest([encoding]) | string \| Buffer | Returns the digest. If `encoding` is set, returns a string; otherwise a Buffer. |
 
@@ -49,7 +49,7 @@ HMAC object produced by [Crypto](#crypto).
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | update(data[, inputEncoding]) | [hmac](#hmac) | Update the HMAC with `data`. Same rules as `hash.update`. |
 | digest([encoding]) | string \| Buffer | Returns the HMAC digest. |
 
@@ -67,7 +67,7 @@ console.log(buf.toString()) // buffer
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | from(array) | Buffer | New Buffer from byte values 0–255. |
 | from(string[, encoding]) | Buffer | Buffer from a string. |
 | from(arrayBuffer[, byteOffset[, length]]) | Buffer | Buffer from part of an `ArrayBuffer`. |
@@ -85,7 +85,7 @@ Time.sleep(1000) // sleep one second
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | sleep(millisecond) | undefined | Sleep for the given number of milliseconds. |
 
 ## Arguments
@@ -103,5 +103,5 @@ Arguments.get('foo.bar', 'defaults')
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | get(string[, defaults]) | any | Read a nested custom parameter using dot paths (e.g. `a.b` reads `obj.a.b`). If the key is missing, returns `defaults` when provided, otherwise `undefined`. |

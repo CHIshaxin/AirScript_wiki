@@ -17,7 +17,7 @@ var views = Application.View.GetViews({ SheetId: 1 })
 
 ## View の作成
 
-View の型: [多次元テーブルの View 型](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-2-multidimensional-table-view-types)。
+View の型: [多次元テーブルの View 型](Appendix.md#appendix-2-multidimensional-table-view-types)。
 
 ```javascript
 var view = Application.View.CreateView({

@@ -14,21 +14,21 @@ FormatConditions コレクションは、Excel の条件付き書式を制御し
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Count](#count) | 数値 | FormatConditions コレクション内のオブジェクト数 |
 
 #### メソッド
 
 | メソッド | 戻り値 | 説明 |
-|---|---|---|
-| [Add()](#add) | [FormatCondition](/docs/ja-JP/api/excel/workbook/FormatCondition.html) | コレクションに条件付き書式を追加する |
+| --- | --- | --- |
+| [Add()](#add) | [FormatCondition](FormatCondition.md) | コレクションに条件付き書式を追加する |
 | [AddAboveAverage()](#addaboveaverage) | AboveAverage | 範囲の新しい AboveAverage ルール |
 | [AddIconSetCondition()](#addiconsetcondition) | IconSetCondition | 範囲のアイコンセット条件付き書式 |
 | [AddColorScale()](#addcolorscale) | ColorScale | 相対的なセル値をグラデーションで示すカラースケール ルール |
 | [AddTop10()](#addtop10) | Top10 | 順位または割合で最大・最小の値を強調表示する |
 | [AddUniqueValues()](#adduniquevalues) | UniqueValues | 範囲の新しい UniqueValues ルール |
 | [Delete()](#delete) | undefined | 範囲の条件付き書式を削除する |
-| [Item()](#item) | [FormatCondition](/docs/ja-JP/api/excel/workbook/FormatCondition.html) | コレクションから 1 つの条件付き書式を返す |
+| [Item()](#item) | [FormatCondition](FormatCondition.md) | コレクションから 1 つの条件付き書式を返す |
 
 ## Count
 
@@ -54,15 +54,15 @@ console.log(count)
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Type | [XlFormatConditionType](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditiontype) | null | はい | 条件の種類 |
-| Operator | [XlFormatConditionOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlformatconditionoperator) | null | はい | 演算子。Type が `xlExpression` のときは無視される |
+| --- | --- | --- | --- | --- |
+| Type | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | はい | 条件の種類 |
+| Operator | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | null | はい | 演算子。Type が `xlExpression` のときは無視される |
 | Formula1 | 文字列 | null | はい | 値または式: 定数、文字列、参照、または式 |
 | Formula2 | 文字列 | null | いいえ | Operator が `xlBetween` または `xlNotBetween` のときの第 2 要素（それ以外では無視）。定数、文字列、参照、または式 |
 
 #### 戻り値
 
-[FormatCondition](/docs/ja-JP/api/excel/workbook/FormatCondition.html) - 追加された条件付き書式
+[FormatCondition](FormatCondition.md) - 追加された条件付き書式
 
 #### 例
 
@@ -153,7 +153,7 @@ for (let i = 0; i < targetColumns.length; ++i) {
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | ColorScaleType | 数値 | null | はい | 2 は 2 色スケール、3 は 3 色スケール |
 
 #### 戻り値
@@ -254,12 +254,12 @@ const formatCondition1 = targetFormulaRange.FormatConditions.Delete()
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | 数値 / 文字列 | null | はい | コレクション内の 1 始まりのインデックス |
 
 #### 戻り値
 
-[FormatCondition](/docs/ja-JP/api/excel/workbook/FormatCondition.html) オブジェクト
+[FormatCondition](FormatCondition.md) オブジェクト
 
 #### 例
 

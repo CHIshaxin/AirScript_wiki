@@ -38,27 +38,27 @@ function printText(r) {
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Count](#count) | Number | Number of cells in the range |
 | [Text](#text) | String | [Read-only] Formatted text as shown in the cell |
 | [Value/Value2](#value) | any/[][]any | Get or set cell values |
-| [FormatConditions](#formatConditions) | [FormatConditions](/docs/en-US/api/excel/workbook/FormatConditions.html) | Conditional formatting for the range |
+| [FormatConditions](#formatConditions) | [FormatConditions](FormatConditions.md) | Conditional formatting for the range |
 | [Formula](#formula) | String | A1-style formula (implicit intersection) |
 | [FormulaArray](#formulaarray) | String | Get or set an array formula for the range |
 | [NumberFormat](#numberformat) | String | Get or set number format |
 | [Hidden](#hidden) | Boolean | Hide or show row or column |
 | [Interior.Color](#interior-color) | String | Interior color as hexadecimal RGB |
-| [HorizontalAlignment](#horizontalalignment) | [Enum.XlHAlign](/docs/en-US/api/excel/workbook/Enum.html#xlhalign) | Horizontal alignment |
-| [VerticalAlignment](#verticalalignment) | [Enum.XlVAlign](/docs/en-US/api/excel/workbook/Enum.html#xlvalign) | Vertical alignment |
+| [HorizontalAlignment](#horizontalalignment) | [Enum.XlHAlign](Enum.md#xlhalign) | Horizontal alignment |
+| [VerticalAlignment](#verticalalignment) | [Enum.XlVAlign](Enum.md#xlvalign) | Vertical alignment |
 | [WrapText](#wraptext) | Boolean | Wrap text in the range |
 | [IndentLevel](#indentlevel) | Number | Cell indent |
-| [MergeArea](#mergearea) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Merged area containing the cell |
+| [MergeArea](#mergearea) | [Range](Range.md) | Merged area containing the cell |
 | [MergeCells](#mergecells) | Boolean | Whether the range contains merged cells |
-| [Cells](#cells) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Cells in the range |
-| [Rows](#rows) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Rows in the range |
-| [Columns](#columns) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Columns in the range |
-| [EntireRow](#entirerow) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Full rows that intersect the range |
-| [EntireColumn](#entirecolumn) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Full columns that intersect the range |
+| [Cells](#cells) | [Range](Range.md) | Cells in the range |
+| [Rows](#rows) | [Range](Range.md) | Rows in the range |
+| [Columns](#columns) | [Range](Range.md) | Columns in the range |
+| [EntireRow](#entirerow) | [Range](Range.md) | Full rows that intersect the range |
+| [EntireColumn](#entirecolumn) | [Range](Range.md) | Full columns that intersect the range |
 | [Row](#row) | Number | First row number in the range |
 | [RowEnd](#rowend) | Number | Last row number in the range |
 | [Column](#column) | Number | First column index in the range |
@@ -68,10 +68,10 @@ function printText(r) {
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [BorderAround()](#borderaround) | undefined | Add a border; set Color, LineStyle, and Weight on the new border |
 | [Each()](#each) | undefined | Iterate each cell in the range |
-| [Item()](#item) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Cell at the given index within the range |
+| [Item()](#item) | [Range](Range.md) | Cell at the given index within the range |
 | [Offset()](#offset) | undefined | Offset the range by rows and columns |
 | [Replace()](#replace) | undefined | Replace text inside cells |
 | [Delete()](#delete) | undefined | Delete cells, rows, or columns |
@@ -185,7 +185,7 @@ The FormatConditions collection controls conditional formatting in Excel.
 
 #### Data type
 
-[FormatConditions](/docs/en-US/api/excel/workbook/FormatConditions.html) - FormatConditions collection
+[FormatConditions](FormatConditions.md) - FormatConditions collection
 
 #### Example
 
@@ -331,11 +331,11 @@ interior.Color = RGB(255, 0, 0)
 
 ## HorizontalAlignment
 
-Horizontal alignment; use values from [Enum.XlHAlign](/docs/en-US/api/excel/workbook/Enum.html#xlhalign).
+Horizontal alignment; use values from [Enum.XlHAlign](Enum.md#xlhalign).
 
 #### Data type
 
-[Enum.XlHAlign](/docs/en-US/api/excel/workbook/Enum.html#xlhalign) - Horizontal alignment
+[Enum.XlHAlign](Enum.md#xlhalign) - Horizontal alignment
 
 #### Example
 
@@ -355,11 +355,11 @@ console.log(range.HorizontalAlignment) // -4108 (center)
 
 ## VerticalAlignment
 
-Vertical alignment; use values from [Enum.XlVAlign](/docs/en-US/api/excel/workbook/Enum.html#xlvalign).
+Vertical alignment; use values from [Enum.XlVAlign](Enum.md#xlvalign).
 
 #### Data type
 
-[Enum.XlVAlign](/docs/en-US/api/excel/workbook/Enum.html#xlvalign) - Vertical alignment
+[Enum.XlVAlign](Enum.md#xlvalign) - Vertical alignment
 
 #### Example
 
@@ -457,7 +457,7 @@ All cells in the range as a Range (use Range members).
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Cells collection in the range
+[Range](Range.md) - Cells collection in the range
 
 #### Example
 
@@ -479,7 +479,7 @@ Rows in the range as a Range.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Rows in the range
+[Range](Range.md) - Rows in the range
 
 #### Example
 
@@ -497,7 +497,7 @@ Columns in the range as a Range.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Columns in the range
+[Range](Range.md) - Columns in the range
 
 #### Example
 
@@ -515,7 +515,7 @@ Full rows intersecting the range
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Full rows intersecting the range
+[Range](Range.md) - Full rows intersecting the range
 
 #### Example
 
@@ -533,7 +533,7 @@ Full columns intersecting the range
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Full columns intersecting the range
+[Range](Range.md) - Full columns intersecting the range
 
 #### Example
 
@@ -615,7 +615,7 @@ Borders collection
 
 #### Data type
 
-[Border](/docs/en-US/api/excel/workbook/Border.html) collection - Border objects
+[Border](Border.md) collection - Border objects
 
 #### Example
 
@@ -634,8 +634,8 @@ A single border in the Borders collection for a range or style
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Index | Enum |  | Yes | Border to retrieve; see [Enum.XlBordersIndex](/docs/en-US/api/excel/workbook/Enum.html#xlbordersindex) |
+| --- | --- | --- | --- | --- |
+| Index | Enum |  | Yes | Border to retrieve; see [Enum.XlBordersIndex](Enum.md#xlbordersindex) |
 
 #### Return type
 
@@ -658,9 +658,9 @@ Add a border and set Color, LineStyle, and Weight.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| LineStyle | [LineStyle](/docs/en-US/api/excel/workbook/Enum.html#xllinestyle) | null | No | XlLineStyle constant for line style |
-| BorderWeight | [BorderWeight](/docs/en-US/api/excel/workbook/Enum.html#xlborderweight) | null | No | Border weight |
+| --- | --- | --- | --- | --- |
+| LineStyle | [LineStyle](Enum.md#xllinestyle) | null | No | XlLineStyle constant for line style |
+| BorderWeight | [BorderWeight](Enum.md#xlborderweight) | null | No | Border weight |
 | Color | string | null | No | Border color as RGB, e.g. `#ff0000` |
 
 #### Example
@@ -679,7 +679,7 @@ Iterate each cell; avoid inserting or deleting rows/columns during iteration for
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | Yes | Like Array.prototype.forEach |
 
 #### Example
@@ -702,7 +702,7 @@ Returns a Range for the given index within the range.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowIndex | Number |  | Yes | Relative row within the range if ColumnIndex is provided; otherwise index into the subrange |
 | ColumnIndex | Number |  | No | Relative column within the range |
 
@@ -726,7 +726,7 @@ Offsets the range and returns the new Range.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowOffset | Number | 0 | No | Row offset; positive down, negative up |
 | ColumnOffset | Number | 0 | No | Column offset; positive right, negative left |
 
@@ -750,7 +750,7 @@ Replace text inside cells.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | What | String | (none) | Yes | Text to find |
 | Replacement | String | (none) | Yes | Replacement text |
 | LookAt | Enum | xlWhole | No | XlLookAt: xlWhole or xlPart; see examples |
@@ -825,7 +825,7 @@ Insert a picture into a cell.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | dataURL | string | undefined | Yes | Image as a Base64 data URL string |
 
 #### Example
@@ -846,7 +846,7 @@ Merge cells.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Across | boolean | false | Yes | If true, merge each row in the range into one cell across columns. |
 
 #### Example
@@ -864,7 +864,7 @@ Unmerge cells.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | CancelCenter | Boolean | false | No | Whether to unmerge and clear center alignment |
 
 #### Example
@@ -883,10 +883,10 @@ Address string using macro reference style.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowAbsolute | Boolean |  | No | If true, return the row part as an absolute reference. Default true |
 | ColumnAbsolute | Boolean |  | No | If true, return the column part as an absolute reference. Default true |
-| ReferenceStyle | Enum |  | No | Reference style; default xlA1. See [Enum.XlReferenceStyle](/docs/en-US/api/excel/workbook/Enum.html#xlreferencestyle) |
+| ReferenceStyle | Enum |  | No | Reference style; default xlA1. See [Enum.XlReferenceStyle](Enum.md#xlreferencestyle) |
 | External | Boolean |  | No | If true, return an external reference; if false, local reference. Default false |
 | RelativeTo | Range |  | No | When both row and column are relative and style is xlR1C1, anchor range for the relative address |
 
@@ -918,7 +918,7 @@ Add a comment.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Text | String |  | No | Comment text |
 
 #### Example
@@ -1000,7 +1000,7 @@ Whether two ranges overlap.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Range | Range |  | Yes | Another Range object |
 
 #### Return type
@@ -1044,8 +1044,8 @@ Cut the range to a destination.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Destination | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Destination range |
+| --- | --- | --- | --- | --- |
+| Destination | [Range](Range.md) | null | Yes | Destination range |
 
 #### Return type
 
@@ -1071,9 +1071,9 @@ Use [Copy()](#copy) first, then PasteSpecial() with the desired options.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Paste | [XlPasteType](/docs/en-US/api/excel/workbook/Enum.html#xlpastetype) | xlPasteAll | No | Paste type, e.g. xlPasteAll or xlPasteValues |
-| Operation | [XlPasteSpecialOperation](/docs/en-US/api/excel/workbook/Enum.html#xlpastespecialoperation) | xlPasteSpecialOperationNone | No | Paste operation, e.g. xlPasteSpecialOperationAdd |
+| --- | --- | --- | --- | --- |
+| Paste | [XlPasteType](Enum.md#xlpastetype) | xlPasteAll | No | Paste type, e.g. xlPasteAll or xlPasteValues |
+| Operation | [XlPasteSpecialOperation](Enum.md#xlpastespecialoperation) | xlPasteSpecialOperationNone | No | Paste operation, e.g. xlPasteSpecialOperationAdd |
 | SkipBlanks | Boolean | false | No | If true, skip blank cells from the source when pasting |
 | Transpose | Boolean | false | No | If true, transpose rows and columns when pasting |
 
@@ -1193,9 +1193,9 @@ AutoFill the destination range.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Destination | Range |  | No | Destination range; must include the source range |
-| Type | Enum | Enum.XlAutoFillType.xlFillDefault | No | Fill type; see [Enum.XlAutoFillType](/docs/en-US/api/excel/workbook/Enum.html#xlautofilltype) |
+| Type | Enum | Enum.XlAutoFillType.xlFillDefault | No | Fill type; see [Enum.XlAutoFillType](Enum.md#xlautofilltype) |
 
 #### Example
 
@@ -1219,10 +1219,10 @@ Apply AutoFilter to the range.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Field | Variant | null | No | Field index from the left of the list; the leftmost field is 1 |
 | Criteria1 | Variant | null | No | First criterion. Use "=" for blanks, "<>" for non-blanks. If omitted, all values. For xlTop10Items, specifies the count. |
-| Operator | [XlAutoFilterOperator](/docs/en-US/api/excel/workbook/Enum.html#xlautofilteroperator) | null | No | Filter operator; see [XlAutoFilterOperator](/docs/en-US/api/excel/workbook/Enum.html#xlautofilteroperator) |
+| Operator | [XlAutoFilterOperator](Enum.md#xlautofilteroperator) | null | No | Filter operator; see [XlAutoFilterOperator](Enum.md#xlautofilteroperator) |
 | Criteria2 | Variant | null | No | Second criterion with Criteria1 and Operator. Also used for date filters as Array(Level, Date) where Level is 0-2 (year, month, day) and Date is a valid date in the range |
 | SubField | Variant | null | No | Field within a structured type (e.g. Population or Volume). Omit for display values |
 | VisibleDropDown | Variant | true | No | If `true`, show the AutoFilter dropdown for the field; if `false`, hide it. Default `true` |
@@ -1505,10 +1505,10 @@ Split cell text into multiple columns using delimiters.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Destination | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | No | Destination for split columns; if omitted, overwrites source |
-| DataType | [XlTextParsingType](/docs/en-US/api/excel/workbook/Enum.html#xltextparsingtype) | xlDelimited | No | Text format to parse |
-| TextQualifier | [XlTextQualifier](/docs/en-US/api/excel/workbook/Enum.html#xltextqualifier) | xlTextQualifierDoubleQuote | No | Text delimiter |
+| --- | --- | --- | --- | --- |
+| Destination | [Range](Range.md) | null | No | Destination for split columns; if omitted, overwrites source |
+| DataType | [XlTextParsingType](Enum.md#xltextparsingtype) | xlDelimited | No | Text format to parse |
+| TextQualifier | [XlTextQualifier](Enum.md#xltextqualifier) | xlTextQualifierDoubleQuote | No | Text delimiter |
 | ConsecutiveDelimiter | Boolean | false | No | Treat consecutive delimiters as one |
 | Tab | Boolean | false | No | Use tab as delimiter |
 | Semicolon | Boolean | false | No | Use semicolon as delimiter |
@@ -1525,7 +1525,7 @@ Tip
 
 About `FieldInfo`: this array describes how each column is parsed, depending on `DataType`.
 
-For delimited data, each entry is a two-element array: column index (1-based) and a [XlColumnDataType](/docs/en-US/api/excel/workbook/Enum.html#xlcolumndatatype) value. Columns without an entry use General. For fixed-width data, the first element is the starting character index.
+For delimited data, each entry is a two-element array: column index (1-based) and a [XlColumnDataType](Enum.md#xlcolumndatatype) value. Columns without an entry use General. For fixed-width data, the first element is the starting character index.
 
 #### Return type
 

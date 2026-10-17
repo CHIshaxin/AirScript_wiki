@@ -38,27 +38,27 @@ function printText(r) {
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Count](#count) | Number | 区域中单元格的数量 |
 | [Text](#text) | String | 【只读】读取单元格格式化文本 |
 | [Value/Value2](#value) | any/[][]any | 读写单元格中的值 |
-| [FormatConditions](#formatConditions) | [FormatConditions](/docs/api/excel/workbook/FormatConditions.html) | 用于控制 Excel 中的条件格式 |
+| [FormatConditions](#formatConditions) | [FormatConditions](FormatConditions.md) | 用于控制 Excel 中的条件格式 |
 | [Formula](#formula) | String | 以 A1 样式表示法表示的对象的隐式交叉的公式 |
 | [FormulaArray](#formulaarray) | String | 返回或设置区域的数组公式 |
 | [NumberFormat](#numberformat) | String | 获取或者设置区域的数字格式 |
 | [Hidden](#hidden) | Boolean | 行或者列的隐藏 |
 | [Interior.Color](#interior-color) | String | 内部颜色的十六进制 RGB |
-| [HorizontalAlignment](#horizontalalignment) | [Enum.XlHAlign](/docs/api/excel/workbook/Enum.html#xlhalign) | 设置区域的水平对齐方式 |
-| [VerticalAlignment](#verticalalignment) | [Enum.XlVAlign](/docs/api/excel/workbook/Enum.html#xlvalign) | 设置区域的垂直对齐方式 |
+| [HorizontalAlignment](#horizontalalignment) | [Enum.XlHAlign](Enum.md#xlhalign) | 设置区域的水平对齐方式 |
+| [VerticalAlignment](#verticalalignment) | [Enum.XlVAlign](Enum.md#xlvalign) | 设置区域的垂直对齐方式 |
 | [WrapText](#wraptext) | Boolean | 获取或者设置区域自动换行 |
 | [IndentLevel](#indentlevel) | Number | 单元格缩进 |
-| [MergeArea](#mergearea) | [Range](/docs/api/excel/workbook/Range.html) | 单元格的合并区域 |
+| [MergeArea](#mergearea) | [Range](Range.md) | 单元格的合并区域 |
 | [MergeCells](#mergecells) | Boolean | 区域内是否存在合并的单元格 |
-| [Cells](#cells) | [Range](/docs/api/excel/workbook/Range.html) | 区域中的单元格集合 |
-| [Rows](#rows) | [Range](/docs/api/excel/workbook/Range.html) | 区域中的行集合 |
-| [Columns](#columns) | [Range](/docs/api/excel/workbook/Range.html) | 区域中的列集合 |
-| [EntireRow](#entirerow) | [Range](/docs/api/excel/workbook/Range.html) | 区域所在行的整行 |
-| [EntireColumn](#entirecolumn) | [Range](/docs/api/excel/workbook/Range.html) | 区域所在列的整列 |
+| [Cells](#cells) | [Range](Range.md) | 区域中的单元格集合 |
+| [Rows](#rows) | [Range](Range.md) | 区域中的行集合 |
+| [Columns](#columns) | [Range](Range.md) | 区域中的列集合 |
+| [EntireRow](#entirerow) | [Range](Range.md) | 区域所在行的整行 |
+| [EntireColumn](#entirecolumn) | [Range](Range.md) | 区域所在列的整列 |
 | [Row](#row) | Number | 区域中第一行的行号 |
 | [RowEnd](#rowend) | Number | 区域中最后一行的行号 |
 | [Column](#column) | Number | 区域中第一列的列号 |
@@ -68,10 +68,10 @@ function printText(r) {
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [BorderAround()](#borderaround) | undefined | 向区域添加边框，并为新边框设置 Border 对象的 Color、LineStyle 和 Weight 属性 |
 | [Each()](#each) | undefined | 遍历选区所选单元格 |
-| [Item()](#item) | [Range](/docs/api/excel/workbook/Range.html) | 表示区域中指定的位置 |
+| [Item()](#item) | [Range](Range.md) | 表示区域中指定的位置 |
 | [Offset()](#offset) | undefined | 对指定区域进行迁移操作 |
 | [Replace()](#replace) | undefined | 对单元格内文本执行替换操作 |
 | [Delete()](#delete) | undefined | 单元格、行、列的删除 |
@@ -185,7 +185,7 @@ FormatConditions 集合对象用于控制 Excel 中的条件格式。条件格�
 
 #### 数据类型
 
-[FormatConditions](/docs/api/excel/workbook/FormatConditions.html) - FormatConditions 集合对象
+[FormatConditions](FormatConditions.md) - FormatConditions 集合对象
 
 #### 示例
 
@@ -331,11 +331,11 @@ interior.Color = RGB(255, 0, 0)
 
 ## HorizontalAlignment
 
-设置区域的水平对齐方式，设置的值可以是 [Enum.XlHAlign](/docs/api/excel/workbook/Enum.html#xlhalign) 中的值。
+设置区域的水平对齐方式，设置的值可以是 [Enum.XlHAlign](Enum.md#xlhalign) 中的值。
 
 #### 数据类型
 
-[Enum.XlHAlign](/docs/api/excel/workbook/Enum.html#xlhalign) - 区域的水平对齐方式
+[Enum.XlHAlign](Enum.md#xlhalign) - 区域的水平对齐方式
 
 #### 示例
 
@@ -355,11 +355,11 @@ console.log(range.HorizontalAlignment) // -4108，即居中枚举值
 
 ## VerticalAlignment
 
-设置区域的垂直对齐方式，设置的值可以是 [Enum.XlVAlign](/docs/api/excel/workbook/Enum.html#xlvalign) 中的值。
+设置区域的垂直对齐方式，设置的值可以是 [Enum.XlVAlign](Enum.md#xlvalign) 中的值。
 
 #### 数据类型
 
-[Enum.XlVAlign](/docs/api/excel/workbook/Enum.html#xlvalign) - 区域的垂直对齐方式
+[Enum.XlVAlign](Enum.md#xlvalign) - 区域的垂直对齐方式
 
 #### 示例
 
@@ -453,11 +453,11 @@ console.log(range.MergeCells) // true
 
 ## Cells
 
-区域中的所有单元格集合，返回一个 [Range](/docs/api/excel/workbook/Range.html) 对象（可使用 Range 相关的属性、方法）
+区域中的所有单元格集合，返回一个 [Range](Range.md) 对象（可使用 Range 相关的属性、方法）
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 区域中的所有单元格集合
+[Range](Range.md) - 区域中的所有单元格集合
 
 #### 示例
 
@@ -479,7 +479,7 @@ console.log(cell.Address()) // $A$1
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 区域中的所有行集合
+[Range](Range.md) - 区域中的所有行集合
 
 #### 示例
 
@@ -493,11 +493,11 @@ console.log(Application.Range('A1:D4').Rows.Count) // 4
 
 ## Columns
 
-区域中的所有列，返回一个 [Range](/docs/api/excel/workbook/Range.html) 对象（可使用 Range 相关的属性、方法）
+区域中的所有列，返回一个 [Range](Range.md) 对象（可使用 Range 相关的属性、方法）
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 区域中的所有列集合
+[Range](Range.md) - 区域中的所有列集合
 
 #### 示例
 
@@ -515,7 +515,7 @@ console.log(Application.Range('A1:D4').Columns.Count) // 4
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 包含指定区域的整行
+[Range](Range.md) - 包含指定区域的整行
 
 #### 示例
 
@@ -533,7 +533,7 @@ console.log(Application.Range('A1:B2').EntireRow.Count) // 32768
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 包含指定区域的整列
+[Range](Range.md) - 包含指定区域的整列
 
 #### 示例
 
@@ -615,7 +615,7 @@ console.log(range.ColumnEnd) // 4
 
 #### 数据类型
 
-[Border](/docs/api/excel/workbook/Border.html)集合对象 - 边框对象集合
+[Border](Border.md)集合对象 - 边框对象集合
 
 #### 示例
 
@@ -634,8 +634,8 @@ borders.Item(Application.Enum.XlBordersIndex.xlDiagonalDown).Color = '#FF0000'
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Index | Enum |  | 是 | 指定要检索的边框，参考 [Enum.XlBordersIndex](/docs/api/excel/workbook/Enum.html#xlbordersindex) |
+| --- | --- | --- | --- | --- |
+| Index | Enum |  | 是 | 指定要检索的边框，参考 [Enum.XlBordersIndex](Enum.md#xlbordersindex) |
 
 #### 返回类型
 
@@ -658,9 +658,9 @@ borders.Item(Application.Enum.XlBordersIndex.xlDiagonalDown).Color = '#FFFF00'
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| LineStyle | [LineStyle](/docs/api/excel/workbook/Enum.html#xllinestyle) | null | 否 | XlLineStyle 的常量之一，指定边框的线条样式 |
-| BorderWeight | [BorderWeight](/docs/api/excel/workbook/Enum.html#xlborderweight) | null | 否 | 边框粗细 |
+| --- | --- | --- | --- | --- |
+| LineStyle | [LineStyle](Enum.md#xllinestyle) | null | 否 | XlLineStyle 的常量之一，指定边框的线条样式 |
+| BorderWeight | [BorderWeight](Enum.md#xlborderweight) | null | 否 | 边框粗细 |
 | Color | string | null | 否 | 边框颜色，以 RGB 值表示，例如`#ff0000` |
 
 #### 示例
@@ -679,7 +679,7 @@ Range('C3').BorderAround(xlDashDot, xlHairline, '#00ff00')
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | 是 | 类似 JS 数组的 forEach |
 
 #### 示例
@@ -702,7 +702,7 @@ range.Each(function (item) {
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowIndex | Number |  | 是 | 如果提供了第二个参数，则返回的单元格的相对行号。如果未提供第二个参数，则为要返回的子范围的索引 |
 | ColumnIndex | Number |  | 否 | 要返回的单元格的相对列号 |
 
@@ -726,7 +726,7 @@ console.log(range.Item(2, 2).Address()) //$B$2
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowOffset | Number | 0 | 否 | 区域偏移的行数：可以是正值、负值或零。正值表示向下偏移，负值表示向上偏移 |
 | ColumnOffset | Number | 0 | 否 | 区域偏移的列数：可以是正值、负值或零。正值表示向右偏移，负值表示向左偏移 |
 
@@ -750,7 +750,7 @@ console.log(newRange.Address()) //$C$3:$F$4
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | What | String | 无 | 是 | 希望搜索的字符串。 |
 | Replacement | String | 无 | 是 | 替换字符串。 |
 | LookAt | Enum | xlWhole | 否 | 可以是下列 XlLookAt 常量之一：xlWhole 或 xlPart。详情看示例 |
@@ -825,7 +825,7 @@ range.EntireColumn.Insert()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | dataURL | string | undefined | 是 | base64 字符串形式的图片 |
 
 #### 示例
@@ -846,7 +846,7 @@ range.InsertImage(
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Across | boolean | false | 是 | 如果设置为 true，则将指定区域中每一行的单元格合并为一个单独的合并单元格 |
 
 #### 示例
@@ -864,7 +864,7 @@ range.Merge()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | CancelCenter | Boolean | false | 否 | 是否合并居中 |
 
 #### 示例
@@ -883,10 +883,10 @@ range.UnMerge()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RowAbsolute | Boolean |  | 否 | 若为 true，以绝对引用的形式返回引用的行部分。默认值为 true |
 | ColumnAbsolute | Boolean |  | 否 | 若为 true，以绝对引用的形式返回引用的列部分。默认值为 true |
-| ReferenceStyle | Enum |  | 否 | 引用样式。默认值为 xlA1，更多可看 [Enum.XlReferenceStyle](/docs/api/excel/workbook/Enum.html#xlreferencestyle) |
+| ReferenceStyle | Enum |  | 否 | 引用样式。默认值为 xlA1，更多可看 [Enum.XlReferenceStyle](Enum.md#xlreferencestyle) |
 | External | Boolean |  | 否 | 若为 true，返回外部引用。若为 false，返回本地引用。默认值为 false |
 | RelativeTo | Range |  | 否 | 如果 RowAbsolute 和 ColumnAbsolute 为 false，且 ReferenceStyle 是 xlR1C1，则必须为相对引用包含一个起点。此参数是一个定义起点的 Range 对象 |
 
@@ -918,7 +918,7 @@ console.log(
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Text | String |  | 否 | 评论文本 |
 
 #### 示例
@@ -1000,7 +1000,7 @@ range.ClearHyperlinks()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Range | Range |  | 是 | Range 对象，另一块区域 |
 
 #### 返回类型
@@ -1044,8 +1044,8 @@ Range('B1').PasteSpecial()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Destination | [Range](/docs/api/excel/workbook/Range.html) | null | 是 | 目标区域对象 |
+| --- | --- | --- | --- | --- |
+| Destination | [Range](Range.md) | null | 是 | 目标区域对象 |
 
 #### 返回类型
 
@@ -1071,9 +1071,9 @@ Range('A1').Cut(Range('A2'))
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Paste | [XlPasteType](/docs/api/excel/workbook/Enum.html#xlpastetype) | xlPasteAll | 否 | 粘贴类型，例如 xlPasteAll 或 xlPasteValues |
-| Operation | [XlPasteSpecialOperation](/docs/api/excel/workbook/Enum.html#xlpastespecialoperation) | xlPasteSpecialOperationNone | 否 | 粘贴操作，例如 xlPasteSpecialOperationAdd |
+| --- | --- | --- | --- | --- |
+| Paste | [XlPasteType](Enum.md#xlpastetype) | xlPasteAll | 否 | 粘贴类型，例如 xlPasteAll 或 xlPasteValues |
+| Operation | [XlPasteSpecialOperation](Enum.md#xlpastespecialoperation) | xlPasteSpecialOperationNone | 否 | 粘贴操作，例如 xlPasteSpecialOperationAdd |
 | SkipBlanks | Boolean | false | 否 | 如果为 true，则不将剪贴板上区域中的空白单元格粘贴到目标区域中 |
 | Transpose | Boolean | false | 否 | 如果为 true ，则表示在粘贴区域时转置行和列 |
 
@@ -1193,9 +1193,9 @@ console.log(range.Value) //[["A2","B2"],["A2","B2"]]
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Destination | Range |  | 否 | 目标区域。目标区域必须包含源区域 |
-| Type | Enum | Enum.XlAutoFillType.xlFillDefault | 否 | 填充类型，详细可见 [Enum.XlAutoFillType](/docs/api/excel/workbook/Enum.html#xlautofilltype) |
+| Type | Enum | Enum.XlAutoFillType.xlFillDefault | 否 | 填充类型，详细可见 [Enum.XlAutoFillType](Enum.md#xlautofilltype) |
 
 #### 示例
 
@@ -1219,10 +1219,10 @@ fillRange.Each(item => {
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Field | Variant | null | 否 | 指定想要基于筛选的字段的整数偏移量。从列表的左侧算起，最左侧的字段是 1 |
 | Criteria1 | Variant | null | 否 | 指定判断条件。使用“=”查找空字段，或者使用“<>”查找非空字段。如果忽略该参数，那么判断是全部。如果参数 Operator 是 xlTop10Items，那么参数 Criterial1 指定项目的数量 |
-| Operator | [XlAutoFilterOperator](/docs/api/excel/workbook/Enum.html#xlautofilteroperator) | null | 否 | 指定筛选的类型，通过枚举值[XlAutoFilterOperator](/docs/api/excel/workbook/Enum.html#xlautofilteroperator)来指定 |
+| Operator | [XlAutoFilterOperator](Enum.md#xlautofilteroperator) | null | 否 | 指定筛选的类型，通过枚举值[XlAutoFilterOperator](Enum.md#xlautofilteroperator)来指定 |
 | Criteria2 | Variant | null | 否 | 第二个判断条件。与 Criteria1 和 Operator 一起组合成复合筛选条件。 也用作日期字段的单一条件（按日、月或年筛选）。 后跟一个数组，该数组用于描述筛选 Array(Level, Date)。 其中，Level 为 0-2（年、月、日），Date 为筛选期内的一个有效日期 |
 | SubField | Variant | null | 否 | 对其应用条件的数据类型中的字段（例如，来自地理位置的“人口”字段或来自股票的“交易量”字段）。省略此值目标是“（显示值）” |
 | VisibleDropDown | Variant | true | 否 | 如果为 `true`，则显示已筛选字段的 `AutoFilter` 下拉箭头。 如果为 `false`，则隐藏已筛选字段的 `AutoFilter` 下拉箭头。 默认情况下为 `true` |
@@ -1509,10 +1509,10 @@ console.log(selection.Address())
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Destination | [Range](/docs/api/excel/workbook/Range.html) | null | 否 | 指定要将结果插入到的单元格或单元格区域。如果省略此参数，则结果将覆盖源单元格 |
-| DataType | [XlTextParsingType](/docs/api/excel/workbook/Enum.html#xltextparsingtype) | xlDelimited | 否 | 指定将被拆分到多列中的文本的格式 |
-| TextQualifier | [XlTextQualifier](/docs/api/excel/workbook/Enum.html#xltextqualifier) | xlTextQualifierDoubleQuote | 否 | 指定文本分隔符 |
+| --- | --- | --- | --- | --- |
+| Destination | [Range](Range.md) | null | 否 | 指定要将结果插入到的单元格或单元格区域。如果省略此参数，则结果将覆盖源单元格 |
+| DataType | [XlTextParsingType](Enum.md#xltextparsingtype) | xlDelimited | 否 | 指定将被拆分到多列中的文本的格式 |
+| TextQualifier | [XlTextQualifier](Enum.md#xltextqualifier) | xlTextQualifierDoubleQuote | 否 | 指定文本分隔符 |
 | ConsecutiveDelimiter | Boolean | false | 否 | 指定是否将连续分隔符视为一个分隔符 |
 | Tab | Boolean | false | 否 | 指定是否使用制表符作为分隔符 |
 | Semicolon | Boolean | false | 否 | 指定是否使用分号作为分隔符 |
@@ -1529,7 +1529,7 @@ console.log(selection.Address())
 
 关于`FieldInfo`字段：此数组包含各个数据列解析信息，具体取决于`DataType`的值。
 
-分隔数据时，此参数是一个双元素数组，每个双元素数组指定特定列的转换选项。 第一个元素是列号 (从 1 开始的) ，第二个元素是指定应该如何解析列，取值是 [XlColumnDataType](/docs/api/excel/workbook/Enum.html#xlcolumndatatype) 枚举。如果输入数据中特定列不存在给定列说明符，则使用 “常规 ”设置分析该列。如果源数据具有固定宽度的列，则每个双元素数组的第一个元素将列的起始字符位置指定为整数。
+分隔数据时，此参数是一个双元素数组，每个双元素数组指定特定列的转换选项。 第一个元素是列号 (从 1 开始的) ，第二个元素是指定应该如何解析列，取值是 [XlColumnDataType](Enum.md#xlcolumndatatype) 枚举。如果输入数据中特定列不存在给定列说明符，则使用 “常规 ”设置分析该列。如果源数据具有固定宽度的列，则每个双元素数组的第一个元素将列的起始字符位置指定为整数。
 
 #### 返回类型
 

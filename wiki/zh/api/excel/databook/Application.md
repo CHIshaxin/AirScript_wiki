@@ -18,22 +18,22 @@ Application 对象的具体属性和方法请参阅下方的列表。
 #### 属性列表
 
 | 属性 | 数据类型 | 简介 |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/api/excel/databook/Sheet.html) | 当前的活动工作表/数据表 |
-| [Sheets](#sheets) | [Sheets](/docs/api/excel/databook/Application.html#sheets) | 当前文件的所有工作表/数据表 |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | 当前的活动工作表/数据表 |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | 当前文件的所有工作表/数据表 |
 | [FileInfo](#fileinfo) | Object | 当前文档的信息 |
 | [UserInfo](#userinfo) | Object | 当前文档的用户信息 |
-| [Enum](#enum) | [Enum](/docs/api/excel/databook/Enum.html) | 所有的枚举类型 |
+| [Enum](#enum) | [Enum](Enum.md) | 所有的枚举类型 |
 
 #### 方法列表
 
 | 方法 | 返回类型 | 简介 |
-|---|---|---|
-| [Sheets(name)](#sheets-1) | [Sheet](/docs/api/excel/databook/Sheet.html) | 获取名称为 name 的工作表/数据表 |
+| --- | --- | --- |
+| [Sheets(name)](#sheets-1) | [Sheet](Sheet.md) | 获取名称为 name 的工作表/数据表 |
 
 ## ActiveSheet
 
-当前活动工作表/数据表，可以通过 Sheet.Activate()来切换活动工作表/数据表。该属性返回[Sheet](/docs/api/excel/databook/Sheet.html#ActiveSheet)对象,能利用该属性操作当前活动工作表/数据表。
+当前活动工作表/数据表，可以通过 Sheet.Activate()来切换活动工作表/数据表。该属性返回[Sheet](Sheet.md#ActiveSheet)对象,能利用该属性操作当前活动工作表/数据表。
 
 运行脚本的环境是独立在服务器的，因此脚本运行环境的 ActiveSheet 与用户环境的 ActiveSheet 不一定相同。
 
@@ -45,7 +45,7 @@ Application 对象的具体属性和方法请参阅下方的列表。
 
 #### 数据类型
 
-[Sheet](/docs/api/excel/databook/Sheet.html) - 当前活动工作表/数据表
+[Sheet](Sheet.md) - 当前活动工作表/数据表
 
 #### 示例
 
@@ -59,11 +59,11 @@ console.log(Application.ActiveSheet.Name) // 数据表2
 
 ## Sheets
 
-获取当前文件能操作的所有 Sheet，返回一个[Sheets](/docs/api/excel/databook/Application.html#sheets)对象。
+获取当前文件能操作的所有 Sheet，返回一个[Sheets](Application.md#sheets)对象。
 
 #### 数据类型
 
-[Sheets](/docs/api/excel/databook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### 示例
 
@@ -126,11 +126,11 @@ Application.Sheets.Add(
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | String/Number |  | 否 | After 空时，必填，为当前已有单元格的 index 或者名称，新建的工作表将置于此工作表之前 |
 | After | String/Number |  | 否 | Before 空时，必填，为当前已有单元格的 index 或者名称，新建的工作表将置于此工作表之后 |
 | Count | Number | 1 | 否 | 要添加的工作表数。默认值为选定工作表的数量 |
-| Type | Enum |  | 否 | 指定工作表类型，详细可见 [Enum.XlSheetType](/docs/api/excel/databook/Enum.html#xlsheettype) |
+| Type | Enum |  | 否 | 指定工作表类型，详细可见 [Enum.XlSheetType](Enum.md#xlsheettype) |
 | Name | Name |  | 否 | 指定工作表名称 |
 
 #### 示例
@@ -153,12 +153,12 @@ Application.Sheets.Add(
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | 是 | 所选的 sheet 的名称/索引 |
 
 #### 返回类型
 
-[Sheet](/docs/api/excel/databook/Sheet.html) - 对应名称的工作表/数据表
+[Sheet](Sheet.md) - 对应名称的工作表/数据表
 
 #### 示例
 
@@ -177,7 +177,7 @@ Application.Sheets.Item(1).Activate()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | 是 | 类似 JS 数组的 forEach |
 
 #### 示例
@@ -198,7 +198,7 @@ Application.Sheets.Each(function (item) {
 Object - 当前文件的信息
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 文件 ID |
 | name | string | 文件名 |
 | officeType | string | 文档类型 |
@@ -210,7 +210,7 @@ Object - 当前文件的信息
 #### CreatorObject 对象信息
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 创建者 ID |
 | name | string | 创建者名称 |
 | avatar_url | string | 创建者头像 |
@@ -238,7 +238,7 @@ console.log(Application.FileInfo)
 Object- 当前文件的用户信息
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 用户 ID |
 | name | string | 用户名称 |
 
@@ -257,7 +257,7 @@ console.log(Application.UserInfo)
 
 #### 数据类型
 
-[Enum](/docs/api/excel/databook/Enum.html) - 所有的枚举类型
+[Enum](Enum.md) - 所有的枚举类型
 
 #### 示例
 
@@ -269,17 +269,17 @@ console.log(Application.Enum.XlSheetType)
 
 ## Sheets()
 
-作为函数使用，代替 Sheets.Item()，返回一个[Sheet](/docs/api/excel/databook/Sheet.html)对象。
+作为函数使用，代替 Sheets.Item()，返回一个[Sheet](Sheet.md)对象。
 
 #### 参数
 
 | 名称 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | 是 | 工作表/数据表的名称 |
 
 #### 返回类型
 
-[Sheet](/docs/api/excel/databook/Sheet.html) - 对应名称的工作表/数据表 Sheet 对象
+[Sheet](Sheet.md) - 对应名称的工作表/数据表 Sheet 对象
 
 #### 示例
 

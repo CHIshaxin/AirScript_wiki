@@ -20,8 +20,8 @@ var sheets = Application.Sheet.GetSheets()
 パラメーター
 
 - 少なくとも 1 つの Sheet と 1 つの Field を渡してください。
-- フィールドの形式: [多次元テーブルのフィールド型](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types)。
-- View の型: [多次元テーブルの View 型](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-2-multidimensional-table-view-types)。
+- フィールドの形式: [多次元テーブルのフィールド型](Appendix.md#appendix-1-multidimensional-table-field-types)。
+- View の型: [多次元テーブルの View 型](Appendix.md#appendix-2-multidimensional-table-view-types)。
 
 ```javascript
 var sheet = Application.Sheet.CreateSheet({

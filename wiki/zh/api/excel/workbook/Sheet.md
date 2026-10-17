@@ -14,14 +14,14 @@ Sheet 对象的具体属性和方法请参阅下方的列表。
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Id](#id) | String | 该工作表的 Id |
 | [Name](#name) | String | 该工作表的名称 |
 | [Index](#index) | Number | 该工作表在所有工作表的索引值 |
-| [Cells](#cells) | [Range](/docs/api/excel/workbook/Range.html) | 该工作表上所有单元格的集合 |
-| [Columns](#columns) | [Range](/docs/api/excel/workbook/Range.html) | 该工作表上所有列的集合 |
-| [Rows](#rows) | [Range](/docs/api/excel/workbook/Range.html) | 该工作表上所有行的集合 |
-| [UsedRange](#usedrange) | [Range](/docs/api/excel/workbook/Range.html) | 该工作表的使用范围 |
+| [Cells](#cells) | [Range](Range.md) | 该工作表上所有单元格的集合 |
+| [Columns](#columns) | [Range](Range.md) | 该工作表上所有列的集合 |
+| [Rows](#rows) | [Range](Range.md) | 该工作表上所有行的集合 |
+| [UsedRange](#usedrange) | [Range](Range.md) | 该工作表的使用范围 |
 | [Visible](#visible) | Boolean | 该工作表是否可见 |
 | [Type](#type) | String | 该工作表的类型 |
 | [Hyperlinks](#hyperlinks) | [Hyperlinks](#hyperlinks) | 该工作表上所有超链接的集合 |
@@ -31,9 +31,9 @@ Sheet 对象的具体属性和方法请参阅下方的列表。
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
-| [Range()](#range) | [Range](/docs/api/excel/workbook/Range.html) | 一个单元格或单元格区域 |
-| [Cells()](#cells-1) | [Range](/docs/api/excel/workbook/Range.html) | 该工作表上的某个单元格 |
+| --- | --- | --- |
+| [Range()](#range) | [Range](Range.md) | 一个单元格或单元格区域 |
+| [Cells()](#cells-1) | [Range](Range.md) | 该工作表上的某个单元格 |
 | [Activate()](#activate) | undefined | 切换(激活)工作表 |
 | [Move()](#move) | undefined | 移动工作表 |
 | [Delete()](#delete) | undefined | 删除工作表 |
@@ -95,7 +95,7 @@ console.log(sheet.Index) // 1
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 工作表上所有单元格的集合
+[Range](Range.md) - 工作表上所有单元格的集合
 
 #### 示例
 
@@ -107,11 +107,11 @@ console.log(sheet.Cells.Address()) // $A$1:$XFD$1048576
 
 ## Columns
 
-工作表上的所有列，返回的是一个 Range 对象，可参考使用 [Range](/docs/api/excel/workbook/Range.html)
+工作表上的所有列，返回的是一个 Range 对象，可参考使用 [Range](Range.md)
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 工作表上的所有列
+[Range](Range.md) - 工作表上的所有列
 
 #### 示例
 
@@ -127,7 +127,7 @@ console.log(sheet.Columns.Count) //16384
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 工作表上的所有列
+[Range](Range.md) - 工作表上的所有列
 
 #### 示例
 
@@ -142,7 +142,7 @@ console.log(sheet.Rows.Count) // 1048576
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 工作表里的一个单元格或单元格区域
+[Range](Range.md) - 工作表里的一个单元格或单元格区域
 
 #### 示例
 
@@ -181,7 +181,7 @@ sheet.Visible = true
 
 #### 数据类型
 
-[Enum.XlSheetType](/docs/api/excel/workbook/Enum.html#xlsheettype) - 工作表的类型
+[Enum.XlSheetType](Enum.md#xlsheettype) - 工作表的类型
 
 #### 示例
 
@@ -197,7 +197,7 @@ console.log(sheet.Type) //xlWorksheet
 
 #### 数据类型
 
-[AutoFilter](/docs/api/excel/workbook/AutoFilter.html) - 自动筛选对象
+[AutoFilter](AutoFilter.md) - 自动筛选对象
 
 #### 示例
 
@@ -250,12 +250,12 @@ console.log(hyperlinks.Count) // 3
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number |  | 是 | 从 1 开始 |
 
 #### 返回类型
 
-[Hyperlink](/docs/api/excel/workbook/Hyperlink.html) - 超链接对象
+[Hyperlink](Hyperlink.md) - 超链接对象
 
 #### 示例
 
@@ -311,12 +311,12 @@ console.log(imgUrl) // https://imageUrl 如果没有图片则返回undefined
 #### 参数
 
 | 参数名 | 数据类型 | 默认值 | 可选 | 简介 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | Number |  | 否 | 对象的索引 |
 
 #### 返回类型
 
-[Shape](/docs/api/excel/workbook/Shape.html) - 绘图层的一个对象,自选图形、任意多边形、OLE 对象或图片
+[Shape](Shape.md) - 绘图层的一个对象,自选图形、任意多边形、OLE 对象或图片
 
 #### 示例
 
@@ -350,9 +350,9 @@ console.log(shapes.Count)
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Style | String |  | 否 | 指定图表样式 |
-| XlChartType | Enum |  | 否 | 指定图表类型，对应 [Enum.XlChartType](/docs/api/excel/workbook/Enum.html#xlcharttype) |
+| XlChartType | Enum |  | 否 | 指定图表类型，对应 [Enum.XlChartType](Enum.md#xlcharttype) |
 | Left | Number |  | 否 | 指定新建图表的左边距，单位 px |
 | Top | Number |  | 否 | 指定新建图表的上边距，单位 px |
 | Width | Number |  | 否 | 指定新建图表的宽度，单位 px |
@@ -360,7 +360,7 @@ console.log(shapes.Count)
 
 #### 返回类型
 
-[Shape](/docs/api/excel/workbook/Shape.html) - 添加的图形对象
+[Shape](Shape.md) - 添加的图形对象
 
 #### 示例
 
@@ -379,7 +379,7 @@ shapes.AddChart2(340, chartEnum, 0, 0, 300, 300)
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | FileName | String |  | 是 | 要插入的图片（可以是图片数据的 Base64 字符串或者 URL 图片地址） |
 | LinkToFile | Enum |  | 是 | 暂不支持，请填`0` |
 | SaveWithDocument | Enum |  | 是 | 暂不支持，请填`0` |
@@ -412,7 +412,7 @@ shapes.AddPicture({
 
 #### 数据类型
 
-[Sort](/docs/api/excel/workbook/Sort.html) - 排序对象
+[Sort](Sort.md) - 排序对象
 
 #### 示例
 
@@ -451,7 +451,7 @@ sort.Apply()
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 工作表里的一个单元格或单元格区域
+[Range](Range.md) - 工作表里的一个单元格或单元格区域
 
 #### 示例
 
@@ -470,7 +470,7 @@ sheet.Range('D2').Value = 'this is D2'
 
 #### 返回类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 工作表上的某个单元格
+[Range](Range.md) - 工作表上的某个单元格
 
 #### 示例
 
@@ -503,7 +503,7 @@ Application.Range('A1').Value = 'foo'
 **两个参数互斥**
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | number | null | 否 | 验将放置移动的工作表之前的工作表 ID。如果指定 After ，则不能指定 Before。 |
 | After | number | null | 否 | 将放置移动的工作表后的工作表 ID。如果指定 Before ，则不能指定 After |
 

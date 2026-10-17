@@ -29,7 +29,7 @@ console.log(data.note, data.content)
 ### メソッド一覧
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [fetch(url[, options])](#fetch) | [Response](#response) | カスタムタイプのネットワークリクエストを送信 |
 | [get(url[, options])](#get) | [Response](#response) | GET タイプのネットワークリクエストを送信 |
 | [delete(url[, options])](#delete) | [Response](#response) | DELETE タイプのネットワークリクエストを送信 |
@@ -57,14 +57,14 @@ console.log(resp.text())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | アクセスするネットワークアドレス。ポート番号を含まないドメイン名のみ許可 |
 | options | [RequestOption](#requestoption) | undefined | いいえ | リクエストの任意パラメーターを指定できる JavaScript オブジェクト。下記参照。 |
 
 ### RequestOption
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [method](#method) | string | GET | いいえ | ネットワークリクエストのメソッド。`GET`、`POST`、`PUT`、`DELETE` など。 |
 | [timeout](#timeout) | number | 10000 | いいえ | ネットワークリクエストのタイムアウト（ミリ秒）。範囲は 0～60000。範囲外は既定で 10 秒。 |
 | [headers](#headers) | object | undefined | いいえ | ネットワークリクエストのヘッダー。`cookie` など。 |
@@ -88,14 +88,14 @@ console.log(resp.json())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | アクセスするネットワークアドレス。ポート番号を含まないドメイン名のみ許可 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | リクエストの任意パラメーターを指定できる JavaScript オブジェクト。下記参照。 |
 
 ### MethodRequestOption
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [timeout](#timeout) | number | 10000 | いいえ | ネットワークリクエストのタイムアウト（ミリ秒）。範囲は 0～60000。範囲外は既定で 10 秒。 |
 | [headers](#headers) | object | undefined | いいえ | ネットワークリクエストのヘッダー。`cookie` など。 |
 
@@ -117,7 +117,7 @@ console.log(resp.status)
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | アクセスするネットワークアドレス。ポート番号を含まないドメイン名のみ許可 |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | リクエストの任意パラメーターを指定できる JavaScript オブジェクト。下記参照。 |
 
@@ -151,7 +151,7 @@ console.log(resp.json())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | アクセスするネットワークアドレス。ポート番号を含まないドメイン名のみ許可 |
 | body | string\| object |  | はい | リクエストボディ |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | リクエストの任意パラメーターを指定できる JavaScript オブジェクト。下記参照。 |
@@ -177,7 +177,7 @@ console.log(resp.json())
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | はい | アクセスするネットワークアドレス。ポート番号を含まないドメイン名のみ許可 |
 | body | string\| object |  | はい | リクエストボディ |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | いいえ | リクエストの任意パラメーターを指定できる JavaScript オブジェクト。下記参照。 |
@@ -204,7 +204,7 @@ console.log(resp.status) // [...]
 ### メソッド一覧
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [status](#status) | number | レスポンスの HTTP ステータスコードを取得 |
 | [statusText](#statustext) | string | レスポンスの HTTP ステータスを取得 |
 | [headers](#status) | object | レスポンスヘッダーを取得 |

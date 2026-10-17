@@ -133,7 +133,10 @@ def rewrite_links(markdown: str, known_out: dict[str, str], base_dir: str = "",
         if not path:
             return match.group(0)
         if path.startswith("/"):
-            normalised = posixpath.normpath(path.lstrip("/"))
+            p = path
+            if p.startswith(site.BASE):      # 站内绝对链接形如 /docs/api/…
+                p = p[len(site.BASE):]
+            normalised = posixpath.normpath(p.lstrip("/"))
         else:
             normalised = posixpath.normpath(posixpath.join(base_dir, path))
         for candidate in (normalised + ".md",
@@ -143,6 +146,10 @@ def rewrite_links(markdown: str, known_out: dict[str, str], base_dir: str = "",
             if target:
                 tail = f"#{anchor}" if anchor else ""
                 return f"]({posixpath.relpath(target, current_dir)}{tail})"
+        if url.startswith("/"):
+            # 站内页面未镜像：改成官方绝对 URL，点击可回到原站
+            tail = f"#{anchor}" if anchor else ""
+            return f"]({site.SITE_ORIGIN}{url}{tail})"
         return match.group(0)
 
     return _LINK_RE.sub(repl, markdown)
@@ -174,6 +181,7 @@ def crawl(refs: list[PageRef], fetcher, st: State, out_root: Path,
         if unchanged and not force and not dry_run:
             stats.skipped += 1
             st.clear_failure(ref.key)
+            st.unresolved.pop(ref.key, None)
             continue
 
         # 1) 路径：curated 页直接有；api-ref 页需要还原
@@ -186,8 +194,8 @@ def crawl(refs: list[PageRef], fetcher, st: State, out_root: Path,
             stats.unresolved += 1
             st.unresolved[ref.key] = "path not resolved"
             continue
-        if real_path in (st.unresolved.get(ref.key), None):
-            st.unresolved.pop(ref.key, None)
+        # 已解析成功的页面，从 unresolved 名单里移除
+        st.unresolved.pop(ref.key, None)
 
         # 3) 拉取并转换
         status, body = fetcher.get(site.asset_url(real_path, ref.hash))

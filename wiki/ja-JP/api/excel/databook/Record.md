@@ -12,7 +12,7 @@ hash: Fab9nyDQ
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [GetRecords()](#getrecords) | Array | 複数行を取得 |
 | [GetRecord()](#getrecord) | Object | 1 行を取得 |
 | [DeleteRecords()](#deleterecords) | Array | 行を削除 |
@@ -31,29 +31,29 @@ hash: Fab9nyDQ
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | ViewId | String |  | いいえ | 指定した場合、ユーザーが View で見ているのと同じ状態でその View から Record を読み取ります。未指定の場合は Sheet から |
 | PageSize | Number | 100 | いいえ | ページング時の本クエリの先頭 Record（含む）。空の場合は先頭の Record から。**現在の上限: 1000** |
 | Offset | Number |  | いいえ | ページング用。レスポンスに次ページ先頭行の `offset` が含まれる場合があります。最終ページ、または `maxRecords` に達した場合は省略 |
 | MaxRecords | Number |  | いいえ | 一致する行の先頭から最大 `maxRecords` 行のみ返します。省略時は一致するすべての行 |
-| Fields | Array |  | いいえ | [Field の種類](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
-| Filter | Object |  | いいえ | [付録 3](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-3-filter-criteria) を参照 |
+| Fields | Array |  | いいえ | [Field の種類](Appendix.md#appendix-1-datasheet-field-types) |
+| Filter | Object |  | いいえ | [付録 3](Appendix.md#appendix-3-filter-criteria) を参照 |
 
 ### 戻り値
 
 オブジェクト – Record のバッチ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | Offset | String | ページング用カーソル。次のリクエストに渡して続きを取得 |
 | Records | Array[Object] | Record |
 
 #### Record の形状
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID |
-| Fields | Object | Field ID または名前による値。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| Fields | Object | Field ID または名前による値。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 例
 
@@ -86,7 +86,7 @@ fetchAllRecords()
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RecordId | String |  | はい | Record ID |
 
 ### 戻り値
@@ -94,9 +94,9 @@ fetchAllRecords()
 オブジェクト – 1 件の Record
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID |
-| Fields | Object | Field の値。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| Fields | Object | Field の値。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 例
 
@@ -114,7 +114,7 @@ console.log(record)
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RecordIds | Array |  | はい | 削除する ID |
 
 ### 戻り値
@@ -122,7 +122,7 @@ console.log(record)
 Array – ID ごとの結果
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID |
 | deleted | Boolean | 削除できた場合は `true`、できなかった場合は `false` |
 
@@ -144,24 +144,24 @@ console.log(resutlt)
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Records | Array[Object] |  | はい | 更新する Record |
 
 #### Record エントリ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID |
-| Fields | Object | Field ID または名前による値。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| Fields | Object | Field ID または名前による値。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 戻り値
 
 Array – 更新後の Record
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID |
-| Fields | Object | 更新後の値。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| Fields | Object | 更新後の値。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 例
 
@@ -190,24 +190,24 @@ const records = sheet.Record.UpdateRecords({
 ### パラメーター
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Records | Array[Object] |  | はい | 新しい Record |
 
 #### Record エントリ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID（該当する場合） |
-| Fields | Object | 値。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| Fields | Object | 値。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 戻り値
 
 Array – 作成された Record
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Record ID |
-| Fields | Object | 値。形式は [付録](/docs/ja-JP/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) を参照 |
+| Fields | Object | 値。形式は [付録](Appendix.md#appendix-1-datasheet-field-types) を参照 |
 
 ### 例
 
@@ -259,7 +259,7 @@ const records2 = sheet.Record.CreateRecords({
 `Attachment` を少なくとも渡すか、`UploadId` と `Source` の両方を渡してください。
 
 | プロパティ | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Attachment | String |  | いいえ | 添付ファイルのトークン文字列 |
 | UploadId | String |  | いいえ | アップロードファイル ID |
 | Source | String |  | いいえ | `"upload_ks3"`（ローカルアップロード）または `"cloud"`（クラウドアップロード）である必要あり |

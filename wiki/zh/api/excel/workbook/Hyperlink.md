@@ -14,7 +14,7 @@ Hyperlink 对象的具体属性和方法请参阅下方的列表。
 ### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Address](#address) | String | 超链接转跳的地址 |
 | [TextToDisplay](#texttodisplay) | String | 超链接显示的文本 |
 

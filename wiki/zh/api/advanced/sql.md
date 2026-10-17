@@ -45,14 +45,14 @@ connection.close()
 ### 属性列表
 
 | 属性名 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | [Drivers](#drivers) | object | 数据库连接驱动集 |
 | [Types](#types) | object | 数据库字段类型集（仅适用于 SQL server） |
 
 ### 方法列表
 
 | 方法 | 返回类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | [connect()](#connect) | Connection | 连接目标数据库 |
 | [Connection.queryAll()](#queryall) | Result | 执行 SQL 语句 |
 | [Connection.close()](#close) | null | 关闭数据库连接 |
@@ -64,7 +64,7 @@ connection.close()
 ### 属性说明
 
 | 属性名 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | MySQL | string | MySQL 数据库驱动 |
 | PostgreSQL | string | PostgreSQL 数据库驱动 |
 | SQLServer | string | SQL server 数据库驱动 |
@@ -78,7 +78,7 @@ connection.close()
 #### Exact numerics
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | Bit | Boolean |
 | TinyInt | Number |
 | SmallInt | Number |
@@ -92,14 +92,14 @@ connection.close()
 #### Approximate numerics
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | Float | Number |
 | Real | Number |
 
 #### Date and Time
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | SmallDateTime | Date |
 | DateTime | Date |
 | DateTime2 | Date |
@@ -110,7 +110,7 @@ connection.close()
 #### Character Strings
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | Char | String |
 | VarChar | String |
 | Text | String |
@@ -118,7 +118,7 @@ connection.close()
 #### Unicode Strings
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | NChar | String |
 | NVarChar | String |
 | NText | String |
@@ -126,7 +126,7 @@ connection.close()
 #### Binary Strings
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | Binary | Buffer |
 | VarBinary | Buffer |
 | Image | Buffer |
@@ -134,7 +134,7 @@ connection.close()
 #### Other Data Types
 
 | 属性名 | 对应 Javascript 类型 |
-|---|---|
+| --- | --- |
 | Null | null |
 | TVP | Object |
 | UDT | Buffer |
@@ -149,14 +149,14 @@ connection.close()
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | driver | [Driver](#drivers) | null | 是 | 指定目标数据库驱动 |
 | options | [Options](#options) | null | 是 | 数据库连接信息 |
 
 ### options 对象说明
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | host | string | null | 是 | 目标数据库主机 |
 | port | number | null | 是 | 目标数据库端口 |
 | username | string | null | 是 | 目标数据库连接用户名 |
@@ -187,14 +187,14 @@ const connection = SQL.connect(SQL.Drivers.MySQL, {
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | sql | string | null | 是 | 要执行的 sql 语句 |
 | InsertData | any[] \| [InsertData](#insertdata) | null | 否 | 需要插入的数据 |
 
 ### InsertData 对象说明
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | name | string | null | 是 | 插入数据的字段名 |
 | value | string | null | 是 | 插入数据的值 |
 | type | [Types](#types) | null | 否 | 插入数据的类型，SQL server 数据库必须传递该类型 |
@@ -204,7 +204,7 @@ const connection = SQL.connect(SQL.Drivers.MySQL, {
 Result 对象，包含受影响的行数以及返回的数据行
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | affectRowCount | number | 执行 sql 语句后受到影响的行数 |
 | rows | Array | 数据行，根据实际查询的表的数据结构返回 |
 

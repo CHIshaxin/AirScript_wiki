@@ -29,7 +29,7 @@ console.log(data.note, data.content)
 ### Methods
 
 | Method | Return type | Summary |
-|---|---|---|
+| --- | --- | --- |
 | [fetch(url[, options])](#fetch) | [Response](#response) | Sends a custom HTTP request |
 | [get(url[, options])](#get) | [Response](#response) | Sends a GET request |
 | [delete(url[, options])](#delete) | [Response](#response) | Sends a DELETE request |
@@ -57,14 +57,14 @@ console.log(resp.text())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | URL to request; only hostnames without port numbers are allowed |
 | options | [RequestOption](#requestoption) | undefined | false | Optional request settings object, as described below. |
 
 ### RequestOption
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [method](#method) | string | GET | false | HTTP method, e.g. `GET`, `POST`, `PUT`, `DELETE`, etc. |
 | [timeout](#timeout) | number | 10000 | false | Timeout in milliseconds (ms), range 0~60000; values outside the range fall back to 10 seconds. |
 | [headers](#headers) | object | undefined | false | Request headers, e.g. `cookie`. |
@@ -88,14 +88,14 @@ console.log(resp.json())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | URL to request; only hostnames without port numbers are allowed |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | Optional settings object for this request, as described below. |
 
 ### MethodRequestOption
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [timeout](#timeout) | number | 10000 | false | Timeout in milliseconds (ms), range 0~60000; values outside the range fall back to 10 seconds. |
 | [headers](#headers) | object | undefined | false | Request headers, e.g. `cookie`. |
 
@@ -117,7 +117,7 @@ console.log(resp.status)
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | URL to request; only hostnames without port numbers are allowed |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | Optional settings object for this request, as described below. |
 
@@ -151,7 +151,7 @@ console.log(resp.json())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | URL to request; only hostnames without port numbers are allowed |
 | body | string\| object |  | true | Request body |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | Optional settings object for this request, as described below. |
@@ -177,7 +177,7 @@ console.log(resp.json())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | URL to request; only hostnames without port numbers are allowed |
 | body | string\| object |  | true | Request body |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | Optional settings object for this request, as described below. |
@@ -204,7 +204,7 @@ console.log(resp.status) // [...]
 ### Methods
 
 | Method | Return type | Summary |
-|---|---|---|
+| --- | --- | --- |
 | [status](#status) | number | HTTP status code |
 | [statusText](#statustext) | string | HTTP status text |
 | [headers](#status) | object | Response headers |

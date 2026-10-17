@@ -17,7 +17,7 @@ var views = Application.View.GetViews({ SheetId: 1 })
 
 ## Create a view
 
-View types: [Multidimensional Table view types](/docs/en-US/api/dbsheet/Appendix.html#appendix-2-multidimensional-table-view-types).
+View types: [Multidimensional Table view types](Appendix.md#appendix-2-multidimensional-table-view-types).
 
 ```javascript
 var view = Application.View.CreateView({

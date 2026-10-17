@@ -12,7 +12,7 @@ hash: Co_yzPsi
 ### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [GetFields()](#getfields) | Array | 获取字段信息 |
 | [CreateFields()](#createfields) | Array | 创建字段 |
 | [DeleteFields()](#deletefields) | Array | 删除字段 |
@@ -27,10 +27,10 @@ hash: Co_yzPsi
 Array - 返回获取的表所有字段信息
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 字段Id |
 | name | String | 字段名称 |
-| type | String | [字段类型](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| type | String | [字段类型](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 
@@ -53,18 +53,18 @@ console.log(fields)
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Fields | Array |  | 是 | 表的字段信息,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| --- | --- | --- | --- | --- |
+| Fields | Array |  | 是 | 表的字段信息,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 返回值
 
 Array - 返回已创建的表所有字段信息
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 字段Id |
 | name | String | 字段名称 |
-| type | String | [字段类型](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| type | String | [字段类型](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 
@@ -87,7 +87,7 @@ console.log(field)
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Fields | Array |  | 是 | 需要删除的字段Id |
 
 ### 返回值
@@ -95,7 +95,7 @@ console.log(field)
 Array - 返回删除的表id以及删除是否成功信息
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 字段Id |
 | deleted | Boolean | 是否删除成功 |
 
@@ -117,18 +117,18 @@ console.log(resutlt)
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Fields | Array |  | 是 | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| --- | --- | --- | --- | --- |
+| Fields | Array |  | 是 | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 返回值
 
 Array - 返回已更新的字段信息
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 字段Id |
 | name | String | 字段名称 |
-| type | String | [字段类型](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| type | String | [字段类型](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 

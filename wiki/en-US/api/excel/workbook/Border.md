@@ -14,16 +14,16 @@ See the lists below for the Border object's properties and methods.
 ### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Color](#color) | Number | Border color |
-| [Weight](#weight) | [Enum.XlBorderWeight](/docs/en-US/api/excel/workbook/Enum.html#xlborderweight) | Border weight |
-| [LineStyle](#linestyle) | [Enum.XlLineStyle](/docs/en-US/api/excel/workbook/Enum.html#xllinestyle) | Border line style |
+| [Weight](#weight) | [Enum.XlBorderWeight](Enum.md#xlborderweight) | Border weight |
+| [LineStyle](#linestyle) | [Enum.XlLineStyle](Enum.md#xllinestyle) | Border line style |
 
 ## Color
 
 Border color.
 
-Note: When reading border color, specify a concrete border; [Enum.XlBordersIndex](/docs/en-US/api/excel/workbook/Enum.html#xlbordersindex) must not be xlAll, xlOutside, xlInside, etc.
+Note: When reading border color, specify a concrete border; [Enum.XlBordersIndex](Enum.md#xlbordersindex) must not be xlAll, xlOutside, xlInside, etc.
 
 ### Data type
 
@@ -52,7 +52,7 @@ Border weight.
 
 ### Data type
 
-[Enum.XlBorderWeight](/docs/en-US/api/excel/workbook/Enum.html#xlborderweight) - Border weight
+[Enum.XlBorderWeight](Enum.md#xlborderweight) - Border weight
 
 Write-only; cannot be read.
 
@@ -75,7 +75,7 @@ Border line style.
 
 ### Data type
 
-[Enum.XlLineStyle](/docs/en-US/api/excel/workbook/Enum.html#xllinestyle) - Line style
+[Enum.XlLineStyle](Enum.md#xllinestyle) - Line style
 
 Write-only; cannot be read.
 

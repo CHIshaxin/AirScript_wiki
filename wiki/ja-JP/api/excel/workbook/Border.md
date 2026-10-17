@@ -14,16 +14,16 @@ Border オブジェクトのプロパティとメソッドは、以下の一覧�
 ### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Color](#color) | 数値 | 罫線の色 |
-| [Weight](#weight) | [Enum.XlBorderWeight](/docs/ja-JP/api/excel/workbook/Enum.html#xlborderweight) | 罫線の太さ |
-| [LineStyle](#linestyle) | [Enum.XlLineStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xllinestyle) | 罫線の線種 |
+| [Weight](#weight) | [Enum.XlBorderWeight](Enum.md#xlborderweight) | 罫線の太さ |
+| [LineStyle](#linestyle) | [Enum.XlLineStyle](Enum.md#xllinestyle) | 罫線の線種 |
 
 ## Color
 
 罫線の色です。
 
-備考: 罫線の色を読み取るときは、具体的な罫線を指定してください。[Enum.XlBordersIndex](/docs/ja-JP/api/excel/workbook/Enum.html#xlbordersindex) に xlAll、xlOutside、xlInside などを指定してはいけません。
+備考: 罫線の色を読み取るときは、具体的な罫線を指定してください。[Enum.XlBordersIndex](Enum.md#xlbordersindex) に xlAll、xlOutside、xlInside などを指定してはいけません。
 
 ### データ型
 
@@ -52,7 +52,7 @@ border.Color = '#00FF00'
 
 ### データ型
 
-[Enum.XlBorderWeight](/docs/ja-JP/api/excel/workbook/Enum.html#xlborderweight) - 罫線の太さ
+[Enum.XlBorderWeight](Enum.md#xlborderweight) - 罫線の太さ
 
 書き込み専用。読み取れません。
 
@@ -75,7 +75,7 @@ border.Weight = Application.Enum.XlBorderWeight.xlThick
 
 ### データ型
 
-[Enum.XlLineStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xllinestyle) - 線種
+[Enum.XlLineStyle](Enum.md#xllinestyle) - 線種
 
 書き込み専用。読み取れません。
 

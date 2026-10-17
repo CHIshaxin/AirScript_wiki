@@ -14,14 +14,14 @@ Chart オブジェクトのプロパティとメソッドは、以下の一覧�
 ### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [ChartTitle.Text](#charttitle-text) | 文字列 | グラフのタイトル |
 | [HasTitle](#hastitle) | 真偽値 | グラフタイトルを表示するかどうか |
 
 ### メソッド
 
 | メソッド | 戻り値 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [SetSourceData()](#setsourcedata) | undefined | グラフのソースデータ範囲を設定する |
 
 ## ChartTitle.Text
@@ -69,9 +69,9 @@ shape.Chart.HasTitle = false
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Source | Range |  | はい | ソースデータを含む Range |
-| PlotBy | Enum |  | いいえ | 行または列でプロットするか。[Enum.XlRowCol](/docs/ja-JP/api/excel/workbook/Enum.html#xlrowcol) を参照。例: xlColumns または xlRows |
+| PlotBy | Enum |  | いいえ | 行または列でプロットするか。[Enum.XlRowCol](Enum.md#xlrowcol) を参照。例: xlColumns または xlRows |
 
 ### 例
 

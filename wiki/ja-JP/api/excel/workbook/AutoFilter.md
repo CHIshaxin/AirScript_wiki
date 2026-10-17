@@ -11,25 +11,25 @@ hash: CD1JXhU3
 
 フィルターにより、表示する行と隠す行を制御できます。1 列以上の列の値が条件を満たさない場合、行全体が非表示になります。数値や文字列でフィルターしたり、セルの塗りつぶしやフォントの色でフィルターしたりできます。
 
-開発者は [Filters](#filters) プロパティで列フィルターのコレクションを取得します。[Range](#range) プロパティは、フィルターがかかった領域全体の [Range](/docs/ja-JP/api/excel/workbook/Range.html) を返します。
+開発者は [Filters](#filters) プロパティで列フィルターのコレクションを取得します。[Range](#range) プロパティは、フィルターがかかった領域全体の [Range](Range.md) を返します。
 
 注意
 
-シートに AutoFilter を作成するには、ツールバーで手動によりフィルターを有効にするか、[Range](/docs/ja-JP/api/excel/workbook/Range.html) の [AutoFilter](/docs/ja-JP/api/excel/workbook/Range.html#autofilter) メソッドで領域の AutoFilter を有効にしてください。
+シートに AutoFilter を作成するには、ツールバーで手動によりフィルターを有効にするか、[Range](Range.md) の [AutoFilter](Range.md#autofilter) メソッドで領域の AutoFilter を有効にしてください。
 
 AutoFilter オブジェクトのプロパティとメソッドは、以下の一覧を参照してください。
 
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Filters](#filters) | [Filters](#filters) | フィルターのコレクション |
-| [Range](#range) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | フィルター後の範囲 |
+| [Range](#range) | [Range](Range.md) | フィルター後の範囲 |
 
 #### メソッド
 
 | メソッド | 戻り値 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [ApplyFilter()](#applyfilter) | undefined | 現在のシートにフィルターを適用する |
 | [ShowAllData()](#showalldata) | undefined | すべてのフィルターを解除し、すべての行を表示する |
 
@@ -138,7 +138,7 @@ console.log(count)
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | 関数 | null | はい | JS の配列 forEach に類似 |
 
 #### 例
@@ -158,7 +158,7 @@ filters.Each(item => {
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | 文字列/数値 |  | はい | シート上の物理列インデックス。1 から始まる |
 
 #### 戻り値
@@ -175,11 +175,11 @@ const filter1 = filters.Item(1)
 
 ### Item().Operator
 
-フィルター演算子。[XlAutoFilterOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlautofilteroperator) を参照してください。
+フィルター演算子。[XlAutoFilterOperator](Enum.md#xlautofilteroperator) を参照してください。
 
 #### データ型
 
-[XlAutoFilterOperator](/docs/ja-JP/api/excel/workbook/Enum.html#xlautofilteroperator) - XlAutoFilterOperator 列挙型
+[XlAutoFilterOperator](Enum.md#xlautofilteroperator) - XlAutoFilterOperator 列挙型
 
 #### 例
 
@@ -211,7 +211,7 @@ AutoFilter が覆う領域です。
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - Range オブジェクト
+[Range](Range.md) - Range オブジェクト
 
 #### 例
 

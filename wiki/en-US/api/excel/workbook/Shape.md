@@ -14,16 +14,16 @@ See the lists below for the Shape object's properties and methods.
 ### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [ID](#id) | String | Shape ID |
 | [Name](#name) | String | Shape name |
 | [Title](#title) | String | Shape title |
-| [Chart](#chart) | [Chart](/docs/en-US/api/excel/workbook/Chart.html) | Chart object |
+| [Chart](#chart) | [Chart](Chart.md) | Chart object |
 
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Delete](#delete) | undefined | Deletes the shape |
 
 ## ID
@@ -87,7 +87,7 @@ Single chart object.
 
 ### Data type
 
-[Chart](/docs/en-US/api/excel/workbook/Chart.html) - Chart object
+[Chart](Chart.md) - Chart object
 
 ### Example
 

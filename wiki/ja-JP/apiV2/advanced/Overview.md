@@ -47,6 +47,6 @@ AirScript は、開発者がスクリプトを書くときの高度なサービ�
 悪意のあるスクリプトをユーザーに提供しないよう、セキュリティ上の理由から高度なサービスにはいくつかの制限があります。
 
 - 高度なサービスを過度に頻繁に使用する場合。スクリプトは明確なエラーを投げ、異常な呼び出しをユーザーに通知します。
-- [HTTP](/docs/ja-JP/apiV2/advanced/HTTP.html) サービス使用時、IP アドレス宛のリクエストは禁止され、ポートを指定したリクエストも禁止されます。
-- [HTTP](/docs/ja-JP/apiV2/advanced/HTTP.html) サービス使用時、受信できるメッセージボディの最大サイズは 2M です。2M を超えるとエラーが発生します。
-- [KSDrive.openFile](/docs/ja-JP/apiV2/advanced/KSDrive.html#openfile-openinfo) で取得した [File](/docs/ja-JP/apiV2/advanced/KSDrive.html#file) オブジェクトを閉じていない場合、 再度 [KSDrive.openFile](/docs/ja-JP/apiV2/advanced/KSDrive.html#openfile-openinfo) を呼ぶとエラーが発生します。
+- [HTTP](HTTP.md) サービス使用時、IP アドレス宛のリクエストは禁止され、ポートを指定したリクエストも禁止されます。
+- [HTTP](HTTP.md) サービス使用時、受信できるメッセージボディの最大サイズは 2M です。2M を超えるとエラーが発生します。
+- [KSDrive.openFile](KSDrive.md#openfile-openinfo) で取得した [File](KSDrive.md#file) オブジェクトを閉じていない場合、 再度 [KSDrive.openFile](KSDrive.md#openfile-openinfo) を呼ぶとエラーが発生します。

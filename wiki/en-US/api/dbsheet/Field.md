@@ -17,7 +17,7 @@ var fields = Application.Field.GetFields({ SheetId: 1 })
 
 ## Create fields
 
-Field formats: [Multidimensional Table field types](/docs/en-US/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types).
+Field formats: [Multidimensional Table field types](Appendix.md#appendix-1-multidimensional-table-field-types).
 
 ```javascript
 var field = Application.Field.CreateFields({

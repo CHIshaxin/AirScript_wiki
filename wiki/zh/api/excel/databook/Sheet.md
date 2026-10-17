@@ -14,7 +14,7 @@ Sheet 对象的具体属性和方法请参阅下方的列表。
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Id](#id) | String | 该数据表的 Id |
 | [Name](#name) | String | 该数据表的名称 |
 | [Index](#index) | Number | 该数据表在所有表的索引值 |
@@ -26,7 +26,7 @@ Sheet 对象的具体属性和方法请参阅下方的列表。
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Activate()](#activate) | undefined | 切换(激活)数据表 |
 | [Move()](#move) | undefined | 移动数据表 |
 | [Delete()](#delete) | undefined | 删除数据表 |
@@ -107,7 +107,7 @@ sheet.Visible = true
 
 #### 数据类型
 
-[Enum.xlEtDataBaseSheet](/docs/api/excel/databook/Enum.html#xlsheettype) - 数据表的类型
+[Enum.xlEtDataBaseSheet](Enum.md#xlsheettype) - 数据表的类型
 
 #### 示例
 
@@ -119,11 +119,11 @@ console.log(sheet.Type) //xlEtDataBaseSheet
 
 ## Field
 
-数据表的字段， 返回一个[Field](/docs/api/excel/databook/Field.html)对象
+数据表的字段， 返回一个[Field](Field.md)对象
 
 #### 数据类型
 
-[Field](/docs/api/excel/databook/Field.html)
+[Field](Field.md)
 
 #### 示例
 
@@ -135,11 +135,11 @@ const fields = sheet.Field.GetFields()
 
 ## Record
 
-数据表的字段， 返回一个[Record](/docs/api/excel/databook/Record.html)对象
+数据表的字段， 返回一个[Record](Record.md)对象
 
 #### 数据类型
 
-[Record](/docs/api/excel/databook/Record.html)
+[Record](Record.md)
 
 #### 示例
 
@@ -169,7 +169,7 @@ sheet.Activate()
 **两个参数互斥**
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | number | null | 否 | 验将放置移动的数据表之前的数据表 ID。如果指定 After ，则不能指定 Before。 |
 | After | number | null | 否 | 将放置移动的数据表后的数据表 ID。如果指定 Before ，则不能指定 After |
 

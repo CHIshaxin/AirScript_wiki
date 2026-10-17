@@ -14,9 +14,9 @@ See the lists below for the Workbook object's properties and methods.
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/en-US/api/excel/workbook/Sheet.html) | Active worksheet in the workbook |
-| [Sheets](#sheets) | [Sheets](/docs/en-US/api/excel/workbook/Application.html#sheets) | Collection of all worksheet objects |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | Active worksheet in the workbook |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | Collection of all worksheet objects |
 | [ReadOnly](#readonly) | Boolean | Whether the document is read-only |
 | [ReadOnlyComment](#readonlycomment) | Boolean | Whether the document allows comment-only read access |
 | [SupportReadOnlyComment](#supportreadonlycomment) | Boolean | Whether the document supports comment-only read access |
@@ -24,7 +24,7 @@ See the lists below for the Workbook object's properties and methods.
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Save()](#save) | String(JSON) | Save changes to the file |
 | [GetComments()](#getcomments) | String(JSON) | Get comments for the entire workbook |
 | [ExportAsFixedFormat()](#exportasfixedformat) | String(JSON) | Export the whole sheet as PDF or image |
@@ -37,7 +37,7 @@ You can use `Application.ActiveSheet` instead.
 
 #### Data type
 
-[Sheet](/docs/en-US/api/excel/workbook/Sheet.html) - Active worksheet in the active workbook
+[Sheet](Sheet.md) - Active worksheet in the active workbook
 
 #### Example
 
@@ -49,11 +49,11 @@ console.log(Application.ActiveSheet.Name) // Sheet1
 
 ## Sheets
 
-Gets all sheets the current file can operate on, as a [Sheets](/docs/en-US/api/excel/workbook/Application.html#sheets) object.
+Gets all sheets the current file can operate on, as a [Sheets](Application.md#sheets) object.
 
 #### Data type
 
-[Sheets](/docs/en-US/api/excel/workbook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### Example
 
@@ -106,7 +106,7 @@ Saves changes to the file.
 String(JSON) - Save result, format as follows:
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | result | String | Save status |
 | size | Number | File size in bytes |
 | version | Number | Version |
@@ -114,7 +114,7 @@ String(JSON) - Save result, format as follows:
 **Save status values**:
 
 | Status | Description |
-|---|---|
+| --- | --- |
 | ok | Version saved successfully; viewable in version history |
 | nochange | No document changes; no version to save |
 | SavedEmptyFile | Saving empty files is not supported. Occurs when the file is empty after kernel save |
@@ -143,7 +143,7 @@ Gets comments for the entire workbook.
 String(JSON) - Comment collection for the workbook, format as follows:
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | CellComments | `Array<Object>` | Comment entries |
 | PosInfo | `String` | Cell information |
 | SheetName | `String` | Sheet name |
@@ -152,7 +152,7 @@ String(JSON) - Comment collection for the workbook, format as follows:
 **Comment entries**:
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | DateTime | `String` | Timestamp |
 | Text | `String` | Comment text |
 | Time | `String` | Formatted time |
@@ -181,8 +181,8 @@ Exports the whole sheet as PDF or image and returns the export URL.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Type | Enum |  | Optional | Export type; see [Enum.XlFixedFormatType](/docs/en-US/api/excel/workbook/Enum.html#xlfixedformattype). Only image and PDF export are supported |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | Optional | Export type; see [Enum.XlFixedFormatType](Enum.md#xlfixedformattype). Only image and PDF export are supported |
 
 #### Return type
 

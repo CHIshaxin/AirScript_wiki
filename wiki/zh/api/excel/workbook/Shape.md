@@ -14,16 +14,16 @@ Shape 对象的具体属性和方法请参阅下方的列表。
 ### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [ID](#id) | String | 图形 ID |
 | [Name](#name) | String | 图形名称 |
 | [Title](#title) | String | 图形标题 |
-| [Chart](#chart) | [Chart](/docs/api/excel/workbook/Chart.html) | 图表对象 |
+| [Chart](#chart) | [Chart](Chart.md) | 图表对象 |
 
 ### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Delete](#delete) | undefined | 删除Shape |
 
 ## ID
@@ -87,7 +87,7 @@ shape.Title = 'WebOffice'
 
 ### 数据类型
 
-[Chart](/docs/api/excel/workbook/Chart.html) - 单个图表对象
+[Chart](Chart.md) - 单个图表对象
 
 ### 示例
 

@@ -56,17 +56,18 @@ def parse_key(key: str) -> ParsedKey | None:
         cls = fields[-2]
         return ParsedKey("object", fields[:-2], cls, "对象", None, key)
 
-    for cat in MEMBER_CATEGORIES:
-        suffix = " " + cat
-        if last.endswith(suffix) and fields[-2] == cat:
-            member = last[: -len(suffix)]
-            if cat == "枚举" or len(fields) == 2:
-                # 枚举页直接挂在命名空间下（无类目录）
-                return ParsedKey("enum", fields[:-2], None, cat, member, None)
-            cls = fields[-3]
-            prefix = fields[:-3]
-            object_key = "_".join(prefix + [cls, f"{cls} 对象"]) + ".md"
-            return ParsedKey("member", prefix, cls, cat, member, object_key)
+    # 类别字段可能在倒数第二个位置，也可能更靠前（成员名自身含下划线，如 GammaLn_Precise）
+    for idx in range(len(fields) - 2, 0, -1):
+        cat = fields[idx]
+        if cat not in MEMBER_CATEGORIES or not last.endswith(" " + cat):
+            continue
+        member = "_".join(fields[idx + 1:-1] + [last[: -len(cat) - 1]])
+        if cat == "枚举":
+            return ParsedKey("enum", fields[:idx], None, cat, member, None)
+        cls = fields[idx - 1]
+        prefix = fields[:idx - 1]
+        object_key = "_".join(prefix + [cls, f"{cls} 对象"]) + ".md"
+        return ParsedKey("member", prefix, cls, cat, member, object_key)
     return ParsedKey("page", fields, None, None, None, None)
 
 
@@ -276,7 +277,9 @@ class PathResolver:
             return None
 
         if parsed.kind == "enum":
-            for cand in candidates(parsed.member or ""):
+            cached = self.name_map.get(parsed.member or "")
+            cands = [cached] if cached else candidates(parsed.member or "")
+            for cand in cands:
                 if not can_spend():
                     return None
                 spent += 1
@@ -284,6 +287,17 @@ class PathResolver:
                 if self._probe(candidate, hash_):
                     self.name_map[parsed.member or ""] = cand
                     return candidate
+            if cached:  # 缓存过期时回退到词表候选
+                for cand in candidates(parsed.member or ""):
+                    if cand == cached:
+                        continue
+                    if not can_spend():
+                        return None
+                    spent += 1
+                    candidate = f"{prefix}/{parsed.category}/{cand} {parsed.category}.md"
+                    if self._probe(candidate, hash_):
+                        self.name_map[parsed.member or ""] = cand
+                        return candidate
             return None
 
         # object / member：先定类目录，再定成员名

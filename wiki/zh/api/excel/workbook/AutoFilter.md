@@ -11,25 +11,25 @@ hash: 7isl1q-w
 
 使用筛选，不仅可以控制想要查看的内容，还可以控制想要排除的内容。在进行数据筛选时，如果一列或多列中的数值不能满足筛选条件，整行数据都会隐藏起来。可以对数值或文本值进行筛选，也可以对背景或文本应用颜色格式的单元格按颜色进行筛选。
 
-开发者可以通过[Filters](#filters) 属性获取由各个列筛选组成的集合。 使用[Range](#range)属性可返回代表整个筛选区域的[Range](/docs/api/excel/workbook/Range.html)对象。
+开发者可以通过[Filters](#filters) 属性获取由各个列筛选组成的集合。 使用[Range](#range)属性可返回代表整个筛选区域的[Range](Range.md)对象。
 
 注意
 
-若要为工作表创建 AutoFilter 对象，必须在工具栏手动开启筛选功能或者使用[Range](/docs/api/excel/workbook/Range.html)对象的[AutoFilter](/docs/api/excel/workbook/Range.html#autofilter)方法为工作表上的某个区域启用自动筛选。
+若要为工作表创建 AutoFilter 对象，必须在工具栏手动开启筛选功能或者使用[Range](Range.md)对象的[AutoFilter](Range.md#autofilter)方法为工作表上的某个区域启用自动筛选。
 
 AutoFilter 对象的具体属性和方法请参阅下方的列表。
 
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Filters](#filters) | [Filters](#filters) | 筛选对象集合 |
-| [Range](#range) | [Range](/docs/api/excel/workbook/Range.html) | 筛选区域 |
+| [Range](#range) | [Range](Range.md) | 筛选区域 |
 
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [ApplyFilter()](#applyfilter) | undefined | 应用筛选到当前工作表 |
 | [ShowAllData()](#showalldata) | undefined | 清除所有筛选条件，显示所有数据 |
 
@@ -168,7 +168,7 @@ console.log(count)
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | 是 | 类似 JS 数组的 forEach |
 
 #### 示例
@@ -191,7 +191,7 @@ filters.Each(item => {
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | 是 | 对应工作表内的实际列号，索引从 1 开始 |
 
 #### 返回类型
@@ -211,11 +211,11 @@ const filter1 = filters.Item(1)
 
 ### Item().Operator
 
-指定筛选类型，可使用的筛选类型请参照枚举值[XlAutoFilterOperator](/docs/api/excel/workbook/Enum.html#xlautofilteroperator)
+指定筛选类型，可使用的筛选类型请参照枚举值[XlAutoFilterOperator](Enum.md#xlautofilteroperator)
 
 #### 数据类型
 
-[XlAutoFilterOperator](/docs/api/excel/workbook/Enum.html#xlautofilteroperator) - 枚举值 XlAutoFilterOperator
+[XlAutoFilterOperator](Enum.md#xlautofilteroperator) - 枚举值 XlAutoFilterOperator
 
 #### 示例
 
@@ -250,7 +250,7 @@ Variant - 根据指定的筛选类型确定
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 区域对象
+[Range](Range.md) - 区域对象
 
 #### 示例
 

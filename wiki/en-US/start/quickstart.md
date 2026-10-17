@@ -107,4 +107,4 @@ newSheetLeft.Name = 'New Worksheet (Left)'
 
 ## More
 
-For more real-world examples, try [Example Cases](/docs/en-US/example/excel.html).
+For more real-world examples, try [Example Cases](../example/excel.md).

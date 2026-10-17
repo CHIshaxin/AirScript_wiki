@@ -20,8 +20,8 @@ var sheets = Application.Sheet.GetSheets()
 Parameters
 
 - Pass at least one sheet and one field.
-- Field formats: [Multidimensional Table field types](/docs/en-US/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types).
-- View types: [Multidimensional Table view types](/docs/en-US/api/dbsheet/Appendix.html#appendix-2-multidimensional-table-view-types).
+- Field formats: [Multidimensional Table field types](Appendix.md#appendix-1-multidimensional-table-field-types).
+- View types: [Multidimensional Table view types](Appendix.md#appendix-2-multidimensional-table-view-types).
 
 ```javascript
 var sheet = Application.Sheet.CreateSheet({

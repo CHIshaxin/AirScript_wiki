@@ -45,14 +45,14 @@ connection.close()
 ### Properties
 
 | Property | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Drivers](#drivers) | object | Database driver constants |
 | [Types](#types) | object | Column type constants (SQL Server only) |
 
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [connect()](#connect) | Connection | Connects to a database |
 | [Connection.queryAll()](#queryall) | Result | Runs SQL statements |
 | [Connection.close()](#close) | null | Closes the connection |
@@ -64,7 +64,7 @@ Driver constants passed to [connect()](#connect). Read-only. Currently supports 
 ### Properties
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | MySQL | string | MySQL driver |
 | PostgreSQL | string | PostgreSQL driver |
 | SQLServer | string | SQL Server driver |
@@ -78,7 +78,7 @@ Column type constants. Note: only needed for SQL Server; MySQL does not require 
 #### Exact numerics
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | Bit | Boolean |
 | TinyInt | Number |
 | SmallInt | Number |
@@ -92,14 +92,14 @@ Column type constants. Note: only needed for SQL Server; MySQL does not require 
 #### Approximate numerics
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | Float | Number |
 | Real | Number |
 
 #### Date and Time
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | SmallDateTime | Date |
 | DateTime | Date |
 | DateTime2 | Date |
@@ -110,7 +110,7 @@ Column type constants. Note: only needed for SQL Server; MySQL does not require 
 #### Character Strings
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | Char | String |
 | VarChar | String |
 | Text | String |
@@ -118,7 +118,7 @@ Column type constants. Note: only needed for SQL Server; MySQL does not require 
 #### Unicode Strings
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | NChar | String |
 | NVarChar | String |
 | NText | String |
@@ -126,7 +126,7 @@ Column type constants. Note: only needed for SQL Server; MySQL does not require 
 #### Binary Strings
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | Binary | Buffer |
 | VarBinary | Buffer |
 | Image | Buffer |
@@ -134,7 +134,7 @@ Column type constants. Note: only needed for SQL Server; MySQL does not require 
 #### Other Data Types
 
 | Property | Maps to JavaScript type |
-|---|---|
+| --- | --- |
 | Null | null |
 | TVP | Object |
 | UDT | Buffer |
@@ -149,14 +149,14 @@ Connects to a database. Currently supports MySQL, PostgreSQL, and SQL Server. Re
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | driver | [Driver](#drivers) | null | Yes | Target DB driver |
 | options | [Options](#options) | null | Yes | Connection options |
 
 ### options
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | host | string | null | Yes | Database host |
 | port | number | null | Yes | Database port |
 | username | string | null | Yes | Username |
@@ -187,14 +187,14 @@ After [connect()](#connect) succeeds, use the returned connection to call `query
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | sql | string | null | Yes | SQL to run |
 | InsertData | any[] \| [InsertData](#insertdata) | null | No | Insert bind values |
 
 ### InsertData
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | name | string | null | Yes | Column name |
 | value | string | null | Yes | Value |
 | type | [Types](#types) | null | No | Column type; required for SQL Server inserts |
@@ -204,7 +204,7 @@ After [connect()](#connect) succeeds, use the returned connection to call `query
 Result object with affected row count and returned rows.
 
 | Property | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | affectRowCount | number | Rows affected by the SQL statement |
 | rows | Array | Result rows matching the queried table structure |
 

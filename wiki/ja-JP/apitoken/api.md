@@ -20,21 +20,21 @@ hash: D-lDVkX2
 ### ヘッダーパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Content-Type | はい | string | `application/json` |
 | AirScript-Token | はい | string | AirScript エディターで発行した **スクリプトトークン**（APIToken）を渡す |
 
 ### パスパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | script_id | はい | string | スクリプト ID |
 | file_id | はい | string | スクリプトが実行されるファイル ID |
 
 ### ボディパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Context | はい | Object | 実行時コンテキストパラメーター |
 | Context.argv | いいえ | Object | 渡す Context のパラメーターオブジェクト。例：`{name: 'John', age: 18}`。AS コードでは `Context.argv.name` で参照可能 |
 | Context.sheet_name | いいえ | string | et、ksheet の実行時シート名 |
@@ -46,7 +46,7 @@ hash: D-lDVkX2
 ### レスポンスパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | data | はい | Object | タスク実行データオブジェクト |
 | data.result | はい | string | タスクが返したデータ |
 | data.logs | はい | Array | タスク実行ログ |
@@ -320,21 +320,21 @@ IRestResponse response = client.Execute(request);
 ### ヘッダーパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Content-Type | はい | string | `application/json` |
 | AirScript-Token | はい | string | AirScript エディターで発行した **スクリプトトークン**（APIToken）を渡す |
 
 ### パスパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | script_id | はい | string | スクリプト ID |
 | file_id | はい | string | スクリプトが実行されるファイル ID |
 
 ### ボディパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Context | はい | Object | 実行時コンテキストパラメーター |
 | Context.argv | いいえ | Object | 渡す Context のパラメーターオブジェクト。例：`{name: 'John', age: 18}`。AS コードでは `Context.argv.name` で参照可能 |
 | Context.sheet_name | いいえ | string | et、ksheet の実行時シート名 |
@@ -346,7 +346,7 @@ IRestResponse response = client.Execute(request);
 ### レスポンスパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | task_id | はい | string | 結果ポーリング用の実行中タスク ID |
 | task_type | はい | string | タスク種別 |
 
@@ -577,7 +577,7 @@ IRestResponse response = client.Execute(request);
 ### クエリパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | task_id | はい | string | 非同期タスク実行時に返された ID |
 
 ヒント
@@ -587,7 +587,7 @@ IRestResponse response = client.Execute(request);
 ### レスポンスパラメーター
 
 | パラメーター | 必須 | 型 | 説明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | data | はい | Object | タスク実行データオブジェクト |
 | data.result | はい | string | タスクが返したデータ |
 | data.logs | はい | Array | タスク実行ログ |

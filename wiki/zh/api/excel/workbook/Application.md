@@ -18,28 +18,28 @@ Application 对象的具体属性和方法请参阅下方的列表。
 #### 属性列表
 
 | 属性 | 数据类型 | 简介 |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/api/excel/workbook/Sheet.html) | 当前的活动工作表 |
-| [Sheets](#sheets) | [Sheets](/docs/api/excel/workbook/Application.html#sheets) | 当前文件的所有工作表 |
-| [ActiveWorkbook](#activeworkbook) | [Workbook](/docs/api/excel/workbook/Workbook.html) | 当前的文档 |
-| [Selection](#selection) | [Range](/docs/api/excel/workbook/Range.html) | 当前的选区对象 |
-| [Cells](#cells) | [Range](/docs/api/excel/workbook/Range.html) | 当前工作表所有单元格 |
-| [Columns](#columns) | [Range](/docs/api/excel/workbook/Range.html) | 当前工作表所有列 |
-| [Rows](#rows) | [Range](/docs/api/excel/workbook/Range.html) | 当前工作表所有行 |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | 当前的活动工作表 |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | 当前文件的所有工作表 |
+| [ActiveWorkbook](#activeworkbook) | [Workbook](Workbook.md) | 当前的文档 |
+| [Selection](#selection) | [Range](Range.md) | 当前的选区对象 |
+| [Cells](#cells) | [Range](Range.md) | 当前工作表所有单元格 |
+| [Columns](#columns) | [Range](Range.md) | 当前工作表所有列 |
+| [Rows](#rows) | [Range](Range.md) | 当前工作表所有行 |
 | [FileInfo](#fileinfo) | Object | 当前文档的信息 |
 | [UserInfo](#userinfo) | Object | 当前文档的用户信息 |
-| [Enum](#enum) | [Enum](/docs/api/excel/workbook/Enum.html) | 所有的枚举类型 |
+| [Enum](#enum) | [Enum](Enum.md) | 所有的枚举类型 |
 
 #### 方法列表
 
 | 方法 | 返回类型 | 简介 |
-|---|---|---|
-| [Range(address)](#range) | [Range](/docs/api/excel/workbook/Range.html) | 获取当前 ActiveSheet 的某个区域(address 指定) |
-| [Sheets(name)](#sheets-1) | [Sheet](/docs/api/excel/workbook/Sheet.html) | 获取名称为 name 的工作表 |
+| --- | --- | --- |
+| [Range(address)](#range) | [Range](Range.md) | 获取当前 ActiveSheet 的某个区域(address 指定) |
+| [Sheets(name)](#sheets-1) | [Sheet](Sheet.md) | 获取名称为 name 的工作表 |
 
 ## ActiveSheet
 
-当前活动工作表，可以通过 Sheet.Activate()来切换活动工作表。该属性返回[Sheet](/docs/api/excel/workbook/Sheet.html#ActiveSheet)对象,能利用该属性操作当前活动工作表。
+当前活动工作表，可以通过 Sheet.Activate()来切换活动工作表。该属性返回[Sheet](Sheet.md#ActiveSheet)对象,能利用该属性操作当前活动工作表。
 
 运行脚本的环境是独立在服务器的，因此脚本运行环境的 ActiveSheet 与用户环境的 ActiveSheet 不一定相同。
 
@@ -51,7 +51,7 @@ Application 对象的具体属性和方法请参阅下方的列表。
 
 #### 数据类型
 
-[Sheet](/docs/api/excel/workbook/Sheet.html) - 当前活动工作表
+[Sheet](Sheet.md) - 当前活动工作表
 
 #### 示例
 
@@ -68,11 +68,11 @@ Application.ActiveSheet.Range('A1').Value = 'foo'
 
 ## Sheets
 
-获取当前文件能操作的所有 Sheet，返回一个[Sheets](/docs/api/excel/workbook/Application.html#sheets)对象。
+获取当前文件能操作的所有 Sheet，返回一个[Sheets](Application.md#sheets)对象。
 
 #### 数据类型
 
-[Sheets](/docs/api/excel/workbook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### 示例
 
@@ -135,11 +135,11 @@ Application.Sheets.Add(
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | String/Number |  | 否 | After 空时，必填，为当前已有单元格的 index 或者名称，新建的工作表将置于此工作表之前 |
 | After | String/Number |  | 否 | Before 空时，必填，为当前已有单元格的 index 或者名称，新建的工作表将置于此工作表之后 |
 | Count | Number | 1 | 否 | 要添加的工作表数。默认值为选定工作表的数量 |
-| Type | Enum |  | 否 | 指定工作表类型，详细可见 [Enum.XlSheetType](/docs/api/excel/workbook/Enum.html#xlsheettype) |
+| Type | Enum |  | 否 | 指定工作表类型，详细可见 [Enum.XlSheetType](Enum.md#xlsheettype) |
 | Name | Name |  | 否 | 指定工作表名称 |
 
 #### 示例
@@ -162,12 +162,12 @@ Application.Sheets.Add(
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | 是 | 所选的 sheet 的名称/索引 |
 
 #### 返回类型
 
-[Sheet](/docs/api/excel/workbook/Sheet.html) - 对应名称的工作表
+[Sheet](Sheet.md) - 对应名称的工作表
 
 #### 示例
 
@@ -186,7 +186,7 @@ Application.Sheets.Item(1).Activate()
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | 是 | 类似 JS 数组的 forEach |
 
 #### 示例
@@ -200,11 +200,11 @@ Application.Sheets.Each(function (item) {
 
 ## ActiveWorkbook
 
-当前活动的文件。返回一个[Workbook](/docs/api/excel/workbook/Workbook.html)对象。
+当前活动的文件。返回一个[Workbook](Workbook.md)对象。
 
 #### 数据类型
 
-[Workbook](/docs/api/excel/workbook/Workbook.html) - 当前活动文件
+[Workbook](Workbook.md) - 当前活动文件
 
 #### 示例
 
@@ -215,11 +215,11 @@ Application.ActiveWorkbook.Save()
 
 ## Selection
 
-当前的选区对象。返回一个 [Range](/docs/api/excel/workbook/Range.html) 对象。
+当前的选区对象。返回一个 [Range](Range.md) 对象。
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 当前的选区对象
+[Range](Range.md) - 当前的选区对象
 
 #### 示例
 
@@ -230,11 +230,11 @@ console.log(Application.Selection.Address()) // $A$1
 
 ## Cells
 
-当前 Sheet 的所有单元格。返回一个[Range](/docs/api/excel/workbook/Range.html)对象。
+当前 Sheet 的所有单元格。返回一个[Range](Range.md)对象。
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 当前 Sheet 的所有单元格
+[Range](Range.md) - 当前 Sheet 的所有单元格
 
 #### 示例
 
@@ -246,11 +246,11 @@ console.log(cells.Count) // 17179869184
 
 ## Columns
 
-当前 Sheet 的所有列。返回一个[Range](/docs/api/excel/workbook/Range.html)对象。
+当前 Sheet 的所有列。返回一个[Range](Range.md)对象。
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 当前 Sheet 的所有列
+[Range](Range.md) - 当前 Sheet 的所有列
 
 #### 示例
 
@@ -262,11 +262,11 @@ console.log(columns.Count) // 16384
 
 ## Rows
 
-当前 Sheet 的所有行。返回一个[Range](/docs/api/excel/workbook/Range.html)对象。
+当前 Sheet 的所有行。返回一个[Range](Range.md)对象。
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 当前 Sheet 的所有行
+[Range](Range.md) - 当前 Sheet 的所有行
 
 #### 示例
 
@@ -286,7 +286,7 @@ console.log(rows.Count) // 1048576
 Object - 当前文件的信息
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 文件 ID |
 | name | string | 文件名 |
 | officeType | string | 文档类型 |
@@ -298,7 +298,7 @@ Object - 当前文件的信息
 #### CreatorObject 对象信息
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 创建者 ID |
 | name | string | 创建者名称 |
 | avatar_url | string | 创建者头像 |
@@ -326,7 +326,7 @@ console.log(Application.FileInfo)
 Object- 当前文件的用户信息
 
 | 名称 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | string | 用户 ID |
 | name | string | 用户名称 |
 
@@ -345,7 +345,7 @@ console.log(Application.UserInfo)
 
 #### 数据类型
 
-[Enum](/docs/api/excel/workbook/Enum.html) - 所有的枚举类型
+[Enum](Enum.md) - 所有的枚举类型
 
 #### 示例
 
@@ -357,17 +357,17 @@ console.log(Application.Enum.XlSheetType)
 
 ## Range()
 
-获取当前 ActiveSheet 的某个区域的[Range](/docs/api/excel/workbook/Range.html)对象。
+获取当前 ActiveSheet 的某个区域的[Range](Range.md)对象。
 
 #### 参数
 
 | 名称 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | address | string | 是 | 选择的地址，可以是单元格地址或者选区范围范围地址，例"A1"或"A1:A10" |
 
 #### 返回类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 给定地址区域的 Range 对象
+[Range](Range.md) - 给定地址区域的 Range 对象
 
 #### 示例
 
@@ -380,17 +380,17 @@ console.log(Application.ActiveSheet.Range('A1').Text) // A1单元格的内容
 
 ## Sheets()
 
-作为函数使用，代替 Sheets.Item()，返回一个[Sheet](/docs/api/excel/workbook/Sheet.html)对象。
+作为函数使用，代替 Sheets.Item()，返回一个[Sheet](Sheet.md)对象。
 
 #### 参数
 
 | 名称 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | 是 | 工作表的名称 |
 
 #### 返回类型
 
-[Sheet](/docs/api/excel/workbook/Sheet.html) - 对应名称的工作表 Sheet 对象
+[Sheet](Sheet.md) - 对应名称的工作表 Sheet 对象
 
 #### 示例
 

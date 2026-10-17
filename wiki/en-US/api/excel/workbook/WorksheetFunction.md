@@ -16,7 +16,7 @@ For example, Sum totals a column, Average returns the mean, Max returns the larg
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Average()](#average) | Number | Average of numbers in a range |
 | [AverageIf()](#averageif) | Number | Average of cells that meet a condition |
 | [Small()](#small) | Number | k-th smallest value in a data set |
@@ -32,8 +32,8 @@ Average of numbers in the specified range.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Range to average |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | Yes | Range to average |
 
 ### Return value
 
@@ -54,10 +54,10 @@ Average of cells that meet a condition.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Range to evaluate |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | Yes | Range to evaluate |
 | criteria | String | null | Yes | Condition as number, expression, reference, or text (e.g. 32, "32", ">32", "apples", or B4) |
-| average_range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | No | Actual cells to average; if omitted, range is used |
+| average_range | [Range](Range.md) | null | No | Actual cells to average; if omitted, range is used |
 
 ### Return value
 
@@ -85,8 +85,8 @@ If n is the number of points, SMALL(array,1) is the minimum and SMALL(array,n) i
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Array or column from which to take the k-th smallest |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | Yes | Array or column from which to take the k-th smallest |
 | k | Number | null | Yes | Rank of the smallest value; k must be > 0 and <= number of elements |
 
 ### Return value
@@ -116,8 +116,8 @@ If there are n points, LARGE(array,1) is the maximum and LARGE(array,n) is the m
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Array or column from which to take the k-th largest |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | Yes | Array or column from which to take the k-th largest |
 | k | Number | null | Yes | Rank of the largest value; k must be > 0 and <= number of elements |
 
 ### Return value
@@ -151,8 +151,8 @@ Errors or text that cannot be converted to numbers produce an error.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Numbers from which to take the minimum |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | Yes | Numbers from which to take the minimum |
 
 ### Return value
 
@@ -185,8 +185,8 @@ Errors or text that cannot be converted to numbers produce an error.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Array or column for the maximum |
+| --- | --- | --- | --- | --- |
+| range | [Range](Range.md) | null | Yes | Array or column for the maximum |
 
 ### Return value
 
@@ -215,8 +215,8 @@ Errors or text that cannot be converted to numbers produce an error.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Array | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Arguments to sum |
+| --- | --- | --- | --- | --- |
+| Array | [Range](Range.md) | null | Yes | Arguments to sum |
 
 ### Return value
 
@@ -259,9 +259,9 @@ If match_type is 0 and lookup_value is text, wildcards ? and * are allowed. ? ma
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Lookup_value | Object | null | Yes | Value to find |
-| Lookup_array | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Contiguous range that may contain the value; must be an array or reference |
+| Lookup_array | [Range](Range.md) | null | Yes | Contiguous range that may contain the value; must be an array or reference |
 | Match_type | Object | null | No | -1, 0, or 1: how lookup_value is compared to lookup_array in Excel |
 
 ### Return value

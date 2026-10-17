@@ -20,21 +20,21 @@ Regardless of which interface you use, you must first obtain the file ID and scr
 ### Header Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Content-Type | Yes | string | `application/json` |
 | AirScript-Token | Yes | string | Pass in your **Script Token** (APIToken) generated via AirScript editor |
 
 ### Path Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | script_id | Yes | string | Script ID |
 | file_id | Yes | string | File ID where script runs |
 
 ### Body Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Context | Yes | Object | Runtime context parameters |
 | Context.argv | No | Object | Context parameter object passed in, e.g., pass `{name: 'John', age: 18}`, accessible in AS code via `Context.argv.name` |
 | Context.sheet_name | No | string | Sheet name at runtime for et,ksheet |
@@ -46,7 +46,7 @@ Regardless of which interface you use, you must first obtain the file ID and scr
 ### Response Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | data | Yes | Object | Task execution data object |
 | data.result | Yes | string | Data returned by task |
 | data.logs | Yes | Array | Task execution logs |
@@ -320,21 +320,21 @@ IRestResponse response = client.Execute(request);
 ### Header Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Content-Type | Yes | string | `application/json` |
 | AirScript-Token | Yes | string | Pass in your **Script Token** (APIToken) generated via AirScript editor |
 
 ### Path Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | script_id | Yes | string | Script ID |
 | file_id | Yes | string | File ID where script runs |
 
 ### Body Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Context | Yes | Object | Runtime context parameters |
 | Context.argv | No | Object | Context parameter object passed in, e.g., pass `{name: 'John', age: 18}`, accessible in AS code via `Context.argv.name` |
 | Context.sheet_name | No | string | Sheet name at runtime for et,ksheet |
@@ -346,7 +346,7 @@ IRestResponse response = client.Execute(request);
 ### Response Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | task_id | Yes | string | Running task ID for polling results |
 | task_type | Yes | string | Task type |
 
@@ -577,7 +577,7 @@ IRestResponse response = client.Execute(request);
 ### Query Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | task_id | Yes | string | ID returned when executing async task |
 
 Tip
@@ -587,7 +587,7 @@ Task ID is a query parameter. Please encode it when concatenating, e.g., `encode
 ### Response Parameters
 
 | Parameter | Required | Type | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | data | Yes | Object | Task execution data object |
 | data.result | Yes | string | Data returned by task |
 | data.logs | Yes | Array | Task execution logs |

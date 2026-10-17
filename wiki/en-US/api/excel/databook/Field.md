@@ -12,7 +12,7 @@ Field operations.
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [GetFields()](#getfields) | Array | Get field definitions |
 | [CreateFields()](#createfields) | Array | Create fields |
 | [DeleteFields()](#deletefields) | Array | Delete fields |
@@ -27,10 +27,10 @@ Gets field definitions.
 Array – all fields on the sheet
 
 | Property | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | name | String | Field name |
-| type | String | [Field type](/docs/en-US/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| type | String | [Field type](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### Example
 
@@ -51,18 +51,18 @@ Creates fields.
 ### Parameters
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
-| Fields | Array |  | Yes | Field definitions; format see [Appendix](/docs/en-US/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| --- | --- | --- | --- | --- |
+| Fields | Array |  | Yes | Field definitions; format see [Appendix](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### Return value
 
 Array – created fields
 
 | Property | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | name | String | Field name |
-| type | String | [Field type](/docs/en-US/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| type | String | [Field type](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### Example
 
@@ -82,7 +82,7 @@ Deletes fields.
 ### Parameters
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Fields | Array |  | Yes | Field IDs to delete |
 
 ### Return value
@@ -90,7 +90,7 @@ Deletes fields.
 Array – per-field delete result
 
 | Property | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | deleted | Boolean | Whether deletion succeeded |
 
@@ -110,18 +110,18 @@ Updates fields.
 ### Parameters
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
-| Fields | Array |  | Yes | Updates including field ID and name; format see [Appendix](/docs/en-US/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| --- | --- | --- | --- | --- |
+| Fields | Array |  | Yes | Updates including field ID and name; format see [Appendix](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### Return value
 
 Array – updated field definitions
 
 | Property | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | String | Field ID |
 | name | String | Field name |
-| type | String | [Field type](/docs/en-US/api/excel/databook/Appendix.html#appendix-1-datasheet-field-types) |
+| type | String | [Field type](Appendix.md#appendix-1-datasheet-field-types) |
 
 ### Example
 

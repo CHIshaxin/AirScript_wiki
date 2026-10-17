@@ -14,26 +14,26 @@ See the lists below for the Sheet object's properties and methods.
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Id](#id) | String | Id of this worksheet |
 | [Name](#name) | String | Name of this worksheet |
 | [Index](#index) | Number | Index of this sheet among all sheets |
-| [Cells](#cells) | [Range](/docs/en-US/api/excel/workbook/Range.html) | All cells on this sheet |
-| [Columns](#columns) | [Range](/docs/en-US/api/excel/workbook/Range.html) | All columns on this sheet |
-| [Rows](#rows) | [Range](/docs/en-US/api/excel/workbook/Range.html) | All rows on this sheet |
-| [UsedRange](#usedrange) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Used range on this sheet |
+| [Cells](#cells) | [Range](Range.md) | All cells on this sheet |
+| [Columns](#columns) | [Range](Range.md) | All columns on this sheet |
+| [Rows](#rows) | [Range](Range.md) | All rows on this sheet |
+| [UsedRange](#usedrange) | [Range](Range.md) | Used range on this sheet |
 | [Visible](#visible) | Boolean | Whether this sheet is visible |
 | [Type](#type) | String | Type of this worksheet |
 | [Hyperlinks](#hyperlinks) | [Hyperlinks](#hyperlinks) | All hyperlinks on this sheet |
 | [Shapes](#shapes) | [Shapes](#shapes) | All shapes on this sheet |
-| [Sort](#sort) | [Sort](/docs/en-US/api/excel/workbook/Sort.html) | Sort object on this sheet |
+| [Sort](#sort) | [Sort](Sort.md) | Sort object on this sheet |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
-| [Range()](#range) | [Range](/docs/en-US/api/excel/workbook/Range.html) | A cell or cell range |
-| [Cells()](#cells-1) | [Range](/docs/en-US/api/excel/workbook/Range.html) | A cell on this sheet |
+| --- | --- | --- |
+| [Range()](#range) | [Range](Range.md) | A cell or cell range |
+| [Cells()](#cells-1) | [Range](Range.md) | A cell on this sheet |
 | [Activate()](#activate) | undefined | Activate worksheet |
 | [Move()](#move) | undefined | Move worksheet |
 | [Delete()](#delete) | undefined | Delete worksheet |
@@ -95,7 +95,7 @@ Collection of all cells on the sheet as a Range (use Range properties and method
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - All cells on the sheet
+[Range](Range.md) - All cells on the sheet
 
 #### Example
 
@@ -107,11 +107,11 @@ console.log(sheet.Cells.Address()) // $A$1:$XFD$1048576
 
 ## Columns
 
-All columns on the sheet as a Range; see [Range](/docs/en-US/api/excel/workbook/Range.html).
+All columns on the sheet as a Range; see [Range](Range.md).
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - All columns on the sheet
+[Range](Range.md) - All columns on the sheet
 
 #### Example
 
@@ -127,7 +127,7 @@ Rows on the sheet as a Range (use Range properties and methods).
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - All columns on the sheet
+[Range](Range.md) - All columns on the sheet
 
 #### Example
 
@@ -142,7 +142,7 @@ Used range on the sheet (actually used area) as a Range (use Range properties an
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - A cell or range on the sheet
+[Range](Range.md) - A cell or range on the sheet
 
 #### Example
 
@@ -181,7 +181,7 @@ Worksheet type
 
 #### Data type
 
-[Enum.XlSheetType](/docs/en-US/api/excel/workbook/Enum.html#xlsheettype) - Worksheet type
+[Enum.XlSheetType](Enum.md#xlsheettype) - Worksheet type
 
 #### Example
 
@@ -197,7 +197,7 @@ AutoFilter for the current sheet: all column filters and methods to apply or cle
 
 #### Data type
 
-[AutoFilter](/docs/en-US/api/excel/workbook/AutoFilter.html) - AutoFilter object
+[AutoFilter](AutoFilter.md) - AutoFilter object
 
 #### Example
 
@@ -250,12 +250,12 @@ Gets a hyperlink object
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number |  | Yes | Starts at 1 |
 
 #### Return type
 
-[Hyperlink](/docs/en-US/api/excel/workbook/Hyperlink.html) - Hyperlink object
+[Hyperlink](Hyperlink.md) - Hyperlink object
 
 #### Example
 
@@ -311,12 +311,12 @@ Represents a drawing-layer object such as a freeform, polygon, OLE object, or pi
 #### Parameters
 
 | Name | Data type | Default | Optional | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | Number |  | No | Object index |
 
 #### Return type
 
-[Shape](/docs/en-US/api/excel/workbook/Shape.html) - One drawing-layer object (freeform, polygon, OLE, picture)
+[Shape](Shape.md) - One drawing-layer object (freeform, polygon, OLE, picture)
 
 #### Example
 
@@ -350,9 +350,9 @@ Adds a shape
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Style | String |  | No | Chart style |
-| XlChartType | Enum |  | No | Chart type; see [Enum.XlChartType](/docs/en-US/api/excel/workbook/Enum.html#xlcharttype) |
+| XlChartType | Enum |  | No | Chart type; see [Enum.XlChartType](Enum.md#xlcharttype) |
 | Left | Number |  | No | Left offset of new chart in px |
 | Top | Number |  | No | Top offset of new chart in px |
 | Width | Number |  | No | Width of new chart in px |
@@ -360,7 +360,7 @@ Adds a shape
 
 #### Return type
 
-[Shape](/docs/en-US/api/excel/workbook/Shape.html) - Added shape
+[Shape](Shape.md) - Added shape
 
 #### Example
 
@@ -379,7 +379,7 @@ Inserts a floating picture into the sheet
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | FileName | String |  | Yes | Image to insert (Base64 data URL or image URL) |
 | LinkToFile | Enum |  | Yes | Not supported; use `0` |
 | SaveWithDocument | Enum |  | Yes | Not supported; use `0` |
@@ -412,7 +412,7 @@ Sort object; set the target range then apply sort.
 
 #### Data type
 
-[Sort](/docs/en-US/api/excel/workbook/Sort.html) - Sort object
+[Sort](Sort.md) - Sort object
 
 #### Example
 
@@ -451,7 +451,7 @@ A cell or range as a Range (use Range properties and methods).
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - A cell or range on the sheet
+[Range](Range.md) - A cell or range on the sheet
 
 #### Example
 
@@ -470,7 +470,7 @@ Selects a cell on the sheet as a Range.
 
 #### Return type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - A cell on the sheet
+[Range](Range.md) - A cell on the sheet
 
 #### Example
 
@@ -503,7 +503,7 @@ Moves the worksheet
 **The two parameters are mutually exclusive**
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | number | null | No | Sheet id before which to place the moved sheet. Cannot use with After. |
 | After | number | null | No | Sheet id after which to place the moved sheet. Cannot use with Before |
 

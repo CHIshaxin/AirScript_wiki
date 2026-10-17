@@ -27,7 +27,7 @@ console.log(
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | createHash(algorithm) | [hash](#hash) | ハッシュ インスタンスを作成します。アルゴリズム: `"md5"`, `"sha1"`, `"sha"`, `"sha256"`, `"sha512"`。 |
 | createHmac(algorithm, key) | [hmac](#hmac) | HMAC インスタンスを作成します。サポートされるアルゴリズムは上記と同じです。 |
 
@@ -38,7 +38,7 @@ console.log(
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | update(data[, inputEncoding]) | [hash](#hash) | `data` でハッシュを更新します。`data` が文字列で `encoding` が省略されている場合は UTF-8 を使用します。`data` が Buffer の場合、`inputEncoding` は無視されます。繰り返し呼び出せます。 |
 | digest([encoding]) | string \| Buffer | ダイジェストを返します。`encoding` を指定すると文字列、指定しないと Buffer を返します。 |
 
@@ -49,7 +49,7 @@ console.log(
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | update(data[, inputEncoding]) | [hmac](#hmac) | `data` で HMAC を更新します。`hash.update` と同じルールです。 |
 | digest([encoding]) | string \| Buffer | HMAC のダイジェストを返します。 |
 
@@ -67,7 +67,7 @@ console.log(buf.toString()) // buffer
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | from(array) | Buffer | バイト値 0～255 の配列から新しい Buffer を作成します。 |
 | from(string[, encoding]) | Buffer | 文字列から Buffer を作成します。 |
 | from(arrayBuffer[, byteOffset[, length]]) | Buffer | `ArrayBuffer` の一部から Buffer を作成します。 |
@@ -85,7 +85,7 @@ Time.sleep(1000) // 1 秒スリープ
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | sleep(millisecond) | undefined | 指定したミリ秒だけスリープします。 |
 
 ## Arguments
@@ -103,5 +103,5 @@ Arguments.get('foo.bar', 'defaults')
 ### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | get(string[, defaults]) | any | ドット区切りのパスでネストしたカスタム パラメーターを読み取ります（例: `a.b` は `obj.a.b`）。キーがないときは `defaults` が指定されていればそれを、なければ `undefined` を返します。 |

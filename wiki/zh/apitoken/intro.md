@@ -9,7 +9,7 @@ hash: CwTXgPvM
 
 `https://www.kdocs.cn/api/v3/ide/file/caEkI6K5RDG2/script/V2-5rSiBiN7y5xdOd5x5ZYI2r/sync_task`
 
-链接内已拼接好了当前脚本的脚本 ID 和所在文档的文件 ID，接下来请求该链接即可读取和编辑本人相应的文档，注意调用的时候必须设置请求头`AirScript-Token`，值为您的脚本令牌，更详细的说明请参阅[接口说明](/docs/apitoken/api.html)。
+链接内已拼接好了当前脚本的脚本 ID 和所在文档的文件 ID，接下来请求该链接即可读取和编辑本人相应的文档，注意调用的时候必须设置请求头`AirScript-Token`，值为您的脚本令牌，更详细的说明请参阅[接口说明](api.md)。
 
 这里假设目标脚本的代码如下所示，将 A1 单元格的值修改为`AirScript`，并返回一个对象:
 

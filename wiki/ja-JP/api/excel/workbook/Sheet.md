@@ -14,26 +14,26 @@ Sheet オブジェクトのプロパティとメソッドは、以下の一覧�
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Id](#id) | String | このワークシートの ID |
 | [Name](#name) | String | このワークシートの名前 |
 | [Index](#index) | Number | すべてのシート間でのこのシートのインデックス |
-| [Cells](#cells) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | このシート上のすべてのセル |
-| [Columns](#columns) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | このシート上のすべての列 |
-| [Rows](#rows) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | このシート上のすべての行 |
-| [UsedRange](#usedrange) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | このシートの使用済み範囲 |
+| [Cells](#cells) | [Range](Range.md) | このシート上のすべてのセル |
+| [Columns](#columns) | [Range](Range.md) | このシート上のすべての列 |
+| [Rows](#rows) | [Range](Range.md) | このシート上のすべての行 |
+| [UsedRange](#usedrange) | [Range](Range.md) | このシートの使用済み範囲 |
 | [Visible](#visible) | Boolean | このシートを表示するかどうか |
 | [Type](#type) | String | このワークシートの種類 |
 | [Hyperlinks](#hyperlinks) | [Hyperlinks](#hyperlinks) | このシート上のすべてのハイパーリンク |
 | [Shapes](#shapes) | [Shapes](#shapes) | このシート上のすべての Shape |
-| [Sort](#sort) | [Sort](/docs/ja-JP/api/excel/workbook/Sort.html) | このシート上の Sort オブジェクト |
+| [Sort](#sort) | [Sort](Sort.md) | このシート上の Sort オブジェクト |
 
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
-| [Range()](#range) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | セルまたはセル範囲 |
-| [Cells()](#cells-1) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | このシート上の 1 セル |
+| --- | --- | --- |
+| [Range()](#range) | [Range](Range.md) | セルまたはセル範囲 |
+| [Cells()](#cells-1) | [Range](Range.md) | このシート上の 1 セル |
 | [Activate()](#activate) | undefined | ワークシートをアクティブにする |
 | [Move()](#move) | undefined | ワークシートを移動する |
 | [Delete()](#delete) | undefined | ワークシートを削除する |
@@ -95,7 +95,7 @@ console.log(sheet.Index) // 1
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - シート上のすべてのセル
+[Range](Range.md) - シート上のすべてのセル
 
 #### 例
 
@@ -107,11 +107,11 @@ console.log(sheet.Cells.Address()) // $A$1:$XFD$1048576
 
 ## Columns
 
-シート上のすべての列を Range として扱います。[Range](/docs/ja-JP/api/excel/workbook/Range.html) を参照してください。
+シート上のすべての列を Range として扱います。[Range](Range.md) を参照してください。
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - シート上のすべての列
+[Range](Range.md) - シート上のすべての列
 
 #### 例
 
@@ -127,7 +127,7 @@ console.log(sheet.Columns.Count) //16384
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - シート上のすべての行
+[Range](Range.md) - シート上のすべての行
 
 #### 例
 
@@ -142,7 +142,7 @@ console.log(sheet.Rows.Count) // 1048576
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - シート上のセルまたは範囲
+[Range](Range.md) - シート上のセルまたは範囲
 
 #### 例
 
@@ -181,7 +181,7 @@ sheet.Visible = true
 
 #### データ型
 
-[Enum.XlSheetType](/docs/ja-JP/api/excel/workbook/Enum.html#xlsheettype) - ワークシートの種類
+[Enum.XlSheetType](Enum.md#xlsheettype) - ワークシートの種類
 
 #### 例
 
@@ -197,7 +197,7 @@ console.log(sheet.Type) //xlWorksheet
 
 #### データ型
 
-[AutoFilter](/docs/ja-JP/api/excel/workbook/AutoFilter.html) - AutoFilter オブジェクト
+[AutoFilter](AutoFilter.md) - AutoFilter オブジェクト
 
 #### 例
 
@@ -250,12 +250,12 @@ console.log(hyperlinks.Count) // 3
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number |  | はい | 1 から始まります |
 
 #### 戻り値の型
 
-[Hyperlink](/docs/ja-JP/api/excel/workbook/Hyperlink.html) - Hyperlink オブジェクト
+[Hyperlink](Hyperlink.md) - Hyperlink オブジェクト
 
 #### 例
 
@@ -311,12 +311,12 @@ console.log(imgUrl) // https://imageUrl または画像がない場合は undefi
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | Number |  | はい | オブジェクトのインデックス |
 
 #### 戻り値の型
 
-[Shape](/docs/ja-JP/api/excel/workbook/Shape.html) - 描画レイヤー オブジェクトの 1 つ（フリーフォーム、多角形、OLE、画像）
+[Shape](Shape.md) - 描画レイヤー オブジェクトの 1 つ（フリーフォーム、多角形、OLE、画像）
 
 #### 例
 
@@ -350,9 +350,9 @@ Shape を追加します。
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Style | String |  | いいえ | チャートのスタイル |
-| XlChartType | Enum |  | いいえ | チャートの種類。[Enum.XlChartType](/docs/ja-JP/api/excel/workbook/Enum.html#xlcharttype) を参照 |
+| XlChartType | Enum |  | いいえ | チャートの種類。[Enum.XlChartType](Enum.md#xlcharttype) を参照 |
 | Left | Number |  | いいえ | 新しいチャートの左オフセット（px） |
 | Top | Number |  | いいえ | 新しいチャートの上オフセット（px） |
 | Width | Number |  | いいえ | 新しいチャートの幅（px） |
@@ -360,7 +360,7 @@ Shape を追加します。
 
 #### 戻り値の型
 
-[Shape](/docs/ja-JP/api/excel/workbook/Shape.html) - 追加された Shape
+[Shape](Shape.md) - 追加された Shape
 
 #### 例
 
@@ -379,7 +379,7 @@ shapes.AddChart2(340, chartEnum, 0, 0, 300, 300)
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | FileName | String |  | はい | 挿入する画像（Base64 の data URL または画像 URL） |
 | LinkToFile | Enum |  | はい | 未サポート。`0` を使用してください |
 | SaveWithDocument | Enum |  | はい | 未サポート。`0` を使用してください |
@@ -412,7 +412,7 @@ Sort オブジェクトです。対象の範囲を設定してから並べ替え
 
 #### データ型
 
-[Sort](/docs/ja-JP/api/excel/workbook/Sort.html) - Sort オブジェクト
+[Sort](Sort.md) - Sort オブジェクト
 
 #### 例
 
@@ -451,7 +451,7 @@ sort.Apply()
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - シート上のセルまたは範囲
+[Range](Range.md) - シート上のセルまたは範囲
 
 #### 例
 
@@ -470,7 +470,7 @@ sheet.Range('D2').Value = 'this is D2'
 
 #### 戻り値の型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - シート上の 1 セル
+[Range](Range.md) - シート上の 1 セル
 
 #### 例
 
@@ -503,7 +503,7 @@ Application.Range('A1').Value = 'foo'
 **2 つのパラメーターは同時に使用できません。**
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | number | null | いいえ | 移動先のシートの直前に置くときのシート ID。After と同時には使えません。 |
 | After | number | null | いいえ | 移動先のシートの直後に置くときのシート ID。Before と同時には使えません |
 

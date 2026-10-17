@@ -17,7 +17,7 @@ var fields = Application.Field.GetFields({ SheetId: 1 })
 
 ## フィールドの作成
 
-フィールドの形式: [多次元テーブルのフィールド型](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types)。
+フィールドの形式: [多次元テーブルのフィールド型](Appendix.md#appendix-1-multidimensional-table-field-types)。
 
 ```javascript
 var field = Application.Field.CreateFields({

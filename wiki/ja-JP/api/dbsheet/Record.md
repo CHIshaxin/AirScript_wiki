@@ -14,13 +14,13 @@ hash: CAQx6DRv
 任意のパラメーター:
 
 | パラメーター | 説明 |
-|---|---|
+| --- | --- |
 | ViewId | 指定すると、その View 上でユーザーが見ているとおりにレコードを読み取ります。未指定の場合はワークシートから読み取ります |
 | PageSize | ページング時、このクエリで取得を開始するレコード（先頭を含む）。空の場合は先頭のレコードから開始します |
 | Offset | ページング用。レスポンスに次ページ先頭行の `offset` が含まれることがあります。最終ページ、または `maxRecords` に達した場合は省略されます |
 | MaxRecords | 一致する行の先頭から最大 `maxRecords` 行のみ返します。省略時は一致する行をすべて返します |
 | Fields | 例: `["Quantity", "Date", "Time"]` — 返すフィールド名。省略時はすべてのフィールド |
-| Filter | フィルター条件。[フィルター条件](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-3-filter-criteria) を参照 |
+| Filter | フィルター条件。[フィルター条件](Appendix.md#appendix-3-filter-criteria) を参照 |
 
 ```javascript
 var records = Application.Record.GetRecords({ SheetId: 3 })
@@ -43,7 +43,7 @@ var result = Application.Record.DeleteRecords({
 
 ## 行レコードの更新
 
-フィールドの形式: [多次元テーブルのフィールド型](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types)。
+フィールドの形式: [多次元テーブルのフィールド型](Appendix.md#appendix-1-multidimensional-table-field-types)。
 
 ```javascript
 var records = recordapi.UpdateRecords({
@@ -62,7 +62,7 @@ var records = recordapi.UpdateRecords({
 
 ## 行レコードの作成
 
-フィールドの形式: [多次元テーブルのフィールド型](/docs/ja-JP/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types)。
+フィールドの形式: [多次元テーブルのフィールド型](Appendix.md#appendix-1-multidimensional-table-field-types)。
 
 ```javascript
 var records = recordapi.CreateRecords({

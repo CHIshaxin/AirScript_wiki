@@ -29,6 +29,14 @@ SITE_DATA = {
 }
 
 
+def test_homepages_have_deterministic_paths():
+    hm = {"index.md": "A", "en-us_index.md": "B", "ja-jp_index.md": "C"}
+    refs = {r.key: r for r in build_index(hm, {}, [])}
+    assert refs["index.md"].real_path == "index.md"
+    assert refs["en-us_index.md"].real_path == "en-US/index.md"
+    assert refs["ja-jp_index.md"].locale == "ja-JP"
+
+
 def test_curated_paths_keep_real_casing():
     refs = build_index(HASHMAP, SITE_DATA, ["/apiV2/advanced/HTTP"])
     by_key = {r.key: r for r in refs}

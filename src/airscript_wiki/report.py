@@ -59,7 +59,8 @@ def build_index_md(wiki_root: Path) -> str:
                 out.append(f"### {heading}")
                 out.append("")
             title = read_title(path)
-            out.append(f"- [{title}]({rel.as_posix()})")
+            link = f"{locale}/{rel.as_posix()}"
+            out.append(f"- [{title}]({link})")
         out.append("")
     out.insert(3, f"当前共收录 **{total}** 个页面。")
     out.append("")

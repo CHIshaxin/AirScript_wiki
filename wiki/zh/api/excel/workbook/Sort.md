@@ -12,18 +12,18 @@ hash: D5AtpIS8
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
-| [Header](#header) | [XlYesNoGuess](/docs/api/excel/workbook/Enum.html#xlyesnoguess) | 指定第一行是否包含标题信息 |
+| --- | --- | --- |
+| [Header](#header) | [XlYesNoGuess](Enum.md#xlyesnoguess) | 指定第一行是否包含标题信息 |
 | [MatchCase](#matchcase) | Boolean | 是否区分大小写 |
-| [Orientation](#orientation) | [XlSortOrientation](/docs/api/excel/workbook/Enum.html#xlsortorientation) | 指定排序方向 |
-| [Rng](#rng) | [Range](/docs/api/excel/workbook/Range.html) | 返回要执行排序的值的区域 |
-| [SortFields](#sortfields) | [SortFields](/docs/api/excel/workbook/SortFields.html) | 该对象代表与 **Sort** 对象关联的排序字段的集合 |
-| [SortMethod](#sortmethod) | [XlSortMethod](/docs/api/excel/workbook/Enum.html#xlsortmethod) | 中文排序方法 |
+| [Orientation](#orientation) | [XlSortOrientation](Enum.md#xlsortorientation) | 指定排序方向 |
+| [Rng](#rng) | [Range](Range.md) | 返回要执行排序的值的区域 |
+| [SortFields](#sortfields) | [SortFields](SortFields.md) | 该对象代表与 **Sort** 对象关联的排序字段的集合 |
+| [SortMethod](#sortmethod) | [XlSortMethod](Enum.md#xlsortmethod) | 中文排序方法 |
 
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Apply()](#apply) | undefined | 根据当前应用的排序状态对区域进行排序 |
 | [SetRange()](#setrange) | undefined | 设置排序发生的范围 |
 
@@ -203,13 +203,13 @@ sort.Apply()
 
 ## Header
 
-指定第一行是否包含标题信息，可读/写 [XlYesNoGuess](/docs/api/excel/workbook/Enum.html#xlyesnoguess)。
+指定第一行是否包含标题信息，可读/写 [XlYesNoGuess](Enum.md#xlyesnoguess)。
 
 默认值为 xlNo，如果希望 Excel 确定标题，可以指定 xlGuess。
 
 #### 数据类型
 
-[XlYesNoGuess](/docs/api/excel/workbook/Enum.html#xlyesnoguess) - 第一行是否包含标题
+[XlYesNoGuess](Enum.md#xlyesnoguess) - 第一行是否包含标题
 
 ## MatchCase
 
@@ -221,11 +221,11 @@ Boolean - 是否区分大小写
 
 ## Orientation
 
-指定排序方向，可读/写 [XlSortOrientation](/docs/api/excel/workbook/Enum.html#xlsortorientation)。
+指定排序方向，可读/写 [XlSortOrientation](Enum.md#xlsortorientation)。
 
 #### 数据类型
 
-[XlSortOrientation](/docs/api/excel/workbook/Enum.html#xlsortorientation) - 排序方向
+[XlSortOrientation](Enum.md#xlsortorientation) - 排序方向
 
 ## Rng
 
@@ -233,7 +233,7 @@ Boolean - 是否区分大小写
 
 #### 数据类型
 
-[Range](/docs/api/excel/workbook/Range.html) - 排序区域对象
+[Range](Range.md) - 排序区域对象
 
 ## SortFields
 
@@ -254,16 +254,16 @@ Number - 对象数目
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Key | [Range](/docs/api/excel/workbook/Range.html) | null | 是 | 指定用于排序的键值 |
-| SortOn | [XlSortOn](/docs/api/excel/workbook/Enum.html#xlsorton) | null | 否 | 要进行排序的字段 |
-| Order | [XlSortOrder](/docs/api/excel/workbook/Enum.html#xlsortorder) | null | 否 | 指定排序次序 |
+| --- | --- | --- | --- | --- |
+| Key | [Range](Range.md) | null | 是 | 指定用于排序的键值 |
+| SortOn | [XlSortOn](Enum.md#xlsorton) | null | 否 | 要进行排序的字段 |
+| Order | [XlSortOrder](Enum.md#xlsortorder) | null | 否 | 指定排序次序 |
 | CustomOrder | Variant | null | 否 | 指定是否应使用自定义排序次序 |
-| DataOption | [XlSortDataOption](/docs/api/excel/workbook/Enum.html#xlsortdataoption) | null | 否 | 指定数据选项 |
+| DataOption | [XlSortDataOption](Enum.md#xlsortdataoption) | null | 否 | 指定数据选项 |
 
 #### 返回值
 
-[SortField](/docs/api/excel/workbook/SortField.html) - 代表与 **Sort** 对象关联的排序字段对象
+[SortField](SortField.md) - 代表与 **Sort** 对象关联的排序字段对象
 
 ### Clear()
 
@@ -275,25 +275,25 @@ undefined
 
 ### Item()
 
-返回一个 [SortField](/docs/api/excel/workbook/SortField.html) 对象，此为只读属性
+返回一个 [SortField](SortField.md) 对象，此为只读属性
 
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number / String | null | 是 | 指定用于索引，默认从 1 开始 |
 
 #### 返回值
 
-[SortField](/docs/api/excel/workbook/SortField.html) - 代表与 **Sort** 对象关联的排序字段对象
+[SortField](SortField.md) - 代表与 **Sort** 对象关联的排序字段对象
 
 ## SortMethod
 
-指定中文排序方法，可读/写 [XlSortMethod](/docs/api/excel/workbook/Enum.html#xlsortmethod)。
+指定中文排序方法，可读/写 [XlSortMethod](Enum.md#xlsortmethod)。
 
 #### 数据类型
 
-[XlSortMethod](/docs/api/excel/workbook/Enum.html#xlsortmethod) - 中文排序方法
+[XlSortMethod](Enum.md#xlsortmethod) - 中文排序方法
 
 ## Apply()
 
@@ -314,8 +314,8 @@ undefined
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Range | [Range](/docs/api/excel/workbook/Range.html) | null | 是 | 指定 Sort 对象所表示的排序所依据的范围 |
+| --- | --- | --- | --- | --- |
+| Range | [Range](Range.md) | null | 是 | 指定 Sort 对象所表示的排序所依据的范围 |
 
 #### 返回值
 

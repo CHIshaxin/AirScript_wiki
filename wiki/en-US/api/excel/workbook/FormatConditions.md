@@ -14,21 +14,21 @@ Conditional formatting applies formats based on cell values, formulas, or other 
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Count](#count) | Number | Number of objects in the FormatConditions collection |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
-| [Add()](#add) | [FormatCondition](/docs/en-US/api/excel/workbook/FormatCondition.html) | Adds a conditional format to the collection |
+| --- | --- | --- |
+| [Add()](#add) | [FormatCondition](FormatCondition.md) | Adds a conditional format to the collection |
 | [AddAboveAverage()](#addaboveaverage) | AboveAverage | New AboveAverage rule for the range |
 | [AddIconSetCondition()](#addiconsetcondition) | IconSetCondition | Icon set conditional format for the range |
 | [AddColorScale()](#addcolorscale) | ColorScale | Color scale rule showing relative cell values with a gradient |
 | [AddTop10()](#addtop10) | Top10 | Highlights highest or lowest values by rank or percentage |
 | [AddUniqueValues()](#adduniquevalues) | UniqueValues | New UniqueValues rule for the range |
 | [Delete()](#delete) | undefined | Deletes conditional formats on the range |
-| [Item()](#item) | [FormatCondition](/docs/en-US/api/excel/workbook/FormatCondition.html) | Returns one conditional format from the collection |
+| [Item()](#item) | [FormatCondition](FormatCondition.md) | Returns one conditional format from the collection |
 
 ## Count
 
@@ -54,15 +54,15 @@ Adds a conditional format to the collection.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Type | [XlFormatConditionType](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditiontype) | null | Yes | Condition type |
-| Operator | [XlFormatConditionOperator](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditionoperator) | null | Yes | Operator; ignored if Type is `xlExpression` |
+| --- | --- | --- | --- | --- |
+| Type | [XlFormatConditionType](Enum.md#xlformatconditiontype) | null | Yes | Condition type |
+| Operator | [XlFormatConditionOperator](Enum.md#xlformatconditionoperator) | null | Yes | Operator; ignored if Type is `xlExpression` |
 | Formula1 | String | null | Yes | Value or expression: constant, string, reference, or formula |
 | Formula2 | String | null | No | Second part when Operator is `xlBetween` or `xlNotBetween` (otherwise ignored). Constant, string, reference, or formula |
 
 #### Return value
 
-[FormatCondition](/docs/en-US/api/excel/workbook/FormatCondition.html) - The added conditional format
+[FormatCondition](FormatCondition.md) - The added conditional format
 
 #### Example
 
@@ -153,7 +153,7 @@ Returns a new ColorScale object: a color gradient showing relative cell values.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | ColorScaleType | Number | null | Yes | 2 for two-color scale, 3 for three-color scale |
 
 #### Return value
@@ -254,12 +254,12 @@ Returns one conditional format from the collection.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number / String | null | Yes | One-based index in the collection |
 
 #### Return value
 
-[FormatCondition](/docs/en-US/api/excel/workbook/FormatCondition.html) object
+[FormatCondition](FormatCondition.md) object
 
 #### Example
 

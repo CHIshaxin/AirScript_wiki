@@ -29,7 +29,7 @@ console.log(data.note, data.content)
 ### Method List
 
 | Method | Return Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [fetch(url[, options])](#fetch) | [Response](#response) | Send a custom type network request |
 | [get(url[, options])](#get) | [Response](#response) | Send a GET type network request |
 | [delete(url[, options])](#delete) | [Response](#response) | Send a DELETE type network request |
@@ -57,14 +57,14 @@ console.log(resp.text())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | Network address to access, only domain names without port numbers are allowed |
 | options | [RequestOption](#requestoption) | undefined | false | A JavaScript object that can specify optional parameters for the request, as shown below. |
 
 ### RequestOption
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [method](#method) | string | GET | false | Method for network request, such as `GET`, `POST`, `PUT`, `DELETE`, etc. |
 | [timeout](#timeout) | number | 10000 | false | Timeout for network request in milliseconds (ms), range is 0~60000, values outside range default to 10 seconds. |
 | [headers](#headers) | object | undefined | false | Headers for network request, such as `cookie`, etc. |
@@ -88,14 +88,14 @@ console.log(resp.json())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | Network address to access, only domain names without port numbers are allowed |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | A JavaScript object that can specify optional parameters for the request, as shown below. |
 
 ### MethodRequestOption
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [timeout](#timeout) | number | 10000 | false | Timeout for network request in milliseconds (ms), range is 0~60000, values outside range default to 10 seconds. |
 | [headers](#headers) | object | undefined | false | Headers for network request, such as `cookie`, etc. |
 
@@ -117,7 +117,7 @@ console.log(resp.status)
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | Network address to access, only domain names without port numbers are allowed |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | A JavaScript object that can specify optional parameters for the request, as shown below. |
 
@@ -151,7 +151,7 @@ console.log(resp.json())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | Network address to access, only domain names without port numbers are allowed |
 | body | string\| object |  | true | Request body |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | A JavaScript object that can specify optional parameters for the request, as shown below. |
@@ -177,7 +177,7 @@ console.log(resp.json())
 ### Parameters
 
 | Name | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | url | string |  | true | Network address to access, only domain names without port numbers are allowed |
 | body | string\| object |  | true | Request body |
 | options | [MethodRequestOption](#methodrequestoption) | undefined | false | A JavaScript object that can specify optional parameters for the request, as shown below. |
@@ -204,7 +204,7 @@ console.log(resp.status) // [...]
 ### Method List
 
 | Method | Return Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [status](#status) | number | Get response HTTP status code |
 | [statusText](#statustext) | string | Get response HTTP status |
 | [headers](#status) | object | Get response header |

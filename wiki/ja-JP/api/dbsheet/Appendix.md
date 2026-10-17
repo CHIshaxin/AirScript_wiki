@@ -9,10 +9,10 @@ hash: zB0K1UB8
 
 ## 付録 1: 多次元テーブルのフィールド型
 
-[テーブルを迅速に作成](/docs/ja-JP/example/dbSheet.html#quickly-create-a-table) も参照してください。
+[テーブルを迅速に作成](../../example/dbSheet.md#quickly-create-a-table) も参照してください。
 
 | フィールド型 | 型 | フィールド作成時の形状 | 書き込み値 | 読み取り値 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 複数行テキスト | MultiLineText | 追加ルールなし | 文字列 | 文字列 |
 | 日付 | Date | 追加ルールなし | 文字列、`yyyy/mm/dd` 形式 | 文字列 |
 | 時刻 | Time | 追加ルールなし | 文字列、`hh:mm:ss` 形式 | 文字列 |
@@ -40,10 +40,10 @@ hash: zB0K1UB8
 
 ## 付録 2: 多次元テーブルの View 型
 
-[テーブルを迅速に作成](/docs/ja-JP/example/dbSheet.html#quickly-create-a-table) も参照してください。
+[テーブルを迅速に作成](../../example/dbSheet.md#quickly-create-a-table) も参照してください。
 
 | View 型 | 説明 |
-|---|---|
+| --- | --- |
 | Grid | グリッド View |
 | Kanban | カンバン View |
 | Gallery | ギャラリー View |
@@ -73,7 +73,7 @@ hash: zB0K1UB8
 ```
 
 | 演算子 | 意味 |
-|---|---|
+| --- | --- |
 | Equals | 等しい |
 | NotEqu | 等しくない |
 | Greater | より大きい |
@@ -125,7 +125,7 @@ hash: zB0K1UB8
 動的日付では、`values` 内の各オブジェクトは `type` を `DynamicSimple` に設定する必要があります。`op` が `Equals` のとき、`dynamicType` は次の値にできます（大文字・小文字は区別しません）。
 
 | 値 | 意味 |
-|---|---|
+| --- | --- |
 | today | 今日 |
 | yesterday | 昨日 |
 | tomorrow | 明日 |

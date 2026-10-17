@@ -14,14 +14,14 @@ Font オブジェクトのプロパティとメソッドは、以下の一覧を
 ### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Bold](#bold) | 真偽値 | 太字かどうか |
 | [Color](#color) | 文字列 | フォントの色 |
 | [Italic](#italic) | 真偽値 | 斜体かどうか |
 | [Name](#name) | 文字列 | フォント名 |
 | [Size](#size) | 数値 | フォントサイズ |
 | [Strikethrough](#strikethrough) | 真偽値 | 取り消し線を付けるかどうか |
-| [Underline](#underline) | [Enum.XlUnderlineStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xlunderlinestyle) | 下線のスタイル |
+| [Underline](#underline) | [Enum.XlUnderlineStyle](Enum.md#xlunderlinestyle) | 下線のスタイル |
 
 ## Bold
 
@@ -149,7 +149,7 @@ font.Strikethrough = true
 
 ### データ型
 
-[Enum.XlUnderlineStyle](/docs/ja-JP/api/excel/workbook/Enum.html#xlunderlinestyle) - 下線の種類
+[Enum.XlUnderlineStyle](Enum.md#xlunderlinestyle) - 下線の種類
 
 例: 単線の下線は `Application.Enum.XlUnderlineStyle.xlUnderlineStyleSingle`
 

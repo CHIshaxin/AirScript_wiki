@@ -12,18 +12,18 @@ Sort object; set the target range, then apply sorting.
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
-| [Header](#header) | [XlYesNoGuess](/docs/en-US/api/excel/workbook/Enum.html#xlyesnoguess) | Whether the first row contains headers |
+| --- | --- | --- |
+| [Header](#header) | [XlYesNoGuess](Enum.md#xlyesnoguess) | Whether the first row contains headers |
 | [MatchCase](#matchcase) | Boolean | Case-sensitive sort |
-| [Orientation](#orientation) | [XlSortOrientation](/docs/en-US/api/excel/workbook/Enum.html#xlsortorientation) | Sort orientation |
-| [Rng](#rng) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Range containing values to be sorted |
-| [SortFields](#sortfields) | [SortFields](/docs/en-US/api/excel/workbook/SortFields.html) | Collection of sort fields for this **Sort** object |
-| [SortMethod](#sortmethod) | [XlSortMethod](/docs/en-US/api/excel/workbook/Enum.html#xlsortmethod) | East Asian sort method (phonetic or stroke) |
+| [Orientation](#orientation) | [XlSortOrientation](Enum.md#xlsortorientation) | Sort orientation |
+| [Rng](#rng) | [Range](Range.md) | Range containing values to be sorted |
+| [SortFields](#sortfields) | [SortFields](https://airsheet.wps.cn/docs/en-US/api/excel/workbook/SortFields.html) | Collection of sort fields for this **Sort** object |
+| [SortMethod](#sortmethod) | [XlSortMethod](Enum.md#xlsortmethod) | East Asian sort method (phonetic or stroke) |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Apply()](#apply) | undefined | Sorts the range using the current sort state |
 | [SetRange()](#setrange) | undefined | Sets the range to be sorted |
 
@@ -189,13 +189,13 @@ sort.Apply()
 
 ## Header
 
-Whether the first row contains header information. Read/write [XlYesNoGuess](/docs/en-US/api/excel/workbook/Enum.html#xlyesnoguess).
+Whether the first row contains header information. Read/write [XlYesNoGuess](Enum.md#xlyesnoguess).
 
 Default is xlNo; use xlGuess to let Excel detect headers.
 
 #### Data type
 
-[XlYesNoGuess](/docs/en-US/api/excel/workbook/Enum.html#xlyesnoguess) - Header row handling
+[XlYesNoGuess](Enum.md#xlyesnoguess) - Header row handling
 
 ## MatchCase
 
@@ -207,11 +207,11 @@ Boolean - Case sensitivity
 
 ## Orientation
 
-Sort orientation. Read/write [XlSortOrientation](/docs/en-US/api/excel/workbook/Enum.html#xlsortorientation).
+Sort orientation. Read/write [XlSortOrientation](Enum.md#xlsortorientation).
 
 #### Data type
 
-[XlSortOrientation](/docs/en-US/api/excel/workbook/Enum.html#xlsortorientation) - Sort orientation
+[XlSortOrientation](Enum.md#xlsortorientation) - Sort orientation
 
 ## Rng
 
@@ -219,7 +219,7 @@ Returns the range of values to sort. Read-only.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Sort range
+[Range](Range.md) - Sort range
 
 ## SortFields
 
@@ -240,16 +240,16 @@ Creates a new sort field and returns a SortField object.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Key | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Key range |
-| SortOn | [XlSortOn](/docs/en-US/api/excel/workbook/Enum.html#xlsorton) | null | No | Property to sort by |
-| Order | [XlSortOrder](/docs/en-US/api/excel/workbook/Enum.html#xlsortorder) | null | No | Sort order |
+| --- | --- | --- | --- | --- |
+| Key | [Range](Range.md) | null | Yes | Key range |
+| SortOn | [XlSortOn](Enum.md#xlsorton) | null | No | Property to sort by |
+| Order | [XlSortOrder](Enum.md#xlsortorder) | null | No | Sort order |
 | CustomOrder | Variant | null | No | Custom list usage |
-| DataOption | [XlSortDataOption](/docs/en-US/api/excel/workbook/Enum.html#xlsortdataoption) | null | No | Data option |
+| DataOption | [XlSortDataOption](Enum.md#xlsortdataoption) | null | No | Data option |
 
 #### Return value
 
-[SortField](/docs/en-US/api/excel/workbook/SortField.html) - Sort field for this **Sort** object
+[SortField](SortField.md) - Sort field for this **Sort** object
 
 ### Clear()
 
@@ -261,25 +261,25 @@ undefined
 
 ### Item()
 
-Returns a [SortField](/docs/en-US/api/excel/workbook/SortField.html) object. Read-only.
+Returns a [SortField](SortField.md) object. Read-only.
 
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number / String | null | Yes | Index starting at 1 |
 
 #### Return value
 
-[SortField](/docs/en-US/api/excel/workbook/SortField.html) - Sort field for this **Sort** object
+[SortField](SortField.md) - Sort field for this **Sort** object
 
 ## SortMethod
 
-East Asian sort method (phonetic or stroke). Read/write [XlSortMethod](/docs/en-US/api/excel/workbook/Enum.html#xlsortmethod).
+East Asian sort method (phonetic or stroke). Read/write [XlSortMethod](Enum.md#xlsortmethod).
 
 #### Data type
 
-[XlSortMethod](/docs/en-US/api/excel/workbook/Enum.html#xlsortmethod) - East Asian sort method
+[XlSortMethod](Enum.md#xlsortmethod) - East Asian sort method
 
 ## Apply()
 
@@ -300,8 +300,8 @@ Sets the range to be sorted.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Range | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | Range the **Sort** object sorts |
+| --- | --- | --- | --- | --- |
+| Range | [Range](Range.md) | null | Yes | Range the **Sort** object sorts |
 
 #### Return value
 

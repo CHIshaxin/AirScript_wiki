@@ -10,7 +10,7 @@ hash: CD6n301F
 ## 付録 1: データシートの Field の種類
 
 | フィールドの種類 | 型 | Field 作成時の形状 | 書き込み値 | 読み取り値 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 複数行テキスト | MultiLineText | 追加ルールなし | String | String |
 | 日付 | Date | 追加ルールなし | String、`yyyy/mm/dd` 形式 | String |
 | 時刻 | Time | 追加ルールなし | String、`hh:mm:ss` 形式 | String |
@@ -39,7 +39,7 @@ hash: CD6n301F
 ## 付録 2: データシートの View の種類
 
 | View の種類 | 説明 |
-|---|---|
+| --- | --- |
 | Grid | グリッド View |
 | Kanban | カンバン View |
 | Gallery | ギャラリー View |
@@ -69,7 +69,7 @@ hash: CD6n301F
 ```
 
 | 演算子 | 意味 |
-|---|---|
+| --- | --- |
 | Equals | 等しい |
 | NotEqu | 等しくない |
 | Greater | より大きい |
@@ -121,7 +121,7 @@ hash: CD6n301F
 動的日付では、`values` 内の各オブジェクトは `type` を `DynamicSimple` に設定する必要があります。`op` が `Equals` のとき、`dynamicType` は次の値にできます（大文字・小文字を区別しません）。
 
 | 値 | 意味 |
-|---|---|
+| --- | --- |
 | today | 今日 |
 | yesterday | 昨日 |
 | tomorrow | 明日 |

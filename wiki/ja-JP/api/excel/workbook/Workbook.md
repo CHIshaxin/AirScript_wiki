@@ -14,9 +14,9 @@ Workbook オブジェクトのプロパティとメソッドは、以下の一�
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/ja-JP/api/excel/workbook/Sheet.html) | ブック内のアクティブなワークシート |
-| [Sheets](#sheets) | [Sheets](/docs/ja-JP/api/excel/workbook/Application.html#sheets) | すべてのワークシート オブジェクトのコレクション |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | ブック内のアクティブなワークシート |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | すべてのワークシート オブジェクトのコレクション |
 | [ReadOnly](#readonly) | Boolean | ドキュメントが読み取り専用かどうか |
 | [ReadOnlyComment](#readonlycomment) | Boolean | ドキュメントがコメントのみの読み取りを許可するかどうか |
 | [SupportReadOnlyComment](#supportreadonlycomment) | Boolean | ドキュメントがコメントのみの読み取りに対応するかどうか |
@@ -24,7 +24,7 @@ Workbook オブジェクトのプロパティとメソッドは、以下の一�
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Save()](#save) | String(JSON) | 変更をファイルに保存します |
 | [GetComments()](#getcomments) | String(JSON) | ブック全体のコメントを取得します |
 | [ExportAsFixedFormat()](#exportasfixedformat) | String(JSON) | シート全体を PDF または画像としてエクスポートします |
@@ -37,7 +37,7 @@ Workbook オブジェクトのプロパティとメソッドは、以下の一�
 
 #### データ型
 
-[Sheet](/docs/ja-JP/api/excel/workbook/Sheet.html) - アクティブなブックのアクティブなワークシート
+[Sheet](Sheet.md) - アクティブなブックのアクティブなワークシート
 
 #### 例
 
@@ -49,11 +49,11 @@ console.log(Application.ActiveSheet.Name) // Sheet1
 
 ## Sheets
 
-現在のファイルで操作できるすべてのシートを [Sheets](/docs/ja-JP/api/excel/workbook/Application.html#sheets) オブジェクトとして取得します。
+現在のファイルで操作できるすべてのシートを [Sheets](Application.md#sheets) オブジェクトとして取得します。
 
 #### データ型
 
-[Sheets](/docs/ja-JP/api/excel/workbook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### 例
 
@@ -106,7 +106,7 @@ console.log(Application.ActiveWorkbook.ReadOnlyComment) //true
 String(JSON) - 保存結果。形式は次のとおりです。
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | result | String | 保存ステータス |
 | size | Number | ファイルサイズ（バイト） |
 | version | Number | バージョン |
@@ -114,7 +114,7 @@ String(JSON) - 保存結果。形式は次のとおりです。
 **保存ステータスの値**:
 
 | ステータス | 説明 |
-|---|---|
+| --- | --- |
 | ok | バージョンが正常に保存されました。バージョン履歴で確認できます |
 | nochange | ドキュメントに変更がありません。保存するバージョンはありません |
 | SavedEmptyFile | 空ファイルの保存はサポートされていません。カーネル保存後にファイルが空のときに発生します |
@@ -143,7 +143,7 @@ if (res.result === 'ok') {
 String(JSON) - ブックのコメント コレクション。形式は次のとおりです。
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | CellComments | `Array<Object>` | コメント項目 |
 | PosInfo | `String` | セル情報 |
 | SheetName | `String` | シート名 |
@@ -152,7 +152,7 @@ String(JSON) - ブックのコメント コレクション。形式は次のと�
 **コメント項目**:
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | DateTime | `String` | タイムスタンプ |
 | Text | `String` | コメント本文 |
 | Time | `String` | 書式設定済みの時刻 |
@@ -181,8 +181,8 @@ for (let i = 0; i < json.length; i++) {
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Type | Enum |  | 任意 | エクスポートの種類。[Enum.XlFixedFormatType](/docs/ja-JP/api/excel/workbook/Enum.html#xlfixedformattype) を参照。画像と PDF のエクスポートのみサポート |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | 任意 | エクスポートの種類。[Enum.XlFixedFormatType](Enum.md#xlfixedformattype) を参照。画像と PDF のエクスポートのみサポート |
 
 #### 戻り値の型
 

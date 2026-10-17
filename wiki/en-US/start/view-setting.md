@@ -22,7 +22,7 @@ To facilitate users in delivering their scripts to third parties without develop
 Open view configuration and add the following parameters:
 
 | Parameter Name | Variable Name | Variable Type | Input Hint |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Select Sheet | sheet | string | Enter sheet name: "sheet1" |
 | Select Cell | range | string | Enter cell: "A1" |
 | Input Value | value | string | Enter value to set |

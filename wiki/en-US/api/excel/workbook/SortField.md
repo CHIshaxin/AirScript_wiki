@@ -12,19 +12,19 @@ Represents a sort field associated with a **Sort** object.
 #### Properties
 
 | Property | Data type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [CustomOrder](#customorder) | Variant | Custom sort order for the field |
-| [DataOption](#dataoption) | [XlSortDataOption](/docs/en-US/api/excel/workbook/Enum.html#xlsortdataoption) | How to sort text in the range specified by the SortField |
-| [Key](#key) | [Range](/docs/en-US/api/excel/workbook/Range.html) | Sort key range that determines values to sort |
-| [Order](#order) | [XlSortOrder](/docs/en-US/api/excel/workbook/Enum.html#xlsortorder) | Sort order for the key |
+| [DataOption](#dataoption) | [XlSortDataOption](Enum.md#xlsortdataoption) | How to sort text in the range specified by the SortField |
+| [Key](#key) | [Range](Range.md) | Sort key range that determines values to sort |
+| [Order](#order) | [XlSortOrder](Enum.md#xlsortorder) | Sort order for the key |
 | [Priority](#priority) | Number | Priority of this sort field |
-| [SortOn](#sorton) | [XlSortOn](/docs/en-US/api/excel/workbook/Enum.html#xlsorton) | Cell property to sort by |
+| [SortOn](#sorton) | [XlSortOn](Enum.md#xlsorton) | Cell property to sort by |
 | [SortOnValue](#sortonvalue) | Object | Value used to sort for this SortField |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Delete()](#delete) | undefined | Removes this SortField from the SortFields collection |
 | [ModifyKey()](#modifykey) | undefined | Changes the key range used for sorting |
 
@@ -42,7 +42,7 @@ How to sort text in the range specified by the SortField. Read/write.
 
 #### Data type
 
-[XlSortDataOption](/docs/en-US/api/excel/workbook/Enum.html#xlsortdataoption) - Text sort option
+[XlSortDataOption](Enum.md#xlsortdataoption) - Text sort option
 
 ## Key
 
@@ -50,7 +50,7 @@ Sort key range that determines values to sort. Read-only.
 
 #### Data type
 
-[Range](/docs/en-US/api/excel/workbook/Range.html) - Range object
+[Range](Range.md) - Range object
 
 ## Order
 
@@ -58,7 +58,7 @@ Sort order for the key values. Read/write.
 
 #### Data type
 
-[XlSortOrder](/docs/en-US/api/excel/workbook/Enum.html#xlsortorder) - Sort order enum
+[XlSortOrder](Enum.md#xlsortorder) - Sort order enum
 
 ## Priority
 
@@ -74,7 +74,7 @@ Cell property to sort by. Read/write.
 
 #### Data type
 
-[XlSortOn](/docs/en-US/api/excel/workbook/Enum.html#xlsorton)
+[XlSortOn](Enum.md#xlsorton)
 
 ## SortOnValue
 
@@ -99,8 +99,8 @@ Changes the key range used for sorting.
 #### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Key | [Range](/docs/en-US/api/excel/workbook/Range.html) | null | Yes | New key range |
+| --- | --- | --- | --- | --- |
+| Key | [Range](Range.md) | null | Yes | New key range |
 
 #### Return value
 

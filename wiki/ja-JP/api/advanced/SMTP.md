@@ -51,7 +51,7 @@ mailer.send({
 ### メソッド
 
 | メソッド | 戻り値の型 | 概要 |
-|---|---|---|
+| --- | --- | --- |
 | [login(argvs)](#login-argvs) | [Mailer](#mailer) | ログインし、メール送信オブジェクトを返す |
 
 ## login(argvs)
@@ -72,13 +72,13 @@ let mailer = SMTP.login({
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | argvs | LoginArgvs | undefined | はい | SMTP 設定を含む JavaScript オブジェクト。後述 |
 
 ### LoginArgvs
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | host | string | undefined | はい | メールサーバーのホスト名 |
 | port | number | undefined | はい | SMTP ポート。`host` が undefined の場合、`secure` に応じた既定値: false なら 587、true なら 465。 |
 | secure | boolean | undefined | はい | TLS を使うか。ポート 465 の場合は通常 true。587 または 25 の場合は false。 |
@@ -97,7 +97,7 @@ let mailer = SMTP.login({
 ### メソッド
 
 | メソッド | 戻り値の型 | 概要 |
-|---|---|---|
+| --- | --- | --- |
 | [send(message)](#send-message) | undefined | メールを送信する |
 
 ## send(message)
@@ -117,13 +117,13 @@ mailer.send({
 ### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | message | messageArgvs | undefined | はい | メール内容を含む JavaScript オブジェクト。後述 |
 
 ### messageArgvs
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | from | string | undefined | はい | 差出人メールアドレス |
 | to | string / string[] | undefined | はい | 宛先メールアドレス（複数可） |
 | subject | string | undefined | はい | 件名 |

@@ -27,7 +27,7 @@ The copied link content is as follows:
 
 `https://www.wps.com/api/v3/ide/file/caEkI6K5RDG2/script/V2-5rSiBiN7y5xdOd5x5ZYI2r/sync_task`
 
-The link already contains the script ID of the current script and the file ID of the document. You can then request this link to read and edit your corresponding documents. Note that when calling, you must set the request header `AirScript-Token` with your script token as the value. For more detailed instructions, please refer to [API Documentation](/docs/en-US/apitoken/api.html).
+The link already contains the script ID of the current script and the file ID of the document. You can then request this link to read and edit your corresponding documents. Note that when calling, you must set the request header `AirScript-Token` with your script token as the value. For more detailed instructions, please refer to [API Documentation](api.md).
 
 Here we assume the target script code is as follows, modifying the value of cell A1 to `AirScript` and returning an object:
 

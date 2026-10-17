@@ -14,9 +14,9 @@ Workbook 对象的具体属性和方法请参阅下方的列表。
 #### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/api/excel/workbook/Sheet.html) | 工作簿中的活动工作表 |
-| [Sheets](#sheets) | [Sheets](/docs/api/excel/workbook/Application.html#sheets) | 工作表的所有对象集合 |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | 工作簿中的活动工作表 |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | 工作表的所有对象集合 |
 | [ReadOnly](#readonly) | Boolean | 文档是否只读 |
 | [ReadOnlyComment](#readonlycomment) | Boolean | 文档是否只读可评论的权限 |
 | [SupportReadOnlyComment](#supportreadonlycomment) | Boolean | 文档是否支持只读可评论权限 |
@@ -24,7 +24,7 @@ Workbook 对象的具体属性和方法请参阅下方的列表。
 #### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [Save()](#save) | String(JSON) | 保存文件的改动 |
 | [GetComments()](#getcomments) | String(JSON) | 获取整个 Workbook 的评论 |
 | [ExportAsFixedFormat()](#exportasfixedformat) | String(JSON) | 导出整个表格的 PDF 或者 Img 图片 |
@@ -37,7 +37,7 @@ Workbook 对象的具体属性和方法请参阅下方的列表。
 
 #### 数据类型
 
-[Sheet](/docs/api/excel/workbook/Sheet.html) - 活动工作簿中的活动工作表
+[Sheet](Sheet.md) - 活动工作簿中的活动工作表
 
 #### 示例
 
@@ -49,11 +49,11 @@ console.log(Application.ActiveSheet.Name) // Sheet1
 
 ## Sheets
 
-获取当前文件能操作的所有Sheet，返回一个[Sheets](/docs/api/excel/workbook/Application.html#sheets)对象。
+获取当前文件能操作的所有Sheet，返回一个[Sheets](Application.md#sheets)对象。
 
 #### 数据类型
 
-[Sheets](/docs/api/excel/workbook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### 示例
 
@@ -106,7 +106,7 @@ console.log(Application.ActiveWorkbook.ReadOnlyComment) //true
 String(JSON) - 文件的保存状态，具体格式如下：
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | result | String | 保存状态 |
 | size | Number | 文件大小，单位 byte |
 | version | Number | 版本 |
@@ -114,7 +114,7 @@ String(JSON) - 文件的保存状态，具体格式如下：
 **保存状态说明**：
 
 | 保存状态 | 说明 |
-|---|---|
+| --- | --- |
 | ok | 版本保存成功，可在历史版本中查看 |
 | nochange | 文档无更新，无需保存版本 |
 | SavedEmptyFile | 暂不支持保存空文件 触发场景：内核保存完后文件为空 |
@@ -143,7 +143,7 @@ if (res.result === 'ok') {
 String(JSON) - 整个 workbook 的评论集合，具体格式如下：
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | CellComments | `Array<Object>` | 评论信息集合 |
 | PosInfo | `String` | 单元格信息 |
 | SheetName | `String` | Sheet 名称 |
@@ -152,7 +152,7 @@ String(JSON) - 整个 workbook 的评论集合，具体格式如下：
 **评论信息集合**：
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | DateTime | `String` | 时间戳 |
 | Text | `String` | 评论文本 |
 | Time | `String` | 转换后的时间 |
@@ -181,8 +181,8 @@ for (let i = 0; i < json.length; i++) {
 #### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
-| Type | Enum |  | 可选 | 导出的类型，详细可参考 [Enum.XlFixedFormatType](/docs/api/excel/workbook/Enum.html#xlfixedformattype)，目前仅支持导出图片和导出 PDF |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | 可选 | 导出的类型，详细可参考 [Enum.XlFixedFormatType](Enum.md#xlfixedformattype)，目前仅支持导出图片和导出 PDF |
 
 #### 返回类型
 

@@ -18,22 +18,22 @@ See the lists below for properties and methods of `Application`.
 #### Properties
 
 | Property | Type | Description |
-|---|---|---|
-| [ActiveSheet](#activesheet) | [Sheet](/docs/en-US/api/excel/databook/Sheet.html) | Active worksheet / data sheet |
-| [Sheets](#sheets) | [Sheets](/docs/en-US/api/excel/databook/Application.html#sheets) | All worksheets / data sheets in the file |
+| --- | --- | --- |
+| [ActiveSheet](#activesheet) | [Sheet](Sheet.md) | Active worksheet / data sheet |
+| [Sheets](#sheets) | [Sheets](Application.md#sheets) | All worksheets / data sheets in the file |
 | [FileInfo](#fileinfo) | Object | Information about the document |
 | [UserInfo](#userinfo) | Object | User information for the document |
-| [Enum](#enum) | [Enum](/docs/en-US/api/excel/databook/Enum.html) | All enumeration types |
+| [Enum](#enum) | [Enum](Enum.md) | All enumeration types |
 
 #### Methods
 
 | Method | Return type | Description |
-|---|---|---|
-| [Sheets(name)](#sheets-1) | [Sheet](/docs/en-US/api/excel/databook/Sheet.html) | Get the worksheet / data sheet named `name` |
+| --- | --- | --- |
+| [Sheets(name)](#sheets-1) | [Sheet](Sheet.md) | Get the worksheet / data sheet named `name` |
 
 ## ActiveSheet
 
-The active worksheet / data sheet. You can switch it with `Sheet.Activate()`. This property returns a [Sheet](/docs/en-US/api/excel/databook/Sheet.html#activesheet) object so you can work with the active sheet.
+The active worksheet / data sheet. You can switch it with `Sheet.Activate()`. This property returns a [Sheet](Sheet.md#activesheet) object so you can work with the active sheet.
 
 The script runs in an environment isolated on the server, so the script environment’s `ActiveSheet` may not match the user’s `ActiveSheet`.
 
@@ -44,7 +44,7 @@ Rules:
 
 #### Type
 
-[Sheet](/docs/en-US/api/excel/databook/Sheet.html) – the active worksheet / data sheet
+[Sheet](Sheet.md) – the active worksheet / data sheet
 
 #### Example
 
@@ -58,11 +58,11 @@ console.log(Application.ActiveSheet.Name) // DataSheet2
 
 ## Sheets
 
-Returns every `Sheet` you can operate on in the current file, as a [Sheets](/docs/en-US/api/excel/databook/Application.html#sheets) object.
+Returns every `Sheet` you can operate on in the current file, as a [Sheets](Application.md#sheets) object.
 
 #### Type
 
-[Sheets](/docs/en-US/api/excel/databook/Application.html#sheets)
+[Sheets](Application.md#sheets)
 
 #### Example
 
@@ -123,11 +123,11 @@ Adds a worksheet. If both `Before` and `After` are provided, `Before` takes prec
 #### Parameters
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Before | String/Number |  | No | Required when `After` is empty: index or name of an existing sheet; the new sheet is inserted before it |
 | After | String/Number |  | No | Required when `Before` is empty: index or name of an existing sheet; the new sheet is inserted after it |
 | Count | Number | 1 | No | Number of sheets to add. Default is the number of selected sheets |
-| Type | Enum |  | No | Sheet type; see [Enum.XlSheetType](/docs/en-US/api/excel/databook/Enum.html#xlsheettype) |
+| Type | Enum |  | No | Sheet type; see [Enum.XlSheetType](Enum.md#xlsheettype) |
 | Name | Name |  | No | Name of the new sheet |
 
 #### Example
@@ -149,12 +149,12 @@ Select a sheet by name or index.
 #### Parameters
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | index | String/Number |  | Yes | Sheet name or index |
 
 #### Return type
 
-[Sheet](/docs/en-US/api/excel/databook/Sheet.html) – the matching worksheet / data sheet
+[Sheet](Sheet.md) – the matching worksheet / data sheet
 
 #### Example
 
@@ -170,7 +170,7 @@ Iterate all sheets and run a callback.
 #### Parameters
 
 | Property | Type | Default | Required | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | callback | Function | null | Yes | Like `Array.prototype.forEach` |
 
 #### Example
@@ -190,7 +190,7 @@ Basic information about the current file.
 Object – file metadata
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | string | File ID |
 | name | string | File name |
 | officeType | string | Document type |
@@ -202,7 +202,7 @@ Object – file metadata
 #### CreatorObject
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | string | Creator ID |
 | name | string | Creator name |
 | avatar_url | string | Avatar URL |
@@ -229,7 +229,7 @@ User information for the current file.
 Object – user metadata
 
 | Name | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | string | User ID |
 | name | string | User name |
 
@@ -247,7 +247,7 @@ Use `Application.Enum`.
 
 #### Type
 
-[Enum](/docs/en-US/api/excel/databook/Enum.html) – all enumeration types
+[Enum](Enum.md) – all enumeration types
 
 #### Example
 
@@ -258,17 +258,17 @@ console.log(Application.Enum.XlSheetType)
 
 ## Sheets()
 
-Used as a function instead of `Sheets.Item()`; returns a [Sheet](/docs/en-US/api/excel/databook/Sheet.html).
+Used as a function instead of `Sheets.Item()`; returns a [Sheet](Sheet.md).
 
 #### Parameters
 
 | Name | Type | Required | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | name | string | Yes | Worksheet / data sheet name |
 
 #### Return type
 
-[Sheet](/docs/en-US/api/excel/databook/Sheet.html) – the sheet object with that name
+[Sheet](Sheet.md) – the sheet object with that name
 
 #### Example
 

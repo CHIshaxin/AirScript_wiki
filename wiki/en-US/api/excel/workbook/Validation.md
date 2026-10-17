@@ -14,7 +14,7 @@ See the lists below for the Validation object's properties and methods.
 ### Methods
 
 | Method | Return type | Description |
-|---|---|---|
+| --- | --- | --- |
 | [Add()](#add) | undefined | Adds a data validation rule |
 | [Modify()](#modify) | undefined | Modifies a data validation rule |
 | [Delete()](#delete) | undefined | Deletes data validation rules |
@@ -26,10 +26,10 @@ Adds a data validation rule.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Type | Enum |  | Yes | Validation type; see [Enum.XlDVType](/docs/en-US/api/excel/workbook/Enum.html#xldvtype) |
-| AlertStyle | Enum |  | Yes | Icon for validation messages; see [Enum.XlDVAlertStyle](/docs/en-US/api/excel/workbook/Enum.html#xldvalertstyle) |
-| Operator | Enum |  | No | Comparison operator for values or formulas; see [Enum.XlFormatConditionOperator](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditionoperator) |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | Yes | Validation type; see [Enum.XlDVType](Enum.md#xldvtype) |
+| AlertStyle | Enum |  | Yes | Icon for validation messages; see [Enum.XlDVAlertStyle](Enum.md#xldvalertstyle) |
+| Operator | Enum |  | No | Comparison operator for values or formulas; see [Enum.XlFormatConditionOperator](Enum.md#xlformatconditionoperator) |
 | Formula1 | String |  | No | First part of the validation formula; max 255 characters |
 | Formula2 | String |  | No | Second part when Operator is xlBetween or xlNotBetween (otherwise ignored) |
 
@@ -56,10 +56,10 @@ Modifies a data validation rule.
 ### Parameters
 
 | Property | Data type | Default | Required | Description |
-|---|---|---|---|---|
-| Type | Enum |  | Yes | Validation type; see [Enum.XlDVType](/docs/en-US/api/excel/workbook/Enum.html#xldvtype) |
-| AlertStyle | Enum |  | Yes | Icon for validation messages; see [Enum.XlDVAlertStyle](/docs/en-US/api/excel/workbook/Enum.html#xldvalertstyle) |
-| Operator | Enum |  | No | Comparison operator; see [Enum.XlFormatConditionOperator](/docs/en-US/api/excel/workbook/Enum.html#xlformatconditionoperator) |
+| --- | --- | --- | --- | --- |
+| Type | Enum |  | Yes | Validation type; see [Enum.XlDVType](Enum.md#xldvtype) |
+| AlertStyle | Enum |  | Yes | Icon for validation messages; see [Enum.XlDVAlertStyle](Enum.md#xldvalertstyle) |
+| Operator | Enum |  | No | Comparison operator; see [Enum.XlFormatConditionOperator](Enum.md#xlformatconditionoperator) |
 | Formula1 | String |  | No | First part of the validation formula; max 255 characters |
 | Formula2 | String |  | No | Second part when Operator is xlBetween or xlNotBetween (otherwise ignored) |
 

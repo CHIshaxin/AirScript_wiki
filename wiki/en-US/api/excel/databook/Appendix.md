@@ -10,7 +10,7 @@ hash: COW1yA_L
 ## Appendix 1: Datasheet field types
 
 | Field type | Type | Create-field shape | Write value | Read value |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Multi-line text | MultiLineText | No extra rules | String | String |
 | Date | Date | No extra rules | String, `yyyy/mm/dd` | String |
 | Time | Time | No extra rules | String, `hh:mm:ss` | String |
@@ -39,7 +39,7 @@ hash: COW1yA_L
 ## Appendix 2: Datasheet view types
 
 | View type | Description |
-|---|---|
+| --- | --- |
 | Grid | Grid view |
 | Kanban | Kanban view |
 | Gallery | Gallery view |
@@ -69,7 +69,7 @@ Filters restrict rows. Two parts: `mode` is how criteria combine; `creteria` hol
 ```
 
 | Operator | Meaning |
-|---|---|
+| --- | --- |
 | Equals | Equal |
 | NotEqu | Not equal |
 | Greater | Greater than |
@@ -121,7 +121,7 @@ The example above means “equals last month.”
 For dynamic dates, each object in `values` must set `type` to `DynamicSimple`. When `op` is `Equals`, `dynamicType` may be (case-insensitive):
 
 | Value | Meaning |
-|---|---|
+| --- | --- |
 | today | Today |
 | yesterday | Yesterday |
 | tomorrow | Tomorrow |

@@ -47,6 +47,6 @@ AirScript会根据开发者编写脚本时启用高级服务的配置内容来�
 为防止向用户提供恶意的脚本，出于安全性考虑，使用高级服务存在一些限制。
 
 - 过于高频地使用高级服务，当出现这种情况时，脚本的运行会抛出明显的错误通知用户异常调用。
-- 使用[HTTP](/docs/api/advanced/HTTP.html)服务时，禁止使用IP地址发起请求，禁止使用端口发起请求。
-- 使用[HTTP](/docs/api/advanced/HTTP.html)服务时，收到内容的消息体最大为2M，超过2M会抛出错误。
-- 使用[KSDrive.openFile](/docs/api/advanced/KSDrive.html#openfile-openinfo) 获得的[File](/docs/api/advanced/KSDrive.html#file)对象没有调用close, 就再次使用[KSDrive.openFile](/docs/api/advanced/KSDrive.html#openfile-openinfo) 会报错。
+- 使用[HTTP](HTTP.md)服务时，禁止使用IP地址发起请求，禁止使用端口发起请求。
+- 使用[HTTP](HTTP.md)服务时，收到内容的消息体最大为2M，超过2M会抛出错误。
+- 使用[KSDrive.openFile](KSDrive.md#openfile-openinfo) 获得的[File](KSDrive.md#file)对象没有调用close, 就再次使用[KSDrive.openFile](KSDrive.md#openfile-openinfo) 会报错。

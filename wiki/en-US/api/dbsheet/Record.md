@@ -14,13 +14,13 @@ Row records.
 Optional parameters:
 
 | Parameter | Description |
-|---|---|
+| --- | --- |
 | ViewId | If set, records are read from that view as the user sees them; otherwise from the worksheet |
 | PageSize | When paginating, the starting record (inclusive) for this query. If empty, starts from the first record |
 | Offset | For pagination, the response may include `offset` for the first row of the next page. Omitted on the last page or when `maxRecords` is reached |
 | MaxRecords | Return only the first `maxRecords` rows; if omitted, all matching rows |
 | Fields | e.g. `["Quantity", "Date", "Time"]` – field names to return; if omitted, all fields |
-| Filter | Filter criteria; see [filter criteria](/docs/en-US/api/dbsheet/Appendix.html#appendix-3-filter-criteria) |
+| Filter | Filter criteria; see [filter criteria](Appendix.md#appendix-3-filter-criteria) |
 
 ```javascript
 var records = Application.Record.GetRecords({ SheetId: 3 })
@@ -43,7 +43,7 @@ var result = Application.Record.DeleteRecords({
 
 ## Update row records
 
-Field formats: [Multidimensional Table field types](/docs/en-US/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types).
+Field formats: [Multidimensional Table field types](Appendix.md#appendix-1-multidimensional-table-field-types).
 
 ```javascript
 var records = recordapi.UpdateRecords({
@@ -62,7 +62,7 @@ var records = recordapi.UpdateRecords({
 
 ## Create row records
 
-Field formats: [Multidimensional Table field types](/docs/en-US/api/dbsheet/Appendix.html#appendix-1-multidimensional-table-field-types).
+Field formats: [Multidimensional Table field types](Appendix.md#appendix-1-multidimensional-table-field-types).
 
 ```javascript
 var records = recordapi.CreateRecords({

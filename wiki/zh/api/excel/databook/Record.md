@@ -12,7 +12,7 @@ hash: DbbC9VTX
 ### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [GetRecords()](#getrecords) | Array | 获取行记录（多条） |
 | [GetRecord()](#getrecord) | Object | 获取行记录（单条） |
 | [DeleteRecords()](#deleterecords) | Array | 删除行记录 |
@@ -31,29 +31,29 @@ hash: DbbC9VTX
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | ViewId | String |  | 否 | 填写后将从被指定的视图获取该用户所见到的记录；若不填写，则从工作表获取记录 |
 | PageSize | Number | 100 | 否 | 存在分页时，指定本次查询的起始记录（含）。若不填写或填写为空字符串，则从第一条记录开始获取。**当前最大值：1000** |
 | Offset | Number |  | 否 | 分页查询时，将返回一个offset值，指向下一页的第一条记录，供后续查询。查询到最后一页或第maxRecords条记录时，返回数据将不再包含offset值 |
 | MaxRecords | Number |  | 否 | 指定要获取的“前maxRecords条记录”，若不填写，则默认返回全部记录 |
-| Fields | Array |  | 否 | [字段类型](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
-| Filter | Object |  | 否 | 详细说明见[附录三](/docs/api/excel/databook/附录.html#附录-3-筛选条件说明) |
+| Fields | Array |  | 否 | [字段类型](附录.md#附录-1-数据表字段类型说明) |
+| Filter | Object |  | 否 | 详细说明见[附录三](附录.md#附录-3-筛选条件说明) |
 
 ### 返回值
 
 Object - 获取表的所有记录
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | Offset | String | 如果分页的话， 则会返回此字段信息;分页截止 id， 下次请求携带会继续分页请求信息 |
 | Records | Array[Object] | 记录集合 |
 
 #### 记录集合
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
-| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 
@@ -87,7 +87,7 @@ fetchAllRecords()
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RecordId | String |  | 是 | 表中指定获取的记录id |
 
 ### 返回值
@@ -95,9 +95,9 @@ fetchAllRecords()
 Object - 获取表的指定的单条记录
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
-| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 
@@ -116,7 +116,7 @@ console.log(record)
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RecordIds | Array |  | 是 | 表中需要删除的记录id |
 
 ### 返回值
@@ -124,7 +124,7 @@ console.log(record)
 Array - 返回删除的表id以及删除是否成功信息
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
 | deleted | Boolean | 是否删除成功 “true”表示删除成功，“false”表示删除失败 |
 
@@ -147,24 +147,24 @@ console.log(resutlt)
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Records | Array[Object] |  | 是 | 行记录集合 |
 
 #### 行记录集合：
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
-| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 返回值
 
 Array - 表的已更新的所有记录
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
-| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 
@@ -191,24 +191,24 @@ const records = sheet.Record.UpdateRecords({
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Records | Array[Object] |  | 是 | 行记录集合 |
 
 #### 行记录集合：
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
-| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 返回值
 
 Array - 表的已更新的所有记录
 
 | 属性 | 数据类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | id | String | 记录Id |
-| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](/docs/api/excel/databook/附录.html#附录-1-数据表字段类型说明) |
+| Fields | Object | 更新的字段信息，包含字段Id，字段name,格式说明见[附录](附录.md#附录-1-数据表字段类型说明) |
 
 ### 示例
 
@@ -248,7 +248,7 @@ const records = sheet.Record.CreateRecords({
 必须至少传入1个参数`Attachment` 或者传入2个参数`UploadId`和 `Source`
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Attachment | String |  | 否 | 附件 |
 | UploadId | String |  | 否 | 上传文件id |
 | Source | String |  | 否 | source参数必须为"upload_ks3"（本地上传）或"cloud"（云上传） |

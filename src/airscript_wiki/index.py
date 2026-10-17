@@ -124,6 +124,17 @@ def build_index(hashmap: dict[str, str], site_data: dict, search_paths: list[str
         if not hash_:
             pages[key].notes.append("not in hashmap")
 
+    # 三个 locale 的首页不在侧边栏/搜索数据里，但 hashmap 中有，直接给出确定路径
+    homes = {
+        "index.md": ("zh", "index.md"),
+        "en-us_index.md": ("en-US", "en-US/index.md"),
+        "ja-jp_index.md": ("ja-JP", "ja-JP/index.md"),
+    }
+    for key, (locale, real) in homes.items():
+        if key in hashmap and key not in pages:
+            pages[key] = PageRef(key=key, locale=locale, hash=hashmap[key],
+                                 stage=STAGE_DOCS, real_path=real)
+
     for key, hash_ in hashmap.items():
         if key in pages:
             continue

@@ -12,18 +12,18 @@ Sort オブジェクトです。対象の範囲を設定してから並べ替え
 #### プロパティ
 
 | プロパティ | 型 | 説明 |
-|---|---|---|
-| [Header](#header) | [XlYesNoGuess](/docs/ja-JP/api/excel/workbook/Enum.html#xlyesnoguess) | 先頭行が見出し行かどうか |
+| --- | --- | --- |
+| [Header](#header) | [XlYesNoGuess](Enum.md#xlyesnoguess) | 先頭行が見出し行かどうか |
 | [MatchCase](#matchcase) | Boolean | 大文字／小文字を区別する並べ替え |
-| [Orientation](#orientation) | [XlSortOrientation](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortorientation) | 並べ替えの向き |
-| [Rng](#rng) | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | 並べ替え対象の値を含む範囲 |
-| [SortFields](#sortfields) | [SortFields](/docs/ja-JP/api/excel/workbook/SortFields.html) | この **Sort** オブジェクトの並べ替えフィールドのコレクション |
-| [SortMethod](#sortmethod) | [XlSortMethod](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortmethod) | 東アジア語の並べ替え方法（読み／画数） |
+| [Orientation](#orientation) | [XlSortOrientation](Enum.md#xlsortorientation) | 並べ替えの向き |
+| [Rng](#rng) | [Range](Range.md) | 並べ替え対象の値を含む範囲 |
+| [SortFields](#sortfields) | [SortFields](https://airsheet.wps.cn/docs/ja-JP/api/excel/workbook/SortFields.html) | この **Sort** オブジェクトの並べ替えフィールドのコレクション |
+| [SortMethod](#sortmethod) | [XlSortMethod](Enum.md#xlsortmethod) | 東アジア語の並べ替え方法（読み／画数） |
 
 #### メソッド
 
 | メソッド | 戻り値の型 | 説明 |
-|---|---|---|
+| --- | --- | --- |
 | [Apply()](#apply) | undefined | 現在の並べ替え状態で範囲を並べ替えます |
 | [SetRange()](#setrange) | undefined | 並べ替え対象の範囲を設定します |
 
@@ -189,13 +189,13 @@ sort.Apply()
 
 ## Header
 
-先頭行に見出し行の情報が含まれるかどうか。読み書き可能。[XlYesNoGuess](/docs/ja-JP/api/excel/workbook/Enum.html#xlyesnoguess)。
+先頭行に見出し行の情報が含まれるかどうか。読み書き可能。[XlYesNoGuess](Enum.md#xlyesnoguess)。
 
 既定値は xlNo。xlGuess で Excel に見出し行の検出を任せます。
 
 #### データ型
 
-[XlYesNoGuess](/docs/ja-JP/api/excel/workbook/Enum.html#xlyesnoguess) - 見出し行の扱い
+[XlYesNoGuess](Enum.md#xlyesnoguess) - 見出し行の扱い
 
 ## MatchCase
 
@@ -207,11 +207,11 @@ Boolean - 大文字／小文字の区別
 
 ## Orientation
 
-並べ替えの向きです。読み書き可能。[XlSortOrientation](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortorientation)。
+並べ替えの向きです。読み書き可能。[XlSortOrientation](Enum.md#xlsortorientation)。
 
 #### データ型
 
-[XlSortOrientation](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortorientation) - 並べ替えの向き
+[XlSortOrientation](Enum.md#xlsortorientation) - 並べ替えの向き
 
 ## Rng
 
@@ -219,7 +219,7 @@ Boolean - 大文字／小文字の区別
 
 #### データ型
 
-[Range](/docs/ja-JP/api/excel/workbook/Range.html) - 並べ替え範囲
+[Range](Range.md) - 並べ替え範囲
 
 ## SortFields
 
@@ -240,16 +240,16 @@ Number - オブジェクト数
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Key | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | キー範囲 |
-| SortOn | [XlSortOn](/docs/ja-JP/api/excel/workbook/Enum.html#xlsorton) | null | いいえ | 並べ替えの基準となるプロパティ |
-| Order | [XlSortOrder](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortorder) | null | いいえ | 並べ替え順 |
+| --- | --- | --- | --- | --- |
+| Key | [Range](Range.md) | null | はい | キー範囲 |
+| SortOn | [XlSortOn](Enum.md#xlsorton) | null | いいえ | 並べ替えの基準となるプロパティ |
+| Order | [XlSortOrder](Enum.md#xlsortorder) | null | いいえ | 並べ替え順 |
 | CustomOrder | Variant | null | いいえ | カスタム リストの使用 |
-| DataOption | [XlSortDataOption](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortdataoption) | null | いいえ | データ オプション |
+| DataOption | [XlSortDataOption](Enum.md#xlsortdataoption) | null | いいえ | データ オプション |
 
 #### 戻り値
 
-[SortField](/docs/ja-JP/api/excel/workbook/SortField.html) - この **Sort** オブジェクトの並べ替えフィールド
+[SortField](SortField.md) - この **Sort** オブジェクトの並べ替えフィールド
 
 ### Clear()
 
@@ -261,25 +261,25 @@ undefined
 
 ### Item()
 
-[SortField](/docs/ja-JP/api/excel/workbook/SortField.html) オブジェクトを返します。読み取り専用です。
+[SortField](SortField.md) オブジェクトを返します。読み取り専用です。
 
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Index | Number / String | null | はい | 1 から始まるインデックス |
 
 #### 戻り値
 
-[SortField](/docs/ja-JP/api/excel/workbook/SortField.html) - この **Sort** オブジェクトの並べ替えフィールド
+[SortField](SortField.md) - この **Sort** オブジェクトの並べ替えフィールド
 
 ## SortMethod
 
-東アジア語の並べ替え方法（読みまたは画数）です。読み書き可能。[XlSortMethod](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortmethod)。
+東アジア語の並べ替え方法（読みまたは画数）です。読み書き可能。[XlSortMethod](Enum.md#xlsortmethod)。
 
 #### データ型
 
-[XlSortMethod](/docs/ja-JP/api/excel/workbook/Enum.html#xlsortmethod) - 東アジア語の並べ替え方法
+[XlSortMethod](Enum.md#xlsortmethod) - 東アジア語の並べ替え方法
 
 ## Apply()
 
@@ -300,8 +300,8 @@ undefined
 #### パラメーター
 
 | パラメーター | 型 | 既定値 | 必須 | 説明 |
-|---|---|---|---|---|
-| Range | [Range](/docs/ja-JP/api/excel/workbook/Range.html) | null | はい | この **Sort** オブジェクトが並べ替える範囲 |
+| --- | --- | --- | --- | --- |
+| Range | [Range](Range.md) | null | はい | この **Sort** オブジェクトが並べ替える範囲 |
 
 #### 戻り値
 

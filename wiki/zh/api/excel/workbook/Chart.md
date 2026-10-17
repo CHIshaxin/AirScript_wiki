@@ -14,14 +14,14 @@ Chart对象的具体属性和方法请参阅下方的列表。
 ### 属性列表
 
 | 属性名 | 数据类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [ChartTitle.Text](#charttitle-text) | String | 图表标题 |
 | [HasTitle](#hastitle) | Boolean | 图表标题是否可见 |
 
 ### 方法列表
 
 | 方法名 | 返回类型 | 简介 |
-|---|---|---|
+| --- | --- | --- |
 | [SetSourceData()](#setsourcedata) | undefined | 为图表设置源数据区域 |
 
 ## ChartTitle.Text
@@ -69,9 +69,9 @@ shape.Chart.HasTitle = false
 ### 参数
 
 | 属性 | 数据类型 | 默认值 | 必填 | 说明 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Source | Range |  | 是 | 包含源数据的区域，可用 Range 对象 |
-| PlotBy | Enum |  | 否 | 指定图表类型，对应 [Enum.XlRowCol](/docs/api/excel/workbook/Enum.html#xlrowcol)，可以为 xlColumns 或 xlRows |
+| PlotBy | Enum |  | 否 | 指定图表类型，对应 [Enum.XlRowCol](Enum.md#xlrowcol)，可以为 xlColumns 或 xlRows |
 
 ### 示例
 
