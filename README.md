@@ -4,8 +4,12 @@
 由 GitHub Actions **每月检查一次**：官方文档有更新就增量拉取、提交；没有变化就什么都不做。
 
 - 产出目录：[`wiki/`](wiki/)（索引见 [`wiki/INDEX.md`](wiki/INDEX.md)）
-- 历史快照：[`docs/`](docs/) 下除 `superpowers/` 外的内容，是本仓库 2026-09 用早期脚本生成的同一份文档的旧镜像
-  （旧脚本在 `scripts/*.py`，一并保留备查）。**维护中的版本是 `wiki/`**，旧快照仅供对照。
+- **镜像范围：只维护中文站 `wiki/zh/`**（2525 页）。`wiki/en-US/`、`wiki/ja-JP/` 是 2026-09
+  旧流水线留下的快照，各 53 页，**不再更新**，仅作对照——官方文档站的中文版已覆盖全部
+  API 2.0 成员页，其他语言版本官方自己也只做了少量页面。
+- 历史快照：[`docs/`](docs/) 下除 `superpowers/` 外的内容，同为 2026-09 的旧镜像；
+  对应的旧脚本已移入 [`scripts/legacy/`](scripts/legacy/)，在那里跑不起来，仅供对照。
+  **维护中的版本是 `wiki/`**。
 - 抓取工具：`src/airscript_wiki/`（Python，依赖隔离在仓库内 `.venv`）
 - 定时任务：[`.github/workflows/update-wiki.yml`](.github/workflows/update-wiki.yml)（每月 1 日 03:00 UTC / 北京时间 11:00）
 
@@ -36,11 +40,16 @@ AirScript_wiki/
 │  ├─ fetch.py                   抓取、转写、按 hash 跳过未变化页
 │  ├─ report.py                  生成 wiki/INDEX.md
 │  └─ cli.py                     python -m airscript_wiki crawl
-├─ scripts/
+├─ scripts/                      辅助脚本（逐个说明见 scripts/README.md）
 │  ├─ crawl_all.sh               本地一键全量抓取
+│  ├─ repair_pages.py            按文件清单定向重抓个别页面
+│  ├─ check_links.py             检查 wiki/ 内的相对链接是否可达
+│  ├─ validate.py                离线体检：残留 HTML / 围栏成对 / 链接可达
+│  ├─ audit_coverage.py          内容保真度审计：原始 HTML vs 生成的 Markdown（需联网）
 │  ├─ harvest_words.py           生成词表 words.py（可离线复现）
 │  ├─ harvested_names.json       从 API 1.0 文档页收割的官方标识符
-│  └─ measure_candidates.py      离线衡量名称还原命中率
+│  ├─ measure_candidates.py      离线衡量名称还原命中率
+│  └─ legacy/                    2026-09 旧流水线的脚本（已失效，跑不起来）
 ├─ tests/                        pytest（离线，使用 tests/fixtures 中的真实 chunk 片段）
 ├─ state/                        运行状态（入库，供增量与断点续传使用）
 │  ├─ path_map.json              小写 key → 已验证的真实路径
@@ -48,7 +57,7 @@ AirScript_wiki/
 │  ├─ hashes.json                上次抓取时各页 hash
 │  ├─ failures.json              失败计数（下次运行继续重试）
 │  └─ unresolved.json            无法还原的页面及原因
-├─ wiki/                         产出的 Markdown（zh / en-US / ja-JP）
+├─ wiki/                         产出的 Markdown（zh 为维护中；en-US / ja-JP 为冻结快照）
 └─ docs/
    ├─ superpowers/               本项目的设计文档与实施计划
    └─ api* / guide / …           2026-09 旧镜像快照（保留备查）
@@ -77,6 +86,11 @@ python -m airscript_wiki crawl --locales all --stage all      # 全部（三个 
 # 3) 运行测试
 pip install -r requirements-dev.txt
 pytest
+
+# 4) 体检产出
+python scripts/check_links.py         # 相对链接是否可达
+python scripts/validate.py            # 残留 HTML / 围栏成对 / 链接可达（离线）
+python scripts/audit_coverage.py       # 内容保真度：原始 HTML vs 生成的 Markdown（需联网，约 20 分钟）
 ```
 
 或者在 Bash 下一键：
@@ -98,12 +112,20 @@ bash scripts/crawl_all.sh
 
 - 触发：`cron: "0 3 1 * *"`（每月一次）+ 手动 `workflow_dispatch`（可指定 `locales` / `stage` / `delay` / `dry_run`）；
 - 流程：建 `.venv` → 安装依赖 → 抓取 → 有 diff 才 commit & push（`chore(wiki): monthly sync YYYY-MM-DD (N files)`）；
-- 无变化时不产生空提交；失败页保留旧内容并计入 `state/failures.json`，下次继续重试。
+- 无变化时不产生空提交；失败页保留旧内容并计入 `state/failures.json`，下次继续重试；
+- **抓取失败不会被静默吞掉**：抓取步骤的退出码会被保留，已抓到的部分内容照常提交
+  （提交信息带 `[部分同步：抓取未完成]`），但整个作业会标记为失败，便于发现异常。
 
 ## 已知限制
 
+- **只维护中文站**：`wiki/zh/` 是唯一按月更新的产出。`wiki/en-US/`、`wiki/ja-JP/` 是
+  2026-09 的旧快照（各 53 页），不再更新；工具本身支持 `--locales all`，但官方
+  非中文站的 API 2.0 成员页长期没有跟进，镜像价值有限。
 - **动态渲染页**：少量页面（如 API 1.0 的“总览”页、`apiV2/excel/databook/overview`）正文由前端组件渲染，
   chunk 里没有静态 HTML。这类页面会降级为“从页面数据中提取的索引链接”，并在文件内明确标注。
+- **首页这类布局页**：官方首页用 VitePress 的 `layout: home`，正文完全由前端组件渲染，
+  chunk 里只有一个空壳元素。镜像会从页面数据的 `frontmatter.hero` 还原出标题、副标题、
+  入口按钮与特性列表，并在文件内注明这是还原结果、完整正文以官方页面为准。
 - **路径还原的边界**：极少数成员名（拼写不规范或未收录的专有词）可能还原失败；
   这些页面会记录在 `state/unresolved.json`，不会静默丢失，也不会删除已有文件。
   目前 `state/name_map.json` 里的官方写法来自两处：① API 1.0 文档页收割的词元推断；
