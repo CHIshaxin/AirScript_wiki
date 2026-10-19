@@ -77,6 +77,13 @@ def test_rewrite_links_makes_relative_links():
     assert "[外链](https://example.com/a.html)" in out
 
 
+def test_rewrite_links_falls_back_to_official_url_with_docs_base():
+    """站内页面未镜像时，兜底链接必须带 /docs/ 前缀，否则打不开。"""
+    known = {}
+    out = rewrite_links("[速查](/guide/summary.html#a)", known, "", "zh/index.md")
+    assert out == "[速查](https://airsheet.wps.cn/docs/guide/summary.html#a)"
+
+
 class FakeFetcher:
     def __init__(self, payloads):
         self.payloads = payloads
@@ -134,6 +141,30 @@ def test_updated_page_written_with_frontmatter_and_failure_keeps_file(tmp_path):
     assert stats3.failed == 1
     assert written.read_text(encoding="utf-8") == text
     assert st.failures[ref.key] == 1
+
+
+def test_layout_homepage_writes_placeholder_with_entry_links(tmp_path):
+    """首页没有静态正文：应写出含入口链接的说明页，而不是只剩一个词 "div"。"""
+    fixtures = Path(__file__).parent / "fixtures"
+    home = (fixtures / "page_home_layout.js").read_text(encoding="utf-8")
+    doc = (fixtures / "page_count_static.js").read_text(encoding="utf-8")
+    ref = PageRef(key="index.md", locale="zh", hash="CHeQox_U",
+                  stage=STAGE_DOCS, real_path="index.md")
+    guide = PageRef(key="guide_summary.md", locale="zh", hash="GS",
+                    stage=STAGE_DOCS, real_path="guide/summary.md")
+    fetcher = FakeFetcher({".md.CHeQox_U.js": home.encode("utf-8"),
+                           ".md.GS.js": doc.encode("utf-8")})
+    st = _state(tmp_path)
+    stats = crawl([ref, guide], fetcher, st, tmp_path / "wiki")
+    assert stats.failed == 0
+    assert stats.dynamic == 1
+
+    text = (tmp_path / "wiki" / "zh" / "index.md").read_text(encoding="utf-8")
+    assert "\ndiv\n" not in text and "> div" not in text
+    assert "一个简单快速的轻量级脚本应用开发平台" in text
+    assert "[产品介绍](guide/summary.md)" in text
+    # 未镜像的入口退回到官方绝对 URL（带 /docs/ 前缀）
+    assert "https://airsheet.wps.cn/docs/apiV2/overview.html" in text
 
 
 def test_unresolved_pages_are_recorded(tmp_path):

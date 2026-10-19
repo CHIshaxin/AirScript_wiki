@@ -22,7 +22,8 @@ from dataclasses import dataclass, field
 DYNAMIC_MARKERS = ("toDisplayString(", "_ctx.", "resolveComponent(", "createTextVNode(")
 
 _CALL_STRING = re.compile(r"(?<![\w$])([A-Za-z_$][\w$]*)\(\s*(`|'|\")")
-_JSON_PARSE = re.compile(r"JSON\.parse\('(.*?)'\)", re.S)
+# Vite 生成的 page data 字符串有多种引号写法：单引号、双引号、反引号模板串都出现过
+_JSON_PARSE = re.compile(r"JSON\.parse\(\s*(['\"`])(.*?)\1\s*\)", re.S)
 _HTML_MARK = re.compile(r"<\s*/?\s*(?:h[1-6]|p|div|table|ul|ol|li|pre|code|blockquote|img|br)\b", re.I)
 _CALL_NAMES_SKIP = frozenset({"JSON", "parse", "require", "importScripts"})
 
@@ -30,6 +31,18 @@ _CALL_NAMES_SKIP = frozenset({"JSON", "parse", "require", "importScripts"})
 _VNODE_ELEMENT = re.compile(r'(?<![\w$])[A-Za-z_$][\w$]*(\()\s*"([a-zA-Z][\w-]*)"\s*,\s*')
 _VNODE_STRING = re.compile(r'"((?:[^"\\]|\\.)*)"')
 _VOID_TAGS = frozenset({"img", "br", "hr", "input", "meta", "link", "source", "col"})
+
+# 常见 HTML 标签名：用于判断“只抓到一个裸标签名”这种退化结果
+_HTML_TAGS = frozenset("""
+a abbr address area article aside audio b base bdi bdo blockquote body br button
+canvas caption cite code col colgroup data datalist dd del details dfn dialog div
+dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header
+hgroup hr html i iframe img input ins kbd label legend li link main map mark menu
+meta meter nav noscript object ol optgroup option output p param picture pre
+progress q rp rt ruby s samp script section select slot small source span strong
+style sub summary sup table tbody td template textarea tfoot th thead time title tr
+track u ul var video wbr
+""".split())
 
 
 @dataclass
@@ -248,21 +261,47 @@ def _page_data(js: str) -> dict:
     m = _JSON_PARSE.search(js)
     if not m:
         return {}
-    text = _unescape_js(m.group(1))
+    text = _unescape_js(m.group(2))
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         return {}
 
 
+def _is_degenerate(html: str) -> bool:
+    """判断提取结果是不是“其实什么都没抓到”。
+
+    典型场景：首页这类布局页的渲染函数只有一个空壳元素::
+
+        function r(n,l,o,s,c,d){return t(),i("div")}
+
+    ``i("div")`` 没有逗号，不符合 ``_VNODE_ELEMENT`` 的形状，``"div"`` 于是被当成
+    文本节点吐了出来——页面上看起来就只剩一个词 ``div``。
+
+    判据：结果里一个 HTML 标签都没有，且剩下的文字本身就是个标签名。
+    真正的正文即使是单个英文单词（``HTTP``、``Overview``）也不会命中，
+    因为它们不是 HTML 标签名。
+    """
+    text = html.strip()
+    if not text:
+        return True
+    if re.search(r"<\s*/?\s*[a-zA-Z]", text):
+        return False
+    return text.lower() in _HTML_TAGS
+
+
 def extract_page(js: str) -> PageChunk:
     """提取页面正文：优先静态 HTML 字符串，其次 createElementVNode 调用。"""
     html = "".join(_template_literals(js))
+    if _is_degenerate(html):
+        html = ""
     rendered_from = "static" if html.strip() else ""
     if not html.strip():
         # 只扫描渲染函数本身，避免把组件收尾代码（``[["render",l]]``）当正文
         content_js = js.split('["render"', 1)[0]
         html = vnode_to_html(content_js)
+        if _is_degenerate(html):
+            html = ""
         rendered_from = "vnode" if html.strip() else "none"
     dynamic = any(marker in js for marker in DYNAMIC_MARKERS)
     page = PageChunk(html=html, page_data=_page_data(js), dynamic=dynamic)

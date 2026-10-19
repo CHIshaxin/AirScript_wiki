@@ -56,3 +56,29 @@ def test_site_data_and_search_paths_extraction():
     search = 'const e=[{text:"a",link:"/apiV2/advanced/HTTP#x",textType:0},{text:"b",link:"/guide/summary"}]'
     paths = chunk.extract_site_paths(search)
     assert paths == ["/apiV2/advanced/HTTP", "/guide/summary"]
+
+
+def test_layout_page_without_static_body_yields_no_content():
+    """首页的渲染函数只有一个空壳元素 ``i("div")``，不能把它当成正文。
+
+    回归问题：``"div"`` 会被文本分支吐出来，导致首页正文只剩一个词 ``div``。
+    """
+    page = chunk.extract_page(load("page_home_layout.js"))
+    assert page.page_data["title"] == "AirScript"
+    assert page.html == ""
+    assert page.rendered_from == "none"
+
+
+def test_single_word_body_is_not_treated_as_layout_page():
+    """只有 HTML 标签名才算退化；``HTTP`` 这类正常单词必须保留。"""
+    js = 'const a=JSON.parse(\'{"title":"HTTP"}\');function r(n,l,o){return t(),i("p",null,[t("HTTP")])}'
+    page = chunk.extract_page(js)
+    assert "HTTP" in page.html
+    assert page.rendered_from == "vnode"
+
+
+def test_page_data_parses_all_quote_styles():
+    """Vite 生成的 page data 有单引号、双引号、反引号三种写法。"""
+    assert chunk.extract_page('JSON.parse(\'{"title":"A"}\')').page_data == {"title": "A"}
+    assert chunk.extract_page('JSON.parse("{\\"title\\":\\"B\\"}")').page_data == {"title": "B"}
+    assert chunk.extract_page('JSON.parse(`{"title":"C"}`)').page_data == {"title": "C"}

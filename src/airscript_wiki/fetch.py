@@ -115,6 +115,72 @@ def fallback_markdown(js_text: str, page_data: dict) -> str:
 _LINK_RE = re.compile(r"\]\(([^)\s]+)\)")
 
 
+_LAYOUT_FEATURES_HEADING = {"zh": "特性", "en-US": "Features", "ja-JP": "機能"}
+
+_LAYOUT_NOTE = {
+    "zh": ("> 本页在官方站点由前端布局组件渲染（`layout: home`），"
+           "上面是从页面数据还原的入口信息；完整正文请见上方 `source` 指向的官方页面。"),
+    "en-US": ("> This page is rendered on the client by the site's layout component "
+              "(`layout: home`). The entries above are recovered from the page data; "
+              "see the `source` link above for the full page."),
+    "ja-JP": ("> 本ページはサイトのレイアウトコンポーネント（`layout: home`）により"
+              "クライアント側で描画されます。上記のリンクはページデータから復元したものです。"
+              "全文は上部の `source` のリンクを参照してください。"),
+}
+
+
+def layout_note(page_data: dict, locale: str = "zh") -> str:
+    """没有静态正文的页面（首页等布局页）生成的内容。
+
+    首页这类页面用的是 VitePress 的 ``layout: home``：正文由前端布局组件渲染，
+    chunk 里没有静态 HTML，但 page data 的 ``frontmatter`` 里带着 hero 信息
+    （标题、副标题、入口按钮）与 features 列表。这里把能还原的部分还原成
+    Markdown，并注明完整正文以官方页面为准。
+
+    链接写成站点绝对路径（``/guide/summary``），随后由 ``rewrite_links``
+    改写成仓库内的相对链接。
+    """
+    frontmatter = page_data.get("frontmatter") or {}
+    hero = frontmatter.get("hero") or {}
+    title = (page_data.get("title") or hero.get("name") or "").strip()
+    tagline = (hero.get("tagline") or "").strip()
+
+    lines: list[str] = []
+    if title:
+        lines.append(f"# {title}")
+    if tagline:
+        lines.append("")
+        lines.append(tagline)
+
+    actions = [a for a in (hero.get("actions") or []) if isinstance(a, dict)]
+    entries = [(str(a.get("text") or "").strip(), str(a.get("link") or "").strip())
+               for a in actions]
+    entries = [(t, l) for t, l in entries if t and l]
+    if entries:
+        lines.append("")
+        for text, link in entries:
+            lines.append(f"- [{text}]({link})")
+
+    features = [f for f in (frontmatter.get("features") or []) if isinstance(f, dict)]
+    feats = [(str(f.get("title") or "").strip(), str(f.get("details") or "").strip())
+             for f in features]
+    feats = [(t, d) for t, d in feats if t or d]
+    if feats:
+        lines.append("")
+        lines.append(f"## {_LAYOUT_FEATURES_HEADING.get(locale, 'Features')}")
+        for name, details in feats:
+            if name:
+                lines.append("")
+                lines.append(f"### {name}")
+            if details:
+                lines.append("")
+                lines.append(details)
+
+    lines.append("")
+    lines.append(_LAYOUT_NOTE.get(locale, _LAYOUT_NOTE["zh"]))
+    return "\n".join(lines) + "\n"
+
+
 def rewrite_links(markdown: str, known_out: dict[str, str], base_dir: str = "",
                   current_out: str = "") -> str:
     """把站内 ``*.html`` 链接尽量改写成仓库内其它 Markdown 的相对链接。
@@ -148,8 +214,9 @@ def rewrite_links(markdown: str, known_out: dict[str, str], base_dir: str = "",
                 return f"]({posixpath.relpath(target, current_dir)}{tail})"
         if url.startswith("/"):
             # 站内页面未镜像：改成官方绝对 URL，点击可回到原站
+            # （官方站点 cleanUrls=false，页面地址带 .html）
             tail = f"#{anchor}" if anchor else ""
-            return f"]({site.SITE_ORIGIN}{url}{tail})"
+            return f"]({site.page_url(path.lstrip('/') + '.md')}{tail})"
         return match.group(0)
 
     return _LINK_RE.sub(repl, markdown)
@@ -158,14 +225,16 @@ def rewrite_links(markdown: str, known_out: dict[str, str], base_dir: str = "",
 def crawl(refs: list[PageRef], fetcher, st: State, out_root: Path,
           resolver: PathResolver | None = None, limit: int | None = None,
           dry_run: bool = False, log=None, checkpoint_every: int = 25,
-          force: bool = False) -> CrawlStats:
+          force: bool = False, known_out: dict[str, str] | None = None) -> CrawlStats:
     """抓取给定页面集合；返回统计。写盘为原子写。
 
     ``force=True`` 时忽略 hash 缓存（转换规则升级后重写全部页面）。
+    ``known_out`` 是「官方真实路径 → 输出文件路径」的额外映射，用于定向重抓时
+    也能把链接改写成仓库内的相对路径（否则只剩本次传入的页面）。
     """
     log = log or (lambda msg: None)
     stats = CrawlStats()
-    known_out: dict[str, str] = {}
+    known_out = dict(known_out) if known_out else {}
     for r in refs:
         if r.real_path:
             known_out[r.real_path] = out_path_for(out_root, r, r.real_path).relative_to(out_root).as_posix()
@@ -226,6 +295,12 @@ def crawl(refs: list[PageRef], fetcher, st: State, out_root: Path,
             if markdown:
                 stats.dynamic += 1
                 log(f"[fetch] client-rendered page, extracted links: {ref.key}")
+        if not markdown.strip() and page.rendered_from == "none":
+            # 页面压根没有静态正文（首页等布局页）：写说明页，不要当成抓取失败
+            markdown = layout_note(page.page_data, ref.locale)
+            stats.dynamic += 1
+            log(f"[fetch] no static body, wrote placeholder: {ref.key}")
+
         target_out = out_path_for(out_root, ref, real_path)
         relative_out = target_out.relative_to(out_root).as_posix()
         if ref.real_path is None:

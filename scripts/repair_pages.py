@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from airscript_wiki.fetch import crawl  # noqa: E402
+from airscript_wiki.fetch import crawl, out_path_for  # noqa: E402
 from airscript_wiki.http import Fetcher  # noqa: E402
 from airscript_wiki.index import build_index, fetch_sources  # noqa: E402
 from airscript_wiki.resolver import PathResolver  # noqa: E402
@@ -49,13 +49,22 @@ def main() -> int:
     fetcher = Fetcher(delay=args.delay)
     fetcher.find_sentinel()
     hashmap, site_data, search_paths = fetch_sources(fetcher)
-    refs = [r for r in build_index(hashmap, site_data, search_paths) if r.key in wanted]
+    all_refs = build_index(hashmap, site_data, search_paths)
+    refs = [r for r in all_refs if r.key in wanted]
     print(f"matched refs: {len(refs)} / {len(wanted)}")
+
+    # 链接改写需要全站映射：只传本次要重抓的页面会让站内链接退化成官方绝对地址
+    wiki_root = ROOT / "wiki"
+    known_out: dict[str, str] = {}
+    for r in all_refs:
+        real = r.real_path or st.path_map.get(r.key)
+        if real:
+            known_out[real] = out_path_for(wiki_root, r, real).relative_to(wiki_root).as_posix()
 
     resolver = PathResolver(fetcher, hashmap=hashmap, path_map=st.path_map,
                             name_map=st.name_map, log=print)
-    stats = crawl(refs, fetcher, st, ROOT / "wiki", resolver=resolver,
-                  dry_run=args.dry_run, force=True, log=print)
+    stats = crawl(refs, fetcher, st, wiki_root, resolver=resolver,
+                  dry_run=args.dry_run, force=True, log=print, known_out=known_out)
     print(stats.as_line())
     return 0 if not stats.failures else 1
 
