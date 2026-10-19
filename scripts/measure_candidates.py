@@ -48,4 +48,5 @@ def main(path: str) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1] if len(sys.argv) > 1 else "harvested_names.json"))
+    default = str(Path(__file__).resolve().parent / "harvested_names.json")
+    raise SystemExit(main(sys.argv[1] if len(sys.argv) > 1 else default))

@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
-"""抓取结果质量校验：残留 HTML、失效内部链接、代码块完整性"""
+"""抓取结果离线体检：残留 HTML、失效内部链接、代码块完整性
+
+默认校验当前产出 ``wiki/``（2026-09 的旧快照 ``docs/`` 已归档，不再是维护对象）。
+用法：``python scripts/validate.py [目录]``，默认 ``wiki/``。
+"""
 import os
 import re
 import posixpath
+import sys
 from collections import Counter
 from urllib.parse import unquote
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-DOCS = os.path.join(ROOT, 'docs')
+DOCS = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, 'wiki')
 
 LINK_RE = re.compile(r'(?<!!)\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
 IMG_RE = re.compile(r'!\[[^\]]*\]\(([^)\s]+)\)')

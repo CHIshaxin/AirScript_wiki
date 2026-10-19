@@ -1,3 +1,6 @@
+# ⚠️ 已失效（legacy）：本脚本属于 2026-09 的旧抓取流水线，依赖早已废弃的 _raw/ 缓存目录
+#    （或已被 src/airscript_wiki/ 取代），在当前仓库里跑不起来。
+#    保留仅为对照旧产出；现行工具链见 src/airscript_wiki/ 与 scripts/README.md。
 # -*- coding: utf-8 -*-
 """根据侧边栏结构生成 README.md（本地导航索引）与统计信息"""
 import json
