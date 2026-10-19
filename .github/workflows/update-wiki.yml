@@ -52,6 +52,7 @@ jobs:
           pip install -e .
 
       - name: Crawl documentation
+        id: crawl
         env:
           LOCALES: ${{ github.event.inputs.locales || 'zh' }}
           STAGE: ${{ github.event.inputs.stage || 'all' }}
@@ -62,6 +63,9 @@ jobs:
           ARGS="--locales $LOCALES --stage $STAGE --delay $DELAY"
           if [ "$DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python -m airscript_wiki crawl $ARGS
+        # 抓取失败（CDN 全站 404、退出码非 0）时不中断作业：已抓到的内容照常提交，
+        # 失败页保留旧内容并计入 state/failures.json，下次运行继续重试。
+        # 作业最后一步会依据 steps.crawl.outcome 把作业标记为失败，不会静默吞掉。
         continue-on-error: true
 
       - name: Report changes
@@ -77,10 +81,22 @@ jobs:
 
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
+        env:
+          CRAWL_OUTCOME: ${{ steps.crawl.outcome }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DATE=$(date -u +%Y-%m-%d)
           PAGES=$(git diff --cached --numstat -- wiki | wc -l)
-          git commit -m "chore(wiki): monthly sync ${DATE} (${PAGES} files)"
+          if [ "$CRAWL_OUTCOME" = "failure" ]; then
+            git commit -m "chore(wiki): monthly sync ${DATE} (${PAGES} files) [部分同步：抓取未完成]"
+          else
+            git commit -m "chore(wiki): monthly sync ${DATE} (${PAGES} files)"
+          fi
           git push
+
+      - name: Fail if the crawl did not finish
+        if: steps.crawl.outcome == 'failure'
+        run: |
+          echo "::error::抓取未完成（airscript_wiki crawl 退出码非 0）。本次已抓到的内容已提交；失败页保留旧内容，下个月会自动重试。"
+          exit 1
