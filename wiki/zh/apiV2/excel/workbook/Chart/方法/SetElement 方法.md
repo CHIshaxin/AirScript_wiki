@@ -1,8 +1,8 @@
 ---
 title: "SetElement (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/SetElement%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Dyh4AANR
+updated: 1793171662000
+hash: CNJn9fdI
 ---
 
 # SetElement (方法)
@@ -23,7 +23,7 @@ hash: Dyh4AANR
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Element | Kso.MsoChartElementType | 必填 | 指定图表元素类型。 |
 
 ## 示例

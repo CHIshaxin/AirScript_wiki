@@ -1,8 +1,8 @@
 ---
 title: "PivotCell (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotCell/PivotCell%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: DpTWPLsT
+updated: 1793171662000
+hash: DKZskxMz
 ---
 
 # PivotCell (对象)

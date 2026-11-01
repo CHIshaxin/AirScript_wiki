@@ -1,8 +1,8 @@
 ---
 title: "Value1 (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotFilter/%E5%B1%9E%E6%80%A7/Value1%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BVlxJxu0
+updated: 1793171662000
+hash: D9sGkj8-
 ---
 
 # Value1 (属性)

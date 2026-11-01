@@ -1,8 +1,8 @@
 ---
 title: "SplitType (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartGroup/%E5%B1%9E%E6%80%A7/SplitType%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BczytHoZ
+updated: 1793171662000
+hash: DdffBW2Q
 ---
 
 # SplitType (属性)
@@ -12,7 +12,7 @@ hash: BczytHoZ
 ## 说明
 
 | **XlChartSplitType** 可为以下 **XlChartSplitType** 常量之一。 |
-|---|
+| --- |
 | **xlSplitByCustomSplit** |
 | **xlSplitByPercentValue** |
 | **xlSplitByPosition** |

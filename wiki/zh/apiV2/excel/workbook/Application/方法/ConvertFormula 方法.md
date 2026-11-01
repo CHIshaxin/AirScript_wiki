@@ -1,8 +1,8 @@
 ---
 title: "ConvertFormula (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/ConvertFormula%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Crpzj-bj
+updated: 1793171662000
+hash: _mS7HtQ6
 ---
 
 # ConvertFormula (方法)
@@ -12,7 +12,7 @@ hash: Crpzj-bj
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Formula | any | 必填 | 包含要转换的公式的字符串。必须为有效的公式，并且必须以等号开头。 |
 | FromReferenceStyle | XlReferenceStyle | 必填 | 公式的引用样式。 |
 | ToReferenceStyle | any | 可选 | 指定要返回的引用样式的 **[XlReferenceStyle](./../../枚举/XlReferenceStyle 枚举.html)** 常量。如果省略此参数，则引用样式不变；公式样式保持 *FromReferenceStyle* 参数指定的样式。 |

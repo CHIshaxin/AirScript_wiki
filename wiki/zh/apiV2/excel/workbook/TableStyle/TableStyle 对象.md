@@ -1,8 +1,8 @@
 ---
 title: "TableStyle (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TableStyle/TableStyle%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: DSmH8N13
+updated: 1793171662000
+hash: 9PlR_K-N
 ---
 
 # TableStyle (对象)

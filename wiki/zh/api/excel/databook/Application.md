@@ -1,8 +1,8 @@
 ---
 title: "Application"
 source: https://airsheet.wps.cn/docs/api/excel/databook/Application.html
-updated: 1789700916000
-hash: Cgn_UrZj
+updated: 1793171662000
+hash: B5oj3MJ9
 ---
 
 # Application

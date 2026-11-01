@@ -1,8 +1,8 @@
 ---
 title: "Left (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartObject/%E5%B1%9E%E6%80%A7/Left%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DHkTFVXx
+updated: 1793171662000
+hash: DcavZ1pK
 ---
 
 # Left (属性)

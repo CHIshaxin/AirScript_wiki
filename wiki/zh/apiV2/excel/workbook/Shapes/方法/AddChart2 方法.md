@@ -1,8 +1,8 @@
 ---
 title: "AddChart2 (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Shapes/%E6%96%B9%E6%B3%95/AddChart2%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B_D9-FnD
+updated: 1793171662000
+hash: 1QxGvBPb
 ---
 
 # AddChart2 (方法)

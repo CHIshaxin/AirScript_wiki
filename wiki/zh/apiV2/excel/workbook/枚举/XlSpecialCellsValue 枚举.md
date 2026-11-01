@@ -1,8 +1,8 @@
 ---
 title: "XlSpecialCellsValue 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlSpecialCellsValue%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: B85_s9mv
+updated: 1793171662000
+hash: C-MuH4Zm
 ---
 
 # XlSpecialCellsValue 枚举

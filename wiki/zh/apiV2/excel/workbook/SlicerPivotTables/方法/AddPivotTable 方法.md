@@ -1,8 +1,8 @@
 ---
 title: "AddPivotTable (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SlicerPivotTables/%E6%96%B9%E6%B3%95/AddPivotTable%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Cqmao5Pq
+updated: 1793171662000
+hash: LjAS4JJN
 ---
 
 # AddPivotTable (方法)

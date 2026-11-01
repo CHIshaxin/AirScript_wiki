@@ -1,8 +1,8 @@
 ---
 title: "PictureFormat (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartFormat/%E5%B1%9E%E6%80%A7/PictureFormat%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DP0yiZiD
+updated: 1793171662000
+hash: CoZ4N89J
 ---
 
 # PictureFormat (属性)

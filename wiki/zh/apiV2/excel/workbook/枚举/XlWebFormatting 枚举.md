@@ -1,8 +1,8 @@
 ---
 title: "XlWebFormatting 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlWebFormatting%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: C2vxtmrJ
+updated: 1793171662000
+hash: BUlrgL7f
 ---
 
 # XlWebFormatting 枚举

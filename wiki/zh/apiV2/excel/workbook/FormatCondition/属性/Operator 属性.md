@@ -1,8 +1,8 @@
 ---
 title: "Operator (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/FormatCondition/%E5%B1%9E%E6%80%A7/Operator%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DBAUHPOO
+updated: 1793171662000
+hash: gH0K56BE
 ---
 
 # Operator (属性)

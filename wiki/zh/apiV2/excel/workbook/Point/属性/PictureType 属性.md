@@ -1,8 +1,8 @@
 ---
 title: "PictureType (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Point/%E5%B1%9E%E6%80%A7/PictureType%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Cews45_A
+updated: 1793171662000
+hash: Bg6lP4C6
 ---
 
 # PictureType (属性)

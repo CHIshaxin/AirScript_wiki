@@ -1,8 +1,8 @@
 ---
 title: "Trendlines (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Series/%E6%96%B9%E6%B3%95/Trendlines%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BBB40zRU
+updated: 1793171662000
+hash: Ch9p0L-I
 ---
 
 # Trendlines (方法)

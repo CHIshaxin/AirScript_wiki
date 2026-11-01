@@ -1,8 +1,8 @@
 ---
 title: "ShowAsAvailableSlicerStyle (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TableStyle/%E5%B1%9E%E6%80%A7/ShowAsAvailableSlicerStyle%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CA67Oby1
+updated: 1793171662000
+hash: BoXGVmYr
 ---
 
 # ShowAsAvailableSlicerStyle (属性)

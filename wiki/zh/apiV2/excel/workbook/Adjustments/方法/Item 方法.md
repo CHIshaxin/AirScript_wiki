@@ -1,8 +1,8 @@
 ---
 title: "Item (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Adjustments/%E6%96%B9%E6%B3%95/Item%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: D0UINWUg
+updated: 1793171662000
+hash: BdaZCbu4
 ---
 
 # Item (方法)
@@ -17,6 +17,6 @@ hash: D0UINWUg
 
 参数
 
-| **名称** \| | **必选/可选** \| | **数据类型** \| | **说明** \| |
-|---|---|---|---|
-| *Index* \| | 必选 \| | **[INT]** \| | **Long** 型。调整的索引号。 \| |
+| **名称** | **必选/可选** | **数据类型** | **说明** |
+| --- | --- | --- | --- |
+| *Index* | 必选 | **[INT]** | **Long** 型。调整的索引号。 |

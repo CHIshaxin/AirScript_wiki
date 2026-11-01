@@ -1,8 +1,8 @@
 ---
 title: "ApplyDataLabels (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/ApplyDataLabels%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: C2kROPex
+updated: 1793171662000
+hash: B0bpAmYo
 ---
 
 # ApplyDataLabels (方法)
@@ -14,7 +14,7 @@ hash: C2kROPex
 使用 **Separator** 参数时。如果使用字符串，您将得到一个字符串作为分隔符。如果您使用 **xlDataLabelSeparatorDefault** (= 1)，您将获得默认的数据标签分隔符，它是逗号或换行符，具体取决于数据标签。
 
 | **XlDataLabelsType** 可为以下 **XlDataLabelsType** 常量之一。 |
-|---|
+| --- |
 | **xlDataLabelsShowBubbleSizes**。数据标签的气泡尺寸。 |
 | **xlDataLabelsShowLabelAndPercent**。占总数的百分比及数据点所属的分类。仅用于饼图和圆环图。 |
 | **xlDataLabelsShowPercent**。占总数的百分比。仅用于饼图和圆环图。 |
@@ -25,7 +25,7 @@ hash: C2kROPex
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Type | Default | 可选 | 要应用的数据标签的类型。 |
 | LegendKey | any | 可选 | 如果为 True，则在数据点旁边显示图例项标示。默认值为 False。 |
 | AutoText | any | 可选 | 如果对象根据内容自动生成相应的文字，则为 True。 |

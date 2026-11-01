@@ -1,8 +1,8 @@
 ---
 title: "Characters (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DisplayFormat/%E6%96%B9%E6%B3%95/Characters%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Si2t6iHC
+updated: 1793171662000
+hash: CV_SlD3w
 ---
 
 # Characters (方法)

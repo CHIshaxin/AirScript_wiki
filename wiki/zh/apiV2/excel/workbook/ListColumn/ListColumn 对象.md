@@ -1,8 +1,8 @@
 ---
 title: "ListColumn (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ListColumn/ListColumn%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: DP3WVgGc
+updated: 1793171662000
+hash: PxW4895c
 ---
 
 # ListColumn (对象)

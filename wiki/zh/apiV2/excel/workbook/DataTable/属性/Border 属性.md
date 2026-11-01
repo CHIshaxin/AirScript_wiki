@@ -1,8 +1,8 @@
 ---
 title: "Border (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DataTable/%E5%B1%9E%E6%80%A7/Border%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Cxx2I5zq
+updated: 1793171662000
+hash: B1KniiDw
 ---
 
 # Border (属性)

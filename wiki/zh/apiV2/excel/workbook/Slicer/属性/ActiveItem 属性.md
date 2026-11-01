@@ -1,8 +1,8 @@
 ---
 title: "ActiveItem (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Slicer/%E5%B1%9E%E6%80%A7/ActiveItem%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: ZBMYlYW1
+updated: 1793171662000
+hash: DsjEoCXo
 ---
 
 # ActiveItem (属性)

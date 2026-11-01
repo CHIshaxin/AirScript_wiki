@@ -1,8 +1,8 @@
 ---
 title: "SetSourceData (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/SetSourceData%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B1V-MElU
+updated: 1793171662000
+hash: CyZcGdUR
 ---
 
 # SetSourceData (方法)
@@ -12,7 +12,7 @@ hash: B1V-MElU
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Source | Range | 必填 | 包含源数据的区域。 |
 | PlotBy | any | 可选 | 指定数据绘制方式。可为以下 XlRowCol 常量之一：xlColumns 或 xlRows。 |
 

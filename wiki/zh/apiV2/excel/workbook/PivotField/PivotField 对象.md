@@ -1,8 +1,8 @@
 ---
 title: "PivotField (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotField/PivotField%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: BhE0WnF3
+updated: 1793171662000
+hash: z8KlPI4b
 ---
 
 # PivotField (对象)

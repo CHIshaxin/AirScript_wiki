@@ -1,8 +1,8 @@
 ---
 title: "Paste (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/Paste%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DUzJS1Cf
+updated: 1793171662000
+hash: DceZwaZz
 ---
 
 # Paste (方法)
@@ -12,7 +12,7 @@ hash: DUzJS1Cf
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Type | any | 可选 | 指定要粘贴的图表信息（如果剪贴板中有一个图表）。可以为以下 XlPasteType 常量之一：xlPasteFormats、xlPasteFormulas 或 xlPasteAll。默认值为 xlPasteAll。如果剪贴板上的数据不是图表数据，则不能使用该参数。 |
 
 ## 示例

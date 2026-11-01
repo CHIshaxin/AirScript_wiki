@@ -1,8 +1,8 @@
 ---
 title: "SlicerCache (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SlicerCache/SlicerCache%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: sIrO6fe7
+updated: 1793171662000
+hash: CdHpbrf8
 ---
 
 # SlicerCache (对象)

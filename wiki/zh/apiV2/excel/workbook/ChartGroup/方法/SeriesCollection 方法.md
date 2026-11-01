@@ -1,8 +1,8 @@
 ---
 title: "SeriesCollection (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartGroup/%E6%96%B9%E6%B3%95/SeriesCollection%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DR9ER29F
+updated: 1793171662000
+hash: yz_8u-Hw
 ---
 
 # SeriesCollection (方法)
@@ -12,7 +12,7 @@ hash: DR9ER29F
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Index | any | 可选 | 数据系列的名称或编号。 |
 
 ## 示例

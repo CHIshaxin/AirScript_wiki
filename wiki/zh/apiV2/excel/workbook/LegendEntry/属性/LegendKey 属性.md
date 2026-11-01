@@ -1,8 +1,8 @@
 ---
 title: "LegendKey (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/LegendEntry/%E5%B1%9E%E6%80%A7/LegendKey%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CME4QTAV
+updated: 1793171662000
+hash: zhbz9dGU
 ---
 
 # LegendKey (属性)

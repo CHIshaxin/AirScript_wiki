@@ -1,8 +1,8 @@
 ---
 title: "XlTimePeriods 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlTimePeriods%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: CDV6vmjt
+updated: 1793171662000
+hash: mW97cZDy
 ---
 
 # XlTimePeriods 枚举

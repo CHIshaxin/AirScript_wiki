@@ -1,8 +1,8 @@
 ---
 title: "ColumnDifferences (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Range/%E6%96%B9%E6%B3%95/ColumnDifferences%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: VkR4i7Ri
+updated: 1793171662000
+hash: DA6hH-hx
 ---
 
 # ColumnDifferences (方法)

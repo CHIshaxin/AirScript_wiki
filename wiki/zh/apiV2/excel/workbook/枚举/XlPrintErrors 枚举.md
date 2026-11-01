@@ -1,8 +1,8 @@
 ---
 title: "XlPrintErrors 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlPrintErrors%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: BlXvtV1q
+updated: 1793171662000
+hash: C6ElAZ1b
 ---
 
 # XlPrintErrors 枚举

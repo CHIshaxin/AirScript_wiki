@@ -1,8 +1,8 @@
 ---
 title: "Name (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Gridlines/%E5%B1%9E%E6%80%A7/Name%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BQFW1Wmr
+updated: 1793171662000
+hash: eNXHHUXQ
 ---
 
 # Name (属性)

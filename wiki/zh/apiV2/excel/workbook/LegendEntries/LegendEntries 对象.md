@@ -1,8 +1,8 @@
 ---
 title: "LegendEntries (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/LegendEntries/LegendEntries%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: AmhtL0dh
+updated: 1793171662000
+hash: DfwtRKiC
 ---
 
 # LegendEntries (对象)

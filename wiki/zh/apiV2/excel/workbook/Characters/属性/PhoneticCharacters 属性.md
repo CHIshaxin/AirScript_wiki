@@ -1,8 +1,8 @@
 ---
 title: "PhoneticCharacters (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Characters/%E5%B1%9E%E6%80%A7/PhoneticCharacters%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BO_0ox5p
+updated: 1793171662000
+hash: BE_tUDJl
 ---
 
 # PhoneticCharacters (属性)

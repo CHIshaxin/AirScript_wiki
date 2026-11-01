@@ -1,8 +1,8 @@
 ---
 title: "ChangePassword (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/AllowEditRange/%E6%96%B9%E6%B3%95/ChangePassword%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BZ7AW46G
+updated: 1793171662000
+hash: CP3AWev2
 ---
 
 # ChangePassword (方法)
@@ -12,7 +12,7 @@ hash: BZ7AW46G
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Password | string | 必填 | 新密码。 |
 
 ## 示例

@@ -1,8 +1,8 @@
 ---
 title: "Name (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TickLabels/%E5%B1%9E%E6%80%A7/Name%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: EjdVHRyN
+updated: 1793171662000
+hash: 8iP4Bnif
 ---
 
 # Name (属性)

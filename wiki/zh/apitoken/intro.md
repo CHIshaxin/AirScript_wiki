@@ -1,8 +1,8 @@
 ---
 title: "脚本令牌（APIToken）"
 source: https://airsheet.wps.cn/docs/apitoken/intro.html
-updated: 1789700916000
-hash: CwTXgPvM
+updated: 1793171662000
+hash: DWYFN01r
 ---
 
 查看复制到的链接的内容如下所示：

@@ -1,8 +1,8 @@
 ---
 title: "Item (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartObjects/%E6%96%B9%E6%B3%95/Item%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: swhRZPPf
+updated: 1793171662000
+hash: BIx-OMEI
 ---
 
 # Item (方法)
@@ -16,7 +16,7 @@ hash: swhRZPPf
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Index | any | 必填 | 对象的名称或索引号。 |
 
 ## 示例

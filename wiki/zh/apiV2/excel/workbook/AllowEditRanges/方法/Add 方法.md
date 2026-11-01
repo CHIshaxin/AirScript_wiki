@@ -1,8 +1,8 @@
 ---
 title: "Add (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/AllowEditRanges/%E6%96%B9%E6%B3%95/Add%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BERmRaNF
+updated: 1793171662000
+hash: MnZmrrFm
 ---
 
 # Add (方法)
@@ -12,7 +12,7 @@ hash: BERmRaNF
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Title | string | 必填 | 单元格区域的标题。 |
 | Range | Range | 必填 | Range 对象。允许编辑的单元格区域。 |
 | Password | any | 可选 | 单元格区域的密码。 |

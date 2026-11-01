@@ -1,8 +1,8 @@
 ---
 title: "Delete (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SortField/%E6%96%B9%E6%B3%95/Delete%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: C1OEf9R2
+updated: 1793171662000
+hash: D66b5dZk
 ---
 
 # Delete (方法)

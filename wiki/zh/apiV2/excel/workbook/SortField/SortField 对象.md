@@ -1,8 +1,8 @@
 ---
 title: "SortField (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SortField/SortField%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: I_7J0a6n
+updated: 1793171662000
+hash: BNjP4Typ
 ---
 
 # SortField (对象)

@@ -1,8 +1,8 @@
 ---
 title: "DownBars (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DownBars/DownBars%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: azHDMBpc
+updated: 1793171662000
+hash: Ds5oK9yL
 ---
 
 # DownBars (对象)

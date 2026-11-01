@@ -1,8 +1,8 @@
 ---
 title: "Copy (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/Copy%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: D7Wb8Obr
+updated: 1793171662000
+hash: MveuAHIj
 ---
 
 # Copy (方法)
@@ -18,7 +18,7 @@ hash: D7Wb8Obr
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Before | any | 可选 | 将要在其之前放置所复制工作表的工作表。如果指定了 After，则不能指定 Before。 |
 | After | any | 可选 | 将要在其之后放置所复制工作表的工作表。如果指定了 Before，则不能指定 After。 |
 

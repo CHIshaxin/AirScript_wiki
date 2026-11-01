@@ -1,8 +1,8 @@
 ---
 title: "FormatConditions"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/FormatConditions.html
-updated: 1789700916000
-hash: CmlrKZHK
+updated: 1793171662000
+hash: DFPZouUA
 ---
 
 # FormatConditions

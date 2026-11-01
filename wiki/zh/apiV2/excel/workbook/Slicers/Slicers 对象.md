@@ -1,8 +1,8 @@
 ---
 title: "Slicers (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Slicers/Slicers%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: T4TFhi1u
+updated: 1793171662000
+hash: CwtU5l3H
 ---
 
 # Slicers (对象)

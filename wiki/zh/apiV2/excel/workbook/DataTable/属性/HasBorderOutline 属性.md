@@ -1,8 +1,8 @@
 ---
 title: "HasBorderOutline (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DataTable/%E5%B1%9E%E6%80%A7/HasBorderOutline%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: C0f3EGHK
+updated: 1793171662000
+hash: BXMgdVVn
 ---
 
 # HasBorderOutline (属性)

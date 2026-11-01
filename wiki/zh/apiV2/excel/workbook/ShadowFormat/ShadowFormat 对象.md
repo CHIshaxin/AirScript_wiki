@@ -1,8 +1,8 @@
 ---
 title: "ShadowFormat (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ShadowFormat/ShadowFormat%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: DPao8szt
+updated: 1793171662000
+hash: 2vtoP5Yc
 ---
 
 # ShadowFormat (对象)

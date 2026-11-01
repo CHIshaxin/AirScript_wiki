@@ -1,8 +1,8 @@
 ---
 title: "Apply (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ShapeRange/%E6%96%B9%E6%B3%95/Apply%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Bx3YsaZi
+updated: 1793171662000
+hash: jJCpA3ir
 ---
 
 # Apply (方法)

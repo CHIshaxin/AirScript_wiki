@@ -1,8 +1,8 @@
 ---
 title: "Tanh (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/Tanh%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DkGegmtI
+updated: 1793171662000
+hash: D3QgO87x
 ---
 
 # Tanh (方法)

@@ -1,8 +1,8 @@
 ---
 title: "InchesToPoints (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/InchesToPoints%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BYBzDbHZ
+updated: 1793171662000
+hash: CvrBeqAL
 ---
 
 # InchesToPoints (方法)
@@ -12,7 +12,7 @@ hash: BYBzDbHZ
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Inches | double | 必填 | 指定要转换为磅值的英寸值。 |
 
 ## 返回值

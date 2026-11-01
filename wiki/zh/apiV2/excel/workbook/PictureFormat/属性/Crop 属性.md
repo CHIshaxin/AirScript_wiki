@@ -1,8 +1,8 @@
 ---
 title: "Crop (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PictureFormat/%E5%B1%9E%E6%80%A7/Crop%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: z0-8Oigz
+updated: 1793171662000
+hash: BbOcYTS2
 ---
 
 # Crop (属性)

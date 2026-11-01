@@ -1,8 +1,8 @@
 ---
 title: "Record"
 source: https://airsheet.wps.cn/docs/api/dbsheet/Record.html
-updated: 1789700916000
-hash: CcS5UzAH
+updated: 1793171662000
+hash: BkqDmNVy
 ---
 
 # Record

@@ -1,8 +1,8 @@
 ---
 title: "Intersect (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/Intersect%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: MwEgbQEN
+updated: 1793171662000
+hash: C6lXp9om
 ---
 
 # Intersect (方法)
@@ -12,7 +12,7 @@ hash: MwEgbQEN
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Arg1 | Range | 必填 | 重叠的区域。必须指定至少两个 **[Range](./../../Range/Range 对象.html)** 对象。 |
 | Arg2 | Range | 必填 | 重叠的区域。必须指定至少两个 **[Range](./../../Range/Range 对象.html)** 对象。 |
 | Arg3 | any | 可选 | Arg30 - 相交范围。 |

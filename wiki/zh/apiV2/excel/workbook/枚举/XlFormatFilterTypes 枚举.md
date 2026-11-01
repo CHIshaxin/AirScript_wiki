@@ -1,8 +1,8 @@
 ---
 title: "XlFormatFilterTypes 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlFormatFilterTypes%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: BaON6V6Y
+updated: 1793171662000
+hash: lBpFCAvN
 ---
 
 # XlFormatFilterTypes 枚举

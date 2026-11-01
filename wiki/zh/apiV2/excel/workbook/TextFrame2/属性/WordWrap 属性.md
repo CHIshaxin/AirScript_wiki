@@ -1,8 +1,8 @@
 ---
 title: "WordWrap (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TextFrame2/%E5%B1%9E%E6%80%A7/WordWrap%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CfP4V8iT
+updated: 1793171662000
+hash: CaLn9XGc
 ---
 
 # WordWrap (属性)

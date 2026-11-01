@@ -1,8 +1,8 @@
 ---
 title: "IsText (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/IsText%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B_b4Eu5Z
+updated: 1793171662000
+hash: D_Ywdc9M
 ---
 
 # IsText (方法)

@@ -1,8 +1,8 @@
 ---
 title: "XlMeasurementUnits 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlMeasurementUnits%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: D_kCNAiM
+updated: 1793171662000
+hash: BvxV-mc5
 ---
 
 # XlMeasurementUnits 枚举

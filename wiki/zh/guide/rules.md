@@ -1,8 +1,8 @@
 ---
 title: "脚本语言"
 source: https://airsheet.wps.cn/docs/guide/rules.html
-updated: 1789700916000
-hash: Ch7PHbJN
+updated: 1793171662000
+hash: C1B1AxV2
 ---
 
 # 脚本语言

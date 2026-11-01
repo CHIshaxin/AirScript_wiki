@@ -1,8 +1,8 @@
 ---
 title: "LinEst (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/LinEst%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: oLc1EiaT
+updated: 1793171662000
+hash: BT9XVW11
 ---
 
 # LinEst (方法)

@@ -1,8 +1,8 @@
 ---
 title: "XlTextQualifier 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlTextQualifier%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: Dd41B1jG
+updated: 1793171662000
+hash: BDOOUEOq
 ---
 
 # XlTextQualifier 枚举

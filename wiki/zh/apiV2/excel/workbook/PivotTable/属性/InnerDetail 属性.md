@@ -1,8 +1,8 @@
 ---
 title: "InnerDetail (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotTable/%E5%B1%9E%E6%80%A7/InnerDetail%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: B4hoRYJB
+updated: 1793171662000
+hash: DO1vy7v8
 ---
 
 # InnerDetail (属性)

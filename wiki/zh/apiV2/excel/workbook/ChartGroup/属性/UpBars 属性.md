@@ -1,8 +1,8 @@
 ---
 title: "UpBars (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartGroup/%E5%B1%9E%E6%80%A7/UpBars%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: D8v7WyYZ
+updated: 1793171662000
+hash: c__0e5Yy
 ---
 
 # UpBars (属性)

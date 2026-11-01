@@ -1,8 +1,8 @@
 ---
 title: "Select (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartObjects/%E6%96%B9%E6%B3%95/Select%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: AT-dPHTI
+updated: 1793171662000
+hash: DZNfCInJ
 ---
 
 # Select (方法)
@@ -12,7 +12,7 @@ hash: AT-dPHTI
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Replace | any | 可选 | 如果为 True，则用指定的对象替换当前所选内容。如果为 False，则扩展当前所选内容以包括以前选择的对象和指定的对象。 |
 
 ## 示例

@@ -1,8 +1,8 @@
 ---
 title: "GeoMean (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/GeoMean%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CeK5B1on
+updated: 1793171662000
+hash: B_hulMf1
 ---
 
 # GeoMean (方法)

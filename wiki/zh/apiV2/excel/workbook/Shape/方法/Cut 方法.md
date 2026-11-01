@@ -1,8 +1,8 @@
 ---
 title: "Cut (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Shape/%E6%96%B9%E6%B3%95/Cut%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: D8OQWdM8
+updated: 1793171662000
+hash: Dfwmz93a
 ---
 
 # Cut (方法)

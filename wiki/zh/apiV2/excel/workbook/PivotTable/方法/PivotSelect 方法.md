@@ -1,8 +1,8 @@
 ---
 title: "PivotSelect (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotTable/%E6%96%B9%E6%B3%95/PivotSelect%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DBL6GGZ_
+updated: 1793171662000
+hash: DXabPIwD
 ---
 
 # PivotSelect (方法)

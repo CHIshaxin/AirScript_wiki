@@ -1,8 +1,8 @@
 ---
 title: "CreateNames (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Range/%E6%96%B9%E6%B3%95/CreateNames%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Cbp_mPLp
+updated: 1793171662000
+hash: Cymu_Xyt
 ---
 
 # CreateNames (方法)

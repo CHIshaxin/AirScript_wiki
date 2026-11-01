@@ -1,8 +1,8 @@
 ---
 title: "PickUp (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Shape/%E6%96%B9%E6%B3%95/PickUp%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CdN18ypT
+updated: 1793171662000
+hash: yki7r42j
 ---
 
 # PickUp (方法)

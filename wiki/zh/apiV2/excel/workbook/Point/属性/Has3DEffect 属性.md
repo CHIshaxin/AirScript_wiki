@@ -1,8 +1,8 @@
 ---
 title: "Has3DEffect (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Point/%E5%B1%9E%E6%80%A7/Has3DEffect%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BWNLcT9h
+updated: 1793171662000
+hash: Ey6FaOyo
 ---
 
 # Has3DEffect (属性)

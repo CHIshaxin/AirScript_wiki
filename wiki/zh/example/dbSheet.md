@@ -1,8 +1,8 @@
 ---
 title: "多维表案例"
 source: https://airsheet.wps.cn/docs/example/dbSheet.html
-updated: 1789700916000
-hash: Cml4-7TD
+updated: 1793171662000
+hash: CHG8sXRm
 ---
 
 # 多维表案例

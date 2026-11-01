@@ -1,8 +1,8 @@
 ---
 title: "AllowDeletingRows (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Protection/%E5%B1%9E%E6%80%A7/AllowDeletingRows%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: _j1XN_8n
+updated: 1793171662000
+hash: BHuuGfok
 ---
 
 # AllowDeletingRows (属性)

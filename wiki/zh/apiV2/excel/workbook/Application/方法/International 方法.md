@@ -1,8 +1,8 @@
 ---
 title: "International (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/International%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B7Gks4bC
+updated: 1793171662000
+hash: 95Cndfmp
 ---
 
 # International (方法)
@@ -14,7 +14,7 @@ hash: B7Gks4bC
 ### 括号和大括号
 
 | 索引 | 类型 | 含义 |
-|---|---|---|
+| --- | --- | --- |
 | **xlLeftBrace** | String | 在字面数组中左大括号 ({) 的替代字符。 |
 | **xlLeftBracket** | String | 在 R1C1-样式相对引用中左方括号 ([) 的替代字符。 |
 | **xlLowerCaseColumnLetter** | String | 小写列字母。 |
@@ -27,7 +27,7 @@ hash: B7Gks4bC
 ### 国家/地区设置
 
 | 索引 | 类型 | 含义 |
-|---|---|---|
+| --- | --- | --- |
 | **xlCountryCode** | Long | ET 的国家/地区版本。 |
 | **xlCountrySetting** | Long | Windows“控制面板”中的当前国家/地区设置。 |
 | **xlGeneralFormatName** | String | “常规”数字格式名称。 |
@@ -35,7 +35,7 @@ hash: B7Gks4bC
 ### 货币
 
 | 索引 | 类型 | 含义 |
-|---|---|---|
+| --- | --- | --- |
 | **xlCurrencyBefore** | Boolean | 如果货币符号在货币值之前，则返回 **True**；如果货币符号在货币值之后，则返回 **False**。 |
 | **xlCurrencyCode** | String | 货币符号。 |
 | **xlCurrencyDigits** | Long | 货币格式中的小数位数。 |
@@ -49,7 +49,7 @@ hash: B7Gks4bC
 ### 日期和时间
 
 | 索引 | 类型 | 含义 |
-|---|---|---|
+| --- | --- | --- |
 | **xl24HourClock** | **Boolean** | 如果使用 24 小时制时间，则返回 **True**；如果使用 12 小时制时间，则返回 **False**。 |
 | **xl4DigitYears** | **Boolean** | 如果使用四位年，则返回 **True**；如果使用两位年，则返回 **False**。 |
 | **xlDateOrder** | **Long** | 日期元素的次序： 0 = 月-日-年 1 = 日-月-年 2 = 年-月-日 |
@@ -71,14 +71,14 @@ hash: B7Gks4bC
 ### 度量系统
 
 | 索引 | 类型 | 含义 |
-|---|---|---|
+| --- | --- | --- |
 | **xlMetric** | **Boolean** | 如果使用米制度量系统，则返回 **True**；如果使用英制度量系统，则返回 **False**。 |
 | **xlNonEnglishFunctions** | **Boolean** | 如果不以英文显示函数，则返回 **True**。 |
 
 ### 分隔符
 
 | 索引 | 类型 | 含义 |
-|---|---|---|
+| --- | --- | --- |
 | **xlAlternateArraySeparator** | **String** | 如果当前数组分隔符与小数分隔符相同时替代的数组项分隔符。 |
 | **xlColumnSeparator** | **String** | 数组文字类型的列分隔符。 |
 | **xlDecimalSeparator** | **String** | 小数分隔符。 |
@@ -91,7 +91,7 @@ hash: B7Gks4bC
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Index | any | 可选 | 要返回的设置。可以是表中列出的 **[XlApplicationInternational](./../../枚举/XlApplicationInternational 枚举.html)** 常量之一。 |
 
 ## 示例

@@ -1,8 +1,8 @@
 ---
 title: "WrapText (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Range/%E5%B1%9E%E6%80%A7/WrapText%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CM5E5szl
+updated: 1793171662000
+hash: CTFx8oCN
 ---
 
 # WrapText (属性)

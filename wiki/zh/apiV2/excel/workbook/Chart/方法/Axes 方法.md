@@ -1,8 +1,8 @@
 ---
 title: "Axes (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/Axes%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BwxYqd-_
+updated: 1793171662000
+hash: O_yaESx5
 ---
 
 # Axes (方法)
@@ -12,7 +12,7 @@ hash: BwxYqd-_
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Type | any | 可选 | 指定要返回的坐标轴。可为以下 XlAxisType 常量之一：xlValue、xlCategory 或 xlSeriesAxis（xlSeriesAxis 仅对三维图表有效）。 |
 | AxisGroup | Default | 可选 | 指定坐标轴组。如果省略该参数，则使用主坐标轴组。三维图表仅有一个坐标轴组。 |
 

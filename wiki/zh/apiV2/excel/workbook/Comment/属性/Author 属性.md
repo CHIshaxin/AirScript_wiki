@@ -1,8 +1,8 @@
 ---
 title: "Author (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Comment/%E5%B1%9E%E6%80%A7/Author%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: D2u-XO0V
+updated: 1793171662000
+hash: OWdbGwfw
 ---
 
 # Author (属性)

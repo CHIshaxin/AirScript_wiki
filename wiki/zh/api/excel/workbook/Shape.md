@@ -1,8 +1,8 @@
 ---
 title: "Shape"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/Shape.html
-updated: 1789700916000
-hash: CUgihw8q
+updated: 1793171662000
+hash: BsN7GWk0
 ---
 
 # Shape

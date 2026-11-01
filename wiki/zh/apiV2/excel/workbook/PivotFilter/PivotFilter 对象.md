@@ -1,8 +1,8 @@
 ---
 title: "PivotFilter (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotFilter/PivotFilter%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: EuEgSQLg
+updated: 1793171662000
+hash: D3ILPg8J
 ---
 
 # PivotFilter (对象)

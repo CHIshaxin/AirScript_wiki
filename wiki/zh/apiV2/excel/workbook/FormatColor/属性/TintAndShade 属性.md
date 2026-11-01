@@ -1,8 +1,8 @@
 ---
 title: "TintAndShade (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/FormatColor/%E5%B1%9E%E6%80%A7/TintAndShade%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BlOw1mtt
+updated: 1793171662000
+hash: CBzjvM75
 ---
 
 # TintAndShade (属性)

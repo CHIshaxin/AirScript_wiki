@@ -1,8 +1,8 @@
 ---
 title: "Enum"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/Enum.html
-updated: 1789700916000
-hash: D5dEnPUE
+updated: 1793171662000
+hash: DF-45e8v
 ---
 
 # Enum

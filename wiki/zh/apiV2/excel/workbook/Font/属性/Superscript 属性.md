@@ -1,8 +1,8 @@
 ---
 title: "Superscript (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Font/%E5%B1%9E%E6%80%A7/Superscript%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: C2RDt5J9
+updated: 1793171662000
+hash: DqwFGZiP
 ---
 
 # Superscript (属性)

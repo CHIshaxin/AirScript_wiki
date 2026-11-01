@@ -1,8 +1,8 @@
 ---
 title: "Color (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Border/%E5%B1%9E%E6%80%A7/Color%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: J8O-j3C5
+updated: 1793171662000
+hash: BGywd7Co
 ---
 
 # Color (属性)
@@ -12,7 +12,7 @@ hash: J8O-j3C5
 ## 说明
 
 | 对象 | 对应颜色 |
-|---|---|
+| --- | --- |
 | **Border** | 边框的颜色。 |
 | **Borders** | 一个区域的所有四条边的颜色。如果四边不是同一种颜色，则 **Color** 返回的是 0（零）。 |
 | **Font** | 字体的颜色。 |

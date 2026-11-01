@@ -1,8 +1,8 @@
 ---
 title: "Border"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/Border.html
-updated: 1789700916000
-hash: C22ddnFB
+updated: 1793171662000
+hash: CZSrvGcs
 ---
 
 # Border

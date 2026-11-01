@@ -1,8 +1,8 @@
 ---
 title: "CalculatedItems (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/CalculatedItems/CalculatedItems%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: 2MKEsafr
+updated: 1793171662000
+hash: DaSVQDyC
 ---
 
 # CalculatedItems (对象)

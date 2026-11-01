@@ -1,8 +1,8 @@
 ---
 title: "FullSeriesCollection (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/FullSeriesCollection%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CeotfQGH
+updated: 1793171662000
+hash: vZo4VSvn
 ---
 
 # FullSeriesCollection (方法)
@@ -20,7 +20,7 @@ expression.FullSeriesCollection("系列名称")
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Index | any | 可选 | 筛选出的 Series 对象的索引号。 |
 
 ## 返回值

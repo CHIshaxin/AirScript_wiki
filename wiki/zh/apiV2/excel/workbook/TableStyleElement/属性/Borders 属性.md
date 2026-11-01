@@ -1,8 +1,8 @@
 ---
 title: "Borders (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TableStyleElement/%E5%B1%9E%E6%80%A7/Borders%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: YFL_cos-
+updated: 1793171662000
+hash: BGZfVXiE
 ---
 
 # Borders (属性)

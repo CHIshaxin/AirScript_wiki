@@ -1,8 +1,8 @@
 ---
 title: "HasBorderVertical (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DataTable/%E5%B1%9E%E6%80%A7/HasBorderVertical%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BOgCOYDL
+updated: 1793171662000
+hash: DpEOLOmT
 ---
 
 # HasBorderVertical (属性)

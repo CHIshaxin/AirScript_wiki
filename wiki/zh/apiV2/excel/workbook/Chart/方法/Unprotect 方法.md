@@ -1,8 +1,8 @@
 ---
 title: "Unprotect (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/Unprotect%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BMq0w3t9
+updated: 1793171662000
+hash: Bh4rq226
 ---
 
 # Unprotect (方法)
@@ -16,7 +16,7 @@ hash: BMq0w3t9
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Password | any | 可选 | 指定用于解除图表保护的密码，此密码是区分大小写的。如果图表不设密码保护，则忽略该参数。 |
 
 ## 示例

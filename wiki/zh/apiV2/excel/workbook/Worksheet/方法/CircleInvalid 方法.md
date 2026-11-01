@@ -1,8 +1,8 @@
 ---
 title: "CircleInvalid (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Worksheet/%E6%96%B9%E6%B3%95/CircleInvalid%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DfD48yn8
+updated: 1793171662000
+hash: B6q9hHpG
 ---
 
 # CircleInvalid (方法)

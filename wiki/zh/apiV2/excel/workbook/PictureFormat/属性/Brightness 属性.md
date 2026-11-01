@@ -1,8 +1,8 @@
 ---
 title: "Brightness (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PictureFormat/%E5%B1%9E%E6%80%A7/Brightness%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CLncwxmM
+updated: 1793171662000
+hash: VeMG0opl
 ---
 
 # Brightness (属性)

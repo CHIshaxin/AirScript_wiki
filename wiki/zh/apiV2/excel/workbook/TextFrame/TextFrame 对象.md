@@ -1,8 +1,8 @@
 ---
 title: "TextFrame (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TextFrame/TextFrame%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: CS6USdPi
+updated: 1793171662000
+hash: DWmfRrp7
 ---
 
 # TextFrame (对象)

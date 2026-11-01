@@ -1,8 +1,8 @@
 ---
 title: "UserAccess (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/UserAccess/UserAccess%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: B08wPgrj
+updated: 1793171662000
+hash: C7MjsWlw
 ---
 
 # UserAccess (对象)

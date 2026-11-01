@@ -1,8 +1,8 @@
 ---
 title: "WorksheetFunction"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/WorksheetFunction.html
-updated: 1789700916000
-hash: CnHGKdCO
+updated: 1793171662000
+hash: DRntrJPh
 ---
 
 # WorksheetFunction

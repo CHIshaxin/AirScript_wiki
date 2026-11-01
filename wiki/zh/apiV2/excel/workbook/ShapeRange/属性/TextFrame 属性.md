@@ -1,8 +1,8 @@
 ---
 title: "TextFrame (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ShapeRange/%E5%B1%9E%E6%80%A7/TextFrame%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: loBNte1q
+updated: 1793171662000
+hash: C7Zrs-W8
 ---
 
 # TextFrame (属性)

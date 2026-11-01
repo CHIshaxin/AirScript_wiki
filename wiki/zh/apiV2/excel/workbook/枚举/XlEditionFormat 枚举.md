@@ -1,8 +1,8 @@
 ---
 title: "XlEditionFormat 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlEditionFormat%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: CSrX-0RM
+updated: 1793171662000
+hash: tDEWgkT4
 ---
 
 # XlEditionFormat 枚举

@@ -1,8 +1,8 @@
 ---
 title: "ChartCategory (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartCategory/ChartCategory%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: CkC1Chau
+updated: 1793171662000
+hash: BI7lNzHS
 ---
 
 # ChartCategory (对象)

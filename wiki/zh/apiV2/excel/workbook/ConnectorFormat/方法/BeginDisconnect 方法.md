@@ -1,8 +1,8 @@
 ---
 title: "BeginDisconnect (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ConnectorFormat/%E6%96%B9%E6%B3%95/BeginDisconnect%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: sV4eDDuo
+updated: 1793171662000
+hash: CscNrwKY
 ---
 
 # BeginDisconnect (方法)

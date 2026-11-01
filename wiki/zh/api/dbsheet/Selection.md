@@ -1,8 +1,8 @@
 ---
 title: "Selection"
 source: https://airsheet.wps.cn/docs/api/dbsheet/Selection.html
-updated: 1789700916000
-hash: kQYl0FhD
+updated: 1793171662000
+hash: AujJFaZs
 ---
 
 # Selection

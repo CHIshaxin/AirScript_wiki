@@ -1,8 +1,8 @@
 ---
 title: "Glow (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartFormat/%E5%B1%9E%E6%80%A7/Glow%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: ki5jLtp6
+updated: 1793171662000
+hash: DWouRRH7
 ---
 
 # Glow (属性)

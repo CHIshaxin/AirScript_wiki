@@ -1,8 +1,8 @@
 ---
 title: "HasAxis (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/HasAxis%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: 15ARyvEQ
+updated: 1793171662000
+hash: ul3NKLVr
 ---
 
 # HasAxis (方法)
@@ -18,7 +18,7 @@ hash: 15ARyvEQ
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Index1 | any | 可选 | 坐标轴类型。系列坐标轴仅适用于三维图表。可以是 **XlAxisType** 常量之一。 |
 | Index2 | any | 可选 | 坐标轴组。三维图表只有一组坐标轴。可以是 **XlAxisGroup** 常量之一。 |
 

@@ -1,8 +1,8 @@
 ---
 title: "MarkerBackgroundColorIndex (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Point/%E5%B1%9E%E6%80%A7/MarkerBackgroundColorIndex%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Cw_g5B9P
+updated: 1793171662000
+hash: BS7X1TPj
 ---
 
 # MarkerBackgroundColorIndex (属性)

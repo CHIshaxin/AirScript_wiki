@@ -1,8 +1,8 @@
 ---
 title: "ColorIndex (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Border/%E5%B1%9E%E6%80%A7/ColorIndex%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BNGYumBu
+updated: 1793171662000
+hash: 8_T1FpOs
 ---
 
 # ColorIndex (属性)

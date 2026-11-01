@@ -1,8 +1,8 @@
 ---
 title: "XlRangeValueDataType 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlRangeValueDataType%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: qI2bmJQE
+updated: 1793171662000
+hash: c7al3ros
 ---
 
 # XlRangeValueDataType 枚举

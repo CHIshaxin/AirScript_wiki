@@ -1,8 +1,8 @@
 ---
 title: "Calculate (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/Calculate%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: ChH1Omg6
+updated: 1793171662000
+hash: Cf6zgoUv
 ---
 
 # Calculate (方法)
@@ -12,7 +12,7 @@ hash: ChH1Omg6
 ## 说明
 
 | 要计算 | 依照此示例 |
-|---|---|
+| --- | --- |
 | 所有打开的工作簿 | Application.Calculate（或只是 Calculate） |
 | 指定工作表 | Worksheets(1).Calculate |
 | 指定区域 | Worksheets(1).Rows(2).Calculate |

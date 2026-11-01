@@ -1,8 +1,8 @@
 ---
 title: "应用场景"
 source: https://airsheet.wps.cn/docs/apitoken/scenario.html
-updated: 1789700916000
-hash: D5r6Czz-
+updated: 1793171662000
+hash: BnvTum1r
 ---
 
 # 应用场景

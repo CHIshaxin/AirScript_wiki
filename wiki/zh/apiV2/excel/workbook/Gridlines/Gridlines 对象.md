@@ -1,8 +1,8 @@
 ---
 title: "Gridlines (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Gridlines/Gridlines%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: 5pN8GFB7
+updated: 1793171662000
+hash: dOsEVdhG
 ---
 
 # Gridlines (对象)

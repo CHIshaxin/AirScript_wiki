@@ -1,8 +1,8 @@
 ---
 title: "IsError (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/IsError%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CxbviqZC
+updated: 1793171662000
+hash: C2bbBJsw
 ---
 
 # IsError (方法)

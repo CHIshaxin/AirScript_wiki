@@ -1,8 +1,8 @@
 ---
 title: "Horizontal (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SparkAxes/%E5%B1%9E%E6%80%A7/Horizontal%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: l9AEkXZU
+updated: 1793171662000
+hash: C_OyhGAL
 ---
 
 # Horizontal (属性)

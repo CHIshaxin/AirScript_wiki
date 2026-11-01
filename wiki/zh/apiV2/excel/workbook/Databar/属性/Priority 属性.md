@@ -1,8 +1,8 @@
 ---
 title: "Priority (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Databar/%E5%B1%9E%E6%80%A7/Priority%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: ghmcoRjc
+updated: 1793171662000
+hash: BMy42CDi
 ---
 
 # Priority (属性)

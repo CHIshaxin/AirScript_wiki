@@ -1,8 +1,8 @@
 ---
 title: "Offset (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TickLabels/%E5%B1%9E%E6%80%A7/Offset%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: 3fHdFW9F
+updated: 1793171662000
+hash: 944X0aMg
 ---
 
 # Offset (属性)

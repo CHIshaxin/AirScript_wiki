@@ -1,8 +1,8 @@
 ---
 title: "StopIfTrue (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ColorScale/%E5%B1%9E%E6%80%A7/StopIfTrue%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BrHcKq2A
+updated: 1793171662000
+hash: B07uRqon
 ---
 
 # StopIfTrue (属性)

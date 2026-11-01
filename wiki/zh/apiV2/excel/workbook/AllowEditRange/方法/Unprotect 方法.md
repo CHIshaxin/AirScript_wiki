@@ -1,8 +1,8 @@
 ---
 title: "Unprotect (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/AllowEditRange/%E6%96%B9%E6%B3%95/Unprotect%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CeJMDYDA
+updated: 1793171662000
+hash: Ul5qewVg
 ---
 
 # Unprotect (方法)
@@ -16,7 +16,7 @@ hash: CeJMDYDA
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Password | any | 可选 | 一个字符串，它指定用于解除单元格区域保护的密码，此密码是区分大小写的。如果单元格区域不设密码保护，则忽略此参数。 |
 
 ## 示例

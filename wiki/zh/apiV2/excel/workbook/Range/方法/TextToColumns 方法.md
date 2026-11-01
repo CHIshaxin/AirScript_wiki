@@ -1,8 +1,8 @@
 ---
 title: "TextToColumns (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Range/%E6%96%B9%E6%B3%95/TextToColumns%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BGA6cVUV
+updated: 1793171662000
+hash: D4eVTa-1
 ---
 
 # TextToColumns (方法)

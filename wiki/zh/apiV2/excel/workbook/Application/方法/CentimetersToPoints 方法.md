@@ -1,8 +1,8 @@
 ---
 title: "CentimetersToPoints (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/CentimetersToPoints%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: k7BCIriw
+updated: 1793171662000
+hash: D964bX1H
 ---
 
 # CentimetersToPoints (方法)
@@ -12,7 +12,7 @@ hash: k7BCIriw
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Centimeters | double | 必填 | 指定要转换为磅的厘米值。 |
 
 ## 返回值

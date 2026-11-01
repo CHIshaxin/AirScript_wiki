@@ -1,8 +1,8 @@
 ---
 title: "Sort"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/Sort.html
-updated: 1789700916000
-hash: D5AtpIS8
+updated: 1793171662000
+hash: r7T5fCUS
 ---
 
 # Sort
@@ -17,7 +17,7 @@ hash: D5AtpIS8
 | [MatchCase](#matchcase) | Boolean | 是否区分大小写 |
 | [Orientation](#orientation) | [XlSortOrientation](Enum.md#xlsortorientation) | 指定排序方向 |
 | [Rng](#rng) | [Range](Range.md) | 返回要执行排序的值的区域 |
-| [SortFields](#sortfields) | [SortFields](SortFields.md) | 该对象代表与 **Sort** 对象关联的排序字段的集合 |
+| [SortFields](#sortfields) | [SortFields](https://airsheet.wps.cn/docs/docs/api/excel/workbook/SortFields.html) | 该对象代表与 **Sort** 对象关联的排序字段的集合 |
 | [SortMethod](#sortmethod) | [XlSortMethod](Enum.md#xlsortmethod) | 中文排序方法 |
 
 #### 方法列表

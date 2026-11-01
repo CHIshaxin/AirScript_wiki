@@ -1,8 +1,8 @@
 ---
 title: "Transparency (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ShadowFormat/%E5%B1%9E%E6%80%A7/Transparency%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CjKJL_9_
+updated: 1793171662000
+hash: B6Qvu8T_
 ---
 
 # Transparency (属性)

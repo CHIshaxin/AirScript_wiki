@@ -1,8 +1,8 @@
 ---
 title: "SelectAll (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Shapes/%E6%96%B9%E6%B3%95/SelectAll%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B0A9xRAQ
+updated: 1793171662000
+hash: BlRmPh0n
 ---
 
 # SelectAll (方法)

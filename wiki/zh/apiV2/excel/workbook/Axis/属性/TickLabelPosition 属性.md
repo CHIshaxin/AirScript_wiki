@@ -1,8 +1,8 @@
 ---
 title: "TickLabelPosition (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Axis/%E5%B1%9E%E6%80%A7/TickLabelPosition%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Eu51dp5z
+updated: 1793171662000
+hash: n0nYFVbL
 ---
 
 # TickLabelPosition (属性)
@@ -12,7 +12,7 @@ hash: Eu51dp5z
 ## 说明
 
 | **XlTickLabelPosition** 可为以下 **XlTickLabelPosition** 常量之一。 |
-|---|
+| --- |
 | **xlTickLabelPositionLow** |
 | **xlTickLabelPositionNone** |
 | **xlTickLabelPositionHigh** |

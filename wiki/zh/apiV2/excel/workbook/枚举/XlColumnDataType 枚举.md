@@ -1,8 +1,8 @@
 ---
 title: "XlColumnDataType 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlColumnDataType%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: C-q6k-31
+updated: 1793171662000
+hash: a_mkfeTO
 ---
 
 # XlColumnDataType 枚举

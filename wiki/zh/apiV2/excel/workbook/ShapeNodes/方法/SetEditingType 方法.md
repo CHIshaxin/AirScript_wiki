@@ -1,8 +1,8 @@
 ---
 title: "SetEditingType (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ShapeNodes/%E6%96%B9%E6%B3%95/SetEditingType%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: D8PZWfh4
+updated: 1793171662000
+hash: EhwChaSz
 ---
 
 # SetEditingType (方法)

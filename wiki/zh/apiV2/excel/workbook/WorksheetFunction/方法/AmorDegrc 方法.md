@@ -1,8 +1,8 @@
 ---
 title: "AmorDegrc (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/AmorDegrc%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: Cw1lKgqe
+updated: 1793171662000
+hash: 2XhAjVsx
 ---
 
 # AmorDegrc (方法)

@@ -1,8 +1,8 @@
 ---
 title: "Formula (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotItem/%E5%B1%9E%E6%80%A7/Formula%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CMAFPBeF
+updated: 1793171662000
+hash: Cd31qDKP
 ---
 
 # Formula (属性)

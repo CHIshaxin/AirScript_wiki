@@ -1,8 +1,8 @@
 ---
 title: "Interior (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/FormatCondition/%E5%B1%9E%E6%80%A7/Interior%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: iYd0397S
+updated: 1793171662000
+hash: BffDhaNE
 ---
 
 # Interior (属性)

@@ -1,8 +1,8 @@
 ---
 title: "Crosses (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Axis/%E5%B1%9E%E6%80%A7/Crosses%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: COTZ_wx5
+updated: 1793171662000
+hash: DlqjE2Hd
 ---
 
 # Crosses (属性)
@@ -14,7 +14,7 @@ hash: COTZ_wx5
 可以是下表所列的 **XlAxisCrosses** 常量之一。
 
 | 常量 | 含义 |
-|---|---|
+| --- | --- |
 | **xlAxisCrossesAutomatic** | 由 ET 设置坐标轴交点。 |
 | **xlMinimum** | 坐标轴在最小值处相交。 |
 | **xlMaximum** | 坐标轴在最大值处相交。 |

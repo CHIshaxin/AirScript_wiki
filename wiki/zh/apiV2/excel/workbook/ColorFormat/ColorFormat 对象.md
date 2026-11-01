@@ -1,8 +1,8 @@
 ---
 title: "ColorFormat (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ColorFormat/ColorFormat%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: rdr21-LH
+updated: 1793171662000
+hash: Cv_-uFxr
 ---
 
 # ColorFormat (对象)
@@ -16,7 +16,7 @@ hash: rdr21-LH
 使用下表中列出的属性之一可返回 **[ColorFormat](./../ColorFormat/ColorFormat 对象.html)** 对象。
 
 | 使用此属性 | 对象 | 返回一个 ColorFormat 对象，该对象代表 |
-|---|---|---|
+| --- | --- | --- |
 | **BackColor** | **[FillFormat](./../FillFormat/FillFormat 对象.html)** | 背景填充色（用于阴影或图案填充格式） |
 | **ForeColor** | **[FillFormat](./../FillFormat/FillFormat 对象.html)** | 前景填充色（对于纯色填充格式，即代表填充颜色） |
 | **BackColor** | **[LineFormat](./../LineFormat/LineFormat 对象.html)** | 线条背景色（用于图案线条） |

@@ -1,8 +1,8 @@
 ---
 title: "SummaryColumn (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Outline/%E5%B1%9E%E6%80%A7/SummaryColumn%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BA45O4WJ
+updated: 1793171662000
+hash: BWpDLFnm
 ---
 
 # SummaryColumn (属性)

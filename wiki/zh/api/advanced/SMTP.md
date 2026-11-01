@@ -1,8 +1,8 @@
 ---
 title: "邮件 API"
 source: https://airsheet.wps.cn/docs/api/advanced/SMTP.html
-updated: 1789700916000
-hash: C3HBVFKR
+updated: 1793171662000
+hash: BT5vSdFa
 ---
 
 # 邮件 API

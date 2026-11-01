@@ -1,8 +1,8 @@
 ---
 title: "GetCustomListNum (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/GetCustomListNum%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: iIYa4TK-
+updated: 1793171662000
+hash: DWXWW7pI
 ---
 
 # GetCustomListNum (方法)
@@ -16,7 +16,7 @@ hash: iIYa4TK-
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | ListArray | any | 必填 | 字符串数组。 |
 
 ## 返回值

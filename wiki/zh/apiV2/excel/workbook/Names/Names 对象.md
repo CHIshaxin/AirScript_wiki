@@ -1,8 +1,8 @@
 ---
 title: "Names (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Names/Names%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: D5V73lxr
+updated: 1793171662000
+hash: CBR30y8H
 ---
 
 # Names (对象)

@@ -1,8 +1,8 @@
 ---
 title: "Add (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/CalculatedItems/%E6%96%B9%E6%B3%95/Add%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CbSDykdO
+updated: 1793171662000
+hash: yCiSP_lQ
 ---
 
 # Add (方法)
@@ -12,7 +12,7 @@ hash: CbSDykdO
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Name | string | 必填 | 项的名称。 |
 | Formula | string | 必填 | 项的公式。 |
 | UseStandardFormula | any | 可选 | 为实现向上兼容，该值默认为 False。对于作为项名称的任何参数中所含的字符串来说，该值为 True，并将被解释为已按标准美国英语进行了格式设置，而非本地设置。 |

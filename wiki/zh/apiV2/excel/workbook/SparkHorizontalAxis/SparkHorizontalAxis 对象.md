@@ -1,8 +1,8 @@
 ---
 title: "SparkHorizontalAxis (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SparkHorizontalAxis/SparkHorizontalAxis%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: DGou6Vod
+updated: 1793171662000
+hash: DVKMxcuF
 ---
 
 # SparkHorizontalAxis (对象)

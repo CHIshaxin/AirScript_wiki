@@ -1,8 +1,8 @@
 ---
 title: "Border (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Border/Border%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: BR_81eEz
+updated: 1793171662000
+hash: COz46vWS
 ---
 
 # Border (对象)

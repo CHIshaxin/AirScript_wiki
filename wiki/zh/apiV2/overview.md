@@ -1,8 +1,8 @@
 ---
 title: "什么是AirScript 2.0"
 source: https://airsheet.wps.cn/docs/apiV2/overview.html
-updated: 1789700916000
-hash: C0pyKoy6
+updated: 1793171662000
+hash: BSsLRxLZ
 ---
 
 # 什么是AirScript 2.0

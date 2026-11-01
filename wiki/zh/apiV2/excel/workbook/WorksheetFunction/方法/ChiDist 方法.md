@@ -1,8 +1,8 @@
 ---
 title: "ChiDist (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/ChiDist%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CU4S9qlo
+updated: 1793171662000
+hash: Cr6yU4I5
 ---
 
 # ChiDist (方法)

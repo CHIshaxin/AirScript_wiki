@@ -1,8 +1,8 @@
 ---
 title: "PivotFormulas (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotTable/%E5%B1%9E%E6%80%A7/PivotFormulas%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Dlg8Wkhq
+updated: 1793171662000
+hash: 3Ho_81Xw
 ---
 
 # PivotFormulas (属性)

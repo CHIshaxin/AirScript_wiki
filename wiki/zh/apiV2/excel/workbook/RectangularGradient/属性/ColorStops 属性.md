@@ -1,8 +1,8 @@
 ---
 title: "ColorStops (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/RectangularGradient/%E5%B1%9E%E6%80%A7/ColorStops%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CqEfRJ-d
+updated: 1793171662000
+hash: Bj2NfgvS
 ---
 
 # ColorStops (属性)

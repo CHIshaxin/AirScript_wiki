@@ -1,8 +1,8 @@
 ---
 title: "Mode (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/Mode%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CafwL7Nj
+updated: 1793171662000
+hash: rOgkDtqk
 ---
 
 # Mode (方法)

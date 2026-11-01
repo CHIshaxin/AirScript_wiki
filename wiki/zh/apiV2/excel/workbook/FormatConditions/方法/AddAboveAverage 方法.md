@@ -1,8 +1,8 @@
 ---
 title: "AddAboveAverage (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/FormatConditions/%E6%96%B9%E6%B3%95/AddAboveAverage%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DSgd6wBG
+updated: 1793171662000
+hash: DAtgr4rv
 ---
 
 # AddAboveAverage (方法)

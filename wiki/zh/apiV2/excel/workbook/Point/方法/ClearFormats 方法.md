@@ -1,8 +1,8 @@
 ---
 title: "ClearFormats (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Point/%E6%96%B9%E6%B3%95/ClearFormats%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CQSHmo5z
+updated: 1793171662000
+hash: CA3QdeF9
 ---
 
 # ClearFormats (方法)

@@ -1,8 +1,8 @@
 ---
 title: "ObjectThemeColor (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ColorFormat/%E5%B1%9E%E6%80%A7/ObjectThemeColor%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BhDnpFQQ
+updated: 1793171662000
+hash: nV2bxhb0
 ---
 
 # ObjectThemeColor (属性)

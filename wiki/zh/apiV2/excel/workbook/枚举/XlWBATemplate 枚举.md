@@ -1,8 +1,8 @@
 ---
 title: "XlWBATemplate 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlWBATemplate%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: y0Rg__sU
+updated: 1793171662000
+hash: BMkbvY2j
 ---
 
 # XlWBATemplate 枚举

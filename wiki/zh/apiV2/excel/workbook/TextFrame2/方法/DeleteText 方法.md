@@ -1,8 +1,8 @@
 ---
 title: "DeleteText (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TextFrame2/%E6%96%B9%E6%B3%95/DeleteText%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CDwGDjbb
+updated: 1793171662000
+hash: Dt9NC3u0
 ---
 
 # DeleteText (方法)

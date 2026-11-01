@@ -1,8 +1,8 @@
 ---
 title: "Columns (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Range/%E5%B1%9E%E6%80%A7/Columns%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DYAsNeWM
+updated: 1793171662000
+hash: DMdQehmQ
 ---
 
 # Columns (属性)

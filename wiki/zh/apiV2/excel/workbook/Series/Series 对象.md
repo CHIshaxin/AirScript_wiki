@@ -1,8 +1,8 @@
 ---
 title: "Series (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Series/Series%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: W5s_6_7F
+updated: 1793171662000
+hash: C52CKgp5
 ---
 
 # Series (对象)

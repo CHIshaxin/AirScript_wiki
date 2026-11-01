@@ -1,8 +1,8 @@
 ---
 title: "PresetTexture (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/FillFormat/%E5%B1%9E%E6%80%A7/PresetTexture%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CXEvTt4Y
+updated: 1793171662000
+hash: BIhc8i8g
 ---
 
 # PresetTexture (属性)

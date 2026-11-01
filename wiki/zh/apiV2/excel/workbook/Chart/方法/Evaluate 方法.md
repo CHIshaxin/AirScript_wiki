@@ -1,8 +1,8 @@
 ---
 title: "Evaluate (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/Evaluate%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: BpnDQar7
+updated: 1793171662000
+hash: CP-CUFnI
 ---
 
 # Evaluate (方法)
@@ -34,7 +34,7 @@ let firstCellInSheet = Application.Workbooks.Item("BOOK1.XLS").Sheets.Item(4).Ev
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Name | any | 必填 | 使用 ET 命名约定的对象名称。 |
 
 ## 示例

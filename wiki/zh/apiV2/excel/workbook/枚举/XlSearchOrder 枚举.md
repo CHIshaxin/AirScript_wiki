@@ -1,8 +1,8 @@
 ---
 title: "XlSearchOrder 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlSearchOrder%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: MFUKuzz6
+updated: 1793171662000
+hash: Bx5iNkfR
 ---
 
 # XlSearchOrder 枚举

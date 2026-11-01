@@ -1,8 +1,8 @@
 ---
 title: "Previous (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Comment/%E6%96%B9%E6%B3%95/Previous%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: FyJOxbwA
+updated: 1793171662000
+hash: BqPlyxdt
 ---
 
 # Previous (方法)

@@ -1,8 +1,8 @@
 ---
 title: "ShowTableStyleRowStripes (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ListObject/%E5%B1%9E%E6%80%A7/ShowTableStyleRowStripes%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BkCP11Nn
+updated: 1793171662000
+hash: DZyR4yrg
 ---
 
 # ShowTableStyleRowStripes (属性)

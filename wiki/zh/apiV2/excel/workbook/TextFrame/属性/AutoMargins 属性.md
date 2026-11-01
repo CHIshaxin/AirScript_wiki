@@ -1,8 +1,8 @@
 ---
 title: "AutoMargins (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TextFrame/%E5%B1%9E%E6%80%A7/AutoMargins%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BXsJVEHM
+updated: 1793171662000
+hash: Cm4Cupty
 ---
 
 # AutoMargins (属性)

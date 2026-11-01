@@ -1,8 +1,8 @@
 ---
 title: "PageFields (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotTable/%E6%96%B9%E6%B3%95/PageFields%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: oD6ILIAF
+updated: 1793171662000
+hash: DPn9L5w7
 ---
 
 # PageFields (方法)

@@ -1,8 +1,8 @@
 ---
 title: "XlSearchDirection 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlSearchDirection%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: buTLSf1Q
+updated: 1793171662000
+hash: XvsdQ9OX
 ---
 
 # XlSearchDirection 枚举

@@ -1,8 +1,8 @@
 ---
 title: "XlInsertShiftDirection 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlInsertShiftDirection%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: ByRtVKJU
+updated: 1793171662000
+hash: 8Tx6RY5J
 ---
 
 # XlInsertShiftDirection 枚举

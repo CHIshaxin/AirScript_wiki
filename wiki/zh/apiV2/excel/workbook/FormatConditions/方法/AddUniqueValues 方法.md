@@ -1,8 +1,8 @@
 ---
 title: "AddUniqueValues (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/FormatConditions/%E6%96%B9%E6%B3%95/AddUniqueValues%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CNWhnXT7
+updated: 1793171662000
+hash: CPporal_
 ---
 
 # AddUniqueValues (方法)

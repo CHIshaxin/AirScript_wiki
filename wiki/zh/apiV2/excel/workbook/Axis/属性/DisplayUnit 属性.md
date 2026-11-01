@@ -1,8 +1,8 @@
 ---
 title: "DisplayUnit (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Axis/%E5%B1%9E%E6%80%A7/DisplayUnit%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: E1JRPWsU
+updated: 1793171662000
+hash: EjGob1DA
 ---
 
 # DisplayUnit (属性)
@@ -12,7 +12,7 @@ hash: E1JRPWsU
 ## 说明
 
 | **[XlDisplayUnit](./../../枚举/XlDisplayUnit 枚举.html)** 可为以下 **[XlDisplayUnit](./../../枚举/XlDisplayUnit 枚举.html)** 常量之一。 |
-|---|
+| --- |
 | **xlHundredMillions** |
 | **xlHundredThousands** |
 | **xlMillions** |

@@ -1,8 +1,8 @@
 ---
 title: "Pattern (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/LineFormat/%E5%B1%9E%E6%80%A7/Pattern%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: IFdPDsfR
+updated: 1793171662000
+hash: B_4cCRUf
 ---
 
 # Pattern (属性)

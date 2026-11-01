@@ -1,8 +1,8 @@
 ---
 title: "Application (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E5%B1%9E%E6%80%A7/Application%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DNBT06vl
+updated: 1793171662000
+hash: DtdCAJdf
 ---
 
 # Application (属性)

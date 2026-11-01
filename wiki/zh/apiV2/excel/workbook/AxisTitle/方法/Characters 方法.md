@@ -1,8 +1,8 @@
 ---
 title: "Characters (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/AxisTitle/%E6%96%B9%E6%B3%95/Characters%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B_N4DApy
+updated: 1793171662000
+hash: wd8ti8fX
 ---
 
 # Characters (方法)
@@ -16,7 +16,7 @@ hash: B_N4DApy
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Start | any | 可选 | 要返回的第一个字符。如果此参数是 1 或被省略，则此属性返回一个以第一个字符为开头的字符区域。 |
 | Length | any | 可选 | 要返回的字符数。如果省略此参数，则此属性返回字符串的后半部分（*Start* 字符之后的所有字符）。 |
 

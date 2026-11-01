@@ -1,8 +1,8 @@
 ---
 title: "View"
 source: https://airsheet.wps.cn/docs/api/excel/databook/View.html
-updated: 1789700916000
-hash: B38iwbZS
+updated: 1793171662000
+hash: EOc4AUte
 ---
 
 # View

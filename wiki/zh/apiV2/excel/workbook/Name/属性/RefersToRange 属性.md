@@ -1,8 +1,8 @@
 ---
 title: "RefersToRange (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Name/%E5%B1%9E%E6%80%A7/RefersToRange%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: D_C3-DSF
+updated: 1793171662000
+hash: BtREaZxO
 ---
 
 # RefersToRange (属性)

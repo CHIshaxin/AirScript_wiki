@@ -1,8 +1,8 @@
 ---
 title: "Selected (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SlicerItem/%E5%B1%9E%E6%80%A7/Selected%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BqJTWC-N
+updated: 1793171662000
+hash: FF5q-REQ
 ---
 
 # Selected (属性)

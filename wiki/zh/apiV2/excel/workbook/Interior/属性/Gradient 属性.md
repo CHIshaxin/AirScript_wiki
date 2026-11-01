@@ -1,8 +1,8 @@
 ---
 title: "Gradient (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Interior/%E5%B1%9E%E6%80%A7/Gradient%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BwnLAJwD
+updated: 1793171662000
+hash: BslDp1eC
 ---
 
 # Gradient (属性)

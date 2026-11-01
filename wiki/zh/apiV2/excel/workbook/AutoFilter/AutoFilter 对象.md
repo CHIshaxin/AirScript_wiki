@@ -1,8 +1,8 @@
 ---
 title: "AutoFilter (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/AutoFilter/AutoFilter%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: C5RLZgj7
+updated: 1793171662000
+hash: DkZqEpOp
 ---
 
 # AutoFilter (对象)
@@ -16,5 +16,5 @@ hash: C5RLZgj7
 要为工作表创建 **[AutoFilter](./../AutoFilter/AutoFilter 对象.html)** 对象，必须手动打开或使用 **[Range](./../Range/Range 对象.html)** 对象的 **AutoFilter** 方法打开工作表上某个区域上的自动筛选功能。
 
 | 注释 |
-|---|
+| --- |
 | When using **AutoFilter** with dates, the format should be consistent with English date separators ("/") instead of local settings ("."). A valid date would be "2/2/2007", whereas "2.2.2007" is invalid. |

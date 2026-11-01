@@ -1,8 +1,8 @@
 ---
 title: "DisplayEquation (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Trendline/%E5%B1%9E%E6%80%A7/DisplayEquation%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DkdG1vFB
+updated: 1793171662000
+hash: YzGM_XyL
 ---
 
 # DisplayEquation (属性)

@@ -1,8 +1,8 @@
 ---
 title: "GeStep (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/GeStep%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: dX2hq0Lg
+updated: 1793171662000
+hash: k-FzvoIH
 ---
 
 # GeStep (方法)

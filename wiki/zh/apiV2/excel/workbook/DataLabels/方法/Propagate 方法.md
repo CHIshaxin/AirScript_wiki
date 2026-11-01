@@ -1,8 +1,8 @@
 ---
 title: "Propagate (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DataLabels/%E6%96%B9%E6%B3%95/Propagate%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: rRyTNHhd
+updated: 1793171662000
+hash: B3yUBnGQ
 ---
 
 # Propagate (方法)

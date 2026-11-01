@@ -1,8 +1,8 @@
 ---
 title: "AppliesTo (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Databar/%E5%B1%9E%E6%80%A7/AppliesTo%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: v-CLk35S
+updated: 1793171662000
+hash: OcLX3XT4
 ---
 
 # AppliesTo (属性)

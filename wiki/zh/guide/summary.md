@@ -1,8 +1,8 @@
 ---
 title: "AirScript 概述"
 source: https://airsheet.wps.cn/docs/guide/summary.html
-updated: 1789700916000
-hash: CHPtg27n
+updated: 1793171662000
+hash: DvKYNh4K
 ---
 
 # AirScript 概述

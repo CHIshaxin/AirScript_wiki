@@ -1,8 +1,8 @@
 ---
 title: "NumberValue (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/NumberValue%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DQ2rvMxJ
+updated: 1793171662000
+hash: CWXk73vU
 ---
 
 # NumberValue (方法)

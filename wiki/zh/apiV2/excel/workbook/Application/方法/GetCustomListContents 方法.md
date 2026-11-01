@@ -1,8 +1,8 @@
 ---
 title: "GetCustomListContents (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/GetCustomListContents%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B-5Rq2fI
+updated: 1793171662000
+hash: CPW6D9yA
 ---
 
 # GetCustomListContents (方法)
@@ -12,7 +12,7 @@ hash: B-5Rq2fI
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | ListNum | int4 | 必填 | 列表数字。 |
 
 ## 返回值

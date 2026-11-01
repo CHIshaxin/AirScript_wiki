@@ -1,8 +1,8 @@
 ---
 title: "Firstpoint (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SparkPoints/%E5%B1%9E%E6%80%A7/Firstpoint%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BEszyd1i
+updated: 1793171662000
+hash: BMxpcqtx
 ---
 
 # Firstpoint (属性)

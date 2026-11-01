@@ -1,8 +1,8 @@
 ---
 title: "DataLabels (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DataLabels/DataLabels%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: DvQU09oz
+updated: 1793171662000
+hash: B6RDtL-h
 ---
 
 # DataLabels (对象)

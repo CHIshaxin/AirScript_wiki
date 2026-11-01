@@ -1,8 +1,8 @@
 ---
 title: "配置视图"
 source: https://airsheet.wps.cn/docs/start/view-setting.html
-updated: 1789700916000
-hash: DyeUVuk_
+updated: 1793171662000
+hash: BbUKoRFX
 ---
 
 # 配置视图

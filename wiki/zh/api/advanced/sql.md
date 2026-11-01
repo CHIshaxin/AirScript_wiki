@@ -1,8 +1,8 @@
 ---
 title: "数据库 API"
 source: https://airsheet.wps.cn/docs/api/advanced/sql.html
-updated: 1789700916000
-hash: DLFvdTwS
+updated: 1793171662000
+hash: CIyhVO2h
 ---
 
 # 数据库 API

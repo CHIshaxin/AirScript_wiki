@@ -1,8 +1,8 @@
 ---
 title: "AirScript"
 source: https://airsheet.wps.cn/docs/index.html
-updated: 1789700916000
-hash: CHeQox_U
+updated: 1793171662000
+hash: DhzftR75
 ---
 
 # AirScript

@@ -1,8 +1,8 @@
 ---
 title: "Interior (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Interior/Interior%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: D3RXX7tF
+updated: 1793171662000
+hash: BA_2IDP0
 ---
 
 # Interior (对象)

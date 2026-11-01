@@ -1,8 +1,8 @@
 ---
 title: "Font (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/LegendEntry/%E5%B1%9E%E6%80%A7/Font%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Da5g-kaE
+updated: 1793171662000
+hash: Bx8Ma3uK
 ---
 
 # Font (属性)

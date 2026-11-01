@@ -1,8 +1,8 @@
 ---
 title: "Evaluate (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/Evaluate%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: B_y01t3-
+updated: 1793171662000
+hash: JsfBqvWv
 ---
 
 # Evaluate (方法)
@@ -22,7 +22,7 @@ hash: B_y01t3-
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Name | any | 必填 | 公式或使用 ET 命名约定的对象名称。 |
 
 ## 示例

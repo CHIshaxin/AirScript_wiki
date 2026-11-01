@@ -1,8 +1,8 @@
 ---
 title: "AllowEditRanges (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Protection/%E5%B1%9E%E6%80%A7/AllowEditRanges%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Czz5v_am
+updated: 1793171662000
+hash: BDnV9n1k
 ---
 
 # AllowEditRanges (属性)

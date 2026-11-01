@@ -1,8 +1,8 @@
 ---
 title: "Legend (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Legend/Legend%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: Bv6cuI-s
+updated: 1793171662000
+hash: 2YN-1a-5
 ---
 
 # Legend (对象)

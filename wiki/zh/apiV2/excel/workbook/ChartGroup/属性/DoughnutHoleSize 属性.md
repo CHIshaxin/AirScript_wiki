@@ -1,8 +1,8 @@
 ---
 title: "DoughnutHoleSize (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/ChartGroup/%E5%B1%9E%E6%80%A7/DoughnutHoleSize%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: hmiRmhCC
+updated: 1793171662000
+hash: F9hZ_XQN
 ---
 
 # DoughnutHoleSize (属性)

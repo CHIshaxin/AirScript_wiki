@@ -1,8 +1,8 @@
 ---
 title: "TableStyles (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Workbook/%E5%B1%9E%E6%80%A7/TableStyles%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CrE0m1_q
+updated: 1793171662000
+hash: DgdMCnVc
 ---
 
 # TableStyles (属性)

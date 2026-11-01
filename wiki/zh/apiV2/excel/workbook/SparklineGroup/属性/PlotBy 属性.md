@@ -1,8 +1,8 @@
 ---
 title: "PlotBy (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/SparklineGroup/%E5%B1%9E%E6%80%A7/PlotBy%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: D4SsGyhi
+updated: 1793171662000
+hash: F0eUJw3t
 ---
 
 # PlotBy (属性)

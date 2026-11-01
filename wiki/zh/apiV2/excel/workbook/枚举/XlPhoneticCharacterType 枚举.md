@@ -1,8 +1,8 @@
 ---
 title: "XlPhoneticCharacterType 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlPhoneticCharacterType%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: C8UpFHTc
+updated: 1793171662000
+hash: CnEpwI9V
 ---
 
 # XlPhoneticCharacterType 枚举

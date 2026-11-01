@@ -1,8 +1,8 @@
 ---
 title: "Python✖️表格"
 source: https://airsheet.wps.cn/docs/python/quickstart.html
-updated: 1789700916000
-hash: Dr_CTHWa
+updated: 1793171662000
+hash: B0cUBSl8
 ---
 
 # Python✖️表格

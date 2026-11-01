@@ -1,8 +1,8 @@
 ---
 title: "Erf (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/Erf%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: hxH-NoBP
+updated: 1793171662000
+hash: M_D8U53u
 ---
 
 # Erf (方法)

@@ -1,8 +1,8 @@
 ---
 title: "CropRight (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PictureFormat/%E5%B1%9E%E6%80%A7/CropRight%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: ePGgfCTj
+updated: 1793171662000
+hash: B8A7x6wk
 ---
 
 # CropRight (属性)

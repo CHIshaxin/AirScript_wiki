@@ -1,8 +1,8 @@
 ---
 title: "ChartWizard (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/ChartWizard%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DJ2SAPtw
+updated: 1793171662000
+hash: ny0sIjil
 ---
 
 # ChartWizard (方法)
@@ -16,7 +16,7 @@ hash: DJ2SAPtw
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Source | any | 可选 | 包含新图表源数据的区域。如果省略本参数，ET 将编辑活动图表工作表或活动工作表上处于选定状态的图表。 |
 | Gallery | any | 可选 | 用于指定图表类型的 XlChartType 的常量之一。 |
 | Format | any | 可选 | 内置自动套用格式的选项编号。可为从 1 到 10 的数字，其取值取决于库的类型。如果省略此参数，ET 将根据库的类型和数据源选择默认值。 |

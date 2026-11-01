@@ -1,8 +1,8 @@
 ---
 title: "Round (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/WorksheetFunction/%E6%96%B9%E6%B3%95/Round%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: AvQ3d4j9
+updated: 1793171662000
+hash: CpN5q9yI
 ---
 
 # Round (方法)

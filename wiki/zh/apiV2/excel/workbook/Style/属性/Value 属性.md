@@ -1,8 +1,8 @@
 ---
 title: "Value (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Style/%E5%B1%9E%E6%80%A7/Value%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Cthu1ly3
+updated: 1793171662000
+hash: BC4cA6pH
 ---
 
 # Value (属性)

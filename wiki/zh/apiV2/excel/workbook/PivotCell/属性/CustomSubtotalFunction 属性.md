@@ -1,8 +1,8 @@
 ---
 title: "CustomSubtotalFunction (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotCell/%E5%B1%9E%E6%80%A7/CustomSubtotalFunction%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BIWH0RYi
+updated: 1793171662000
+hash: Du5UGFKz
 ---
 
 # CustomSubtotalFunction (属性)

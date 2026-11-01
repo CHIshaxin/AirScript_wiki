@@ -1,8 +1,8 @@
 ---
 title: "CutCopyMode (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E5%B1%9E%E6%80%A7/CutCopyMode%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Blfm8YOc
+updated: 1793171662000
+hash: BQI1Smq3
 ---
 
 # CutCopyMode (属性)
@@ -12,13 +12,13 @@ hash: Blfm8YOc
 ## 说明
 
 | 返回值 | 说明 |
-|---|---|
+| --- | --- |
 | **False** | 不处于剪切或复制模式。 |
 | **xlCopy** | 处于复制模式。 |
 | **xlCut** | 处于剪切模式。 |
 
 | 设置值 | 说明 |
-|---|---|
+| --- | --- |
 | **False** | 取消剪切或复制模式并清除移动边框。 |
 | **True** | 启动剪切或复制模式并显示移动边框。 |
 

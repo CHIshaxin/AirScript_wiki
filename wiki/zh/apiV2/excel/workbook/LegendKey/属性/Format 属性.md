@@ -1,8 +1,8 @@
 ---
 title: "Format (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/LegendKey/%E5%B1%9E%E6%80%A7/Format%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: C9_uyLgo
+updated: 1793171662000
+hash: rW3oqAF6
 ---
 
 # Format (属性)

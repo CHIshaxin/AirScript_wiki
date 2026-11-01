@@ -1,8 +1,8 @@
 ---
 title: "DataRange (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotField/%E5%B1%9E%E6%80%A7/DataRange%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DW-oaamj
+updated: 1793171662000
+hash: -03RIwyB
 ---
 
 # DataRange (属性)

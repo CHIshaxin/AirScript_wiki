@@ -1,8 +1,8 @@
 ---
 title: "XlObjectSize 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlObjectSize%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: Bwcqv9iO
+updated: 1793171662000
+hash: Cbkg_I3L
 ---
 
 # XlObjectSize 枚举

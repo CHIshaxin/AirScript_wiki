@@ -1,8 +1,8 @@
 ---
 title: "ReadOnlyRecommended (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Workbook/%E5%B1%9E%E6%80%A7/ReadOnlyRecommended%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DM6m60rs
+updated: 1793171662000
+hash: D607uhdz
 ---
 
 # ReadOnlyRecommended (属性)

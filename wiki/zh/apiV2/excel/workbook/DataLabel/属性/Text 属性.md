@@ -1,8 +1,8 @@
 ---
 title: "Text (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/DataLabel/%E5%B1%9E%E6%80%A7/Text%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BJuo0pyR
+updated: 1793171662000
+hash: BqZ-5nQ5
 ---
 
 # Text (属性)

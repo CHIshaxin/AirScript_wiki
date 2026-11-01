@@ -1,8 +1,8 @@
 ---
 title: "ApplyLayout (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Chart/%E6%96%B9%E6%B3%95/ApplyLayout%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: DzopEC3I
+updated: 1793171662000
+hash: DVaWv5NU
 ---
 
 # ApplyLayout (方法)
@@ -16,7 +16,7 @@ hash: DzopEC3I
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Layout | int4 | 必填 | 指定版式类型。版式类型由 1 到 10 的数字表示。 |
 | ChartType | any | 可选 | 图表的类型。 |
 

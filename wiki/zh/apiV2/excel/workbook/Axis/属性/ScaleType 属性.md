@@ -1,8 +1,8 @@
 ---
 title: "ScaleType (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Axis/%E5%B1%9E%E6%80%A7/ScaleType%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: Cclmia9B
+updated: 1793171662000
+hash: BrudouuH
 ---
 
 # ScaleType (属性)
@@ -12,7 +12,7 @@ hash: Cclmia9B
 ## 说明
 
 | **XlScaleType** 可为以下 **XlScaleType** 常量之一。 |
-|---|
+| --- |
 | **xlScaleLinear** |
 | **xlScaleLogarithmic** |
 

@@ -1,8 +1,8 @@
 ---
 title: "Locked (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/CellFormat/%E5%B1%9E%E6%80%A7/Locked%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: DoLPtlcQ
+updated: 1793171662000
+hash: DWHkXw6u
 ---
 
 # Locked (属性)

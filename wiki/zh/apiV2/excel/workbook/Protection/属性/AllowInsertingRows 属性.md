@@ -1,8 +1,8 @@
 ---
 title: "AllowInsertingRows (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Protection/%E5%B1%9E%E6%80%A7/AllowInsertingRows%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: CSq6dWXW
+updated: 1793171662000
+hash: B_UXn2uU
 ---
 
 # AllowInsertingRows (属性)

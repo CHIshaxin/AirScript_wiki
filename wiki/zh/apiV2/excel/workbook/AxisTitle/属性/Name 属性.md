@@ -1,8 +1,8 @@
 ---
 title: "Name (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/AxisTitle/%E5%B1%9E%E6%80%A7/Name%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: D3P9tYYO
+updated: 1793171662000
+hash: kKI649r8
 ---
 
 # Name (属性)

@@ -1,8 +1,8 @@
 ---
 title: "XlTopBottom 枚举"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/%E6%9E%9A%E4%B8%BE/XlTopBottom%20%E6%9E%9A%E4%B8%BE.html
-updated: 1789700916000
-hash: CMkX5tNZ
+updated: 1793171662000
+hash: zK2sW6YI
 ---
 
 # XlTopBottom 枚举

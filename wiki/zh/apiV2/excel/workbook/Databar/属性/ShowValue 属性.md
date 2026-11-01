@@ -1,8 +1,8 @@
 ---
 title: "ShowValue (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Databar/%E5%B1%9E%E6%80%A7/ShowValue%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: h2YNEbn7
+updated: 1793171662000
+hash: CFzwHGL1
 ---
 
 # ShowValue (属性)

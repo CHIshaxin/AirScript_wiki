@@ -1,8 +1,8 @@
 ---
 title: "BuiltinDocumentProperties (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Workbook/%E5%B1%9E%E6%80%A7/BuiltinDocumentProperties%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: B7Jv2FCJ
+updated: 1793171662000
+hash: CYil3YH7
 ---
 
 # BuiltinDocumentProperties (属性)

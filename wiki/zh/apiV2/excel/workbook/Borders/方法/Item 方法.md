@@ -1,8 +1,8 @@
 ---
 title: "Item (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Borders/%E6%96%B9%E6%B3%95/Item%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: CFvwM3Vv
+updated: 1793171662000
+hash: YOMGsPhG
 ---
 
 # Item (方法)
@@ -12,7 +12,7 @@ hash: CFvwM3Vv
 ## 说明
 
 | **[XlBordersIndex](./../../枚举/XlBordersIndex 枚举.html)** 可为下列 **[XlBordersIndex](./../../枚举/XlBordersIndex 枚举.html)** 常量之一。 |
-|---|
+| --- |
 | **xlDiagonalDown** |
 | **xlDiagonalUp** |
 | **xlEdgeBottom** |
@@ -25,7 +25,7 @@ hash: CFvwM3Vv
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Index | XlBordersIndex | 必填 | XlBordersIndex 的常量之一。 |
 
 ## 示例

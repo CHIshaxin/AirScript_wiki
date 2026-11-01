@@ -1,8 +1,8 @@
 ---
 title: "DeleteCustomList (方法)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/Application/%E6%96%B9%E6%B3%95/DeleteCustomList%20%E6%96%B9%E6%B3%95.html
-updated: 1789700916000
-hash: TWyST2t6
+updated: 1793171662000
+hash: KfeRsUsy
 ---
 
 # DeleteCustomList (方法)
@@ -16,7 +16,7 @@ hash: TWyST2t6
 ## 参数
 
 | 属性 | 数据类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | ListNum | int4 | 必填 | 自定义序列数字。此数字必须大于或等于 5（ET 有四个不可删除的内置自定义序列）。 |
 
 ## 示例

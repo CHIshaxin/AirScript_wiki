@@ -1,8 +1,8 @@
 ---
 title: "PivotFormula (对象)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/PivotFormula/PivotFormula%20%E5%AF%B9%E8%B1%A1.html
-updated: 1789700916000
-hash: FYqKTCgM
+updated: 1793171662000
+hash: 9mD6gAd6
 ---
 
 # PivotFormula (对象)

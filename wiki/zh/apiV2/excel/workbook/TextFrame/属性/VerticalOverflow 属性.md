@@ -1,8 +1,8 @@
 ---
 title: "VerticalOverflow (属性)"
 source: https://airsheet.wps.cn/docs/apiV2/excel/workbook/TextFrame/%E5%B1%9E%E6%80%A7/VerticalOverflow%20%E5%B1%9E%E6%80%A7.html
-updated: 1789700916000
-hash: BqJEiFRS
+updated: 1793171662000
+hash: BYKDc35x
 ---
 
 # VerticalOverflow (属性)

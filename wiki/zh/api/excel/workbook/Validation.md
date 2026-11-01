@@ -1,8 +1,8 @@
 ---
 title: "Validation"
 source: https://airsheet.wps.cn/docs/api/excel/workbook/Validation.html
-updated: 1789700916000
-hash: CRONaFYv
+updated: 1793171662000
+hash: D22cTXVc
 ---
 
 # Validation
